@@ -1,0 +1,32 @@
+// Requirements
+// ============
+@import "mappy-breakpoints";
+@import "susy";
+
+$susy: ( 
+	gutters: 0.25,
+    container: 1080px,
+	global-box-sizing: border-box,
+    //debug: ( image: debug )
+);
+
+$breakpoints: ( 
+	'small': 320px,
+	'med': 550px,
+	'large': 780px,
+	'wide': 1080px
+);
+
+.grid {
+	@include container(4);
+    
+	@include mappy-bp(med) {
+		@include container(6);
+	}
+	@include mappy-bp(large) {
+		@include container(8);
+	}
+	@include mappy-bp(wide) {
+		@include container(12);
+	}
+}
