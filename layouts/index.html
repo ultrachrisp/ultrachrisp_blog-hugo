@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="viewport" content="initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="author" content="{{ .Site.Params.author }}">
+    <meta name="description" content="{{ .Site.Params.description }}">
 
-        {{ .Hugo.Generator }}
+    {{ .Hugo.Generator }}
 
-        <title>{{ .Site.Title }}</title>    
-        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.min.css">
-    </head>
-    <body>
-      <p>Coming soon.</p>
-    </body>
-    <script src="{{ .Site.BaseURL }}js/main.min.js"></script>
+    <title>{{ .Site.Title }}</title>    
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.min.css">
+  </head>
+  <body>
+    <div class="background"></div>
+    <section class="grid">
+      <div class="placeholder">
+        <h1>Coming soon.</h1>
+        <p>Chrispyke.com is getting a much needed revamp, stay tuned.</p>
+      </div>
+    </section>
+  </body>
+  <script src="{{ .Site.BaseURL }}js/main.min.js"></script>
 </html>

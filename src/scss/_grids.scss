@@ -5,9 +5,9 @@
 
 $susy: ( 
 	gutters: 0.25,
-    container: 1080px,
+  container: 1080px,
 	global-box-sizing: border-box,
-    //debug: ( image: debug )
+  //debug: ( image: debug )
 );
 
 $breakpoints: ( 
@@ -18,6 +18,9 @@ $breakpoints: (
 );
 
 .grid {
+  // this is to show the debugging grid
+  position: relative;
+  
 	@include container(4);
     
 	@include mappy-bp(med) {
