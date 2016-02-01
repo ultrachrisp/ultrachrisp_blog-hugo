@@ -48,11 +48,23 @@ body{
   min-height: 300px;
 }
 
-h1{font-size:6.0rem; line-height:6rem; font-weight: 300;} 
+h1{font-size:6.0rem; line-height:7.5rem; font-weight: 300;}
+h2{font-size:5.0rem; line-height:6.2rem; font-weight: 300;}
+h3{font-size:4.2rem; line-height:5.2rem; font-weight: 400;}
+h4{font-size:3.8rem; line-height:4.5rem; font-weight: 400;}
+h5{font-size:3.1rem; line-height:3.8rem; font-weight: 700;}
+h6{font-size:2.7rem; line-height:3.3rem; font-weight: 700;}
+
+h1, h2, h3{
+  text-shadow: 2px 2px 4px #666;
+}
+
+h4, h5, h6{
+  text-shadow: 2px 2px 3px #666;
+}
 
 hr{
   position: relative;
-  margin:20px $gutter_half;
   border-width: 2px;
   border-color: #000;
   
@@ -84,38 +96,51 @@ hr{
   background-size: cover;
 }
 
+.grid{
+  padding: 0 10px;
+}
+
+ul, ol{
+  list-style-position: inside;
+  padding:5px 10px;
+}
+
+ul{list-style-type: circle;}
+ol{list-style-type: decimal;}
+
+.content, 
 .placeholder{
   @include span(4 of 4);
-  color:#fff;
-  
-  h1{text-shadow: 2px 2px 5px #333;}
-  p{text-shadow: 2px 2px 3px #222;}
+  color:#111;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-sizing: border-box;
+  padding:$gutter_quater();
+  border-radius: 20px;
+  margin-top: 20px;
   
   img{
     width:50px;
     height:50px;
     position: relative;
     float: left;
-    padding: 17px $gutter_half 0;
-  }
-  
-  h1, p{
-    padding:10px $gutter_half;
+    //padding: 17px $gutter_half 0;
   }
 }
 
 @include mappy-bp(med) {
   hr{margin:20px 0;}
+  
+  .content, 
   .placeholder{
     @include span(4 of 6);
     @include pre(1 of 6);
     @include post(1 of 6);
-    img{padding-left:0;}
-    h1, p{padding:10px 0;}
   }
 }
 
 @include mappy-bp(large) {
+  
+  .content,
   .placeholder{
     @include span(6 of 8);
     @include pre(1 of 8);
@@ -124,9 +149,11 @@ hr{
 }
 
 @include mappy-bp(wide) {
+  
+  .content,
   .placeholder{
-    @include span(6 of 12);
-    @include pre(3 of 12);
-    @include post(3 of 12);
+    @include span(10 of 12);
+    @include pre(1 of 12);
+    @include post(1 of 12);
   }
 }
