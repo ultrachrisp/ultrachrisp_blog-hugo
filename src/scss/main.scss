@@ -48,12 +48,12 @@ body{
   min-height: 300px;
 }
 
-h1{font-size:6.0rem; line-height:7.5rem; font-weight: 300;}
-h2{font-size:5.0rem; line-height:6.2rem; font-weight: 300;}
-h3{font-size:4.2rem; line-height:5.2rem; font-weight: 400;}
-h4{font-size:3.8rem; line-height:4.5rem; font-weight: 400;}
-h5{font-size:3.1rem; line-height:3.8rem; font-weight: 700;}
-h6{font-size:2.7rem; line-height:3.3rem; font-weight: 700;}
+h1{font-size:6.0rem; line-height:7.0rem; font-weight: 300;}
+h2{font-size:5.0rem; line-height:5.9rem; font-weight: 300;}
+h3{font-size:4.2rem; line-height:5.0rem; font-weight: 300;}
+h4{font-size:3.8rem; line-height:4.4rem; font-weight: 300;}
+h5{font-size:3.1rem; line-height:3.6rem; font-weight: 400;}
+h6{font-size:2.7rem; line-height:3.1rem; font-weight: 400;}
 
 h1, h2, h3{
   text-shadow: 2px 2px 4px #666;
@@ -63,10 +63,23 @@ h4, h5, h6{
   text-shadow: 2px 2px 3px #666;
 }
 
+p{
+  padding:10px 0;
+}
+
+em{
+  font-style: italic;
+}
+
+strong{
+  font-weight: 400;
+}
+
 hr{
   position: relative;
   border-width: 2px;
   border-color: #000;
+  border-style: solid;
   
   &:before, &:after{
     content:"";
@@ -111,7 +124,7 @@ ol{list-style-type: decimal;}
 .content, 
 .placeholder{
   @include span(4 of 4);
-  color:#111;
+  color:#333;
   background-color: rgba(255, 255, 255, 0.6);
   box-sizing: border-box;
   padding:$gutter_quater();

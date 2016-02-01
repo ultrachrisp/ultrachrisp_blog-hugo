@@ -2,12 +2,13 @@
 date        = "2016-02-01T09:32:54+02:00"
 title       = "HelloWorld"
 description = "Moved from Wordpress"
+draft       = false
 tags        = ["Development", "CMS", "Hugo"]
 +++
 
-# Hugo
+## Hugo
 
-I was lucky enough to use Hugo for a commercial product that I immediately decided to move my Wordpress site accross to Hugo. The freedom that a static site generator coupled with some build tools hosted publicly provides is a new experience for me yet it feels so natural.
+I was **lucky** enough to use _Hugo_ for a commercial product that I immediately decided to move my Wordpress site accross to Hugo. The freedom that a static site generator coupled with some build tools hosted publicly provides is a new experience for me yet it feels so natural.
 
 # Hugo
 ## Hugo 
@@ -31,17 +32,18 @@ But this should be a space.
 ***
 
 This is the introduction:
-    
+
+***
     Trying to put something in code
     http://gohugo.io/
-    
+***
 ```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
- 
+***
 ```python
 s = "Python syntax highlighting"
 print s
 ```
-   
+***
