@@ -72,7 +72,7 @@ em{
 }
 
 strong{
-  font-weight: 400;
+  font-weight: 700;
 }
 
 hr{
@@ -81,7 +81,7 @@ hr{
   border-color: #000;
   border-style: solid;
   
-  &:before, &:after{
+  &::before, &::after{
     content:"";
     border:4px solid #000;
     border-radius: 50%;
@@ -92,10 +92,10 @@ hr{
     width: 6px;
     height: 6px;
   }
-  &:before{
+  &::before{
     left:-5px;
   }
-  &:after{
+  &::after{
     right:-5px;
   }
 }
@@ -118,7 +118,7 @@ ul, ol{
   padding:5px 10px;
 }
 
-ul{list-style-type: circle;}
+ul{list-style-type: disc;}
 ol{list-style-type: decimal;}
 
 .content, 
