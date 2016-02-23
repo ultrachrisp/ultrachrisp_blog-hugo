@@ -3,14 +3,13 @@
 var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	autoprefixer = require('gulp-autoprefixer'),
-	minifycss = require('gulp-minify-css'),
+    cssnano = require('gulp-cssnano'),
 	uglify = require('gulp-uglify'),
 	imagemin = require('gulp-imagemin'),
 	rename = require('gulp-rename'),
 	concat = require('gulp-concat'),
 	notify = require('gulp-notify'),
-	//cache = require('gulp-cache'),
-  livereload = require('gulp-livereload'),
+    livereload = require('gulp-livereload'),
 	nodeReset = require('node-reset-scss'),
 	order = require('gulp-order'),
 	del = require('del');
@@ -30,7 +29,7 @@ gulp.task('styles', function () {
 		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
 	  .pipe(gulp.dest('static/css'))
 		.pipe(rename({suffix: '.min'}))
-		.pipe(minifycss())
+		.pipe(cssnano())
 		.pipe(gulp.dest('static/css'))
 		.pipe(notify({message: 'Styles task complete' }));
 });
