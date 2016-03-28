@@ -11,6 +11,7 @@ var gulp = require('gulp'),
 	notify = require('gulp-notify'),
     livereload = require('gulp-livereload'),
 	nodeReset = require('node-reset-scss'),
+fontAwesome = require('node-font-awesome');
 	order = require('gulp-order'),
 	del = require('del');
 
@@ -54,7 +55,12 @@ gulp.task('images', function () {
 		.pipe(notify({ message: 'Images task completed' }));
 });
 
-gulp.task('default', ['clean', 'general', 'styles', 'scripts', 'images']);
+gulp.task('fonts', function() {
+  gulp.src(fontAwesome.fonts)
+    .pipe(gulp.dest('static/fonts'));
+});
+
+gulp.task('default', ['clean', 'general', 'styles', 'scripts', 'images', 'fonts']);
 
 gulp.task('watch', function () {
 	livereload.listen();
