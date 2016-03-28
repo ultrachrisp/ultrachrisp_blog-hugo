@@ -1,5 +1,5 @@
-baseurl = "http://chrispyke.com/"
-languageCode = "en"
+baseurl = "https://chrispyke.com/"
+languageCode = "en-za"
 title = "chrispyke.com"
 
 [params]

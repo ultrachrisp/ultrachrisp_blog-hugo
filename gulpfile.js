@@ -15,6 +15,15 @@ var gulp = require('gulp'),
 	order = require('gulp-order'),
 	del = require('del');
 
+gulp.task('clean', function (cb) {
+	del(['static/**', '!static', 'public/**', '!public'], cb);
+});
+
+gulp.task('general', function () {
+  return gulp.src('src/general/**')
+    .pipe(gulp.dest('static'));
+});
+
 gulp.task('styles', function () {
 	return gulp.src('src/scss/main.scss')
 		.pipe(sass({includePaths: [nodeReset.includePath, './node_modules/susy/sass', './bourbon']}))
@@ -46,22 +55,13 @@ gulp.task('images', function () {
 		.pipe(notify({ message: 'Images task completed' }));
 });
 
-gulp.task('general', function () {
-  return gulp.src('src/general/**')
-    .pipe(gulp.dest('static/'));
-});
-
-gulp.task('clean', function (cb) {
-	del(['static/**', '!static', 'public/**', '!public'], cb);
-});
-
-gulp.task('default', ['clean', 'styles', 'scripts', 'images', 'general']);
+gulp.task('default', ['clean', 'general', 'styles', 'scripts', 'images']);
 
 gulp.task('watch', function () {
 	livereload.listen();
+  gulp.watch('src/general/**/*', ['general']);
 	gulp.watch('src/scss/**/*.scss', ['styles']);
 	gulp.watch('src/js/**/*.js', ['scripts']);
 	gulp.watch('src/img/**/*', ['images']);
-  gulp.watch('src/general/**/*', ['general']);
 	gulp.watch(['static/**']).on('change', livereload.changed);
 });
