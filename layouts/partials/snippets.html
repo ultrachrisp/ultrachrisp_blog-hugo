@@ -1,0 +1,12 @@
+<head>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+</head>    
+
+          
+ <section class="grid">
+  <div class="content">
+    {{ range .Data.Pages }}
+      <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    {{ end }}
+  </div>
+</section>

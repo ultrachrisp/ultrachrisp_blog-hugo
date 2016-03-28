@@ -3,19 +3,12 @@
  {{ partial "head.html" . }}
   <body>
     <section class="grid">
-      <div class="placeholder">
+      <div class="content">
         <hr>
         <img class="logo" src="img/LogoPlay.png" alt="logo">
         <h1>Coming soon.</h1>
         <p>Chrispyke.com is getting a much needed revamp, stay tuned.</p>
         <hr>
-      </div>
-    </section>
-    <section class="grid">
-      <div class="content">
-        {{ range .Data.Pages }}
-          <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-        {{ end }}
       </div>
     </section>
     {{ partial "footer.html" . }}
