@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 	notify = require('gulp-notify'),
     livereload = require('gulp-livereload'),
 	nodeReset = require('node-reset-scss'),
-fontAwesome = require('node-font-awesome');
+    fontAwesome = require('node-font-awesome');
 	order = require('gulp-order'),
 	del = require('del');
 
