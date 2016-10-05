@@ -1,4 +1,4 @@
 .DS\_store
 node_modules
 static
-public
+#public
