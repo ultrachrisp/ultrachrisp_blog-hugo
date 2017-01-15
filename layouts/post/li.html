@@ -1,0 +1,14 @@
+
+{{ $baseURL := .Site.BaseURL }}
+
+<div class="background"></div>
+<section class="grid">
+    <div class="content">
+        <h1>{{ .Title }}</h1>
+        <ul id="list">
+            {{ range .Data.Pages }}
+            {{ .Render "li"}}
+            {{ end }}
+        </ul>
+    </div>
+</section>
