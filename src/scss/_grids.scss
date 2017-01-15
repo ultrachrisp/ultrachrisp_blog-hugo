@@ -28,7 +28,6 @@ $breakpoints: (
 .grid {
  // this is to show the debugging grid
  position: relative;
-  
  @include container(4);
     
  @include mappy-bp(med) {
@@ -38,6 +37,7 @@ $breakpoints: (
  @include mappy-bp(large) {
   @include container(12);
  }
+     
  @include mappy-bp(wide) {
   @include container(16);
  }
