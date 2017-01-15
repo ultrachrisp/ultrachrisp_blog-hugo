@@ -1,12 +1,11 @@
 +++
-date        = "2016-02-01T09:32:54+02:00"
-title       = "HelloWorld"
-description = "Moved from Wordpress"
-draft       = false
+date = "2017-01-15T14:12:40+02:00"
+title = "For the Love of Emacs"
+draft = true
 
 +++
 
-## New and different
+## How it began
 
 Lorem ipsum dolor sit amet, pro erroribus inciderint ei, legimus propriae vix id. Nostrum propriae antiopam ad duo, probo veritus ex has, illud fugit tacimates ei eam. Quem fugit sensibus nec ex, deleniti vulputate eu duo. Mea at lorem regione, ne quo alii tale torquatos, liber eirmod commune an sit.
 
@@ -17,3 +16,4 @@ Nostrud aliquam atomorum sit cu, tota perfecto vix in. Cum eirmod intellegat in,
 Nec ad labore graeco epicurei. Mel nullam epicurei intellegebat ea. An vis similique interesset, nisl accusamus duo id. Pro wisi laoreet dissentias eu, minim causae nominavi et has. Harum numquam deleniti his ne.
 
 Probo dicat alterum et pro, ex nam quem zril accusata, et qui alia zril impedit. Vis laudem volutpat ex, duo ad velit dolor reprehendunt, est dico recusabo gubergren ex. No has soluta scriptorem intellegebat. In mei soleat eripuit voluptatibus. Mei tempor nominavi ut, ne quidam urbanitas honestatis sea.
+
