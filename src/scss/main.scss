@@ -17,8 +17,6 @@ $gutter: gutter();
 $gutter_half: $gutter * 0.5;
 $gutter_quater: $gutter * 0.25;
 
-
-
 // Custom Layout for different sections
 
 .grid,
@@ -39,7 +37,7 @@ footer{
 
         
     .post {        
-        p {
+        p, pre {
             @include pre(1 of 8);
             @include span(6 of 8);
             @include post(1 of 8);
@@ -60,7 +58,7 @@ footer{
         @include span(10 of 12);
         @include post(1 of 12);
         
-        p{
+        p, pre{
             @include pre(1 of 10);
             @include span(9 of 10);
         }
@@ -72,7 +70,6 @@ footer{
 }
     
 // Custom Layout End
-
 
 html {
     font-size: 62.5%;
@@ -215,7 +212,7 @@ ol { list-style-type: decimal; }
 }
 
 .card {
-    background-color: $canvas;
+    //background-color: $canvas;
     box-shadow: 2px 2px 6px 3px $shadow;
     box-sizing: border-box;
     border-radius: 20px;

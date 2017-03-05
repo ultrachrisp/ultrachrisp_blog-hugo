@@ -1,11 +1,6 @@
-+++
-date = "2017-03-05T08:34:02+02:00"
-title = "Layout"
-draft = true
-
-+++
-
-** Hugo
+#+TITLE: Layout Template
+#+DATE: 2017-03-05T08:34:02+02:00
+#+DRAFT: true
 
 So, checking out *org-mode* instead of +markdown+, and I am /happy/ with how things are =turning out=. It all ~appears to be here~.
 
@@ -36,11 +31,11 @@ Unordered lists:
 - item
 - item
 
-This is the introduction:
+[[file:../../img/LogoPlay.png]]
 
+<div class='myClass'>Looking for something</div>
 
-Trying to put something in code
-http://gohugo.io/
+[[http://gohugo.io/][Check out Hugo]]
 
 #+BEGIN_SRC javascript
 var s = "JavaScript syntax highlighting";
