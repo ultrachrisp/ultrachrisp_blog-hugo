@@ -1,0 +1,54 @@
++++
+date = "2017-03-05T08:34:02+02:00"
+title = "Layout"
+draft = true
+
++++
+
+** Hugo
+
+So, checking out *org-mode* instead of +markdown+, and I am /happy/ with how things are =turning out=. It all ~appears to be here~.
+
+* Heading 1
+** Heading 2
+*** Heading 3
+**** Heading 4
+***** Heading 5
+****** Heading 6
+
+So far, it all seems to be here.
+
+-----
+
+Ordered lists:
+
+1. item
+2. item
+3. item
+4. item
+
+-----
+
+Unordered lists:
+
+- item
+- item
+- item
+- item
+
+This is the introduction:
+
+
+Trying to put something in code
+http://gohugo.io/
+
+#+BEGIN_SRC javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+#+END_SRC
+
+#+BEGIN_SRC python
+s = "Python syntax highlighting"
+print s
+#+END_SRC
+
