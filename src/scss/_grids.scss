@@ -4,33 +4,41 @@
 @import "susy";
 
 $susy: ( 
-	gutters: 0.25,
-  container: 1080px,
-	global-box-sizing: border-box,
-  //debug: ( image: debug )
-    
+ gutters: 0.25,
+ container: 1080px,
+ global-box-sizing: border-box,
+ //debug: ( image: debug )    
 );
 
+// trying new breakpoints
+//$breakpoints: ( 
+// 'small': 320px,
+// 'med': 550px,
+// 'large': 780px,
+// 'wide': 1080px
+//);
+
 $breakpoints: ( 
-	'small': 320px,
-	'med': 550px,
-	'large': 780px,
-	'wide': 1080px
+ 'small': 320px,
+ 'med': 600px,
+ 'large': 900px,
+ 'wide': 1200px
 );
 
 .grid {
-  // this is to show the debugging grid
-  position: relative;
-  
-	@include container(4);
+ // this is to show the debugging grid
+ position: relative;
+ @include container(4);
     
-	@include mappy-bp(med) {
-		@include container(6);
-	}
-	@include mappy-bp(large) {
-		@include container(8);
-	}
-	@include mappy-bp(wide) {
-		@include container(12);
-	}
+ @include mappy-bp(med) {
+  @include container(8);
+ }
+     
+ @include mappy-bp(large) {
+  @include container(12);
+ }
+     
+ @include mappy-bp(wide) {
+  @include container(12);
+ }
 }
