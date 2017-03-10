@@ -1,0 +1,12 @@
+#+DATE: 2017-03-06T15:04:40+02:00
+#+TITLE: Hugo &amp; Emacs
+#+DRAFT: true
+
+** The joys of craft
+
+   I get huge satisfaction when I view a product I built using tools I prefer following principles I believe in. On any given day, I am working on a number of code bases and tech stacks that get the job done but fall short of the elusive 'If I could have built this from scratch...' standard. When I can hand-pick the tools and fire-up my processes to watch it all come together, oh boy, the endorphins flow.
+
+   And to be clear, I am not saying that one tech-stack or technology is better than another (enter ninja vs pirates) because each developers preferances are as unique as they are. I am saying that when you have full control of your environment and tools, your motivation as well as the quality of the end product should go up (some exceptions aside). 
+
+   I have tried a number of blogs on a couple of different platforms 
+

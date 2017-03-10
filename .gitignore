@@ -1,4 +1,5 @@
 .DS\_store
+.tern-port
 node_modules
 static
 #public
