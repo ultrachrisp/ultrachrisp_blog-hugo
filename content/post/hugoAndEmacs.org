@@ -1,12 +1,34 @@
 #+DATE: 2017-03-06T15:04:40+02:00
-#+TITLE: Hugo &amp; Emacs
+#+TITLE: Hugo & Emacs
 #+DRAFT: true
 
-** The joys of craft
+*** The joys of craft
 
-   I get huge satisfaction when I view a product I built using tools I prefer following principles I believe in. On any given day, I am working on a number of code bases and tech stacks that get the job done but fall short of the elusive 'If I could have built this from scratch...' standard. When I can hand-pick the tools and fire-up my processes to watch it all come together, oh boy, the endorphins flow.
+    I get huge satisfaction when I view a product I built using tools I prefer following principles I believe in. On any given day, I am working on a number of code bases and tech stacks that get the job done but fall short of the elusive 'If I could have built this from scratch...' standard. When I can hand-pick the tools and fire-up my processes to watch it all come together, oh boy, the endorphin's flow.
 
-   And to be clear, I am not saying that one tech-stack or technology is better than another (enter ninja vs pirates) because each developers preferances are as unique as they are. I am saying that when you have full control of your environment and tools, your motivation as well as the quality of the end product should go up (some exceptions aside). 
+    And to be clear, I am not saying that one tech-stack or technology is better than another (enter ninja vs pirates) because each developer's preferences are as unique as they are. I am saying that when you have full control of your environment and tools, your motivation as well as the quality of the end product should go up (some exceptions aside). 
 
-   I have tried a number of blogs on a couple of different platforms 
+    I have tried a number of blogs on a couple of different platforms and my tastes have changes over the years. Currently, these tastes include:
+
+    - as much freedom on the front-end as possible.
+    - less need for a 'mature' back end with multiple user/ contributor accounts.
+    - support for NodeJS task runners.
+    - option to author using my choice of tech.
+
+    And this is where [[http://gohugo.io/][Hugo]] stepped in. Static site generators make so much sense for smaller sites. There will always be a need for [[https://docs.adobe.com/content/docs/en/aem/6-2.html][AEM]], [[https://wordpress.com/][Wordpress]] or even [[https://angular.io/][Angular]] but most micro sites do not need, or even use, half the features offered. But having your content produced on the fly and having near full control of what is produced allows for some serious front-end crafting. In an age where you are spoiled for choice, the hard part is choosing a solution that best suits your needs... as well as aligning with your abilities.
+
+**** Hugo: The simplified CMS that could
+
+     I really like Hugo. It's fast, it's straight-forward, it's felxible, it's had a massive update and now supports org-mode directly. I will say that again, you can now use .org files instead of mark-down for your content. Before, I was merely a fan of Hugo but now I'm a fanatic.
+
+    
+**** Emacs and the might org-mode
+
+     I find my story similar to other people's: started using Emacs to get access to org-mode and then slowly but surely, Emacs invaded my whole programming life. In fact, I am ashamed that it has taken me this long to adopt Emacs as all purpose solution (IDE, general editor, secratary). The learning curve is still pretty high but I find that I get frustrated everytime I have to do something that is not in Emacs and I immediately start missing my hot-keys and built in tools. 
+
+     Emacs can do so much and forefills such a broad set of tasks that it is hard for me to imagine using anything else. And now that Hugo supports org files instead of markdown, it's hard to think that their was life before Emacs.
+
+**** Gulp and taking the pain out of front-end developing
+
+     Task runners have been around for a while and have become a pretty big part of my front-end development workflow. From vendor-prefixes to minification to linting and sass compilation, being able to do all this using pipable commands really should be a no brainer (sure, there are more standard and lower level solutions available... I'm looking at you bash, but I still bash level up first). So being able to get Gulp to work with my Hugo build while doing all the coding in Emacs means we passed the 'awesome' tools milestone a while back.
 

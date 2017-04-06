@@ -1,4 +1,5 @@
 {{ partial "head.html" . }}
+{{ partial "navigation.html" . }}
 
 <section class="grid">
     <div class="card">
@@ -10,7 +11,7 @@
     </div>
 </section>
     
-<aside id="meta">
+<aside>
     <div>
         {{ if .Prev }}
         <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a>

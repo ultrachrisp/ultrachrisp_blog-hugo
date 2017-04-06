@@ -33,7 +33,7 @@ Unordered lists:
 
 [[file:../../img/LogoPlay.png]]
 
-<div class='myClass'>Looking for something</div>
+<span class='myClass'>Looking for something</span>
 
 [[http://gohugo.io/][Check out Hugo]]
 
