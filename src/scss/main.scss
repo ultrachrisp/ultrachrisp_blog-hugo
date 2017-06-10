@@ -1,10 +1,10 @@
 // Screen
-// ======
 @import "reset";
 @import "grids";
 @import "colors";
 @import "lines";
 @import "svgs";
+
 @import "font-awesome";
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,600';
 $font-openSans: 'Open Sans', sans-serif;
@@ -17,7 +17,7 @@ $gutter: gutter();
 $gutter_half: $gutter * 0.5;
 $gutter_quater: $gutter * 0.25;
 
-// some mixins
+// Some mixins
 @mixin card(){
     background-color: $canvas;
     box-shadow: 2px 2px 6px 3px $shadow;
@@ -28,9 +28,9 @@ $gutter_quater: $gutter * 0.25;
 @mixin link(){
     font-size: 2.4rem;
     line-height: 2.8rem;
-    margin: 0 15px;
+    margin: 0 12px;
     color: $black;
-    padding: 5px 10px;
+    padding: 5px 10px 7px;
     border-radius: 10px;
     transition: background-color $ani-duration, color $ani-duration;
     &:hover {
@@ -39,28 +39,24 @@ $gutter_quater: $gutter * 0.25;
         
         // for the logo
         .stroke{ stroke: $canvas; }
-        .fill { fill: $black; }
+        .fill{ fill: $black; }
     }
 }
 
 // Custom Layout for different sections
+.grid, .post-layout{ padding: 0 $gutter_half; }
 
-
-.grid, .post-layout {
-    padding: 0 $gutter_half;
-}
-
-.post {
+.post{
     @include span(4 of 4);
 }
 
-@include mappy-bp(med) {
+@include mappy-bp(med){
     .post{
         @include span(8 of 8);
     }
 
-    .post-layout {        
-        p, pre, ul, ol {
+    .post-layout{        
+        p, pre, ul, ol{
             @include pre(1 of 8);
             @include span(6 of 8);
             @include post(1 of 8);
@@ -73,7 +69,7 @@ $gutter_quater: $gutter * 0.25;
     }
 }
 
-@include mappy-bp(large) {
+@include mappy-bp(large){
 
     .post{
         @include span(12 of 12);
@@ -93,7 +89,6 @@ $gutter_quater: $gutter * 0.25;
     .content{
         @include pre(1 of 12)
         @include span(5 of 12 first);
-        
     }
 
     .post-list{
@@ -106,21 +101,18 @@ $gutter_quater: $gutter * 0.25;
     }
 }
 
-@include mappy-bp(wide) {
-    .grid, .post-layout { padding: 0; }
+@include mappy-bp(wide){
+    .grid, .post-layout{ padding: 0; }
 
     .content, .post-list{
         @include span(4 of 4);
     }
 }
     
-// Custom Layout End
+// General styles
+html{ font-size: 62.5%; }
 
-html {
-    font-size: 62.5%;
-}
-
-body {
+body{
     line-height: 2.6rem;
     font-size: 1.8rem;
     font-family: $font-openSans;
@@ -136,96 +128,98 @@ h1, h2, h3, h4, h5, h6{
   padding: 20px 0 0 0;
 }
 
-h1 {
+h1{
     font-size: 5.7rem;
     line-height: 6.6rem;
 }
 
-h2 {
+h2{
     font-size: 4.9rem;
     line-height: 5.7rem;
 }
 
-h3 {
+h3{
     font-size: 4.2rem;
     line-height: 4.9rem;
 }
 
-h4 {
+h4{
     font-size: 3.6rem;
     line-height: 4.2rem;
 }
 
-h5 {
+h5{
     font-size: 3.1rem;
     line-height: 3.6rem;
 }
 
-h6 {
+h6{
     font-size: 2.7rem;
     line-height: 3.1rem;
 }
 
-p {
-    padding: 15px 0;
+p{ padding: 15px 0; }
+em{ font-style: italic; }
+strong{ font-weight: 600; }
+a{
+    text-decoration:none;
+    color: $grey-light;
 }
 
-em {
-    font-style: italic;
+nav, footer{
+    @include card();
+    padding: 10px 0px;
+    
+    a{ @include link(); }
 }
 
-strong {
-    font-weight: 600;
-}
-
-nav {
+nav{
     margin-top: 15px;
     margin-bottom: 15px;
     float: left;
     
-    a, span {
-        float: left;
+    a, span{ float: left; }
+
+    a:not(.home){
+        padding: 11px 10px;
+        margin: 0 15px 0 10xbpx;
+    }
+
+    .line{
+        margin-top: 12px;
     }
 
     .home{
-        width: 45px;
-        height: 45px;
-        padding: 5px;
+        width: 40px;
+        height: 40px;
     }
 }
 
-footer {
+footer{
     margin-bottom: 30px;
     float: right;
 
     a, span { float: right; }
 }
-
-footer, nav {
-    @include card();
-    padding: 10px;
     
-    a { @include link(); }
-}
-    
-ul, ol {
+ul, ol{
     list-style-position: initial;
     padding: 0 0 15px 40px;
 }
 
-ul { list-style-type: disc; }
-ol { list-style-type: decimal; }
+ul{ list-style-type: disc; }
+ol{ list-style-type: decimal; }
 
-.logo {
+.logo{
     padding: 1.25rem;
 }
 
-.content {
+.content{
     @include card();
     
     padding: 8px 15px;
     
-    img {
+    img{
         width: 50px;
         height: 50px;
         position: relative;
@@ -233,31 +227,16 @@ ol { list-style-type: decimal; }
     }
 }
 
-.post {
+.post{
     @include card();
     padding-bottom: 30px;
 }
 
-.post-layout {
-    time {
+.post-layout{
+    time{
         font-size: 1.3rem;
         line-height: 1.4rem;
         padding-top: 5px;
         display: block;
-    }
-}
-
-svg {
-    .stroke{
-        stroke-width: 5;
-        stroke: $black;
-    }
-
-    .no-fill{
-        fill: none;
-    }
-        
-    .fill{
-        fill: $canvas;
     }
 }

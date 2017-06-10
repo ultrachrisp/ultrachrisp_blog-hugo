@@ -1,11 +1,15 @@
 <section class="grid">
     <nav>
-        <a class="home" href="#">
+        <a class="home" href="{{ .Site.BaseURL }}">
             {{ partial "logo.svg" . }}
         </a>
         {{ partial "lineSpacer.html" . }}
         <a href="#">
             Blog
+        </a>
+        {{ partial "lineSpacer.html" . }}
+        <a href="#">
+            Play
         </a>
     </nav>
 </section>
