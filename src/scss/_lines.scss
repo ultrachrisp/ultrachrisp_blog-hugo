@@ -20,17 +20,17 @@ hr, .line {
 hr {
     &::before {
         left: -5px;
-        top: -6px;
+        top: -7px;
     }
     &::after {
-        top: -6px;
+        top: -7px;
         right: -5px;
     }
 }
 
 .line {
     position: relative;
-    float: right;
+    display: inline-block;
     height: 30px;
     width: 15px;
     border-width: 0px;
@@ -53,7 +53,7 @@ hr {
         border-bottom-color: $canvas;
     }
 
-    div {
+    span {
         position: absolute;
         left: 0px;
         top: 0px;

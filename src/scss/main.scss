@@ -17,26 +17,45 @@ $gutter: gutter();
 $gutter_half: $gutter * 0.5;
 $gutter_quater: $gutter * 0.25;
 
-// Custom Layout for different sections
-
-    
-.grid,
-.post {
-    padding: 0 $gutter_half;
+// some mixins
+@mixin card(){
+    background-color: $canvas;
+    box-shadow: 2px 2px 6px 3px $shadow;
+    box-sizing: border-box;
+    border-radius: 20px;
 }
 
-.card,
-footer{
+@mixin link(){
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    margin: 0 15px;
+    color: $black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background-color $ani-duration, color $ani-duration;
+    &:hover {
+        color: $canvas;
+        background-color: $black;
+    }
+}
+
+// Custom Layout for different sections
+
+
+.grid,
+.post {
+    //adding: 0 $gutter_half;
+}
+
+.card{
     @include span(4 of 4);
 }
 
 @include mappy-bp(med) {
-    .card,
-    footer {
+    .card{
         @include span(8 of 8);
     }
 
-        
     .post {        
         p, pre, ul, ol {
             @include pre(1 of 8);
@@ -53,13 +72,12 @@ footer{
 
 @include mappy-bp(large) {
 
-    .card,
-    footer {
+    .card{
         @include span(12 of 12);
     }
         
     .post{
-        padding: 0;
+        //padding: 0;
         @include pre(1 of 12);
         @include span(10 of 12);
         @include post(1 of 12);
@@ -86,7 +104,7 @@ footer{
 }
 
 @include mappy-bp(wide) {
-    .grid{ padding: 0; }
+    //.grid{ padding: 0; }
 
     .content, .post-list{
         @include span(4 of 4);
@@ -97,26 +115,6 @@ footer{
 
 html {
     font-size: 62.5%;
-    
-    #ieMessage {
-        display: none;
-    }
-    &.ieOld {
-        header,
-        section,
-        footer,
-        nav {
-            display: none;
-        }
-        body {
-            width: 100%;
-            #ieMessage {
-                display: block;
-                width: 450px;
-                margin: 20px auto;
-            }
-        }
-    }
 }
 
 body {
@@ -124,7 +122,7 @@ body {
     font-size: 1.8rem;
     font-family: $font-openSans;
     color: $grey-dark;
-    padding: 30px 0;
+    //padding: 30px 0;
     background-color: $white;
     background-attachment: fixed;
     background-image: $background_image;
@@ -179,13 +177,11 @@ strong {
 }
 
 nav {
+    margin-top:15px;
+    float: left;
+    
+    a, span { float: left; }
 
-    display: inline-block;
-    a, .line{
-        float: left;
-    }
-
-        
     .home{
         width: 30px;
         height: 30px;
@@ -194,29 +190,16 @@ nav {
 
 footer {
     margin-bottom: 30px;
+    float: right;
 
-    a {
-        float: right;
-    }
+    a, span { float: right; }
 }
 
 footer, nav {
+    @include card();
     padding: 10px;
-    a{
-        font-size: 2.4rem;
-        line-height: 2.8rem;
-        position: relative;
-        //float: right;
-        margin: 0 15px;
-        color: $black;
-        padding: 5px 10px;
-        border-radius: 10px;
-        transition: background-color $ani-duration, color $ani-duration;
-        &:hover {
-            color: $canvas;
-            background-color: $black;
-        }
-    }
+    
+    a { @include link(); }
 }
     
 ul, ol {
@@ -232,12 +215,8 @@ ol { list-style-type: decimal; }
 }
 
 .content {
-    //@include span(4 of 4);
+    @include card();
     
-    background-color: $canvas;
-    box-shadow: 2px 2px 6px 3px $shadow;
-    box-sizing: border-box;
-    border-radius: 20px;
     margin-top: 20px;
     padding: 8px 15px;
     
@@ -250,11 +229,7 @@ ol { list-style-type: decimal; }
 }
 
 .card {
-    background-color: $canvas;
-    box-shadow: 2px 2px 6px 3px $shadow;
-    box-sizing: border-box;
-    border-radius: 20px;
-    //padding: 40px 0;
+    @include card();
 }
 
 .post{
