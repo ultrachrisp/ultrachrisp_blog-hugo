@@ -2,8 +2,8 @@
 {{ partial "navigation.html" . }}
 
 <section class="grid">
-    <div class="card">
-        <div class="post">
+    <div class="post">
+        <div class="post-layout">
             <h2>{{ .Title }}</h2>
             <time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time>
             {{ .Content }}

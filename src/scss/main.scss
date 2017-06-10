@@ -42,21 +42,20 @@ $gutter_quater: $gutter * 0.25;
 // Custom Layout for different sections
 
 
-.grid,
-.post {
-    //adding: 0 $gutter_half;
+.grid, .post-layout {
+    padding: 0 $gutter_half;
 }
 
-.card{
+.post {
     @include span(4 of 4);
 }
 
 @include mappy-bp(med) {
-    .card{
+    .post{
         @include span(8 of 8);
     }
 
-    .post {        
+    .post-layout {        
         p, pre, ul, ol {
             @include pre(1 of 8);
             @include span(6 of 8);
@@ -72,12 +71,11 @@ $gutter_quater: $gutter * 0.25;
 
 @include mappy-bp(large) {
 
-    .card{
+    .post{
         @include span(12 of 12);
     }
         
-    .post{
-        //padding: 0;
+    .post-layout{
         @include pre(1 of 12);
         @include span(10 of 12);
         @include post(1 of 12);
@@ -93,18 +91,19 @@ $gutter_quater: $gutter * 0.25;
         @include span(5 of 12 first);
         
     }
+
     .post-list{
         @include span(5 of 12 last);
         @include post(1 of 12);
 
-        .card{
+        .post{
             @include span(5 of 5);
         }
     }
 }
 
 @include mappy-bp(wide) {
-    //.grid{ padding: 0; }
+    .grid, .post-layout { padding: 0; }
 
     .content, .post-list{
         @include span(4 of 4);
@@ -122,7 +121,6 @@ body {
     font-size: 1.8rem;
     font-family: $font-openSans;
     color: $grey-dark;
-    //padding: 30px 0;
     background-color: $white;
     background-attachment: fixed;
     background-image: $background_image;
@@ -177,7 +175,8 @@ strong {
 }
 
 nav {
-    margin-top:15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     float: left;
     
     a, span { float: left; }
@@ -203,8 +202,8 @@ footer, nav {
 }
     
 ul, ol {
-    list-style-position: inside;
-    padding: 5px 0px;
+    list-style-position: initial;
+    padding: 0 0 15px 40px;
 }
 
 ul { list-style-type: disc; }
@@ -217,7 +216,6 @@ ol { list-style-type: decimal; }
 .content {
     @include card();
     
-    margin-top: 20px;
     padding: 8px 15px;
     
     img {
@@ -228,11 +226,12 @@ ol { list-style-type: decimal; }
     }
 }
 
-.card {
+.post {
     @include card();
+    padding-bottom: 30px;
 }
 
-.post{
+.post-layout {
     time {
         font-size: 1.3rem;
         line-height: 1.4rem;
