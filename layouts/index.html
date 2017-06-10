@@ -1,4 +1,5 @@
 {{ partial "head.html" . }}
+{{ partial "navigation.html" . }}
 <section class="grid">
     <div class="content">
         <hr>
@@ -6,6 +7,13 @@
         <h1>Coming soon.</h1>
         <p>Chrispyke.com is getting a much needed revamp, stay tuned.</p>
         <hr>
+    </div>
+    <div class="post-list">
+        {{ range first 3 .Data.Pages }}
+        <div class="card">
+        <a class="post-link" href="{{ .Permalink }}">{{ .Title }}</a>
+        </div>
+        {{ end }}
     </div>
 </section>
 {{ partial "footer.html" . }}

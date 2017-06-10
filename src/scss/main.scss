@@ -19,6 +19,7 @@ $gutter_quater: $gutter * 0.25;
 
 // Custom Layout for different sections
 
+    
 .grid,
 .post {
     padding: 0 $gutter_half;
@@ -43,6 +44,11 @@ footer{
             @include post(1 of 8);
         }
     }
+
+    .content,
+    .post-list{
+        @include span(4 of 4);
+    }
 }
 
 @include mappy-bp(large) {
@@ -63,10 +69,28 @@ footer{
             @include span(9 of 10);
         }
     }
+
+    .content{
+        @include pre(1 of 12)
+        @include span(5 of 12 first);
+        
+    }
+    .post-list{
+        @include span(5 of 12 last);
+        @include post(1 of 12);
+
+        .card{
+            @include span(5 of 5);
+        }
+    }
 }
 
 @include mappy-bp(wide) {
     .grid{ padding: 0; }
+
+    .content, .post-list{
+        @include span(4 of 4);
+    }
 }
     
 // Custom Layout End
@@ -154,17 +178,38 @@ strong {
     font-weight: 600;
 }
 
+nav {
+
+    display: inline-block;
+    a, .line{
+        float: left;
+    }
+
+        
+    .home{
+        width: 30px;
+        height: 30px;
+    }
+}
+
 footer {
     margin-bottom: 30px;
 
     a {
-        font-size: 2.0rem;
+        float: right;
+    }
+}
+
+footer, nav {
+    padding: 10px;
+    a{
+        font-size: 2.4rem;
         line-height: 2.8rem;
         position: relative;
-        float: right;
+        //float: right;
         margin: 0 15px;
         color: $black;
-        padding: 5px 10px 8px;
+        padding: 5px 10px;
         border-radius: 10px;
         transition: background-color $ani-duration, color $ani-duration;
         &:hover {
@@ -187,7 +232,7 @@ ol { list-style-type: decimal; }
 }
 
 .content {
-    @include span(4 of 4);
+    //@include span(4 of 4);
     
     background-color: $canvas;
     box-shadow: 2px 2px 6px 3px $shadow;
@@ -209,8 +254,7 @@ ol { list-style-type: decimal; }
     box-shadow: 2px 2px 6px 3px $shadow;
     box-sizing: border-box;
     border-radius: 20px;
-
-    padding: 40px 0;
+    //padding: 40px 0;
 }
 
 .post{

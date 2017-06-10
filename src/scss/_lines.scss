@@ -13,16 +13,17 @@ hr, .line {
         width: 6px;
         height: 6px;
         z-index: 1;
+        display: inline-table;
     }
 }
 
 hr {
     &::before {
         left: -5px;
-        top: -7px;
+        top: -6px;
     }
     &::after {
-        top: -7px;
+        top: -6px;
         right: -5px;
     }
 }
