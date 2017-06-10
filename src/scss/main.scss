@@ -44,11 +44,11 @@ $gutter_quater: $gutter * 0.25;
 }
 
 // Custom Layout for different sections
-.grid, .post-layout{ padding: 0 $gutter_half; }
+.grid{ padding: 0 $gutter_half; }
+.post{ @include span(4 of 4); }
 
-.post{
-    @include span(4 of 4);
-}
+.previous{ @include span(4 of 4); }
+.next{ @include span(4 of 4); }
 
 @include mappy-bp(med){
     .post{
@@ -63,16 +63,58 @@ $gutter_quater: $gutter * 0.25;
         }
     }
 
-    .content,
-    .post-list{
-        @include span(4 of 4);
-    }
+    .content{ @include span(4 of 8 first); }
+    .post-list{ @include span(4 of 8 last); }
+
+    .previous{ @include span(4 of 8 first); }
+    .next{ @include span(4 of 8 last); }
 }
 
 @include mappy-bp(large){
+    .grid{ padding: 0; }
+
+    nav{ @include pre(1 of 12); }
+    footer{ @include post(1 of 12); }
+        
+    .post{
+        @include pre(1 of 12);
+        @include span(10 of 12);
+        @include post(1 of 12);
+    }
+        
+    .post-layout{
+        @include pre(1 of 10);
+        @include span(8 of 10);
+        @include post(1 of 10);
+        
+        p, pre, ul, ol{
+            @include pre(1 of 8);
+            @include span(7 of 8);
+        }
+    }
+    
+    .content{
+        @include pre(1 of 12)
+        @include span(4 of 12 first);
+    }
+
+    .post-list{
+        @include span(6 of 12 last);
+        @include post(1 of 12);
+    }
+
+    .previous{ @include span(6 of 12 first); }
+    .next{ @include span(6 of 12 last); }
+}
+
+@include mappy-bp(wide){
+    nav{ @include pre(0 of 12); }
+    footer{ @include post(0 of 12); }
 
     .post{
+        @include pre(0 of 12);
         @include span(12 of 12);
+        @include post(0 of 12);
     }
         
     .post-layout{
@@ -84,28 +126,6 @@ $gutter_quater: $gutter * 0.25;
             @include pre(1 of 10);
             @include span(9 of 10);
         }
-    }
-
-    .content{
-        @include pre(1 of 12)
-        @include span(5 of 12 first);
-    }
-
-    .post-list{
-        @include span(5 of 12 last);
-        @include post(1 of 12);
-
-        .post{
-            @include span(5 of 5);
-        }
-    }
-}
-
-@include mappy-bp(wide){
-    .grid, .post-layout{ padding: 0; }
-
-    .content, .post-list{
-        @include span(4 of 4);
     }
 }
     
@@ -162,8 +182,9 @@ p{ padding: 15px 0; }
 em{ font-style: italic; }
 strong{ font-weight: 600; }
 a{
-    text-decoration:none;
-    color: $grey-light;
+    cursor: pointer;
+    color: $grey-dark;
+    &:hover{ color:$grey-light; }
 }
 
 ul, ol{
@@ -178,7 +199,10 @@ nav, footer{
     @include card();
     padding: 10px 0px;
     
-    a{ @include link(); }
+    a{
+        @include link();
+        text-decoration:none;
+    }
 }
 
 nav{
@@ -200,6 +224,7 @@ nav{
     .home{
         width: 40px;
         height: 40px;
+        padding: 5px 10px;
     }
 }
 
@@ -219,7 +244,68 @@ footer{
     padding-bottom: 30px;
 }
 
+.post-link{
+    @include card();
+    padding: 10px 15px;
+    margin: 0 0 15px 0;
+
+    time{
+        float: right;
+        font-size: 1.3rem;
+        line-height: 1.4rem;
+        margin-top: 7px;
+    }
+        
+    a{ text-decoration: none; }
+
+}
+
+.post-title{
+    @include card();
+    padding: 10px 15px;
+    margin: 15px 0 15px 0;
+    display: inline-block;
+
+    @include mappy-bp(med){
+        margin: 0 0 15px 0;
+    }
+
+    h3{ padding: 0; }
+}
+
+aside{
+    
+    .previous, .next{
+        a{
+            @include card();
+            padding: 10px 15px;
+            margin: 0 0 15px;
+            display: inline-block;
+            text-decoration: none;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .previous a{
+        margin: 15px 0 15px;
+    }
+
+    @include mappy-bp(med){
+        .previous, .next{
+            a{
+                text-align: inherit;
+                margin: 15px 0;
+                width: initial;
+            }
+        }
+            
+        .previous a{ float:right; }
+    }
+}
+
 .post-layout{
+    padding: 0 15px;
     time{
         font-size: 1.3rem;
         line-height: 1.4rem;
