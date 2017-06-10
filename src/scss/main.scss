@@ -36,6 +36,10 @@ $gutter_quater: $gutter * 0.25;
     &:hover {
         color: $canvas;
         background-color: $black;
+        
+        // for the logo
+        .stroke{ stroke: $canvas; }
+        .fill { fill: $black; }
     }
 }
 
@@ -179,11 +183,14 @@ nav {
     margin-bottom: 15px;
     float: left;
     
-    a, span { float: left; }
+    a, span {
+        float: left;
+    }
 
     .home{
-        width: 30px;
-        height: 30px;
+        width: 45px;
+        height: 45px;
+        padding: 5px;
     }
 }
 
@@ -237,5 +244,20 @@ ol { list-style-type: decimal; }
         line-height: 1.4rem;
         padding-top: 5px;
         display: block;
+    }
+}
+
+svg {
+    .stroke{
+        stroke-width: 5;
+        stroke: $black;
+    }
+
+    .no-fill{
+        fill: none;
+    }
+        
+    .fill{
+        fill: $canvas;
     }
 }
