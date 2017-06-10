@@ -166,6 +166,14 @@ a{
     color: $grey-light;
 }
 
+ul, ol{
+    list-style-position: initial;
+    padding: 0 0 15px 40px;
+}
+
+ul{ list-style-type: disc; }
+ol{ list-style-type: decimal; }
+
 nav, footer{
     @include card();
     padding: 10px 0px;
@@ -201,30 +209,9 @@ footer{
 
     a, span { float: right; }
 }
-    
-ul, ol{
-    list-style-position: initial;
-    padding: 0 0 15px 40px;
-}
-
-ul{ list-style-type: disc; }
-ol{ list-style-type: decimal; }
 
 .logo{
     padding: 1.25rem;
-}
-
-.content{
-    @include card();
-    
-    padding: 8px 15px;
-    
-    img{
-        width: 50px;
-        height: 50px;
-        position: relative;
-        float: left;
-    }
 }
 
 .post{
@@ -237,6 +224,19 @@ ol{ list-style-type: decimal; }
         font-size: 1.3rem;
         line-height: 1.4rem;
         padding-top: 5px;
-        display: block;
+    }
+}
+
+// To be removed soon or redeveloped
+.content{
+    @include card();
+    
+    padding: 8px 15px;
+    
+    img{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        float: left;
     }
 }
