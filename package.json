@@ -30,5 +30,7 @@
     "node-reset-scss": "^1.0.1",
     "susy": "^2.2.12"
   },
-  "dependencies": {}
+  "dependencies": {
+    "tern": "^0.21.0"
+  }
 }
