@@ -2,14 +2,9 @@
 {{ partial "navigation.html" . }}
 
 <section class="grid">
-    <div>
-        <h1 id="title">{{ .Title }}</h1>
-    </div>
-    <ul>
-        {{ range .Data.Pages }}
-        {{ .Render "li"}}
-        {{ end }}
-    </ul>
+    {{ range .Data.Pages }}
+    {{ .Render "li"}}
+    {{ end }}
 </section>
 
 {{ partial "footer.html" . }}

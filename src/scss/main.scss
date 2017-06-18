@@ -23,12 +23,12 @@ $gutter_quater: $gutter * 0.25;
     box-shadow: 2px 2px 6px 3px $shadow;
     box-sizing: border-box;
     border-radius: 20px;
+    padding: 10px 15px;
 }
 
 @mixin link(){
     font-size: 2.4rem;
     line-height: 2.8rem;
-    margin: 0 12px;
     color: $black;
     padding: 5px 10px 7px;
     border-radius: 10px;
@@ -63,7 +63,7 @@ $gutter_quater: $gutter * 0.25;
         }
     }
 
-    .content{ @include span(4 of 8 first); }
+    .dashboard{ @include span(4 of 8 first); }
     .post-list{ @include span(4 of 8 last); }
 
     .previous{ @include span(4 of 8 first); }
@@ -76,7 +76,8 @@ $gutter_quater: $gutter * 0.25;
     nav{ @include pre(1 of 12); }
     footer{ @include post(1 of 12); }
         
-    .post{
+    .post,
+    .post-summary{
         @include pre(1 of 12);
         @include span(10 of 12);
         @include post(1 of 12);
@@ -93,7 +94,7 @@ $gutter_quater: $gutter * 0.25;
         }
     }
     
-    .content{
+    .dashboard{
         @include pre(1 of 12)
         @include span(4 of 12 first);
     }
@@ -101,6 +102,11 @@ $gutter_quater: $gutter * 0.25;
     .post-list{
         @include span(6 of 12 last);
         @include post(1 of 12);
+    }
+
+    .post-link{
+        @include pre(1 of 6);
+        @include span(5 of 6 last);
     }
 
     .previous{ @include span(6 of 12 first); }
@@ -111,20 +117,21 @@ $gutter_quater: $gutter * 0.25;
     nav{ @include pre(0 of 12); }
     footer{ @include post(0 of 12); }
 
-    .post{
-        @include pre(0 of 12);
-        @include span(12 of 12);
-        @include post(0 of 12);
-    }
-        
-    .post-layout{
+    .post,
+    .post-summary{
         @include pre(1 of 12);
         @include span(10 of 12);
         @include post(1 of 12);
+    }
+        
+    .post-layout{
+        @include pre(1 of 10);
+        @include span(8 of 10);
+        @include post(1 of 10);
         
         p, pre, ul, ol{
-            @include pre(1 of 10);
-            @include span(9 of 10);
+            @include pre(1 of 8);
+            @include span(7 of 8);
         }
     }
 }
@@ -202,6 +209,7 @@ nav, footer{
     a{
         @include link();
         text-decoration:none;
+        margin: 0 12px 0 8px;
     }
 }
 
@@ -213,8 +221,8 @@ nav{
     a, span{ float: left; }
 
     a:not(.home){
-        padding: 11px 10px;
-        margin: 0 15px 0 10xbpx;
+        padding: 10px;
+        margin: 0 10px 0 7px;
     }
 
     .line{
@@ -225,6 +233,7 @@ nav{
         width: 40px;
         height: 40px;
         padding: 5px 10px;
+        margin: 0 10px;
     }
 }
 
@@ -233,6 +242,13 @@ footer{
     float: right;
 
     a, span { float: right; }
+    a:last-child{ margin: 0 12px; }
+}
+
+time{
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    padding-top: 5px;
 }
 
 .logo{
@@ -246,31 +262,34 @@ footer{
 
 .post-link{
     @include card();
-    padding: 10px 15px;
     margin: 0 0 15px 0;
 
-    time{
-        float: right;
-        font-size: 1.3rem;
-        line-height: 1.4rem;
-        margin-top: 7px;
-    }
-        
+    time{ float: right; }
     a{ text-decoration: none; }
-
 }
 
 .post-title{
     @include card();
-    padding: 10px 15px;
     margin: 15px 0 15px 0;
     display: inline-block;
+
+    h3{ padding: 0; }
 
     @include mappy-bp(med){
         margin: 0 0 15px 0;
     }
+}
 
-    h3{ padding: 0; }
+.post-summary{
+    @include card();
+    margin-bottom: 15px;
+    h4{ padding-top: 0; }
+    h4 > a{ text-decoration: none; }
+}
+
+.readMore{
+    @include susy-clearfix;
+    a{ float:right; }
 }
 
 aside{
@@ -279,7 +298,7 @@ aside{
         a{
             @include card();
             padding: 10px 15px;
-            margin: 0 0 15px;
+            margin: 15px 0 0;
             display: inline-block;
             text-decoration: none;
             width: 100%;
@@ -287,7 +306,7 @@ aside{
         }
     }
 
-    .previous a{
+    .next a{
         margin: 15px 0 15px;
     }
 
@@ -304,25 +323,14 @@ aside{
     }
 }
 
-.post-layout{
-    padding: 0 15px;
-    time{
-        font-size: 1.3rem;
-        line-height: 1.4rem;
-        padding-top: 5px;
-    }
+.dashboard{
+    @include card();
 }
 
-// To be removed soon or redeveloped
-.content{
+.page-not-found{
     @include card();
-    
-    padding: 8px 15px;
-    
-    img{
-        width: 50px;
-        height: 50px;
-        position: relative;
-        float: left;
-    }
+    margin: 0 auto 15px;
+    display: table;
+    text-align: center;
+    h2{ padding: 0; }
 }

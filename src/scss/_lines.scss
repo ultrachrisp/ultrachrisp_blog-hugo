@@ -10,7 +10,7 @@ hr, .line {
         border-radius: 50%;
         background-color: $canvas;
         position: absolute;
-        width: 6px;
+        width: 7px;
         height: 6px;
         z-index: 1;
         display: inline-table;
@@ -38,11 +38,11 @@ hr {
     
     &::before {
         top: -5px;
-        right: -2px;
+        right: -3px;
     }
     &::after {
         bottom: 0px;
-        left: -6px;
+        left: -7px;
     }
 
     .subLine1 {

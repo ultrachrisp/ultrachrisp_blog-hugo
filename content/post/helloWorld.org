@@ -1,12 +1,9 @@
-+++
-date        = "2016-02-01T09:32:54+02:00"
-title       = "HelloWorld"
-description = "Moved from Wordpress"
-draft       = false
+#+TITLE: Hello World
+#+DATE: 2016-02-01T09:32:54+02:00
+#+DESCRIPTION: Moved from Wordpress
+#+DRAFT: true
 
-+++
-
-## New and different
+* The original post, when the journey started
 
 Lorem ipsum dolor sit amet, pro erroribus inciderint ei, legimus propriae vix id. Nostrum propriae antiopam ad duo, probo veritus ex has, illud fugit tacimates ei eam. Quem fugit sensibus nec ex, deleniti vulputate eu duo. Mea at lorem regione, ne quo alii tale torquatos, liber eirmod commune an sit.
 

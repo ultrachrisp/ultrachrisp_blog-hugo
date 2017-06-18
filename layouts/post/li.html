@@ -1,5 +1,10 @@
-<li class="post-link">
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-    {{ .Summary }}
-    <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
-</li>
+<div class="post-summary">
+    <h4>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h4>
+    <time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time>
+    <p>{{ .Summary }}</p>
+    <div class="readMore">
+        <a href="{{ .RelPermalink }}">Read more</a>
+    </div>
+</div>
