@@ -1,7 +1,7 @@
 baseurl = "https://chrispyke.com/"
 languageCode = "en-za"
 title = "Space Cowboy Coding"
-enableRobotsTXT = false
+enableRobotsTXT = true
 disable404 = false
 googleAnalytics = "UA-39736751-1"
 

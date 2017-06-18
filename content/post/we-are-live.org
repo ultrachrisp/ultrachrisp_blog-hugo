@@ -1,0 +1,25 @@
+#+DATE: 2017-06-18T13:49:02+02:00
+#+TITLE: We're Live!
+#+DRAFT: true
+
+To say that this has been a long time coming would be an understatement, but I am very please to be at this point. There has been so much that I have wanted to post that completing the blog overhaul has been a priority. But before I jump into topics of interest, I just wanted to list some of the technologies that are driving the blog:
+
+**** Hugo
+     The more I have used [[https://gohugo.io/][Hugo]], the more I have grown to love it. My first attempts at a blog were database driven, which made total sense at the time. But the need to store your posts in a database with the added costs of hosting started to make less sense with the rise of [[https://www.staticgen.com/][static site generators]]. It is a diverse field, with a generator suited to your particular coding tastes but once Hugo started supporting [[http://orgmode.org/][org-mode]] files for content, that was went I was truly hooked.
+
+**** GitHub & GitHub Pages
+     Like most developers, I rely heavily on version control. Even though most of the work I do goes into private repositories, I am starting to consolidate my work, and private projects, at [[https://github.com/][GitHub]]. For this blog specifically, I am using [[https://pages.github.com/][GitHub Pages]] for hosting. If there is no major reliance on a back end (which, in this case, there isn't) then it makes a lot of sense.
+
+**** Gulp
+     This is another crowded field but I have grown comfortable with [[http://gulpjs.com/][Gulp]]. As time goes by, I may simplify my builds are us more generic tools (i.e. using [[https://www.npmjs.com/][npm]] natively or bash scripts) but Gulp does what I need it too and it does it well.
+
+**** Susy
+     For the life of me, I cannot understand why [[http://susy.oddbird.net/][Susy]] is not more widely adopted. I have been using Susy as a [[http://sass-lang.com/][Sass]] grid system for a few years now and the flexibility it gives you and your layouts has been unmatched. We are now seeing the rise of flex-box and css-grid (which will probably replace Susy), but Susy has allowed me as a developer to, hilariously, break out of grid systems.
+
+**** Emacs
+     My love of [[https://www.gnu.org/software/emacs/][Emacs]] grows daily (que all competing IDE fan-boys & trolls). After a number of years using it primarily as a time-tracking or scoping tool, I recently took the plunge and started doing all my development in it and... well, my quality of life increased significantly.
+
+Is it the only solution & does it do everything better than all the other options?
+
+No, but what it does do and once you get over the learning curve and play to its strengths, well, there are reasons there are so many 'die hard' Emacs people out there. 
+

@@ -15,8 +15,8 @@ var gulp = require('gulp'),
     order = require('gulp-order'),
     del = require('del');
 
-gulp.task('clean', function (cb) {
-	del(['static/**', '!static', 'public/**', '!public'], cb);
+gulp.task('clean', function () {
+	del.sync(['static/**', '!static', 'public/**', '!public']);
 });
 
 gulp.task('general', function () {
