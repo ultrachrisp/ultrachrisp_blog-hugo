@@ -1,6 +1,6 @@
 #+DATE: 2017-06-19T07:37:40+02:00
 #+TITLE: The Joys of Craft
-#+DRAFT: true
+#+DRAFT: false
 
 I get great satisfaction from viewing a product I built using tools I prefer following principles I believe in. On any given day, I work on a number of tech stacks that get the job done but I always end up thinking, "If I could have built this from scratch." Most projects suffer from budget & time constraints and end up being 'good enough', which is OK. But when you do have enough time, when you are able to pick and choose your tools and set them up just right and you watch them work together, then the endorphin's flow. 
 
