@@ -1,0 +1,5 @@
+#+DATE: 2017-08-04T13:32:22+02:00
+#+TITLE: Do you even functional bro?
+#+DRAFT: true
+
+I have recently completed [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Functional Programming in Scala]] via [[https://www.coursera.org][Coursera]] and it has had a profound affect on my programming. There are a number of tools that have changed my workflows (git &amp Emacs from the top of my head) and various data-structures, algorithms or design patterns have all contributed to my coding adventures. But there is something haunting about functional programming that has forced me to re-evaluate everything I have learnt thus far.

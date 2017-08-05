@@ -2,20 +2,30 @@
 #+TITLE: The Joys of Craft
 #+DRAFT: false
 
-I get great satisfaction from viewing a product I built using tools I prefer following principles I believe in. On any given day, I work on a number of tech stacks that get the job done but I always end up thinking, "If I could have built this from scratch." Most projects suffer from budget & time constraints and end up being 'good enough', which is OK. But when you do have enough time, when you are able to pick and choose your tools and set them up just right and you watch them work together, then the endorphin's flow. 
+I get great satisfaction from viewing a product I built using tools I prefer following principles I believe in. 
 
-To be clear, I am not saying that one technology is better than another (enter 'ninja vs pirates', 'spaces vs tabs') because each developer's preferences are as unique as they are. Nor am I saying that your slice of technological Nirvana will survive code debt or entropy. Code cannot be perfect (not according to [[https://plato.stanford.edu/entries/goedel-incompleteness/][Gödel's incompleteness theorem]]) and code can always be improved or expanded with more features. What I am saying is that when you have full control of your environment and tools, your motivation and the quality of the end product should increase. 
+On any given day, I work on a number of tech stacks that get the job done but leave me thinking, "If I could have built this from scratch?" Most projects suffer from budget & time constraints and end up being good enough. But when you do have enough time, when you are able to pick your tools and set them up just right and you watch them work together... then the endorphin's flow. 
 
-Blogs and the CMS's that power them are diverse in their approaches. They all have their strengths and fulfill particular needs, but my desires for this blog were:
+To be clear, I am not saying that one technology is better than another (enter 'ninja vs pirates', 'spaces vs tabs'). Each developer's preferences are as unique as they are. Nor am I saying that any slice of coding Nirvana will survive code debt or entropy. Code cannot be perfect (not according to [[https://plato.stanford.edu/entries/goedel-incompleteness/][Gödel's incompleteness theorem]]) and code can always be improved or expanded. 
+
+My point is when you have full control of your environment and tools, your motivation should increase which results in a better end product.
+
+Blogs and the CMS's that power them are diverse in their approaches. They all have their strengths and fulfill particular needs. My desires for this blog were:
 
 - as much freedom on the front-end as possible.
 - less dependence on a back-end (mostly because I am the only contributor).
 - support for task runners.
-- option to author using my choice of editor.
+- able to author using an editor of my choice.
 
-**** Obsessively Compulsively Indecisive
-     So why even bother building your own your own blog? When there are such great mediums out there like... erm... [[https://medium.com/][Medium.com]] that provide content discovery and all the tools & features so that you can just focus on writing. Well, even though content is a big part of blogging for me, if you are able to build your own site just the way you want to, why not? 
+*** Obsessively Compulsively Indecisive
+     So why even bother building your own blog? There are such great mediums out there like... erm... [[https://medium.com/][Medium.com]]. They provide greater content discovery and more tools & features so that you can focus on writing. 
 
-I want to be able to play with layout, to try new things and see how they don't work. If I iterate over a number of bad ideas, maybe I will discover a good. Why must our focus be center aligned, or was that a by-product of development? [[http://susy.oddbird.net/][Susy]] provides such flexibility that you can really experiment with layout but somehow, I keep coming back to the same paradigms. Which isn't bad by itself but seems like a pity. So to sate my own curiosity, the layout may change just to see what happens. What will an odd number of columns in the grid do to the balance, and can it be corrected using other visual techniques?
+     Content is a large part of blogging, but I want to tweak the presentation too. I plan to play with the layout, to try new things and see what doesn't work. If I iterate over a number of bad ideas, maybe I will discover a good. 
 
-So if the layout on this blog changes overnight and offends you, I will gladly take responsibility for the failed attempt at something different.
+     - Should the focus always be center aligned?
+     - Can I solve most navigation & presentation issues with JS disabled?
+     - [[http://susy.oddbird.net/][Susy]] provides such flexibility  with layouts, why not experiment? 
+     - What will an odd number of columns in the grid do to the balance?
+     - Can the balance be corrected using other visual techniques?
+
+To sate my own curiosity, the layout on this site may change from time to time.
