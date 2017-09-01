@@ -8,6 +8,6 @@ googleAnalytics = "UA-39736751-1"
 [params]
   author = "Chris Pyke"
   description = "Personal blog for Chris Pyke."
-  dashboardTitle = "We're Live!"
-  dashboardDescription = "This has been a long time coming, time to populate with some content."
+  dashboardTitle = ""
+  dashboardDescription = "When you say things twice it means you care... you care."
   
