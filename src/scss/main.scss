@@ -209,9 +209,10 @@ nav, footer{
     }
 }
 
+footer { margin-top: 15px; }
+
 nav{
     margin-top: 15px;
-    margin-bottom: 15px;
     float: left;
     
     a, span{ float: left; }
@@ -254,11 +255,12 @@ time{
 .post{
     @include card();
     padding-bottom: 30px;
+    margin-top: 15px;
 }
 
 .post-link{
     @include card();
-    margin: 0 0 15px 0;
+    margin-top: 15px;
     overflow: hidden;
 
     time{ float: right; }
@@ -267,19 +269,15 @@ time{
 
 .post-title{
     @include card();
-    margin: 15px 0 15px 0;
+    margin-top: 15px;
     display: inline-block;
 
     h2{ padding: 0; }
-
-    @include mappy-bp(med){
-        margin: 0 0 15px 0;
-    }
 }
 
 .post-summary{
     @include card();
-    margin-bottom: 15px;
+    margin-top: 15px;
     h2{ padding-top: 0; }
     h2 > a{ text-decoration: none; }
 }
@@ -290,21 +288,16 @@ time{
 }
 
 aside{
-    
     .previous, .next{
         a{
             @include card();
             padding: 10px 15px;
-            margin: 15px 0 0;
+            margin-top: 15px;
             display: inline-block;
             text-decoration: none;
             width: 100%;
             text-align: center;
         }
-    }
-
-    .next a{
-        margin: 15px 0 15px;
     }
 
     @include mappy-bp(med){
@@ -322,6 +315,8 @@ aside{
 
 .dashboard{
     @include card();
+    margin-top: 15px;
+    overflow: hidden;
 }
 
 .page-not-found{
