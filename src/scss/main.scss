@@ -259,6 +259,7 @@ time{
 .post-link{
     @include card();
     margin: 0 0 15px 0;
+    overflow: hidden;
 
     time{ float: right; }
     a{ text-decoration: none; }
