@@ -1,6 +1,6 @@
-#+DATE: 2017-09-01T13:32:22+02:00
+#+DATE: 2017-09-09T15:45:43+02:00
 #+TITLE: Do you even functional bro?
-#+DRAFT: true
+#+DRAFT: false
 
 My interest grew from a side conversation I over-heard. After that, every taste taught me something different. There is something truly haunting about functional programming.
 
@@ -11,10 +11,15 @@ Of course there is debate, we are spoiled for choice. There are three classic sc
 
 Being fully emerged in a functional environment enables deeper insights but needs to be part of your daily life. At the time, I had yet to integrate a fully functional approach into my daily tasks.
 
-** Is that you JS?
+*** Is that you JS?
 My first love was [[https://en.wikipedia.org/wiki/ActionScript][ActionScript]]. I still miss features of the language. There was even a time I used ActionScript & JavaScript in tandem, the two [[https://en.wikipedia.org/wiki/ECMAScript][ECMAScript]] twins. I hurt when they fought and I was sad to see ActionScript leave... I resented JavaScript. This changed with time as I learned that it was not JavaScript that I was resenting but rather the contemporary practises. In time, I witnessed JavaScript adapt and morph into what we see today.
 
 In many ways, I am grateful that the web has iterated so rapidly enabling an environment for [[https://facebook.github.io/react/][React]]. I felt joy when I realised 'how' React was solving many of my more common struggles. 
 
-** React lands
-   
+*** React lands
+    So after a fairly in depth introduction to functional I was presented with a problem that I wanted to solve with my new found knowledge. At the same time I started reading about [[https://facebook.github.io/react/][ReactJS]], and that is when I really became excited.
+
+    I do not think that I would have had the same reaction about React if I had not actively been looking for a functional solution to a rich, interactive, static web components. I raced through [[https://www.udemy.com/react-redux/][Modern React with redux]] and was thrilled when I realised that it was actively supporting a functional approach. [[https://lodash.com/][Lodash]] integrated seamlessly and it was easy enough to extend with other libraries that I needed. 
+
+    I knew I was getting serious about React when I integrated [[https://github.com/felipeochoa/rjsx-mode][rjsx-mode]], with a couple of personal tweaks, into my standard Emacs build. Aside from a few issues I could not immediately solve with what was there and supported, I dived into this exciting new world of functional front-end.
+    

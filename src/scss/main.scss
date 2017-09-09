@@ -45,10 +45,11 @@ $gutter_quater: $gutter * 0.25;
 
 // Custom Layout for different sections
 .grid{ padding: 0 $gutter_half; }
-.post{ @include span(4 of 4); }
 
-.previous{ @include span(4 of 4); }
-.next{ @include span(4 of 4); }
+.post,
+.previous,
+.next,
+hr{ @include span(4 of 4); }
 
 @include mappy-bp(med){
     .post{
@@ -156,16 +157,11 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-    font-size: 5.7rem;
-    line-height: 6.6rem;
-}
-
-h2{
     font-size: 4.9rem;
     line-height: 5.7rem;
 }
 
-h3{
+h2, h3{
     font-size: 4.2rem;
     line-height: 4.9rem;
 }
@@ -273,7 +269,7 @@ time{
     margin: 15px 0 15px 0;
     display: inline-block;
 
-    h3{ padding: 0; }
+    h2{ padding: 0; }
 
     @include mappy-bp(med){
         margin: 0 0 15px 0;
@@ -283,8 +279,8 @@ time{
 .post-summary{
     @include card();
     margin-bottom: 15px;
-    h4{ padding-top: 0; }
-    h4 > a{ text-decoration: none; }
+    h2{ padding-top: 0; }
+    h2 > a{ text-decoration: none; }
 }
 
 .readMore{

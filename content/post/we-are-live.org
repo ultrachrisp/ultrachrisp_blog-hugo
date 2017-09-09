@@ -4,10 +4,10 @@
 
 This blog has been a long time coming. I have wanted to post on a number of things that completing the blog became a priority. Before I jump into topics of interest, I want to list some of the technologies driving the blog.
 
-*** Hugo
-    The more I use [[https://gohugo.io/][Hugo]], the more I love it. My first attempts at a blog used database-driven content management systems (CMS), which made sense at the time. Database driven CMS's are still relevant for large, distributed teams that need a central point to manage their content. The rise of [[https://www.staticgen.com/][static site generators]] allows us to sidestep the reliance on a back-end for simple sites. There is a static site generator suited for everyone but when Hugo started supporting [[http://orgmode.org/][org-mode]] for content was when I became hooked.
+** Hugo
+   The more I use [[https://gohugo.io/][Hugo]], the more I love it. My first attempts at a blog used database-driven content management systems (CMS), which made sense at the time. Database driven CMS's are still relevant for large, distributed teams that need a central point to manage their content. The rise of [[https://www.staticgen.com/][static site generators]] allows us to sidestep the reliance on a back-end for simple sites. There is a static site generator suited for everyone but when Hugo started supporting [[http://orgmode.org/][org-mode]] for content was when I became hooked.
 
-    The ability to customise Hugo to your tastes is a big plus. It handles the content and then quickly gets out of the way. It is fast, stable and provides all the functionality I need. I only have praise for the team, Hugo is a joy to work with.
+   The ability to customise Hugo to your tastes is a big plus. It handles the content and then quickly gets out of the way. It is fast, stable and provides all the functionality I need. I only have praise for the team, Hugo is a joy to work with.
 
 *** GitHub & GitHub Pages
     I rely heavily on version control. Most of my work goes into private repositories which left my [[https://github.com/][GitHub]] account neglected. I use [[https://pages.github.com/][GitHub Pages]] for this blog. If there is no major reliance on a back-end, you can have your repositories & blog in the same place. Yay Git!

@@ -17,7 +17,7 @@ Blogs and the CMS's that power them are diverse in their approaches. They all ha
 - support for task runners.
 - able to author using an editor of my choice.
 
-*** Obsessively Compulsively Indecisive
+** Obsessively Compulsively Indecisive
      So why even bother building your own blog? There are such great mediums out there like... erm... [[https://medium.com/][Medium.com]]. They provide greater content discovery and more tools & features so that you can focus on writing. 
 
      Content is a large part of blogging, but I want to tweak the presentation too. I plan to play with the layout, to try new things and see what doesn't work. If I iterate over a number of bad ideas, maybe I will discover a good. 
