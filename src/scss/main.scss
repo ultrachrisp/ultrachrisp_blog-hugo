@@ -19,6 +19,7 @@ $gutter_quater: $gutter * 0.25;
 
 // Some mixins
 @mixin card(){
+    margin-top: 15px;
     background-color: $canvas;
     box-shadow: 2px 2px 6px 3px $shadow;
     box-sizing: border-box;
@@ -209,10 +210,7 @@ nav, footer{
     }
 }
 
-footer { margin-top: 15px; }
-
 nav{
-    margin-top: 15px;
     float: left;
     
     a, span{ float: left; }
@@ -255,12 +253,10 @@ time{
 .post{
     @include card();
     padding-bottom: 30px;
-    margin-top: 15px;
 }
 
 .post-link{
     @include card();
-    margin-top: 15px;
     overflow: hidden;
 
     time{ float: right; }
@@ -269,7 +265,6 @@ time{
 
 .post-title{
     @include card();
-    margin-top: 15px;
     display: inline-block;
 
     h2{ padding: 0; }
@@ -277,7 +272,6 @@ time{
 
 .post-summary{
     @include card();
-    margin-top: 15px;
     h2{ padding-top: 0; }
     h2 > a{ text-decoration: none; }
 }
@@ -292,7 +286,6 @@ aside{
         a{
             @include card();
             padding: 10px 15px;
-            margin-top: 15px;
             display: inline-block;
             text-decoration: none;
             width: 100%;
@@ -315,7 +308,6 @@ aside{
 
 .dashboard{
     @include card();
-    margin-top: 15px;
     overflow: hidden;
 }
 
