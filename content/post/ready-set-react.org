@@ -2,6 +2,7 @@
 #+TITLE: Ready, Set, React.
 #+DRAFT: true
 
-I am surprised how quickly I took to [[https://reactjs.org/][React]]. I had just completed [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Functional Programming in Scala]] and was itching to apply the theory, but never anticipated how naturally React solved a problem I was facing.
+I am surprised how quickly I took to [[https://reactjs.org/][React]]. I had just completed [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Functional Programming in Scala]] and was itching to apply the theory, but never anticipated how naturally React solved many of the problems I was facing. Below are some impressions of deploying my first React application.
 
 ** So it began
+   After doing some initial reading on [[https://angularjs.org/][Angular]] and [[https://vuejs.org/][Vue]], I settled on React as I believed it aligned closest to what I was trying to do. I was able to upskill myself quickly using via [[https://www.udemy.com/react-redux/][Modern React with Redux]] & [[https://www.udemy.com/webpack-2-the-complete-developers-guide/][Webpack 2: The Complete Developer's Guide]]. This provided a sufficient foundation for me to build upon. I was also lucky enough to have a team member who had developed in React before and I was able to leverage his experience.
