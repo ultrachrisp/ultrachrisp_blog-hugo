@@ -1,0 +1,7 @@
+#+DATE: 2018-01-03T16:42:43+02:00
+#+TITLE: Ready, Set, React.
+#+DRAFT: true
+
+I am surprised how quickly I took to [[https://reactjs.org/][React]]. I had just completed [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Functional Programming in Scala]] and was itching to apply the theory, but never anticipated how naturally React solved a problem I was facing.
+
+** So it began
