@@ -4,8 +4,8 @@
 @import "colors";
 @import "lines";
 @import "svgs";
+@import "iconmoon";
 
-@import "font-awesome";
 @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,600';
 $font-openSans: 'Open Sans', sans-serif;
 
@@ -206,7 +206,7 @@ nav, footer{
     a{
         @include link();
         text-decoration:none;
-        margin: 0 12px 0 8px;
+        margin: 0 11px 0 7px;
     }
 }
 
