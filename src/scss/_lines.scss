@@ -3,6 +3,7 @@ hr, .line {
     border-width: 2px;
     border-color: $black;
     border-style: solid;
+    overflow: visible;
     &::before,
     &::after {
         content: "";

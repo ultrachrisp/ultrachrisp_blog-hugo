@@ -10,12 +10,17 @@
 $font-openSans: 'Open Sans', sans-serif;
 
 $ani-duration: 0.6s;
-$ani-delay: 0.5s;
-$swipe-duration: 0.8s;
+//$ani-delay: 0.5s;
+//$swipe-duration: 0.8s;
 
 $gutter: gutter();
 $gutter_half: $gutter * 0.5;
 $gutter_quater: $gutter * 0.25;
+
+$breakpoint-small: 320px;
+$breakpoint-medium: 600px;
+$breakpoint-large: 900px;
+$breakpoint-wide: 1200px;
 
 // Some mixins
 @mixin card(){
@@ -52,7 +57,7 @@ $gutter_quater: $gutter * 0.25;
 .next,
 hr{ @include span(4 of 4); }
 
-@include mappy-bp(med){
+@media only screen and (min-width: $breakpoint-medium) {
     .post{
         @include span(8 of 8);
     }
@@ -72,7 +77,7 @@ hr{ @include span(4 of 4); }
     .next{ @include span(4 of 8 last); }
 }
 
-@include mappy-bp(large){
+@media only screen and (min-width: $breakpoint-large) {
     .grid{ padding: 0; }
 
     nav{ @include pre(1 of 12); }
@@ -115,7 +120,7 @@ hr{ @include span(4 of 4); }
     .next{ @include span(6 of 12 last); }
 }
 
-@include mappy-bp(wide){
+@media only screen and (min-width: $breakpoint-wide) {
     nav{ @include pre(0 of 12); }
     footer{ @include post(0 of 12); }
 
@@ -149,6 +154,7 @@ body{
     background-color: $white;
     background-attachment: fixed;
     background-image: $background_image;
+    min-width: 320px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -277,7 +283,6 @@ time{
 }
 
 .readMore{
-    @include susy-clearfix;
     a{ float:right; }
 }
 
@@ -293,7 +298,7 @@ aside{
         }
     }
 
-    @include mappy-bp(med){
+    @media only screen and (min-width: $breakpoint-medium) {
         .previous, .next{
             a{
                 text-align: inherit;

@@ -2,9 +2,8 @@
 #+TITLE: Do you even functional bro?
 #+DRAFT: false
 
-My interest grew from a side conversation I over-heard. After that, every taste taught me something different. There is something truly haunting about functional programming.
-
-I have completed [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Functional Programming in Scala]]. I was not fully prepared for the learning curve as many of the concepts and principles were new to me. What I took away from the course has had a real impact on the way I approach software development.
+<img style="width:125px; height:200px; float:right; padding-left:10px;" src="../../img/scala.svg" alt="Scala logo"/>
+My interest grew from a side conversation I over-heard. After that, every taste taught me something different. There is something truly haunting about functional programming.<br><br>I have completed [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Functional Programming in Scala]]. I was not fully prepared for the learning curve as many of the concepts and principles were new to me. What I took away from the course has had a real impact on the way I approach software development.
 
 ** The discussion
 Of course there is debate, we are spoiled for choice. There are three classic schools: imperative, procedural & functional. They all have their strengths. I have used imperative more than procedural. So when tasked with converting your general approach and thoughts regarding programming, a lot depends on the context. Concession make sense as stated by in [[Https:https://medium.com/@bfil/just-enough-functional-programming-a0c4fd09c8f7][Just enough functional programming]]. You then also get the other view in [[https://www.vincit.fi/en/blog/empty-promises-and-other-heresy/][Empty promises and heresy]]. 
