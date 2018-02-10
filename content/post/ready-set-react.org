@@ -3,26 +3,38 @@
 #+DRAFT: true
 
 <img style="width:180px; height:180px; float:right;" src="../../img/react.svg" alt="React"/>
-I am surprised how quickly I took to [[https://reactjs.org/][React]]. I had just completed [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Functional Programming in Scala]] and was itching to apply the theory, but never anticipated how naturally React (and by extension functional programming) solved many of the problems I was facing. Below are some impressions of deploying my first React application.
+I am surprised how quickly I took to [[https://reactjs.org/][React]]. I had completed [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Functional Programming in Scala]] and was itching to apply the theory. I never anticipated how naturally React (and by extension functional programming) solved many of the problems I was facing. Below are some impressions of deploying my first React application.
 
 ** So it began
-   After doing some initial reading on [[https://angularjs.org/][Angular]] and [[https://vuejs.org/][Vue]], I settled on React as it aligned closest to what I was trying to do. [[https://www.udemy.com/react-redux/][Modern React with Redux]] & [[https://www.udemy.com/webpack-2-the-complete-developers-guide/][Webpack 2: The Complete Developer's Guide]] provided a sufficient foundation to build upon. I was also lucky enough to have a team member who had developed in React before who provided a number of key insights.
+   After doing some initial reading on [[https://angularjs.org/][Angular]] and [[https://vuejs.org/][Vue]], I settled on React as it aligned closest to what I was trying to do. [[https://www.udemy.com/react-redux/][Modern React with Redux]] & [[https://www.udemy.com/webpack-2-the-complete-developers-guide/][Webpack 2: The Complete Developer's Guide]] provided a sufficient foundation to build upon. A team member who had developed in React before also provided some key insights.
 
    With that in mind & a clear idea of what I didn't want, I started.
 
 *** Json driven
-    When your application is driven by Json, it can reinforce the separation between presentation and logic. The initial effort of structuring everything you see, as well as the logic, into Json paid-off when you could add/ remove components through edits to the Json alone. Content updates also became much easier.
+    When your application is driven by Json, it can reinforce the separation between presentation & logic. Structuring your content & application logic into Json pays off when you can add & remove components through edits to the Json. Content updates then become much easier.
 
-    Json also provided a flexible structure so that we could make quite different applications using different combiations of components. 
+    The Json then becomes the composite model of your application.
 
 *** Application vs component state
     Or phrased better, 'why not both?'
 
-    The temptation of putting all state changes in Redux quickly became impractical, just for the performance hit. The process of reducing your logic into sections that fit into reducers helps to add focus to core changes powering your application. It then just becomes a matter of putting the logic that is left into the relevent components as theri own state. Watching the play between components before an application state changes moves 
+    The temptation of putting all application state in Redux is appealing but impractical. Reducing your logic into sections that fit into reducers helps to add focus to core changes. The logic left over gets implemented as component state & logic. 
+
+    But I was unprepared for the joy I felt when there was a clear separation of application vs local state. It was incredibly satisfying watching the application refresh relevant components on critical changes, as well as watching interactions between components that did not affect the application state.
 
 *** Components everywhere
-    
-   
+    This has been a secondary objective in so many of my projects that I had almost given up hope of getting it right. This is not to say that it is not possible in other frameworks, or that other frameworks have not attempted the same thing. But when the timelines are tight or more members are added to the team, the current pressures usually override all future payoffs.
+
+    React (I am going to abuse another well known phrase) treats components as 'first class citizens'. React focuses your development around building smaller, more reusable, more interchangeable components. The application arises from the interactions of these components. The whole process feels very natural.
+
 *** Brand new second hand
+    Modular components allow for component libraries that span multiple applications. There are many advantages: consistency across applications; more maintainable components; faster updates across applications.
+
+    In the same breath, there are dangers too: an error in one component affects all applications; maintaining the library; setting up access to the component library... I am trying hard to think of down-sides.
+
+    This approach leads to micro updates to the library. The individual components expand their functionality as applications required more from them. This can be argued to be a good or a bad thing, but ultimately helps side step the worst of code-debt. You re-look & refine your existing components to accommodate new features & functionality without sacrificing its modularity.
 
 *** Debugging
+    I was surprised when the production version of the application threw a run-time error that was not present during development. My initial disappointment did not last long once I dived in and started debugging. I was able to isolate the troubled component quickly by removing components via the Json. And since I was looking at a single, modular component, finding and fixing the problem was trivial.
+
+    [[https://github.com/gaearon/redux-devtools][Redux Devtools]] is also an excellent browser extension & an invaluable development tool. It surfaces the application state, tracks specific state changes and even allows you to go back to previous versions of the state. It does not surface component state which can be confusing.
