@@ -1,6 +1,5 @@
 // Screen
 @import "reset";
-@import "grids";
 @import "colors";
 @import "lines";
 @import "svgs";
@@ -13,10 +12,6 @@ $ani-duration: 0.6s;
 //$ani-delay: 0.5s;
 //$swipe-duration: 0.8s;
 
-$gutter: gutter();
-$gutter_half: $gutter * 0.5;
-$gutter_quater: $gutter * 0.25;
-
 $breakpoint-small: 320px;
 $breakpoint-medium: 600px;
 $breakpoint-large: 900px;
@@ -25,20 +20,21 @@ $breakpoint-wide: 1200px;
 // Some mixins
 @mixin card(){
     margin-top: 15px;
-    background-color: $canvas;
-    box-shadow: 2px 2px 6px 3px $shadow;
-    box-sizing: border-box;
-    border-radius: 20px;
     padding: 10px 15px;
+    border-radius: 20px;
+    background-color: $canvas;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 6px 3px $shadow;
 }
 
 @mixin link(){
+    color: $black;
     font-size: 2.4rem;
     line-height: 2.8rem;
-    color: $black;
-    padding: 5px 10px 7px;
+    text-decoration: none;
     border-radius: 10px;
     transition: background-color $ani-duration, color $ani-duration;
+    
     &:hover {
         color: $canvas;
         background-color: $black;
@@ -50,111 +46,120 @@ $breakpoint-wide: 1200px;
 }
 
 // Custom Layout for different sections
-.grid{ padding: 0 $gutter_half; }
+.grid {
+    display: grid;
 
-.post,
-.previous,
-.next,
-hr{ @include span(4 of 4); }
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "content" "footer";
+}
+
+// .post,
+// .previous,
+// .next,
+// hr{ @include span(4 of 4); }
 
 @media only screen and (min-width: $breakpoint-medium) {
-    .post{
-        @include span(8 of 8);
-    }
+    // .post{
+    //     @include span(8 of 8);
+    // }
 
-    .post-layout{        
-        p, pre, ul, ol{
-            @include pre(1 of 8);
-            @include span(6 of 8);
-            @include post(1 of 8);
-        }
-    }
+    // .post-layout{        
+    //     p, pre, ul, ol{
+    //         @include pre(1 of 8);
+    //         @include span(6 of 8);
+    //         @include post(1 of 8);
+    //     }
+    // }
 
-    .dashboard{ @include span(4 of 8 first); }
-    .post-list{ @include span(4 of 8 last); }
+    // .dashboard{ @include span(4 of 8 first); }
+    // .post-list{ @include span(4 of 8 last); }
 
-    .previous{ @include span(4 of 8 first); }
-    .next{ @include span(4 of 8 last); }
+    // .previous{ @include span(4 of 8 first); }
+    // .next{ @include span(4 of 8 last); }
 }
 
 @media only screen and (min-width: $breakpoint-large) {
-    .grid{ padding: 0; }
+    // .grid{ padding: 0; }
 
-    nav{ @include pre(1 of 12); }
-    footer{ @include post(1 of 12); }
+    // nav{ @include pre(1 of 12); }
+    // footer{ @include post(1 of 12); }
         
-    .post,
-    .post-summary{
-        @include pre(1 of 12);
-        @include span(10 of 12);
-        @include post(1 of 12);
-    }
+    // .post,
+    // .post-summary{
+    //     @include pre(1 of 12);
+    //     @include span(10 of 12);
+    //     @include post(1 of 12);
+    // }
         
-    .post-layout{
-        @include pre(1 of 10);
-        @include span(8 of 10);
-        @include post(1 of 10);
+    // .post-layout{
+    //     @include pre(1 of 10);
+    //     @include span(8 of 10);
+    //     @include post(1 of 10);
         
-        p, pre, ul, ol{
-            @include pre(1 of 8);
-            @include span(7 of 8);
-        }
-    }
+    //     p, pre, ul, ol{
+    //         @include pre(1 of 8);
+    //         @include span(7 of 8);
+    //     }
+    // }
     
-    .dashboard{
-        @include pre(1 of 12)
-        @include span(4 of 12 first);
-    }
+    // .dashboard{
+    //     @include pre(1 of 12)
+    //     @include span(4 of 12 first);
+    // }
 
-    .post-list{
-        @include span(6 of 12 last);
-        @include post(1 of 12);
-    }
+    // .post-list{
+    //     @include span(6 of 12 last);
+    //     @include post(1 of 12);
+    // }
 
-    .post-link{
-        @include pre(1 of 6);
-        @include span(5 of 6 last);
-    }
+    // .post-link{
+    //     @include pre(1 of 6);
+    //     @include span(5 of 6 last);
+    // }
 
-    .previous{ @include span(6 of 12 first); }
-    .next{ @include span(6 of 12 last); }
+    // .previous{ @include span(6 of 12 first); }
+    // .next{ @include span(6 of 12 last); }
 }
 
 @media only screen and (min-width: $breakpoint-wide) {
-    nav{ @include pre(0 of 12); }
-    footer{ @include post(0 of 12); }
+    // nav{ @include pre(0 of 12); }
+    // footer{ @include post(0 of 12); }
 
-    .post,
-    .post-summary{
-        @include pre(1 of 12);
-        @include span(10 of 12);
-        @include post(1 of 12);
-    }
+    // .post,
+    // .post-summary{
+    //     @include pre(1 of 12);
+    //     @include span(10 of 12);
+    //     @include post(1 of 12);
+    // }
         
-    .post-layout{
-        @include pre(1 of 10);
-        @include span(8 of 10);
-        @include post(1 of 10);
+    // .post-layout{
+    //     @include pre(1 of 10);
+    //     @include span(8 of 10);
+    //     @include post(1 of 10);
         
-        p, pre, ul, ol{
-            @include pre(1 of 8);
-            @include span(7 of 8);
-        }
-    }
+    //     p, pre, ul, ol{
+    //         @include pre(1 of 8);
+    //         @include span(7 of 8);
+    //     }
+    // }
 }
     
 // General styles
 html{ font-size: 62.5%; }
 
 body{
-    line-height: 2.7rem;
-    font-size: 1.8rem;
-    font-family: $font-openSans;
+    margin: 0 10px;
+    min-width: 320px;
     color: $grey-dark;
+
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    font-family: $font-openSans;
+
     background-color: $white;
     background-attachment: fixed;
     background-image: $background_image;
-    min-width: 320px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -194,12 +199,12 @@ strong{ font-weight: 600; }
 a{
     cursor: pointer;
     color: $grey-dark;
-    &:hover{ color:$grey-light; }
+    &:hover{ color: $grey-light; }
 }
 
 ul, ol{
-    list-style-position: initial;
     padding: 0 0 15px 40px;
+    list-style-position: initial;
 }
 
 ul{ list-style-type: disc; }
@@ -208,56 +213,42 @@ ol{ list-style-type: decimal; }
 nav, footer{
     @include card();
     padding: 10px 0px;
-    
+    display: flex;
+    width: min-content;
+
     a{
         @include link();
-        text-decoration:none;
-        margin: 0 11px 0 7px;
+        padding: 5px 10px;
+        margin: 0 12px 0 7px;
     }
 }
 
 nav{
-    float: left;
-    
-    a, span{ float: left; }
-
-    a:not(.home){
-        padding: 10px;
-        margin: 0 10px 0 7px;
-    }
-
-    .line{
-        margin-top: 12px;
-    }
-
     .home{
         width: 40px;
         height: 40px;
-        padding: 5px 10px;
         margin: 0 10px;
     }
+    .line{ margin-top: 12px; }
+    a:not(.home){ padding-top: 10px; }
 }
 
 footer{
-    margin-bottom: 30px;
     float: right;
-
-    a, span { float: right; }
-    a:last-child{ margin: 0 12px; }
+    margin-bottom: 30px;
 }
 
 time{
+    padding-top: 5px;
     font-size: 1.3rem;
     line-height: 1.4rem;
-    padding-top: 5px;
 }
 
-.logo{
-    padding: 1.25rem;
-}
+.logo{ padding: 1.25rem; }
 
 .post{
     @include card();
+    
     padding-bottom: 30px;
 }
 
@@ -278,23 +269,25 @@ time{
 
 .post-summary{
     @include card();
+    
     h2{ padding-top: 0; }
     h2 > a{ text-decoration: none; }
 }
 
 .readMore{
-    a{ float:right; }
+    a{ float: right; }
 }
 
 aside{
     .previous, .next{
         a{
             @include card();
+
+            width: 100%;
             padding: 10px 15px;
             display: inline-block;
-            text-decoration: none;
-            width: 100%;
             text-align: center;
+            text-decoration: none;
         }
     }
 
@@ -318,8 +311,10 @@ aside{
 
 .page-not-found{
     @include card();
-    margin: 0 auto 15px;
+
     display: table;
     text-align: center;
+    margin: 0 auto 15px;
+
     h2{ padding: 0; }
 }

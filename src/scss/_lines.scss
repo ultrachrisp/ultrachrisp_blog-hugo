@@ -1,27 +1,31 @@
 hr, .line {
-    position: relative;
-    border-width: 2px;
-    border-color: $black;
-    border-style: solid;
     overflow: visible;
+    position: relative;
+
     &::before,
     &::after {
+        z-index: 1;
         content: "";
-        border: 4px solid $black;
-        border-radius: 50%;
-        background-color: $canvas;
-        position: absolute;
+
         width: 7px;
         height: 6px;
-        z-index: 1;
+        position: absolute;
         display: inline-table;
+
+        border-radius: 50%;
+        border: 4px solid $black;
+        background-color: $canvas;
     }
 }
 
 hr {
+    border-width: 2px;
+    border-style: solid;
+    border-color: $black;
+
     &::before {
-        left: -5px;
         top: -7px;
+        left: -5px;
     }
     &::after {
         top: -7px;
@@ -30,13 +34,11 @@ hr {
 }
 
 .line {
-    position: relative;
-    display: inline-block;
-    height: 30px;
     width: 15px;
-    border-width: 0px;
+    height: 30px;
     margin-top: 5px;
-    
+    display: inline-block;
+
     &::before {
         top: -5px;
         right: -3px;
@@ -46,20 +48,19 @@ hr {
         left: -7px;
     }
 
-    .subLine1 {
-        border-bottom-color: $black;
-    }
+    .subLine1 { border-bottom-color: $black; }
     .subLine2 {
         left: 3px;
         border-bottom-color: $canvas;
     }
 
     span {
-        position: absolute;
-        left: 0px;
         top: 0px;
-        border-left-color: transparent;
+        left: 0px;
+        position: absolute;
+
         border-style: solid;
+        border-left-color: transparent;
         border-width: 0px 0px 20px 10px;
     }
 }
