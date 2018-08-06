@@ -1,12 +1,9 @@
-<section>
-    <nav>
-        <a class="home" href="{{ .Site.BaseURL }}">
-            {{ partial "svg/logo.svg" . }}
-        </a>
-        {{ partial "lineSpacer.html" . }}
-        <a href="{{ .Site.BaseURL }}post">
-            Blog
-        </a>
-    </nav>
-</section>
-
+<nav class="header">
+    <a class="home" href="{{ .Site.BaseURL }}">
+        {{ partial "svg/logo.svg" . }}
+    </a>
+    {{ partial "lineSpacer.html" . }}
+    <a href="{{ .Site.BaseURL }}post">
+        Blog
+    </a>
+</nav>

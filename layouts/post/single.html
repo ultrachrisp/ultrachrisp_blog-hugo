@@ -1,17 +1,15 @@
 {{ partial "head.html" . }}
 {{ partial "navigation.html" . }}
 
-<section class="grid">
-    <div class="post">
-        <div class="post-layout">
-            <h1>{{ .Title }}</h1/>
-            <time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time>
-            {{ .Content }}
-        </div>
+<section class="post">
+    <div class="post-layout">
+        <h1>{{ .Title }}</h1>
+        <time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time>
+        {{ .Content }}
     </div>
 </section>
     
-<aside class="grid">
+<aside class="pagination">
     <span class="previous">
         {{ if .Prev }}
         <a href="{{ .Prev.Permalink }}">&lt;&lt; {{ .Prev.Title }} </a>

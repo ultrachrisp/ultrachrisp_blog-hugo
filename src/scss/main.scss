@@ -46,12 +46,34 @@ $breakpoint-wide: 1200px;
 }
 
 // Custom Layout for different sections
+.header{
+    grid-area: header;
+}
+
+.post{
+    grid-area: main;
+}
+
+.pagination{
+    grid-area: pagination;
+    justify-self: center;
+}
+
+.footer{
+    grid-area: footer;
+    justify-self: end;
+}
+    
 .grid {
     display: grid;
 
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "content" "footer";
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-areas:
+    ". header ."
+    ". main ."
+    ". pagination ."
+    ". footer .";
 }
 
 // .post,
@@ -149,7 +171,6 @@ $breakpoint-wide: 1200px;
 html{ font-size: 62.5%; }
 
 body{
-    margin: 0 10px;
     min-width: 320px;
     color: $grey-dark;
 
@@ -234,7 +255,8 @@ nav{
 }
 
 footer{
-    float: right;
+    // float: right;
+
     margin-bottom: 30px;
 }
 
@@ -300,7 +322,7 @@ aside{
             }
         }
             
-        .previous a{ float:right; }
+        .previous a{ margin-right:15px; }
     }
 }
 
