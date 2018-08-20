@@ -12,6 +12,8 @@ $ani-duration: 0.6s;
 //$ani-delay: 0.5s;
 //$swipe-duration: 0.8s;
 
+$content-width: 1200px;
+
 $breakpoint-small: 320px;
 $breakpoint-medium: 600px;
 $breakpoint-large: 900px;
@@ -67,9 +69,11 @@ $breakpoint-wide: 1200px;
     
 .grid {
     display: grid;
+    justify-content: center;
+    // grid-gap: 0px 10px;
 
-    grid-template-columns: 2fr 6fr 2fr;
-    grid-template-rows: auto 1fr auto auto;
+    grid-template-columns: 10px auto 10px;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
     ". header ."
     ". main ."
@@ -143,6 +147,15 @@ $breakpoint-wide: 1200px;
 
     // .previous{ @include span(6 of 12 first); }
     // .next{ @include span(6 of 12 last); }
+
+    .grid {
+        grid-template-columns: 10px 75px auto 75px 10px;
+        grid-template-areas:
+        ". header header . ."
+        ". . main . ."
+        ". . pagination . ."
+        ". . footer footer .";
+    }
 }
 
 @media only screen and (min-width: $breakpoint-wide) {
@@ -165,6 +178,14 @@ $breakpoint-wide: 1200px;
     //         @include pre(1 of 8);
     //         @include span(7 of 8);
     //     }
+    // }
+    // .grid {
+    //     grid-template-columns: 75px auto 75px;
+    //     grid-template-areas:
+    //     "header header ."
+    //     ". main ."
+    //     ". pagination ."
+    //     ". footer footer";
     // }
 }
     
@@ -256,8 +277,6 @@ nav{
 }
 
 footer{
-    // float: right;
-
     margin-bottom: 30px;
 }
 
@@ -271,7 +290,7 @@ time{
 
 .post{
     @include card();
-    max-width: 1200px;
+    max-width: $content-width;
     
     padding-bottom: 30px;
 }
