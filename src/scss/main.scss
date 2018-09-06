@@ -12,7 +12,7 @@ $ani-duration: 0.6s;
 //$ani-delay: 0.5s;
 //$swipe-duration: 0.8s;
 
-$content-width: 1200px;
+$content-width: 1000px;
 
 $breakpoint-small: 320px;
 $breakpoint-medium: 600px;
@@ -50,11 +50,6 @@ $breakpoint-wide: 1200px;
 // Custom Layout for different sections
 .header{
     grid-area: header;
-}
-
-.post{
-    grid-area: main;
-    justify-self: center;
 }
 
 .pagination{
@@ -288,11 +283,33 @@ time{
 
 .logo{ padding: 1.25rem; }
 
+// .post{
+//     @include card();
+//     max-width: $content-width;
+    
+//     padding-bottom: 30px;
+// }
+
 .post{
+    grid-area: main;
+    // justify-self: center;
+
     @include card();
     max-width: $content-width;
     
     padding-bottom: 30px;
+
+    display: grid;
+    // justify-content: center;
+    grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
+    // grid-template-rows: auto auto auto auto;
+
+    p{
+        grid-column: 3 / 5;
+    }
+    h1, h2, h3, time {
+        grid-column: 2 / span 3;
+    }
 }
 
 .post-link{
