@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 {{ partial "navigation.html" . }}
 
-<section class="grid">
+<section class="posts-summary">
     {{ range .Data.Pages }}
     {{ .Render "li"}}
     {{ end }}
