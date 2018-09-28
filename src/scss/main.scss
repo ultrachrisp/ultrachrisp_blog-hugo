@@ -48,20 +48,6 @@ $breakpoint-wide: 1200px;
 }
 
 // Custom Layout for different sections
-.header{
-    grid-area: header;
-}
-
-.pagination{
-    grid-area: pagination;
-    justify-self: center;
-}
-
-.footer{
-    grid-area: footer;
-    justify-self: end;
-}
-    
 .grid {
     display: grid;
     justify-content: center;
@@ -74,39 +60,39 @@ $breakpoint-wide: 1200px;
     ". pagination ."
     ". footer .";
 }
+.header{ grid-area: header; }
+
+.pagination{
+    grid-area: pagination;
+    justify-self: center;
+}
+
+.footer{
+    grid-area: footer;
+    justify-self: end;
+}
+
+.post, .homepage, .posts-summary{
+    grid-area: main;
+}
 
 .post{
-    grid-area: main;
-
     @include card();
     max-width: $content-width;
-    
     padding-bottom: 30px;
 
     display: grid;
     grid-template-columns: 10px 4fr 10px;
 
-    p{ grid-column: 2 / 3; }
+    p, ul, ol{ grid-column: 2 / 3; }
     h1, h2, h3, time { grid-column: 2 / span 3; }
 }
 
-.homepage{
-    grid-area: main;
-    .post-list{ grid-template-rows: max-content; }
-}
-
-.posts-summary{ grid-area: main; }
+.post-list{ grid-template-rows: max-content; }
 .post-summary{ max-width: $content-width; }
 
 
 @media only screen and (min-width: $breakpoint-large) {
-    .post{
-        grid-template-columns: 0.5fr 1fr 7fr 1fr 0.5fr;
-
-        p{ grid-column: 3 / 5; }
-        h1, h2, h3, time { grid-column: 2 / span 3; }
-    }
-
     .grid {
         grid-template-columns: 10px 75px auto 75px 10px;
         grid-template-areas:
@@ -114,6 +100,13 @@ $breakpoint-wide: 1200px;
         ". . main . ."
         ". . pagination . ."
         ". . footer footer .";
+    }
+
+    .post{
+        grid-template-columns: 0.5fr 1fr 7fr 1fr 0.5fr;
+
+        p, ul, ol{ grid-column: 3 / 5; }
+        h1, h2, h3, time { grid-column: 2 / span 3; }
     }
         
     .homepage{
@@ -127,24 +120,24 @@ $breakpoint-wide: 1200px;
 @media only screen and (min-width: $breakpoint-wide) {
     .homepage{
         grid-template-columns: 1fr 1fr 20px 1fr 1fr 1fr;
+    }
 
-        .dashboard{
-            grid-column: 1 / span 2;
-            align-self: start;
-        }
+    .dashboard{
+        grid-column: 1 / span 2;
+        align-self: start;
+    }
 
-        .post-list{
-            display: grid;
-            grid-template-columns: 1fr 9fr;
-            grid-auto-rows: minmax(min-content, max-content);
-            justify-items: start;
-            
-            .post-title { grid-column: 1 / span 3; }
-            .post-link {
-                grid-column: 2 / span 3;
-                justify-self: stretch;
-            }
-        }
+    .post-list{
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+        grid-auto-rows: minmax(min-content, max-content);
+        justify-items: start;
+    }
+
+    .post-title { grid-column: 1 / span 3; }
+    .post-link {
+        grid-column: 2 / span 3;
+        justify-self: stretch;
     }
 }
     
@@ -235,9 +228,7 @@ nav{
     a:not(.home){ padding-top: 10px; }
 }
 
-footer{
-    margin-bottom: 30px;
-}
+footer{ margin-bottom: 30px; }
 
 time{
     padding-top: 5px;
@@ -277,26 +268,25 @@ time{
     bottom: 15px;
 }
 
-aside{
-    .previous, .next{
-        @include card();
-        
-        width: 100%;
-        padding: 10px 15px;
-        display: inline-block;
-        text-align: center;
-        text-decoration: none;
-    }
 
-    @media only screen and (min-width: $breakpoint-medium) {
-        .previous, .next{
-            text-align: inherit;
-            margin: 15px 0;
-            width: initial;
-        }
-            
-        .previous{ margin-right:15px; }
+.previous, .next{
+    @include card();
+        
+    width: 100%;
+    padding: 10px 15px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: $breakpoint-medium) {
+    .previous, .next{
+        text-align: inherit;
+        margin: 15px 0;
+        width: initial;
     }
+            
+    .previous{ margin-right:15px; }
 }
 
 .dashboard{
