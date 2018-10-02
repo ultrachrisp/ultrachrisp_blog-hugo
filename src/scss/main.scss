@@ -12,7 +12,7 @@ $ani-duration: 0.6s;
 //$ani-delay: 0.5s;
 //$swipe-duration: 0.8s;
 
-$content-width: 1000px;
+$content-width: 1100px;
 
 $breakpoint-small: 320px;
 $breakpoint-medium: 600px;
@@ -47,100 +47,6 @@ $breakpoint-wide: 1200px;
     }
 }
 
-// Custom Layout for different sections
-.grid {
-    display: grid;
-    justify-content: center;
-
-    grid-template-columns: 10px auto 10px;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-    ". header ."
-    ". main ."
-    ". pagination ."
-    ". footer .";
-}
-.header{ grid-area: header; }
-
-.pagination{
-    grid-area: pagination;
-    justify-self: center;
-}
-
-.footer{
-    grid-area: footer;
-    justify-self: end;
-}
-
-.post, .homepage, .posts-summary{
-    grid-area: main;
-}
-
-.post{
-    @include card();
-    max-width: $content-width;
-    padding-bottom: 30px;
-
-    display: grid;
-    grid-template-columns: 10px 4fr 10px;
-
-    p, ul, ol{ grid-column: 2 / 3; }
-    h1, h2, h3, time { grid-column: 2 / span 3; }
-}
-
-.post-list{ grid-template-rows: max-content; }
-.post-summary{ max-width: $content-width; }
-
-
-@media only screen and (min-width: $breakpoint-large) {
-    .grid {
-        grid-template-columns: 10px 75px auto 75px 10px;
-        grid-template-areas:
-        ". header header . ."
-        ". . main . ."
-        ". . pagination . ."
-        ". . footer footer .";
-    }
-
-    .post{
-        grid-template-columns: 0.5fr 1fr 7fr 1fr 0.5fr;
-
-        p, ul, ol{ grid-column: 3 / 5; }
-        h1, h2, h3, time { grid-column: 2 / span 3; }
-    }
-        
-    .homepage{
-        display: grid;
-        grid-template-columns: 1fr 1fr 20px 1fr 1fr;
-        .dashboard{ grid-column: 1 / span 2; }
-        .post-list{ grid-column: 4 / span 3; }
-    }
-}
-
-@media only screen and (min-width: $breakpoint-wide) {
-    .homepage{
-        grid-template-columns: 1fr 1fr 20px 1fr 1fr 1fr;
-    }
-
-    .dashboard{
-        grid-column: 1 / span 2;
-        align-self: start;
-    }
-
-    .post-list{
-        display: grid;
-        grid-template-columns: 1fr 9fr;
-        grid-auto-rows: minmax(min-content, max-content);
-        justify-items: start;
-    }
-
-    .post-title { grid-column: 1 / span 3; }
-    .post-link {
-        grid-column: 2 / span 3;
-        justify-self: stretch;
-    }
-}
-    
 // General styles
 html{ font-size: 62.5%; }
 
@@ -205,7 +111,27 @@ ul, ol{
 ul{ list-style-type: disc; }
 ol{ list-style-type: decimal; }
 
-nav, footer{
+time{
+    padding-top: 5px;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+}
+
+// Custom Layout for different sections
+.grid {
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: 10px auto 10px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    ". header ."
+    ". main ."
+    ". pagination ."
+    ". footer .";
+}
+
+.header, .footer {
     @include card();
     padding: 10px 0px;
     display: flex;
@@ -218,7 +144,10 @@ nav, footer{
     }
 }
 
-nav{
+.header{
+    grid-area: header;
+    justify-self: start;
+
     .home{
         width: 40px;
         height: 40px;
@@ -228,13 +157,35 @@ nav{
     a:not(.home){ padding-top: 10px; }
 }
 
-footer{ margin-bottom: 30px; }
+.footer{
+    grid-area: footer;
+    justify-self: end;
 
-time{
-    padding-top: 5px;
-    font-size: 1.3rem;
-    line-height: 1.4rem;
+    margin-bottom: 30px;
 }
+
+.pagination{
+    grid-area: pagination;
+    justify-self: center;
+}
+
+.post, .homepage, .posts-summary, .page-not-found{
+    grid-area: main;
+    max-width: $content-width;
+}
+
+.post{
+    @include card();
+    padding-bottom: 30px;
+
+    display: grid;
+    grid-template-columns: 10px 4fr 10px;
+
+    p, ul, ol{ grid-column: 2 / 3; }
+    h1, h2, h3, time { grid-column: 2 / span 3; }
+}
+
+.post-list{ grid-template-rows: max-content; }
 
 .logo{ padding: 1.25rem; }
 
@@ -268,7 +219,6 @@ time{
     bottom: 15px;
 }
 
-
 .previous, .next{
     @include card();
         
@@ -279,16 +229,6 @@ time{
     text-decoration: none;
 }
 
-@media only screen and (min-width: $breakpoint-medium) {
-    .previous, .next{
-        text-align: inherit;
-        margin: 15px 0;
-        width: initial;
-    }
-            
-    .previous{ margin-right:15px; }
-}
-
 .dashboard{
     @include card();
     overflow: hidden;
@@ -297,8 +237,71 @@ time{
 .page-not-found{
     @include card();
 
-    grid-area: main;
     text-align: center;
+    width: 75vw;
+    min-width: 320px;
+    padding: 100px 15px;
 
     h2{ padding: 0; }
+}
+
+@media only screen and (min-width: $breakpoint-medium) {
+    .previous, .next{
+        text-align: inherit;
+        margin: 15px 0;
+        width: initial;
+    }
+            
+    .previous{ margin-right: 15px; }
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+    .grid {
+        grid-template-columns: 10px 75px auto 75px 10px;
+        grid-template-areas:
+        ". header header . ."
+        ". . main . ."
+        ". . pagination . ."
+        ". . footer footer .";
+    }
+
+    .post{
+        grid-template-columns: 0.5fr 1fr 7fr 1fr 0.5fr;
+
+        p, ul, ol{ grid-column: 3 / 5; }
+        h1, h2, h3, time { grid-column: 2 / span 3; }
+    }
+        
+    .homepage{
+        display: grid;
+        grid-template-columns: 1fr 1fr 20px 1fr 1fr;
+        .dashboard{ grid-column: 1 / span 2; }
+        .post-list{ grid-column: 4 / span 3; }
+    }
+}
+
+@media only screen and (min-width: $breakpoint-wide) {
+    .homepage{
+        grid-template-columns: 1fr 1fr 20px 1fr 1fr 1fr;
+    }
+
+    .dashboard{
+        grid-column: 1 / span 2;
+        align-self: start;
+    }
+
+    .post-list{
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+        grid-auto-rows: minmax(min-content, max-content);
+        justify-items: start;
+    }
+
+    .post-title { grid-column: 1 / span 3; }
+    .post-link {
+        grid-column: 2 / span 3;
+        justify-self: stretch;
+    }
+
+    .page-not-found{ width: 90vw; }
 }
