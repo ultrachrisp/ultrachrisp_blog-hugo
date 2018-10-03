@@ -4,7 +4,6 @@
     </h2>
     <time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time>
     <p>{{ .Summary }}</p>
-    <div class="readMore">
-        <a href="{{ .RelPermalink }}">Read more</a>
-    </div>
+    
+    <a class="readMore" href="{{ .RelPermalink }}">Read more</a>
 </div>

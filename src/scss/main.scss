@@ -1,6 +1,5 @@
 // Screen
 @import "reset";
-@import "grids";
 @import "colors";
 @import "lines";
 @import "svgs";
@@ -13,9 +12,7 @@ $ani-duration: 0.6s;
 //$ani-delay: 0.5s;
 //$swipe-duration: 0.8s;
 
-$gutter: gutter();
-$gutter_half: $gutter * 0.5;
-$gutter_quater: $gutter * 0.25;
+$content-width: 1100px;
 
 $breakpoint-small: 320px;
 $breakpoint-medium: 600px;
@@ -25,20 +22,21 @@ $breakpoint-wide: 1200px;
 // Some mixins
 @mixin card(){
     margin-top: 15px;
-    background-color: $canvas;
-    box-shadow: 2px 2px 6px 3px $shadow;
-    box-sizing: border-box;
-    border-radius: 20px;
     padding: 10px 15px;
+    border-radius: 20px;
+    background-color: $canvas;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 6px 3px $shadow;
 }
 
 @mixin link(){
+    color: $black;
     font-size: 2.4rem;
     line-height: 2.8rem;
-    color: $black;
-    padding: 5px 10px 7px;
+    text-decoration: none;
     border-radius: 10px;
     transition: background-color $ani-duration, color $ani-duration;
+    
     &:hover {
         color: $canvas;
         background-color: $black;
@@ -49,112 +47,20 @@ $breakpoint-wide: 1200px;
     }
 }
 
-// Custom Layout for different sections
-.grid{ padding: 0 $gutter_half; }
-
-.post,
-.previous,
-.next,
-hr{ @include span(4 of 4); }
-
-@media only screen and (min-width: $breakpoint-medium) {
-    .post{
-        @include span(8 of 8);
-    }
-
-    .post-layout{        
-        p, pre, ul, ol{
-            @include pre(1 of 8);
-            @include span(6 of 8);
-            @include post(1 of 8);
-        }
-    }
-
-    .dashboard{ @include span(4 of 8 first); }
-    .post-list{ @include span(4 of 8 last); }
-
-    .previous{ @include span(4 of 8 first); }
-    .next{ @include span(4 of 8 last); }
-}
-
-@media only screen and (min-width: $breakpoint-large) {
-    .grid{ padding: 0; }
-
-    nav{ @include pre(1 of 12); }
-    footer{ @include post(1 of 12); }
-        
-    .post,
-    .post-summary{
-        @include pre(1 of 12);
-        @include span(10 of 12);
-        @include post(1 of 12);
-    }
-        
-    .post-layout{
-        @include pre(1 of 10);
-        @include span(8 of 10);
-        @include post(1 of 10);
-        
-        p, pre, ul, ol{
-            @include pre(1 of 8);
-            @include span(7 of 8);
-        }
-    }
-    
-    .dashboard{
-        @include pre(1 of 12)
-        @include span(4 of 12 first);
-    }
-
-    .post-list{
-        @include span(6 of 12 last);
-        @include post(1 of 12);
-    }
-
-    .post-link{
-        @include pre(1 of 6);
-        @include span(5 of 6 last);
-    }
-
-    .previous{ @include span(6 of 12 first); }
-    .next{ @include span(6 of 12 last); }
-}
-
-@media only screen and (min-width: $breakpoint-wide) {
-    nav{ @include pre(0 of 12); }
-    footer{ @include post(0 of 12); }
-
-    .post,
-    .post-summary{
-        @include pre(1 of 12);
-        @include span(10 of 12);
-        @include post(1 of 12);
-    }
-        
-    .post-layout{
-        @include pre(1 of 10);
-        @include span(8 of 10);
-        @include post(1 of 10);
-        
-        p, pre, ul, ol{
-            @include pre(1 of 8);
-            @include span(7 of 8);
-        }
-    }
-}
-    
 // General styles
 html{ font-size: 62.5%; }
 
 body{
-    line-height: 2.7rem;
-    font-size: 1.8rem;
-    font-family: $font-openSans;
+    min-width: 320px;
     color: $grey-dark;
+
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    font-family: $font-openSans;
+
     background-color: $white;
     background-attachment: fixed;
     background-image: $background_image;
-    min-width: 320px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -194,72 +100,94 @@ strong{ font-weight: 600; }
 a{
     cursor: pointer;
     color: $grey-dark;
-    &:hover{ color:$grey-light; }
+    &:hover{ color: $grey-light; }
 }
 
 ul, ol{
-    list-style-position: initial;
     padding: 0 0 15px 40px;
+    list-style-position: initial;
 }
 
 ul{ list-style-type: disc; }
 ol{ list-style-type: decimal; }
 
-nav, footer{
+time{
+    padding-top: 5px;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+}
+
+// Custom Layout for different sections
+.grid {
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: 10px auto 10px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    ". header ."
+    ". main ."
+    ". pagination ."
+    ". footer .";
+}
+
+.header, .footer {
     @include card();
     padding: 10px 0px;
-    
+    display: flex;
+    width: min-content;
+
     a{
         @include link();
-        text-decoration:none;
-        margin: 0 11px 0 7px;
+        padding: 5px 10px;
+        margin: 0 12px 0 7px;
     }
 }
 
-nav{
-    float: left;
-    
-    a, span{ float: left; }
-
-    a:not(.home){
-        padding: 10px;
-        margin: 0 10px 0 7px;
-    }
-
-    .line{
-        margin-top: 12px;
-    }
+.header{
+    grid-area: header;
+    justify-self: start;
 
     .home{
         width: 40px;
         height: 40px;
-        padding: 5px 10px;
         margin: 0 10px;
     }
+    .line{ margin-top: 12px; }
+    a:not(.home){ padding-top: 10px; }
 }
 
-footer{
+.footer{
+    grid-area: footer;
+    justify-self: end;
+
     margin-bottom: 30px;
-    float: right;
-
-    a, span { float: right; }
-    a:last-child{ margin: 0 12px; }
 }
 
-time{
-    font-size: 1.3rem;
-    line-height: 1.4rem;
-    padding-top: 5px;
+.pagination{
+    grid-area: pagination;
+    justify-self: center;
 }
 
-.logo{
-    padding: 1.25rem;
+.post, .homepage, .posts-summary, .page-not-found{
+    grid-area: main;
+    max-width: $content-width;
 }
 
 .post{
     @include card();
     padding-bottom: 30px;
+
+    display: grid;
+    grid-template-columns: 10px 4fr 10px;
+
+    p, ul, ol{ grid-column: 2 / 3; }
+    h1, h2, h3, time { grid-column: 2 / span 3; }
 }
+
+.post-list{ grid-template-rows: max-content; }
+
+.logo{ padding: 1.25rem; }
 
 .post-link{
     @include card();
@@ -278,37 +206,27 @@ time{
 
 .post-summary{
     @include card();
+    padding: 10px 15px 35px;
+    position: relative;
+    
     h2{ padding-top: 0; }
     h2 > a{ text-decoration: none; }
 }
 
 .readMore{
-    a{ float:right; }
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
 }
 
-aside{
-    .previous, .next{
-        a{
-            @include card();
-            padding: 10px 15px;
-            display: inline-block;
-            text-decoration: none;
-            width: 100%;
-            text-align: center;
-        }
-    }
-
-    @media only screen and (min-width: $breakpoint-medium) {
-        .previous, .next{
-            a{
-                text-align: inherit;
-                margin: 15px 0;
-                width: initial;
-            }
-        }
-            
-        .previous a{ float:right; }
-    }
+.previous, .next{
+    @include card();
+        
+    width: 100%;
+    padding: 10px 15px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
 }
 
 .dashboard{
@@ -318,8 +236,72 @@ aside{
 
 .page-not-found{
     @include card();
-    margin: 0 auto 15px;
-    display: table;
+
     text-align: center;
+    width: 75vw;
+    min-width: 320px;
+    padding: 100px 15px;
+
     h2{ padding: 0; }
+}
+
+@media only screen and (min-width: $breakpoint-medium) {
+    .previous, .next{
+        text-align: inherit;
+        margin: 15px 0;
+        width: initial;
+    }
+            
+    .previous{ margin-right: 15px; }
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+    .grid {
+        grid-template-columns: 10px 75px auto 75px 10px;
+        grid-template-areas:
+        ". header header . ."
+        ". . main . ."
+        ". . pagination . ."
+        ". . footer footer .";
+    }
+
+    .post{
+        grid-template-columns: 0.5fr 1fr 7fr 1fr 0.5fr;
+
+        p, ul, ol{ grid-column: 3 / 5; }
+        h1, h2, h3, time { grid-column: 2 / span 3; }
+    }
+        
+    .homepage{
+        display: grid;
+        grid-template-columns: 1fr 1fr 20px 1fr 1fr;
+        .dashboard{ grid-column: 1 / span 2; }
+        .post-list{ grid-column: 4 / span 3; }
+    }
+}
+
+@media only screen and (min-width: $breakpoint-wide) {
+    .homepage{
+        grid-template-columns: 1fr 1fr 20px 1fr 1fr 1fr;
+    }
+
+    .dashboard{
+        grid-column: 1 / span 2;
+        align-self: start;
+    }
+
+    .post-list{
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+        grid-auto-rows: minmax(min-content, max-content);
+        justify-items: start;
+    }
+
+    .post-title { grid-column: 1 / span 3; }
+    .post-link {
+        grid-column: 2 / span 3;
+        justify-self: stretch;
+    }
+
+    .page-not-found{ width: 90vw; }
 }
