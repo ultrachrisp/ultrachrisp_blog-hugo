@@ -9,8 +9,8 @@
         "general": "cp src/general/* static",
         "fonts": "cp src/fonts/* static/fonts",
         "commonReasources": "npm run general && npm run fonts",
-        "autoprefixer": "postcss -u autoprefixer -r static/css/*",
-        "scss": "node-sass --output-style compressed -o static/css src/scss",
+        "autoprefixer": "postcss -u autoprefixer -u cssnano -r static/css/* --no-map",
+        "scss": "node-sass -o static/css src/scss --output-style compressed",
         "imagemin": "imagemin src/img/* --out-dir=static/img",
         "build:css": "npm run scss && npm run autoprefixer",
         "build:images": "npm run imagemin",
@@ -27,6 +27,7 @@
     "license": "MIT",
     "devDependencies": {
         "autoprefixer": "^8.4.1",
+        "cssnano": "^4.1.4",
         "del-cli": "^1.1.0",
         "imagemin-cli": "^3.0.0",
         "onchange": "^4.0.0",
