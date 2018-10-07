@@ -6,17 +6,17 @@
     "scripts": {
         "clean": "del static/** & del public/**",
         "createFolders": "mkdir -p ./static ./static/js ./static/css ./static/img ./static/fonts",
-        "general": "cp src/general/* static",
-        "fonts": "cp src/fonts/* static/fonts",
+        "general": "cp resources/general/* static",
+        "fonts": "cp resources/fonts/* static/fonts",
         "commonReasources": "npm run general && npm run fonts",
         "autoprefixer": "postcss -u autoprefixer -u cssnano -r static/css/* --no-map",
-        "scss": "node-sass -o static/css src/scss",
-        "imagemin": "imagemin src/img/* --out-dir=static/img",
+        "scss": "node-sass -o static/css resources/scss",
+        "imagemin": "imagemin resources/img/* --out-dir=static/img",
         "build:css": "npm run scss && npm run autoprefixer",
         "build:images": "npm run imagemin",
         "build:all": "npm run clean && npm run createFolders && npm run commonReasources && npm run build:css && npm run build:images",
-        "watch:css": "onchange 'src/scss/**/*.scss' -- npm run build:css",
-        "watch:images": "onchange 'src/img/**/*' -- npm run build:images",
+        "watch:css": "onchange 'resources/scss/**/*.scss' -- npm run build:css",
+        "watch:images": "onchange 'resources/img/**/*' -- npm run build:images",
         "watch:all": "npm-run-all -p watch:css watch:images"
     },
     "repository": {
