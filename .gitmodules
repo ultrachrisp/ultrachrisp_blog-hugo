@@ -2,3 +2,4 @@
 	path = public
 	url = git@github.com:ultrachrisp/ultrachrisp.github.io.git
 	branch = master
+    ignore = dirty
