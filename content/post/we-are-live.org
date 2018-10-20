@@ -13,14 +13,23 @@ This blog has been a long time coming. I have wanted to post on a number of thin
 *** GitHub & GitHub Pages
     I rely heavily on version control. Most of my work goes into private repositories which left my [[https://github.com/][GitHub]] account neglected. I use [[https://pages.github.com/][GitHub Pages]] for this blog. If there is no major reliance on a back-end, you can have your repositories & blog in the same place. Yay Git!
 
-*** Cloadflare
+*** Cloudflare
     You have a static website but you now need SSL or some simple server functionality? Enter [[https://www.cloudflare.com/][Cloudflare]], helping secure your website as well as other benefits. It solved the issues I had, and it solved it for free.
 
-*** Gulp
-    There are options with Task Runners too but I have grown very found of [[http://gulpjs.com/][Gulp]]. In time, I may simplify my builds using more generic tools (i.e. [[https://www.npmjs.com/][npm]] natively or bash scripts) but Gulp does what I need it too and it does it well.
+*** +Gulp+ NPM
+    +There are options with Task Runners too but I have grown very found of [[http://gulpjs.com/][Gulp]]. In time, I may simplify my builds using more generic tools (i.e. [[https://www.npmjs.com/][npm]] natively or bash scripts) but Gulp does what I need it too and it does it well.+
 
-*** Susy
-    For the life of me, I cannot understand why [[http://susy.oddbird.net/][Susy]] has not been more widely adopted. I have been using Susy as a [[http://sass-lang.com/][Sass]] grid system for a few years and the flexibility it gives is unmatched. The rise of flex-box and CSS-grid will eventually replace Susy. Until then, it allows greater freedom in positioning & layout without the expense of my sanity or weekends.
+    Gulp certainly still has its place but after working with [[https://webpack.js.org/][Webpack]], I have grown more accustomed to [[https://docs.npmjs.com/misc/scripts][NPM scripts]]. Moving from Gulp to NPM scripts allowed me to remove a 'minor' dependency & streamline my build process.
+
+*** +Susy+ CSS Grid & Flexbox
+    +For the life of me, I cannot understand why [[http://susy.oddbird.net/][Susy]] has not been more widely adopted. I have been using Susy as a [[http://sass-lang.com/][Sass]] grid system for a few years and the flexibility it gives is unmatched. The rise of flex-box and CSS-grid will eventually replace Susy. Until then, it allows greater  freedom in positioning & layout without the expense of my sanity or weekends.+
+
+    For its time, Susy was amazing! It added so many options that were either not available or took too long to develop & maintain. But after CSS grid & flexbox arrived (and Susy started to [[https://twitter.com/SassSusy/status/954423375127957504][shut down]]), there really was no excuse to hold onto the past. A combination of CSS grid & flexbox can allow for almost limitless responsive layout options. I decided to try it out and recreate the existing Susy layout using CSS grid & flexbox. And where better than here!
+
+*** JavaScript
+    Or lack thereof. One of the goals for the blog was to see if I could solve most problems without having to use JavaScript (JS). [[https://stallman.org/][Richard Stallman]] and his approaches to software development have impacted my views. Completely 'free' software is a worthwhile ideal if somewhat inconvenient. 
+
+    The blog runs Analytics but should still function with JS disabled. Not a day goes by when I do not write some JS, but this blog is as much about experimenting & prototyping as it is about blogging. I'll save JS for the good stuff.
 
 *** Emacs
       My love of [[https://www.gnu.org/software/emacs/][Emacs]] grows. After a number of years using it as a time-tracking & scoping tool, I recently took the plunge and started developing in it. My quality of life has increased significantly.
@@ -29,9 +38,4 @@ This blog has been a long time coming. I have wanted to post on a number of thin
 
  *Answer:* No, but it can do so much once you get over the learning curve & play to its strengths.
 
- Tip 22 from the [[https://pragprog.com/book/tpp/the-pragmatic-programmer][Pragmatic Programmer]] was "Use a single editor well". This struck me as odd because I was using a number of IDS's simultaneously. Each one had its specific niche but fell short in other respects. I now see the advantage of consolidating my life in a single editor. I use other IDE's when needed ([[https://www.visualstudio.com/][Visual Studio]], [[https://developer.apple.com/xcode/][Xcode]], [[https://madewith.unity.com/][Unity]] & [[https://www.unrealengine.com/][Unreal]]) but Emacs feels like home every time I fire it up.
-
-*** JavaScript
-    Or lack thereof. One of the goals for the blog was to see if I could solve most problems without having to use JavaScript (JS). [[https://stallman.org/][Richard Stallman]] and his approaches to software development have impacted my views. Completely 'free' software is a worthwhile ideal if somewhat inconvenient. 
-
-    The blog runs Analytics but should still function with JS disabled. Not a day goes by when I do not write some JS, but this blog is as much about experimenting & prototyping as it is about blogging. I'll save JS for the good stuff.
+ Tip 22 from the [[https://pragprog.com/book/tpp/the-pragmatic-programmer][Pragmatic Programmer]] was "Use a single editor well". This struck me as odd because I was using a number of IDE's simultaneously. Each one had its specific niche but fell short in other respects. I now see the advantage of consolidating my life in a single editor. I use other IDE's when needed ([[https://www.visualstudio.com/][Visual Studio]], [[https://developer.apple.com/xcode/][Xcode]], [[https://madewith.unity.com/][Unity]] & [[https://www.unrealengine.com/][Unreal]]) but Emacs feels like home every time I fire it up.

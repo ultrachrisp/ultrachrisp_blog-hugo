@@ -24,7 +24,7 @@ Blogs and the CMS's that power them are diverse in their approaches. They all ha
 
      - Should the focus always be center aligned?
      - Can I solve most navigation & presentation issues with JS disabled?
-     - [[http://susy.oddbird.net/][Susy]] provides such flexibility  with layouts, why not experiment? 
+     - +Susy+ CSS grid & flexbox provides such flexibility with layouts, why not experiment? 
      - What will an odd number of columns in the grid do to the balance?
      - Can the balance be corrected using other visual techniques?
 
