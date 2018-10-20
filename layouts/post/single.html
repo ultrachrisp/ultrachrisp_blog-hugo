@@ -2,15 +2,16 @@
 {{ partial "navigation.html" . }}
 
 <section class="post">
-
         <h1>{{ .Title }}</h1>
-        <time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time>
+        <time datetime="{{ .Date }}">Published: {{ .Date.Format "2006-01-02" }}</time>
+        {{ if ne .Date .Lastmod }}
+        <time datetime="{{ .Lastmod }}">Last update: {{ .Lastmod.Format "2006-01-02" }}</time>
+        {{ end }}
+        
         {{ .Content }}
-
 </section>
     
 <aside class="pagination">
-
     {{ if .Prev }}
     <a class="previous" href="{{ .Prev.Permalink }}">&lt;&lt; {{ .Prev.Title }} </a>
     {{ end }}
@@ -18,7 +19,6 @@
     {{ if .Next }}
     <a class="next" href="{{ .Next.Permalink }}"> {{ .Next.Title }} &gt;&gt;</a>
     {{ end }}
-
 </aside>
 
 {{ partial "footer.html" . }}
