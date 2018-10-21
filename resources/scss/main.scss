@@ -182,7 +182,7 @@ time{
     grid-template-columns: 10px 4fr 10px;
 
     p, ul, ol{ grid-column: 2 / 3; }
-    h1, h2, h3, time { grid-column: 2 / span 3; }
+    h1, h2, h3, h4, h5, h6, hr, time, pre { grid-column: 2 / span 3; }
 }
 
 .post-list{ grid-template-rows: max-content; }
@@ -269,7 +269,7 @@ time{
         grid-template-columns: 0.5fr 1fr 7fr 1fr 0.5fr;
 
         p, ul, ol{ grid-column: 3 / 5; }
-        h1, h2, h3, time { grid-column: 2 / span 3; }
+        h1, h2, h3, h4, h5, h6, hr, time, pre{ grid-column: 2 / span 3; }
     }
         
     .homepage{

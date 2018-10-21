@@ -37,13 +37,14 @@ Unordered lists:
 
 [[http://gohugo.io/][Check out Hugo]]
 
+-----
 #+BEGIN_SRC javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 #+END_SRC
-
+-----
 #+BEGIN_SRC python
 s = "Python syntax highlighting"
 print s
 #+END_SRC
-
+-----
