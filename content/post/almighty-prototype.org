@@ -5,7 +5,13 @@
 <img style="width:180px; height:180px; float:right;" src="../../img/react.svg" alt="React"/>
 Hindsight is competely unforgiving. Being able to look back and observe oversights or pitfalls is a luxsury that most people cannot afford. This is why you need to make space for yourself to fail, and fail enough to learn the lesson. Because, in all honesty, failure is the best teacher that we have, we just need to choose a suitable time to fail. This time is usually in the early stages of a project.
 
+** But I know what the user wants
+
 ** The need for speed
    Few clients or business executives are able to clearly define what they want. 
 
+** Multi-purpose
 
+** Hi vs Lo fidelity
+
+** Tools

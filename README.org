@@ -1,0 +1,8 @@
+#+TITLE: Source files for my blog
+
+I have been drawn to static site generators for some time. It is easy to over-engineer when you are motivated when a simpler solution will work just as well.
+
+I have found a combination of [[https://gohugo.io/][Hugo]], [[https://www.npmjs.com/][NPM]] & [[https://github.com][GitHub.com]] provides a fast, flexible & powerful enough platform for simple blogs.
+
+For more details on the tools I used, please refer to [[https://chrispyke.com/post/we-are-live/][this post]].
+
