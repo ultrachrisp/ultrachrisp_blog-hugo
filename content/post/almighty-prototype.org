@@ -2,7 +2,7 @@
 #+TITLE: The Almighty Prototype
 #+DRAFT: true
 
-<img style="width:180px; height:180px; float:right;" src="../../img/react.svg" alt="React"/>
+<img style="width:170px; height:170px; float:right; padding: 0 30px" src="../../img/prototype.svg" alt="React"/>
 Hindsight is completely unforgiving. Being able to look back and observe oversights or pitfalls is a luxury that most projects & individuals cannot afford. This is why you need to make space for yourself to fail, and fail enough to learn the lesson. Because, in all honesty, failure is the best teacher that we have, we just need to choose a suitable time to fail. And that time is usually in the early stages of a project when it is still 'relatively' easy to accommodate changes.
 
 ** But I know what the user wants
