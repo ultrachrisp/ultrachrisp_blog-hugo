@@ -13,16 +13,24 @@ Hindsight is completely unforgiving. Looking back & observing oversights is a lu
 We took a closer look at the analytics and conducted some user testing. The data showed that the stakeholders did not understand their users as well as they claimed. 
    
 ** Hi vs Lo fidelity
-   The choice of making a quick & dirty user flow using paper, or a graphically richer representation including screen transitions & working components, depends on the stage of the project.
+   Making a quick & dirty user flow using paper or a richer representation including screen transitions & working components depends on the stage & type of the project. Some projects are so different that you have to create the interaction paradigm. Other projects can leverage existing paradigms & best practises. Both extremes can still benefit from prototyping, but the role the prototype plays is very different.
+
+   For projects that have new interaction paradigms, a fast & cheap prototyping technique is very helpful. You can mock up interactions and program states on pieces of paper to use for user testing. These prototypes give great insights into how to use & interact with the product & can be rapidly iterated upon. Additionally, you can overhaul the project completely at this early stage.
+
+   A higher fidelity prototype can work well later in a project. Sometimes you need evidence that a proposal or approach is flawed. Other times, a high fidelity prototype can catch some oversights or issues.
+
+   The biggest take away is that it can be very hard to motivate for a prototype during the project but it is almost always worth it.
+
+** Talk is cheap
+  Many stakeholders are, "obsessively compulsively indecisive". Or in other words, "they do not know what they want, but they know that they want it now".
+
+  We faced this issue on a project where the stakeholders insisted we had everything we needed to start development. We disagreed, but decided we needed to be proactive. We rapidly prototyped some of the designs using [[https://framer.com/][Framer]] to highlight the pitfalls. 
+
+  We sent the stakeholder a preview link of the prototype when an amazing thing happened. The stakeholders replied with a detailed critique of the prototype. This critique included questions on the design, user flows as well as various user experience (UX) components. We then revealed that we had merely mocked up the very same designs they had given us. The stakeholders were shocked. They immediately calmed down and allowed us some room to refine the product.
+
+** Tools
 
 ** Multi-purpose
    The ability to rapidly & effectively prototype can provide different results or insights, depending on how you use the prototype. The specific prototype's fidelity comes into play here, but some general uses include:
 
    - Provide a concrete example to an abstract concept.
-
-** Talk is cheap
-   Many stakeholders are, "obsessively compulsively indecisive". Or in other words, "they do not know what they want, but they know that they want it now".
-
-   One clear example of this was when a stakeholder insisted that we had everything we needed to start development. To show the stakeholder some of the pitfalls of their 'signed off' & 'approved' project, we rapidly prototyped some of the screens they had given us using [[https://framer.com/][Framer]]. When we sent the stakeholder a preview link of the framer prototype, an amazing thing happened, they sent back a detailed critique of the prototype questioning design choices, user flows as well as various user experience (UX) components. When we challenged this critique, showing the stakeholder that we had merely mocked up the very same designs they had given us, the stakeholder calmed down and allowed us some room to refine the product.
-
-** Tools
