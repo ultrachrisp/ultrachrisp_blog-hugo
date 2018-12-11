@@ -2,7 +2,7 @@
 #+TITLE: The Almighty Prototype
 #+DRAFT: true
 
-<img style="width:160px; height:160px; padding:0 20px; float:right;" src="../../img/prototype.svg" alt="React"/>
+<img style="width:160px; height:160px; padding:0 20px 5px; float:right;" src="../../img/prototype.svg" alt="Prototype logo"/>
 Hindsight is completely unforgiving. Looking back & observing oversights is a luxury most projects cannot afford. This is why you need to make space to fail, and fail enough to learn. Because failure is the best teacher that we have, provided we choose a suitable time to fail. And that time is in the early stages of a project when it is still 'relatively' easy to accommodate changes.
 
 ** But I know what the user wants
@@ -10,7 +10,7 @@ Hindsight is completely unforgiving. Looking back & observing oversights is a lu
 
    Prototyping & user testing at an early stage will provide a solid, iterable foundation. I have been involved with projects where the stakeholders were convinced that they knew their users. When the project launched and did not get the traction hoped for, the focus shifted to the designers & developers.
 
-We took a closer look at the analytics and conducted some user testing. The data showed that the stakeholders did not understand their users as well as they claimed. There were clear drop-off points in the user journey, and they aligned with the designers predictions. We were able to address the issues but it extended the project timeline.
+   We took a closer look at the analytics and conducted some user testing. The data showed that the stakeholders did not understand their users as well as they claimed. There were clear drop-off points in the user journey, and they aligned with the designers predictions. We were able to address the issues but it extended the project timeline.
    
 ** Hi vs Lo fidelity
    Making a quick & dirty user flow using paper or a richer representation including screen transitions & working components depends on the stage & type of the project. Some projects are so different that you have to create the interaction paradigm. Other projects can leverage existing paradigms & best practises. Both extremes benefit from prototyping, but the role the prototype plays is different.
@@ -22,11 +22,11 @@ We took a closer look at the analytics and conducted some user testing. The data
    The biggest take away is that it can be very hard to motivate for a prototype during the project but it is almost always worth it.
 
 ** Talk is cheap
-  Many stakeholders are, "obsessively compulsively indecisive". Or in other words, "they do not know what they want, but they know that they want it now".
+   Many stakeholders are, "obsessively compulsively indecisive". Or in other words, "they do not know what they want, but they know that they want it now".
 
-  We faced this issue on a project where the stakeholders insisted we had everything we needed to start development. We disagreed, but decided we needed to be proactive. We rapidly prototyped some of the designs using [[https://framer.com/][Framer]] to highlight the pitfalls. 
+   We faced this issue on a project where the stakeholders insisted we had everything we needed to start development. We disagreed, but decided we needed to be proactive. We rapidly prototyped some of the designs using [[https://framer.com/][Framer]] to highlight the pitfalls. 
 
-  We sent the stakeholder a preview link of the prototype when an amazing thing happened. The stakeholders replied with a detailed critique of the prototype. This critique included questions on the design, user flows as well as various user experience (UX) components. We then revealed that we had merely mocked up the very same designs they had given us. The stakeholders were shocked. They immediately calmed down and allowed us some room to refine the product.
+   We sent the stakeholder a preview link of the prototype when an amazing thing happened. The stakeholders replied with a detailed critique of the prototype. This critique included questions on the design, user flows as well as various user experience (UX) components. We then revealed that we had merely mocked up the very same designs they had given us. The stakeholders were shocked. They immediately calmed down and allowed us some room to refine the product.
 
 ** Multi-purpose
    The ability to rapidly & effectively prototype can provide different results or insights, depending on how you use the prototype. The specific prototype's fidelity comes into play here, but some general uses include:
