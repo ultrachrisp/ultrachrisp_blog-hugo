@@ -28,9 +28,11 @@ We took a closer look at the analytics and conducted some user testing. The data
 
   We sent the stakeholder a preview link of the prototype when an amazing thing happened. The stakeholders replied with a detailed critique of the prototype. This critique included questions on the design, user flows as well as various user experience (UX) components. We then revealed that we had merely mocked up the very same designs they had given us. The stakeholders were shocked. They immediately calmed down and allowed us some room to refine the product.
 
-** Tools
-
 ** Multi-purpose
    The ability to rapidly & effectively prototype can provide different results or insights, depending on how you use the prototype. The specific prototype's fidelity comes into play here, but some general uses include:
 
    - Provide a concrete example to an abstract concept.
+   - Refine journeys & stream line interactions.
+   - Test & validate new concepts without serious investment or commitment.
+
+
