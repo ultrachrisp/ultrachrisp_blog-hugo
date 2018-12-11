@@ -3,7 +3,7 @@
 #+DRAFT: true
 
 <img style="width:180px; height:180px; float:right;" src="../../img/react.svg" alt="React"/>
-Hindsight is completely unforgiving. Looking back & observing oversights is a luxury that most projects cannot afford. This is why you need to make space for yourself to fail, and fail enough to learn the lesson. Because, in all honesty, failure is the best teacher that we have, provided we choose a suitable time to fail. And that time is in the early stages of a project when it is still 'relatively' easy to accommodate changes.
+Hindsight is completely unforgiving. Looking back & observing oversights is a luxury that most projects cannot afford. This is why you need to make space for yourself to fail, and fail enough to learn the lesson. Because, in all honesty, failure is the best teacher that we have, provided we choose a suitable time to fail. And that time is in the early stages of a project when it is still /relatively/ easy to accommodate changes.
 
 ** But I know what the user wants
    Stakeholders or clients often do not see the true value of prototyping. Why budget time refining at the very beginning of the project? The 'agile approach' expects us to deploy a 'minimum viable product' (MVP) as soon as possible & then iterate on it. In the panic to get to market, it is very easy to overlook the word 'viable' in MVP.
@@ -28,9 +28,11 @@ We took a closer look at the analytics and conducted some user testing. The data
 
   We sent the stakeholder a preview link of the prototype when an amazing thing happened. The stakeholders replied with a detailed critique of the prototype. This critique included questions on the design, user flows as well as various user experience (UX) components. We then revealed that we had merely mocked up the very same designs they had given us. The stakeholders were shocked. They immediately calmed down and allowed us some room to refine the product.
 
-** Tools
-
 ** Multi-purpose
    The ability to rapidly & effectively prototype can provide different results or insights, depending on how you use the prototype. The specific prototype's fidelity comes into play here, but some general uses include:
 
    - Provide a concrete example to an abstract concept.
+   - Refine journeys & stream line interactions.
+   - Test & validate new concepts without serious investment or commitment.
+
+
