@@ -2,15 +2,15 @@
 #+TITLE: The Almighty Prototype
 #+DRAFT: true
 
-<img style="width:180px; height:180px; float:right;" src="../../img/react.svg" alt="React"/>
-Hindsight is completely unforgiving. Looking back & observing oversights is a luxury that most projects cannot afford. This is why you need to make space for yourself to fail, and fail enough to learn the lesson. Because, in all honesty, failure is the best teacher that we have, provided we choose a suitable time to fail. And that time is in the early stages of a project when it is still /relatively/ easy to accommodate changes.
+<img style="width:160px; height:160px; padding:0 20px; float:right;" src="../../img/prototype.svg" alt="React"/>
+Hindsight is completely unforgiving. Looking back & observing oversights is a luxury most projects cannot afford. This is why you need to make space to fail, and fail enough to learn. Because failure is the best teacher that we have, provided we choose a suitable time to fail. And that time is in the early stages of a project when it is still 'relatively' easy to accommodate changes.
 
 ** But I know what the user wants
-   Stakeholders or clients often do not see the true value of prototyping. Why budget time refining at the very beginning of the project? The 'agile approach' expects us to deploy a 'minimum viable product' (MVP) as soon as possible & then iterate on it. In the panic to get to market, it is very easy to overlook the word 'viable' in MVP.
+   Stakeholders or clients often do not see the true value of prototyping. Why budget time refining at the beginning of the project? The 'agile approach' expects us to deploy a 'minimum viable product' (MVP) as soon as possible & then iterate on it. In the panic to get to market, it is easy to overlook the word 'viable' in MVP.
 
    Prototyping & user testing at an early stage will provide a solid, iterable foundation. I have been involved with projects where the stakeholders were convinced that they knew their users. When the project launched and did not get the traction hoped for, the focus shifted to the designers & developers.
 
-We took a closer look at the analytics and conducted some user testing. The data showed that the stakeholders did not understand their users as well as they claimed. 
+We took a closer look at the analytics and conducted some user testing. The data showed that the stakeholders did not understand their users as well as they claimed. There were clear user drop-off points
    
 ** Hi vs Lo fidelity
    Making a quick & dirty user flow using paper or a richer representation including screen transitions & working components depends on the stage & type of the project. Some projects are so different that you have to create the interaction paradigm. Other projects can leverage existing paradigms & best practises. Both extremes can still benefit from prototyping, but the role the prototype plays is very different.
