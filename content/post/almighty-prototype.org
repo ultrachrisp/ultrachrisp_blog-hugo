@@ -2,7 +2,7 @@
 #+TITLE: The Almighty Prototype
 #+DRAFT: false
 
-<img style="width:130px; height:130px; padding:0 20px 5px; float:right;" src="../../img/prototype.svg" alt="Prototype logo"/>
+<img style="width:130px; height:130px; padding:0 20px 5px; float:right;" src="../../images/prototype.svg" alt="Prototype logo"/>
 Hindsight is completely unforgiving. Looking back & observing oversights is a luxury most projects cannot afford. Allowing yourself space to fail & learn at an early stage of a project has advantages. It also allows a project to grow while preventing journey bottlenecks and minimising drop-offs.
 
 ** But I know what the user wants
