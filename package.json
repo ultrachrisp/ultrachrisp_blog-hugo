@@ -5,11 +5,11 @@
     "main": "public/index.html",
     "scripts": {
         "clean": "del static/** & del public/** !public !public/.git !public/.gitignore",
-        "createFolders": "mkdir -p ./static ./static/img ./static/fonts",
+        "createFolders": "mkdir -p ./static ./static/images ./static/fonts",
         "general": "cp assets/general/* static",
         "fonts": "cp assets/fonts/* static/fonts",
         "commonReasources": "npm run general && npm run fonts",
-        "imagemin": "imagemin assets/images/* --out-dir=static/img",
+        "imagemin": "imagemin assets/images/* --out-dir=static/images",
         "build:images": "npm run imagemin",
         "build": "npm run clean && npm run createFolders && npm run commonReasources && npm run build:images",
         "watch:images": "onchange 'assets/images/**/*' -- npm run build:images",
