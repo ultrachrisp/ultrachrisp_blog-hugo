@@ -3,7 +3,8 @@
 <section class="homepage">
     <div class="dashboard">
         <hr>
-        <img src="../../img/logo_front.svg" alt="Logo"/>
+        {{ $logo := resources.Get "images/logo.svg" | minify }}
+        <img src="{{ $logo.Permalink }}" alt="Logo"/>
         <h2>{{ .Site.Params.DashboardTitle }}</h2>
         <p>{{ .Site.Params.DashboardDescription }}</p>
         <hr>
