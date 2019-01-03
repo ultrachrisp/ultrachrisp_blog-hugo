@@ -21,7 +21,10 @@
     <meta name="theme-color" content="#ffffff">
     
     <!-- stylesheet -->
-    <link href="/css/main.css" rel="stylesheet">
+    {{ $style := resources.Get "styles/main.scss" | toCSS | postCSS | fingerprint }}
+    <link href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet">
+    <link href="{{ .Site.Params.siteFont }}" rel="stylesheet">
+    
     <!-- javascript -->
     {{ template "_internal/google_analytics_async.html" . }}
     <!-- script async type="text/javascript" src="/js/main.js"></script -->

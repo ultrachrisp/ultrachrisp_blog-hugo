@@ -10,4 +10,4 @@ googleAnalytics = "UA-39736751-1"
   description = "Personal blog for Chris Pyke."
   dashboardTitle = ""
   dashboardDescription = "When you say things twice it means you care... you care."
-  
+  siteFont = "https://fonts.googleapis.com/css?family=Open+Sans:300,600"

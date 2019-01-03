@@ -4,20 +4,16 @@
     "description": "Personal blog",
     "main": "public/index.html",
     "scripts": {
-        "clean": "del static/** & del public/**",
-        "createFolders": "mkdir -p ./static ./static/js ./static/css ./static/img ./static/fonts",
-        "general": "cp resources/general/* static",
-        "fonts": "cp resources/fonts/* static/fonts",
+        "clean": "del static/** & del public/** !public !public/.git !public/.gitignore",
+        "createFolders": "mkdir -p ./static ./static/img ./static/fonts",
+        "general": "cp assets/general/* static",
+        "fonts": "cp assets/fonts/* static/fonts",
         "commonReasources": "npm run general && npm run fonts",
-        "autoprefixer": "postcss -u autoprefixer -u cssnano -r static/css/* --no-map",
-        "scss": "node-sass -o static/css resources/scss",
-        "imagemin": "imagemin resources/img/* --out-dir=static/img",
-        "build:css": "npm run scss && npm run autoprefixer",
+        "imagemin": "imagemin assets/img/* --out-dir=static/img",
         "build:images": "npm run imagemin",
-        "build:all": "npm run clean && npm run createFolders && npm run commonReasources && npm run build:css && npm run build:images",
-        "watch:css": "onchange 'resources/scss/**/*.scss' -- npm run build:css",
-        "watch:images": "onchange 'resources/img/**/*' -- npm run build:images",
-        "watch:all": "npm-run-all -p watch:css watch:images"
+        "build:all": "npm run clean && npm run createFolders && npm run commonReasources && npm run build:images",
+        "watch:images": "onchange 'assets/img/**/*' -- npm run build:images",
+        "watch:all": "npm-run-all -p watch:images"
     },
     "repository": {
         "type": "git",
@@ -32,7 +28,6 @@
         "imagemin-cli": "^3.0.0",
         "onchange": "^4.0.0",
         "postcss-cli": "^5.0.0",
-        "node-sass": "^4.9.0",
         "npm-run-all": "^4.1.3",
         "reset-css": "^4.0.1",
         "tern": "^0.21.0"
