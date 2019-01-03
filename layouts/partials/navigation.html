@@ -1,6 +1,6 @@
 <nav class="header">
     <a class="home" href="{{ .Site.BaseURL }}">
-        {{ partial "svg/logo.svg" .}}
+        {{ readFile "static/img/logo.svg" | safeHTML }}
     </a>
     {{ partial "lineSpacer.html" . }}
     <a href="{{ .Site.BaseURL }}post">

@@ -9,11 +9,11 @@
         "general": "cp assets/general/* static",
         "fonts": "cp assets/fonts/* static/fonts",
         "commonReasources": "npm run general && npm run fonts",
-        "imagemin": "imagemin assets/img/* --out-dir=static/img",
+        "imagemin": "imagemin assets/images/* --out-dir=static/img",
         "build:images": "npm run imagemin",
-        "build:all": "npm run clean && npm run createFolders && npm run commonReasources && npm run build:images",
-        "watch:images": "onchange 'assets/img/**/*' -- npm run build:images",
-        "watch:all": "npm-run-all -p watch:images"
+        "build": "npm run clean && npm run createFolders && npm run commonReasources && npm run build:images",
+        "watch:images": "onchange 'assets/images/**/*' -- npm run build:images",
+        "watch": "npm-run-all -p watch:images"
     },
     "repository": {
         "type": "git",
