@@ -95,8 +95,8 @@ const preRenderCanvas = (colour) => {
 const setCanvasSize = () => {
     const { canvas } = window.ftue;
     canvas.width = canvas.height = canvas.parentElement.getBoundingClientRect().width;
-    console.log(canvas.parentElement.getBoundingClientRect().width);
-     // = canvas.parentElement.offsetWidth;
+    // console.log(canvas.parentElement.getBoundingClientRect().width);
+    // = canvas.parentElement.offsetWidth;
     canvas.style.width = canvas.width + 'px';
     canvas.style.height = canvas.height + 'px';
     canvas.getContext('2d');
@@ -379,9 +379,5 @@ const animateParticles = (timestamp) => {
     renderParticle();
     window.requestAnimationFrame(animateParticles);
 };
-
-// const remove = (elem) => {
-//     ftue.canvas.parentNode.removeChild(elem);
-// };
 
 init();
