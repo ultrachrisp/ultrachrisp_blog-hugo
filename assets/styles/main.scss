@@ -232,6 +232,7 @@ time{
 
 .dashboard{
     @include card();
+    box-sizing: border-box;
     //overflow: hidden;
 }
 

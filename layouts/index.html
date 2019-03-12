@@ -1,17 +1,22 @@
 {{ partial "head.html" . }}
 {{ partial "navigation.html" . }}
 <section class="homepage">
-    <div class="dashboard2">
-        <canvas id='ftue'></canvas>
-        {{ $js := resources.Get "javascript/dashboard.js" | fingerprint }}
-        <script async type="text/javascript" src="{{ $js.Permalink}}" integrity="{{ $js.Data.Integrity}}"></script>
+    <div class="dashboard" id="dashboard">
+        {{ $logo := resources.Get "images/front.svg" }}
+        <img src="{{ $logo.Permalink }}" alt="Logo"/>
+        {{ $script := resources.Get "javascript/main.js" | resources.Fingerprint "sha512" }}
+        <script type="text/javascript" type="module" src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}" async></script>
+
     </div>
-    <div class="dashboard" id="checker">
+    <!--div class="dashboard">
         <hr>
+        {{ $logo := resources.Get "images/front.svg" }}
+        <img src="{{ $logo.Permalink }}" alt="Logo"/>
+        
         <h2>{{ .Site.Params.DashboardTitle }}</h2>
         <p>{{ .Site.Params.DashboardDescription }}</p>
         <hr>
-    </div>
+    </div -->
     <div class="post-list">
         <div class="post-title">
             <h2>Recent Posts</h2>
