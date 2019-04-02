@@ -233,7 +233,7 @@ time{
 .dashboard{
     @include card();
     box-sizing: border-box;
-    //overflow: hidden;
+    align-self: start;
 }
 
 .page-not-found{
@@ -277,9 +277,9 @@ time{
     .homepage{
         display: grid;
         grid-template-columns: 1fr 1fr 20px 1fr 1fr;
-        .dashboard{ grid-column: 1 / span 2; }
-        .post-list{ grid-column: 4 / span 3; }
     }
+    .dashboard{ grid-column: 1 / span 2; }
+    .post-list{ grid-column: 4 / span 3; }
 }
 
 @media only screen and (min-width: $breakpoint-wide) {
@@ -287,10 +287,7 @@ time{
         grid-template-columns: 1fr 1fr 20px 1fr 1fr 1fr;
     }
 
-    .dashboard{
-        grid-column: 1 / span 2;
-        align-self: start;
-    }
+    .dashboard{ grid-column: 1 / span 2; }
 
     .post-list{
         display: grid;
