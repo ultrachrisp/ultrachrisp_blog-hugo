@@ -1,3 +1,4 @@
+// import { Tester } from 'particles.js';
 
 const initDashboard = () => {
 
@@ -9,7 +10,7 @@ const initDashboard = () => {
 
 const createObject = () => {
     const animation = {
-        colours: ['#F0325A', '#FF780F', '#960528'],
+        colours: ['#FF780F', '#960528', '#F0325A'],
         grid: null,
         particles: null,
         offscreenCanvases: [],
@@ -69,7 +70,6 @@ const createParticles = ({anim}) => {
         });
     });
 
-    console.log(particles);
     return particles;
 };
 
@@ -251,7 +251,7 @@ const createParticule = ({x, y, anim}) => {
         if(p.state === 'fadeIn' || p.state === 'fadeOut'){
             anim.context.globalAlpha = p.alpha;
         }
-        console.log(anim.preRenderCanvases, p.colour);
+        // console.log(anim.preRenderCanvases, p.colour);
         if(!p.remove){
             anim.context.save(); 
 	        anim.context.translate(p.xPos + p.centre, p.yPos + p.centre);

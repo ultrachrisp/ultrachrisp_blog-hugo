@@ -2,15 +2,15 @@
 {{ partial "navigation.html" . }}
 <section class="homepage">
     <div class="dashboard" id="dashboard">
-        {{ $logo := resources.Get "images/front.svg" }}
+        {{ $logo := resources.Get "svg/front.svg" }}
         <img src="{{ $logo.Permalink }}" alt="Logo"/>
-        {{ $script := resources.Get "javascript/main.js" | resources.Fingerprint "sha512" }}
+        {{ $script := resources.Get "js/main.bundle.js" | resources.Fingerprint "sha512" }}
         <script type="text/javascript" type="module" src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}" async></script>
 
     </div>
     <!--div class="dashboard">
         <hr>
-        {{ $logo := resources.Get "images/front.svg" }}
+        {{ $logo := resources.Get "svg/front.svg" }}
         <img src="{{ $logo.Permalink }}" alt="Logo"/>
         
         <h2>{{ .Site.Params.DashboardTitle }}</h2>

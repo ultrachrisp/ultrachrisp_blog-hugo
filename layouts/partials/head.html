@@ -21,7 +21,7 @@
     <meta name="theme-color" content="#ffffff">
     
     <!-- stylesheet -->
-    {{ $style := resources.Get "styles/main.scss" | toCSS | postCSS | fingerprint }}
+    {{ $style := resources.Get "scss/main.scss" | toCSS | postCSS | fingerprint }}
     <link href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet">
     <link href="{{ .Site.Params.font }}" rel="stylesheet">
     
