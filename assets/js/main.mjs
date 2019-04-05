@@ -1,4 +1,4 @@
-// import { Tester } from 'particles.js';
+import { Tester } from 'particles.js';
 
 const initDashboard = () => {
 
@@ -9,6 +9,7 @@ const initDashboard = () => {
 };
 
 const createObject = () => {
+    const test = Tester;
     const animation = {
         colours: ['#FF780F', '#960528', '#F0325A'],
         grid: null,

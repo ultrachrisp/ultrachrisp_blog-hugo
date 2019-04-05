@@ -5,7 +5,6 @@
     "main": "public/index.html",
     "module": "public/main.js",
     "scripts": {
-        "babel": "babel --presets es2015 -w assets/js/main.js -o assets/js/main.bundle.js",
         "clean": "del static/** & del public/** !public !public/.git !public/.gitignore",
         "createFolders": "mkdir -p ./static ./static/svg ./static/fonts",
         "general": "cp assets/general/* static",
@@ -13,12 +12,12 @@
         "hugo": "hugo server -w -D",
         "commonReasources": "npm run general && npm run fonts",
         "imagemin": "imagemin assets/svg/* --out-dir=static/svg",
-        
         "images:build": "npm run imagemin",
-        "images:watch": "onchange 'assets/svg/**/*' -- npm run images:build",
-        
+        "images:start": "onchange 'assets/svg/**/*' -- npm run images:build",
+        "rollup:build": "rollup -c",
+        "rollup:start": "rollup -c -w",
         "build": "npm run clean && npm run createFolders && npm run commonReasources && npm run build:images",
-        "watch": "npm-run-all -p images:watch babel hugo"
+        "start": "npm-run-all -p images:start rollup:start hugo"
     },
     "repository": {
         "type": "git",
@@ -27,16 +26,44 @@
     "author": "Chris Pyke",
     "license": "MIT",
     "devDependencies": {
+        "@babel/cli": "^7.4.3",
+        "@babel/core": "^7.4.3",
+        "@babel/plugin-external-helpers": "^7.2.0",
+        "@babel/plugin-transform-runtime": "^7.4.3",
+        "@babel/preset-env": "^7.4.3",
+        "@babel/preset-es2015": "^7.0.0-beta.53",
         "autoprefixer": "^8.4.1",
-        "babel-cli": "^6.26.0",
-        "babel-core": "^6.26.3",
-        "babel-preset-es2015": "^6.24.1",
         "cssnano": "^4.1.10",
         "del-cli": "^1.1.0",
+        "esm": "^3.2.22",
         "imagemin-cli": "^3.0.0",
         "npm-run-all": "^4.1.3",
         "onchange": "^4.0.0",
         "postcss-cli": "^5.0.0",
-        "reset-css": "^4.0.1"
+        "reset-css": "^4.0.1",
+        "rollup": "^1.8.0",
+        "rollup-plugin-babel": "^4.3.2",
+        "rollup-plugin-commonjs": "^9.3.4",
+        "rollup-plugin-node-resolve": "^4.1.0"
+    },
+    "dependencies": {},
+    "babel": {
+        "presets": [
+            [
+                "@babel/preset-env",
+                {
+                    "modules": false
+                }
+            ]
+        ],
+        "plugins": [
+            "@babel/plugin-external-helpers",
+            [
+                "@babel/plugin-transform-runtime",
+                {
+                    "corejs": 2
+                }
+            ]
+        ]
     }
 }
