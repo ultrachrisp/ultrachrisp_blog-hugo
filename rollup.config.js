@@ -3,26 +3,24 @@ import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
 
 export default {
-    input: 'assets/js/index.js',
+    input: 'assets/js/main.mjs',
     output: [
         {
             file: 'assets/js/main.bundle.js',
             format: 'iife',
-            sourceMap: true
+            sourceMap: true,
+            name: 'main'
         }
     ],
-    external: [ 'ow' ],
     plugins: [
-        resolve({
-            browser: true
-        }),
-        commonjs({
-            include: 'node_modules/**'
-        }),
         babel({
             exclude: 'node_modules/**',
             externalHelpers: false,
             runtimeHelpers: true
-        })
+        }),
+        resolve({
+            browser: true
+        }),
+        commonjs()
     ]
 };
