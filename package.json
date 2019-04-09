@@ -16,8 +16,9 @@
         "images:start": "onchange 'assets/svg/**/*' -- npm run images:build",
         "rollup:build": "babel assets/js/src -d assets/js",
         "rollup:start": "babel assets/js/src -d assets/js -w",
+        "browserify": "browserify assets/js/src/main.js -o assets/js/main.bundle.js",
         "build": "npm run clean && npm run createFolders && npm run commonReasources && npm run build:images",
-        "start": "npm-run-all -p images:start hugo"
+        "start": "npm-run-all -p images:start browserify hugo"
     },
     "repository": {
         "type": "git",
@@ -30,6 +31,8 @@
         "@babel/core": "^7.4.3",
         "@babel/preset-env": "^7.4.3",
         "autoprefixer": "^8.4.1",
+        "babelify": "^10.0.0",
+        "browserify": "^16.2.3",
         "cssnano": "^4.1.10",
         "del-cli": "^1.1.0",
         "imagemin-cli": "^3.0.0",
@@ -39,25 +42,22 @@
         "reset-css": "^4.0.1"
     },
     "dependencies": {
+        "@babel/preset-stage-0": "^7.0.0"
     },
-    "babel": {
-        "presets": [
+    "browserify": {
+        "transform": [
             [
-                "@babel/preset-env",
+                "babelify",
                 {
-                    "modules": false
-                }
-            ]
-        ],
-        "plugins": [
-            "@babel/plugin-external-helpers",
-            "@babel/plugin-proposal-class-properties",
-            [
-                "@babel/plugin-transform-runtime",
-                {
-                    "corejs": 2
+                    "presets": [
+                        "@babel/preset-env"
+                    ]
                 }
             ]
         ]
+    },
+    "babel": {
+        "presets": [ "@babel/preset-env" ],
+        "plugins": [ "@babel/plugin-proposal-class-properties" ]
     }
 }
