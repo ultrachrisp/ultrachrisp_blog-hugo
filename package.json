@@ -9,16 +9,15 @@
         "createFolders": "mkdir -p ./static ./static/svg ./static/fonts",
         "general": "cp assets/general/* static",
         "fonts": "cp assets/fonts/* static/fonts",
-        "hugo": "hugo server -w -D",
-        "commonReasources": "npm run general && npm run fonts",
+        "commonReasources": "npm-run-all -p general fonts",
         "imagemin": "imagemin assets/svg/* --out-dir=static/svg",
         "images:build": "npm run imagemin",
         "images:start": "onchange 'assets/svg/**/*' -- npm run images:build",
-        "rollup:build": "babel assets/js/src -d assets/js",
-        "rollup:start": "babel assets/js/src -d assets/js -w",
         "browserify": "browserify assets/js/src/main.js -o assets/js/main.bundle.js",
-        "build": "npm run clean && npm run createFolders && npm run commonReasources && npm run build:images",
-        "start": "npm-run-all -p images:start browserify hugo"
+        "watchify": "watchify assets/js/src/main.js -o assets/js/main.bundle.js",
+        "hugo": "Hugo server -w -D",
+        "build": "npm-run-all -s clean createFolders commonReasources images:build browserify",
+        "start": "npm-run-all -p images:start watchify hugo"
     },
     "repository": {
         "type": "git",
@@ -41,9 +40,7 @@
         "postcss-cli": "^5.0.0",
         "reset-css": "^4.0.1"
     },
-    "dependencies": {
-        "@babel/preset-stage-0": "^7.0.0"
-    },
+    "dependencies": {},
     "browserify": {
         "transform": [
             [
@@ -57,7 +54,8 @@
         ]
     },
     "babel": {
-        "presets": [ "@babel/preset-env" ],
-        "plugins": [ "@babel/plugin-proposal-class-properties" ]
+        "presets": [
+            "@babel/preset-env"
+        ]
     }
 }

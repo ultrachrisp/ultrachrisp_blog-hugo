@@ -10,7 +10,7 @@ const initDashboard = () => {
 
 const createObject = () => {
     const animation = {
-        colours: ['#F0325A', '#FF780F', '#960528'],
+        colours: ['#FF780F', '#960528', '#F0325A'],
         grid: null,
         particles: null,
         offscreenCanvases: [],
@@ -68,7 +68,6 @@ const createParticles = ({anim}) => {
             // const obj = Particle({x: rIndex, y:cIndex, anim});
             anim.grid[rIndex][cIndex] = obj;
             particles.push(obj);
-            Particle.stuffs();
         });
     });
 

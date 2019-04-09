@@ -1,42 +1,45 @@
 export class Particle {
-  //   const p = {};
-  //   p.xArr = x;
-  //   p.yArr = y;
-  //   p.distanceFromSpecial = 0;
-  //   p.xPos = x * anim.svgWidth;
-  //   p.yPos = y * anim.svgWidth;
-  //   p.width = anim.svgWidth;
-  //   p.centre = p.width / 2;
-  //   p.halfW = p.width / 2;
-  //   p.alpha = 0;
-  //   p.delay = 0;
-  //   p.fadingStart = (p.xPos * 0.5) + (p.yPos * 0.5);
-  //   // p.colour = getColour(p.xPos/ftue.iconW, p.yPos/ftue.iconW);
-  //   p.colour = 0;
-  //   p.outroStart = 0;
+    constructor({x, y, anim}){
+        this.xArr = x;
+        this.yArr = y;
+        this.anim = anim;
+        this.distanceFromSpecial = 0;
+        this.xPos = x * anim.svgWidth;
+        this.yPos = y * anim.svgWidth;
+        this.width = anim.svgWidth;
+        this.centre = this.width / 2;
+        this.halfW = this.width / 2;
+        this.alpha = 1;
+        this.delay = 0;
+        this.fadingStart = (this.xPos * 0.5) + (this.yPos * 0.5);
+        // p.colour = getColour(p.xPos/ftue.iconW, p.yPos/ftue.iconW);
+        this.colour = 0;
+        this.outroStart = 0;
+        
+        // flags
+        this.state = 'fadeIn';
+        
+        this.remove = false;
+        this.bigger = false;
+        this.colourChange = false;
+    // p.tweening = false;
 
-  //   // flags
-  //   p.state = 'fadeIn';
-    
-  //   p.remove = false;
-  //   p.bigger = false;
-  //   p.colourChange = false;
-  //   // p.tweening = false;
+        this.speed = 1;
+        
+        this.angle = 0;
+        this.radians = Math.PI/180;
+    }
 
-  //   p.speed = 1;
-    
-  //   p.angle = 0;
-  //   p.radians = Math.PI/180;
 
-  //   p.fadeIn = () => {
-  //       if((p.fadingStart + p.delay) <= anim.currentTime){
-  //           p.alpha += 0.1;
+    fadeIn(){
+        if((this.fadingStart + this.delay) <= this.currentTime){
+            this.alpha += 0.1;
             
-  //           if(p.alpha >= 1){
-  //               p.state = 'spin';
-  //           }
-  //       }
-  //   };
+            if(this.alpha >= 1){
+                this.state = 'spin';
+            }
+        }
+    };
 
   //   p.fadeOut = () => {
   //       if((p.fadingStart + p.delay) <= anim.currentTime){
@@ -118,40 +121,38 @@ export class Particle {
   //       if(p.width < 5){ p.remove = true; }
   //   };
     
-  //   p.update = () => {
-  //       p.angle = (p.angle > 360)? 0 : p.angle + p.speed;
-  //       p.rAngle = p.angle * p.radians;
+    update() {
+        this.angle = (this.angle > 360)? 0 : this.angle + this.speed;
+        this.rAngle = this.angle * this.radians;
 
-  //       switch(p.state){
-  //       case 'special': p.pulse(); break;
-  //       case 'wave': p.wave(); break;
-  //       case 'fadeIn': p.fadeIn(); break;
-  //       case 'fadeOut': p.fadeOut(); break;
-  //       case 'hover':  p.hover(); break;
-  //       case 'click':  p.click(); break;
-  //       default: p.state = 'spin';
-  //       }
-  //   };
+        switch(this.state){
+        case 'special': this.pulse(); break;
+        case 'wave': this.wave(); break;
+        case 'fadeIn': this.fadeIn(); break;
+        case 'fadeOut': this.fadeOut(); break;
+        case 'hover':  this.hover(); break;
+        case 'click':  this.click(); break;
+        default: this.state = 'spin';
+        }
+    };
 
-  //   p.draw = () => {
-  //       if(p.state === 'fadeIn' || p.state === 'fadeOut'){
-  //           anim.context.globalAlpha = p.alpha;
-  //       }
-  //       // console.log(anim.preRenderCanvases, p.colour);
-  //       if(!p.remove){
-  //           anim.context.save(); 
-  //           anim.context.translate(p.xPos + p.centre, p.yPos + p.centre);
-  //           anim.context.rotate(p.rAngle);
-  //           anim.context.drawImage(anim.preRenderCanvases[p.colour], -p.halfW, -p.halfW, p.width, p.width);
-  //           anim.context.restore();
-  //       }
+    draw() {
+        if(this.state === 'fadeIn' || this.state === 'fadeOut'){
+            this.anim.context.globalAlpha = this.alpha;
+        }
+        // console.log(anim.preRenderCanvases, p.colour);
+        if(!this.remove){
+            this.anim.context.save(); 
+            this.anim.context.translate(this.xPos + this.centre, this.yPos + this.centre);
+            this.anim.context.rotate(this.rAngle);
+            this.anim.context.drawImage(this.anim.preRenderCanvases[this.colour], -this.halfW, -this.halfW, this.width, this.width);
+            this.anim.context.restore();
+        }
 
-  //       if(p.state === 'fadeOut'){
-  //           anim.context.globalAlpha = 1;
-  //       }
-  //   };
-    
-  // return p;
+        if(this.state === 'fadeOut'){
+            this.anim.context.globalAlpha = 1;
+        }
+    };
 };
 
 
