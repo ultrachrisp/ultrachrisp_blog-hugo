@@ -11,13 +11,14 @@
         "fonts": "cp assets/fonts/* static/fonts",
         "commonReasources": "npm-run-all -p general fonts",
         "imagemin": "imagemin assets/svg/* --out-dir=static/svg",
+        "images:watch": "onchange 'assets/svg/**/*' -- npm run images:build",
         "images:build": "npm run imagemin",
-        "images:start": "onchange 'assets/svg/**/*' -- npm run images:build",
-        "browserify": "browserify assets/js/src/main.js -o assets/js/main.bundle.js",
-        "watchify": "watchify assets/js/src/main.js -o assets/js/main.bundle.js",
-        "hugo": "Hugo server -w -D",
-        "build": "npm-run-all -s clean createFolders commonReasources images:build browserify",
-        "start": "npm-run-all -p images:start watchify hugo"
+        "js:watch": "watchify assets/js/src/main.js -o assets/js/main.bundle.js",
+        "js:build": "browserify assets/js/src/main.js -o assets/js/main.bundle.js",
+        "hugo:watch": "Hugo server -w -D",
+        "hugo:build": "Hugo",
+        "build": "npm-run-all -s clean createFolders commonReasources images:build js:build hugo:build",
+        "start": "npm-run-all -p images:watch js:watch hugo:watch"
     },
     "repository": {
         "type": "git",
@@ -38,7 +39,8 @@
         "npm-run-all": "^4.1.3",
         "onchange": "^4.0.0",
         "postcss-cli": "^5.0.0",
-        "reset-css": "^4.0.1"
+        "reset-css": "^4.0.1",
+        "watchify": "^3.11.1"
     },
     "dependencies": {},
     "browserify": {

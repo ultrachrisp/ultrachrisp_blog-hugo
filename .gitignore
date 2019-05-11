@@ -4,4 +4,4 @@
 node_modules
 static
 resources
-assets/js/main.bundle.*
+assets/js/main.bundle.js
