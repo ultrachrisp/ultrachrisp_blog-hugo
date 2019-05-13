@@ -15,8 +15,8 @@
         "images:build": "npm run imagemin",
         "js:watch": "watchify assets/js/src/main.js -o assets/js/main.bundle.js",
         "js:build": "browserify assets/js/src/main.js -o assets/js/main.bundle.js",
-        "hugo:watch": "Hugo server -w -D",
-        "hugo:build": "Hugo",
+        "hugo:watch": "hugo server -w -D",
+        "hugo:build": "hugo",
         "build": "npm-run-all -s clean createFolders commonReasources images:build js:build hugo:build",
         "start": "npm-run-all -p images:watch js:watch hugo:watch"
     },
