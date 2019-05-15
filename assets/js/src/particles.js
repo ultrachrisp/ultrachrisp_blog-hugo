@@ -21,13 +21,16 @@ export class Particle{
         this.colourChange = false;
     // p.tweening = false;
     // flags
-    this.state = 'fadeIn';
+    // this.state = 'fadeIn';
         this.speed = 1;
         
         this.angle = 0;
         this.radians = Math.PI/180;
     }
 
+    // flags
+    state = 'fadeIn';
+    
     fadeIn() {
         if((this.fadingStart + this.delay) <= this.anim.currentTime){
             this.alpha += 0.1;

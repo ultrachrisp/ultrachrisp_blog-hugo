@@ -30,6 +30,7 @@
         "@babel/cli": "^7.4.3",
         "@babel/core": "^7.4.3",
         "@babel/preset-env": "^7.4.3",
+        "@babel/plugin-proposal-class-properties": "^7.4.4",
         "autoprefixer": "^8.4.1",
         "babelify": "^10.0.0",
         "browserify": "^16.2.3",
@@ -50,14 +51,12 @@
                 {
                     "presets": [
                         "@babel/preset-env"
+                    ],
+                    "plugins": [
+                        "@babel/plugin-proposal-class-properties"
                     ]
                 }
             ]
-        ]
-    },
-    "babel": {
-        "presets": [
-            "@babel/preset-env"
         ]
     }
 }
