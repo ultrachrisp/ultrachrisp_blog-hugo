@@ -11,6 +11,8 @@ const initDashboard = () => {
 const createObject = () => {
     const animation = {
         colours: ['#FF780F', '#960528', '#F0325A'],
+        pointerX: 0,
+        pointerY: 0,
         grid: null,
         particles: null,
         offscreenCanvases: [],
@@ -32,7 +34,50 @@ const createObject = () => {
     animation.context = animation.canvas.getContext('2d');
     animation.element.appendChild(animation.canvas);
 
+    animation.canvas.addEventListener('mousemove', (evt) =>{
+        updateCoords(evt);
+        let obj = findParticle(anim);
+        // console.log('Hover ',obj,' ',obj.state);
+        if(obj.state !== 'fadeIn' && obj.state !== 'fadeOut' && obj.state !== 'hover' && obj.state !== 'special' && obj.state !== 'wave'){
+            obj.setValue('hover');
+        }
+
+        // var rect = evt.target.getBoundingClientRect();
+        // var x = evt.clientX - rect.left; //x position within the element.
+        // var y = evt.clientY - rect.top;  //y position within the element.
+        // console.log(rect,' ',x,' ',y);
+    }, false);
+
+    animation.canvas.addEventListener('click', (evt) => {
+        updateCoords(evt);
+        let obj = findParticle(anim);
+        console.log('Click ',obj,' ',obj.state);
+        if(obj.state === 'spin' || obj.state === 'hover'){
+            obj.state = 'click';
+            console.log('If ',obj);
+        } else if(obj.state === 'special'){
+            // setTimeout(createSpecialParticle, 2000);
+            console.log('Else If ',obj);
+            let i = anim.particles.length;
+            while(i--){
+                anim.particles[i].delay = anim.currentTime;
+                anim.particles[i].state = 'wave';
+            }
+        }
+    },false);
+
     return animation;
+};
+
+
+
+const findParticle = (anim) => {
+    const x = Math.floor(anim.pointerX / anim.svgWidth) - 1,
+          y = Math.floor(anim.pointerY / anim.svgWidth) - 1,
+          temp = (anim.grid && anim.grid[x] && anim.grid[x][y])? anim.grid[x][y]: {};
+    
+    // console.log(x,' ',y,' ',anim.grid,' ',temp,' ',anim.svgWidth);
+    return temp;
 };
 
 const setCanvasSize = ({anim}) => {
@@ -59,6 +104,11 @@ const setCanvasSize = ({anim}) => {
     return {};
 };
 
+const updateCoords = (evt) => {
+  anim.pointerX = evt.clientX || evt.touches[0].clientX;
+  anim.pointerY = evt.clientY || evt.touches[0].clientY;
+};
+
 const createParticles = ({anim}) => {
     const particles = [];
 
@@ -78,7 +128,15 @@ const setGrid = ({canvas, svgWidth}) => {
     const coloumns = Math.floor(canvas.width / svgWidth),
           rows = Math.floor(canvas.width / svgWidth);
 
-    return (new Array(coloumns).fill(0).map( () => new Array(rows).fill(0)) );
+    // return (new Array(coloumns).fill(0).map( () => new Array(rows).fill(0)) );
+    const multiArray = new Array(coloumns);
+    for (var i = 0; i < coloumns; i++) {
+        multiArray[i] = new Array(rows);
+        for(var j = 0; j < rows; j++){
+            multiArray[i][j] = 0;
+        }
+    }
+    return multiArray;
 };
 
 const tileSizeIncrease = ({width, limit, num}) => {
@@ -87,7 +145,6 @@ const tileSizeIncrease = ({width, limit, num}) => {
 };
 
 const preRender = ({anim}) => {
-
     let num = anim.colours.length;
 
     while(num--){

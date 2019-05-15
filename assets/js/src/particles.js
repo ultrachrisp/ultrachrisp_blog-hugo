@@ -1,4 +1,4 @@
-export class Particle {
+export class Particle{
     constructor({x, y, anim}){
         this.xArr = x;
         this.yArr = y;
@@ -16,23 +16,20 @@ export class Particle {
         this.colour = 0;
         this.outroStart = 0;
         
-        // flags
-        this.state = 'fadeIn';
-        
         this.remove = false;
         this.bigger = false;
         this.colourChange = false;
     // p.tweening = false;
-
+    // flags
+    this.state = 'fadeIn';
         this.speed = 1;
         
         this.angle = 0;
         this.radians = Math.PI/180;
     }
 
-
-    fadeIn(){
-        if((this.fadingStart + this.delay) <= this.currentTime){
+    fadeIn() {
+        if((this.fadingStart + this.delay) <= this.anim.currentTime){
             this.alpha += 0.1;
             
             if(this.alpha >= 1){
@@ -40,7 +37,13 @@ export class Particle {
             }
         }
     };
-
+    
+    click(){
+        console.log("Firing",this.x,' ',this.y);
+        this.width = this.width * 0.85;
+        this.halfW = this.width / 2;
+        if(this.width < 5){ this.remove = true; }
+    };
   //   p.fadeOut = () => {
   //       if((p.fadingStart + p.delay) <= anim.currentTime){
   //           p.alpha -= 0.2;
@@ -50,7 +53,6 @@ export class Particle {
   //           }
   //       }
   //   };
-
   //   p.pulse = () => {
   //       if(!p.bigger){
   //           p.width = p.width * 0.98;
@@ -71,26 +73,26 @@ export class Particle {
   //       p.halfW = p.width / 2;
   //   };
 
-  //   p.hover = () => {
-  //       if(!p.bigger){
-  //           p.width = p.width * 0.9;
-  //           if(p.width < 20){
-  //               p.bigger = true;
-  //               p.colourChange = true;
-  //           }
-  //       } else if(p.bigger){
-  //           p.width = p.width * 1.1;
-  //           p.colour = getHoverColour(p);
+    hover(){
+        if(!this.bigger){
+            this.width = this.width * 0.9;
+            if(this.width < 20){
+                this.bigger = true;
+                this.colourChange = true;
+            }
+        } else if(this.bigger){
+            this.width = this.width * 1.1;
+            this.colour = this.getHoverColour();
             
-  //           if(p.width >= anim.svgWidth){
-  //               p.width = anim.svgWidth;
-  //               p.bigger = false;
-  //               p.state = 'spin';
-  //           }
-  //       }
+            if(this.width >= this.anim.svgWidth){
+                this.width = this.anim.svgWidth;
+                this.bigger = false;
+                this.state = 'spin';
+            }
+        }
         
-  //       p.halfW = p.width / 2;
-  //   };
+        this.halfW = this.width / 2;
+    };
 
   //   p.wave = () => {
   //       if((p.distanceFromSpecial + p.delay) <= anim.currentTime){
@@ -113,13 +115,18 @@ export class Particle {
         
   //           p.halfW = p.width / 2;
   //       }
-  //   };
-
-  //   p.click = () => {
-  //       p.width = p.width * 0.85;
-  //       p.halfW = p.width / 2;
-  //       if(p.width < 5){ p.remove = true; }
-  //   };
+    //   };
+    getHoverColour(){
+        if(!this.colourChange) return this.colour;
+        this.colourChange = false;
+        
+        return ((this.colour + 1) >= this.anim.colours.length)? 0 : (this.colour + 1);
+    };
+    
+    setValue(val) {
+        // console.log('Check ',val);
+        this.state = val;
+    }
     
     update() {
         this.angle = (this.angle > 360)? 0 : this.angle + this.speed;
@@ -154,5 +161,4 @@ export class Particle {
         }
     };
 };
-
 
