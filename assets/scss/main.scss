@@ -15,7 +15,6 @@ $ani-duration: 0.6s;
 
 $content-width-max: 1100px;
 
-$breakpoint-small: 320px;
 $breakpoint-medium: 600px;
 $breakpoint-large: 900px;
 $breakpoint-wide: 1200px;
@@ -126,7 +125,7 @@ time{
     display: grid;
     // justify-content: center;
 
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 3% 94% 3%;
     grid-template-rows: auto auto auto auto;
     grid-template-areas:
     ". header ."
@@ -175,21 +174,14 @@ time{
 
 .post, .homepage, .posts-summary, .page-not-found{
     grid-area: main;
-    // max-width: $content-width;
 }
-
-// .homepage{
-//     // display:block;
-//     // width:100%;
-//     justify-self: stretch;
-// }
 
 .post{
     @include card();
     padding-bottom: 30px;
 
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 2% 1fr 2%;
 
     p, ul, ol{ grid-column: 2 / 3; }
     h1, h2, h3, h4, h5, h6, hr, time, pre { grid-column: 2 / span 3; }
@@ -241,7 +233,8 @@ time{
 
 .dashboard{
     @include card();
-    box-sizing: border-box;
+    padding:0;
+    // box-sizing: border-box;
     align-self: start;
 }
 
@@ -257,6 +250,9 @@ time{
 }
 
 @media only screen and (min-width: $breakpoint-medium) {
+    .grid {
+        grid-template-columns: 0.5fr 8fr 0.5fr;
+    }
     .previous, .next{
         text-align: inherit;
         margin: 15px 0;
@@ -284,11 +280,8 @@ time{
     }
         
     .homepage{
-        // justify-self: stretch;
-        // width:100%;
-        // display:block;
         display: grid;
-        grid-template-columns: 0.5fr 1.5fr 0.2fr 1fr 0.5fr;
+        grid-template-columns: 5% 50% 15px 1fr 5%;
     }
     .dashboard{ grid-column: 1 / span 2; }
     .post-list{ grid-column: 4 / span 2; }
@@ -304,7 +297,7 @@ time{
     .post-list{
         display: grid;
         grid-template-columns: 1fr 8fr;
-        // grid-auto-rows: minmax(min-content, max-content);
+        grid-auto-rows: minmax(min-content, max-content);
         justify-items: start;
     }
 

@@ -43,6 +43,18 @@ const createObject = () => {
         }
     }, false);
 
+
+    var cursorTimer;
+
+    window.addEventListener('resize', (evt) =>{
+
+        clearTimeout(cursorTimer);
+        cursorTimer = setTimeout(function() {
+            // console.log('resize');
+            setCanvasSize({anim});
+        }, 500);
+    }, false);
+
     animation.canvas.addEventListener('click', (evt) => {
         updateCoords(evt);
         let obj = findParticle(anim);
@@ -85,16 +97,10 @@ const setCanvasSize = ({anim}) => {
     // if(availableWidth % anim.svgWidth > 1){
     const space = availableWidth % anim.svgWidth,
           halfTile = anim.svgWidth / 2,
-          // temp3 = (space > halfTile)?
           newWidth = tileSizeIncrease({
               width: availableWidth,
               limit: anim.svgWidth,
               num: anim.svgWidth+1 });
-          // temp3 = tileSizeDecrease({
-          //     width: availableWidth,
-          //     limit: anim.svgWidth,
-          //     num: anim.svgWidth-1}) ;
-     // console.log(space,' ',halfTile,' ',temp3,' ',availableWidth,' ',anim.svgWidth,' ',availableWidth % anim.svgWidth,' ',availableWidth / temp3);
     anim.svgWidth = newWidth;
 
     anim.grid = setGrid({canvas:anim.canvas, svgWidth:anim.svgWidth});
@@ -107,8 +113,6 @@ const updateCoords = (evt) => {
     // https://stackoverflow.com/questions/55677/how-do-i-get-the-coordinates-of-a-mouse-click-on-a-canvas-element
     let totalOffsetX = 0,
         totalOffsetY = 0;
-        // canvasX = 0,
-        // canvasY = 0;
 
     do{
         totalOffsetX += anim.canvas.offsetLeft - anim.canvas.scrollLeft;
@@ -207,3 +211,5 @@ const animateParticles = (timestamp) => {
 
 const anim = createObject();
 initDashboard();
+
+
