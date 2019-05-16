@@ -73,8 +73,8 @@ const createObject = () => {
 
 
 const findParticle = (anim) => {
-    const x = Math.floor(anim.pointerX / anim.svgWidth) - 1,
-          y = Math.floor(anim.pointerY / anim.svgWidth) - 1,
+    const x = Math.floor(anim.pointerX / anim.svgWidth),
+          y = Math.floor(anim.pointerY / anim.svgWidth),
           temp = (anim.grid && anim.grid[x] && anim.grid[x][y])? anim.grid[x][y]: {};
     return temp;
 };
@@ -104,8 +104,20 @@ const setCanvasSize = ({anim}) => {
 };
 
 const updateCoords = (evt) => {
-  anim.pointerX = evt.clientX || evt.touches[0].clientX;
-  anim.pointerY = evt.clientY || evt.touches[0].clientY;
+    // https://stackoverflow.com/questions/55677/how-do-i-get-the-coordinates-of-a-mouse-click-on-a-canvas-element
+    let totalOffsetX = 0,
+        totalOffsetY = 0;
+        // canvasX = 0,
+        // canvasY = 0;
+
+    do{
+        totalOffsetX += anim.canvas.offsetLeft - anim.canvas.scrollLeft;
+        totalOffsetY += anim.canvas.offsetTop - anim.canvas.scrollTop;
+    }
+    while(anim.canvas == anim.canvas.offsetParent)
+
+    anim.pointerX = evt.pageX - totalOffsetX;
+    anim.pointerY = evt.pageY - totalOffsetY;
 };
 
 const createParticles = ({anim}) => {

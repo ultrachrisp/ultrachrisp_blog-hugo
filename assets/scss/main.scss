@@ -13,7 +13,7 @@ $ani-duration: 0.6s;
 //$ani-delay: 0.5s;
 //$swipe-duration: 0.8s;
 
-$content-width: 1100px;
+$content-width-max: 1100px;
 
 $breakpoint-small: 320px;
 $breakpoint-medium: 600px;
@@ -53,6 +53,8 @@ html{ font-size: 62.5%; }
 
 body{
     min-width: 320px;
+    max-width: $content-width-max;
+    margin: 0 auto;
     color: $grey-dark;
 
     font-size: 1.8rem;
@@ -122,7 +124,7 @@ time{
 // Custom Layout for different sections
 .grid {
     display: grid;
-    justify-content: center;
+    // justify-content: center;
 
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: auto auto auto auto;
@@ -175,6 +177,12 @@ time{
     grid-area: main;
     // max-width: $content-width;
 }
+
+// .homepage{
+//     // display:block;
+//     // width:100%;
+//     justify-self: stretch;
+// }
 
 .post{
     @include card();
@@ -276,30 +284,33 @@ time{
     }
         
     .homepage{
+        // justify-self: stretch;
+        // width:100%;
+        // display:block;
         display: grid;
-        grid-template-columns: 1fr 1fr 20px 1fr 1fr;
+        grid-template-columns: 0.5fr 1.5fr 0.2fr 1fr 0.5fr;
     }
     .dashboard{ grid-column: 1 / span 2; }
-    .post-list{ grid-column: 4 / span 3; }
+    .post-list{ grid-column: 4 / span 2; }
 }
 
 @media only screen and (min-width: $breakpoint-wide) {
-    .homepage{
-        grid-template-columns: 1fr 1fr 20px 1fr 1fr 1fr;
-    }
+    // .homepage{
+    //     grid-template-columns: 1fr 1fr 20px 1fr 1fr;
+    // }
 
-    .dashboard{ grid-column: 1 / span 2; }
+    // .dashboard{ grid-column: 1 / span 2; }
 
     .post-list{
         display: grid;
-        grid-template-columns: 1fr 9fr;
-        grid-auto-rows: minmax(min-content, max-content);
+        grid-template-columns: 1fr 8fr;
+        // grid-auto-rows: minmax(min-content, max-content);
         justify-items: start;
     }
 
-    .post-title { grid-column: 1 / span 3; }
+    .post-title { grid-column: 1 / span 2; }
     .post-link {
-        grid-column: 2 / span 3;
+        grid-column: 2 / span 1;
         justify-self: stretch;
     }
 
