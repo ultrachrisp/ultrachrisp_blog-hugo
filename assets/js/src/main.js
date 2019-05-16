@@ -10,7 +10,7 @@ const initDashboard = () => {
 
 const createObject = () => {
     const animation = {
-        colours: ['#FF780F', '#960528', '#F0325A'],
+        colours: ['#000000', '#c3c8cd', '#c8d1d4', '#99a3a6', '#4f5559', '#323531'],
         pointerX: 0,
         pointerY: 0,
         grid: null,
