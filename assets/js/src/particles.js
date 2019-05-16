@@ -42,10 +42,11 @@ export class Particle{
     };
     
     click(){
-        console.log("Firing",this.x,' ',this.y);
-        this.width = this.width * 0.85;
-        this.halfW = this.width / 2;
-        if(this.width < 5){ this.remove = true; }
+        // console.log("Firing",this.x,' ',this.y);
+        // this.width = this.width * 0.85;
+        // this.halfW = this.width / 2;
+        // if(this.width < 5){ this.remove = true; }
+        //this.wave();
     };
   //   p.fadeOut = () => {
   //       if((p.fadingStart + p.delay) <= anim.currentTime){
@@ -96,29 +97,37 @@ export class Particle{
         
         this.halfW = this.width / 2;
     };
-
-  //   p.wave = () => {
-  //       if((p.distanceFromSpecial + p.delay) <= anim.currentTime){
-  //           if(!p.bigger){
-  //               p.width = p.width * 0.9;
-  //               if(p.width < 20){
-  //                   p.bigger = true;
-  //                   p.colourChange = true;
-  //               }
-  //           } else if(p.bigger){
-  //               p.width = p.width * 1.1;
-  //               p.colour = getWaveColour(p);
+    
+    wave(){
+        if((this.distanceFromSpecial + this.delay) <= this.anim.currentTime){
+            if(!this.bigger){
+                this.width = this.width * 0.9;
+                if(this.width < 20){
+                    this.bigger = true;
+                    this.colourChange = true;
+                }
+            } else if(this.bigger){
+                this.width = this.width * 1.1;
+                this.colour = this.getWaveColour(this);
                 
-  //               if(p.width >= anim.svgWidth){
-  //                   p.width = anim.svgWidth;
-  //                   p.bigger = false;
-  //                   p.state = 'spin';
-  //               }
-  //           }
+                if(this.width >= this.anim.svgWidth){
+                    this.width = this.anim.svgWidth;
+                    this.bigger = false;
+                    this.state = 'spin';
+                }
+            }
+            
+            this.halfW = this.width / 2;
+        }
+    };
+
+    getWaveColour(obj){
+        if(!obj.colourChange) return obj.colour;
+        obj.colourChange = false;
         
-  //           p.halfW = p.width / 2;
-  //       }
-    //   };
+        return 0;
+};
+    
     getHoverColour(){
         if(!this.colourChange) return this.colour;
         this.colourChange = false;
@@ -126,10 +135,10 @@ export class Particle{
         return ((this.colour + 1) >= this.anim.colours.length)? 0 : (this.colour + 1);
     };
     
-    setValue(val) {
-        // console.log('Check ',val);
-        this.state = val;
-    }
+    // setValue(val) {
+    //     // console.log('Check ',val);
+    //     this.state = val;
+    // }
     
     update() {
         this.angle = (this.angle > 360)? 0 : this.angle + this.speed;
