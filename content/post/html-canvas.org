@@ -1,4 +1,4 @@
-#+TITLE: HTML canvas play
+#+TITLE: HTML Canvas Play
 #+DATE: 2018-08-05T16:17:34+02:00
 #+DRAFT: true
 
@@ -8,8 +8,8 @@
 *** Brand new second hand
     Even though cavas has been around for a while, I have only recently had the opportunity to build something. The project requirements were:
     - small file size
-    - no need for the DOM
-    - highly interactive & visually appealing
+    - no DOM requirement
+    - interactive & visually appealing
 
     The timeline was tight too, which made me reach for canvas. I had been exposed to canvas experiments before and had a good idea of the direction that I wanted the project to go. 
 *** SVG girl in a raster world
