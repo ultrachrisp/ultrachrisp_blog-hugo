@@ -3,16 +3,19 @@
 #+DRAFT: true
 
 ** Oh the joys
-   Canvas was positioned to be the Flash replacement. 
+   HTML Canvas seems to be one of those great technologies that you never get the time to play with. I hear of people people
 
 *** Brand new second hand
-    Even though cavas has been around for a while, I have only recently had the opportunity to build something. The project requirements were:
+    An opportunity arose to explore HTML Canvas. The project goals were simple enough:
     - small file size
     - no DOM requirement
     - interactive & visually appealing
 
-    The timeline was tight too, which made me reach for canvas. I had been exposed to canvas experiments before and had a good idea of the direction that I wanted the project to go. 
+    The timeline was tight too, which meant that I did not explore too many options. I had been exposed to canvas experiments before and had a good idea of the direction that I wanted the project to go. 
 *** SVG girl in a raster world
-    One secondary object I had for the project was to use svg images within canvas. I quickly learnt that canvas, like most real-time graphics engines, prefers raster resources.
+    To assist keeping the file sizes small, I initially aimed to use scalable vector graphics (SVG) where possible. SVGs are great because they can have much smaller file sizes & retain their resolution when scaled up.But I quickly learnt that canvas, like most real-time graphics engines, prefer raster images. I was stumped. I needed the small file size of an SVG, but Canvas would not be able to paint an SVG often enough to allow the desired framerates. This was compounded if you wanted to use an SVG as the basis of a particle system. After a fair amount of searching, I was able to find a way.
 *** Do the lifting offscreen
+    Even though it is possible to paint an SVG to a canvas, making updates or transformations to that SVG will quickly reduce your framerate. The solution, load the SVG as you would, paint it to an off-screen canvas (essentially, a video buffer) and use the external canvas as your reference from that point on. You have essentially converted an SVG to a raster image.
+
+    Once you have your offscreen canvas, you are able to 
 *** Batch processing
