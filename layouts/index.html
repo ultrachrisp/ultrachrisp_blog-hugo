@@ -8,21 +8,11 @@
         <script type="text/javascript" type="module" src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}" async></script>
 
     </div>
-    <!--div class="dashboard">
-         Observing problems from orbit before swooping in & hustling solutions.
-        <hr>
-        {{ $logo := resources.Get "svg/front.svg" }}
-        <img src="{{ $logo.Permalink }}" alt="Logo"/>
-        
-        <h2>{{ .Site.Params.DashboardTitle }}</h2>
-        <p>{{ .Site.Params.DashboardDescription }}</p>
-        <hr>
-    </div -->
     <div class="post-list">
         <div class="post-title">
             <h2>Recent Posts</h2>
         </div>
-        {{ range first 10 .Data.Pages }}
+        {{ range first 10 (where .Pages ".Params.type" "post") }}
         <div class="post-link">
             <a href="{{ .Permalink }}">{{ .Title }}</a>
             <time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time>
