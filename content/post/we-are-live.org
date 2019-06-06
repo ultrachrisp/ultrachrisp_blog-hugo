@@ -1,7 +1,8 @@
-#+TITLE: We're Live!
 #+DATE: 2017-06-18T13:49:02+02:00
 #+LASTMOD: 2018-10-20T13:38:02+02:00
+#+TITLE: We're Live!
 #+DRAFT: false
+#+TYPE: post
 
 This blog has been a long time coming. I have wanted to post on a number of things that completing the blog became a priority. Before I jump into topics of interest, I want to list some of the technologies driving the blog.
 

@@ -1,6 +1,7 @@
-#+TITLE: The Joys of Craft
 #+DATE: 2017-06-19T07:37:40+02:00
+#+TITLE: The Joys of Craft
 #+DRAFT: false
+#+TYPE: post
 
 I get great satisfaction from viewing a product I built using tools I prefer following principles I believe in. 
 

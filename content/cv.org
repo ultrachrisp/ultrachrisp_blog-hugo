@@ -2,7 +2,23 @@
 #+TITLE: Curriculum Vitæ
 #+DRAFT: true
 
-** Absa (formerly Barclays Africa)
+** Work Experience
+-----
+*** Absa (formerly Barclays Africa)
+-----
+*** McCann Johannesburg
+|-----------------------+------------------------------|
+| Sandton, South Africa |                              |
+|-----------------------+------------------------------|
+| Senior Developer      | January 2015 - December 2015 |
+|-----------------------+------------------------------|
 
-** McCann Johannesburg
+- Only developer in the newly created digital department.
+- Provided technical direction & documentation (functional specifications, scopes of work) for numerous projects.
+- Provided direction & assistance on digital projects to many of the companies that are part of McCann Worldgroup.
+- Interfaced directly with clients to better understand their business objectives and find suitable solutions for these objectives.
+- Responsible for the transferal and oversight of digital skills and best practises to the digital team as well as the traditional creatives.
+- Successfully conceptualised, planned, developed & deployed a number of digital projects including: mircosites, cross platform & cross device mobile applications, social media campaigns as well as banners.
+- Clients include: McCann, Nestle, Waltons, Kauai, UIP, Chevrolet, Isuzu, Zurich, Econet
 
+-----
