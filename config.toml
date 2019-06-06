@@ -8,6 +8,4 @@ googleAnalytics = "UA-39736751-1"
 [params]
   author = "Chris Pyke"
   description = "Personal blog for Chris Pyke"
-  dashboardTitle = ""
-  dashboardDescription = "When you say things twice it means you care... you care."
   font = "https://fonts.googleapis.com/css?family=Open+Sans:300,600"
