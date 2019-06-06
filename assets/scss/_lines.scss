@@ -2,7 +2,7 @@
     z-index: 1;
     content: "";
 
-    width: 7px;
+    width: 6px;
     height: 6px;
     position: absolute;
     display: inline-table;
@@ -45,15 +45,15 @@ hr {
 
     &:before {
         top: -3px;
-        right: -1px;
+        right: 0px;
     }
         
     &:after {
         bottom: 3px;
-        left: -6px;
+        left: -5px;
     }
 
-    .subLine1 { border-bottom-color: $black; }
+    .subLine1 { border-bottom-color: $grey-dark; }
     .subLine2 {
         left: 2px;
         border-bottom-color: $canvas;

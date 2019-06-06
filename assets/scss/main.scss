@@ -30,7 +30,7 @@ $breakpoint-wide: 1200px;
 }
 
 @mixin link(){
-    color: $black;
+    color: $grey-dark;
     font-size: 2.4rem;
     line-height: 2.8rem;
     text-decoration: none;
@@ -39,7 +39,7 @@ $breakpoint-wide: 1200px;
     
     &:hover {
         color: $canvas;
-        background-color: $black;
+        background-color: $grey-dark;
         
         // for the logo
         .stroke{ stroke: $canvas; }

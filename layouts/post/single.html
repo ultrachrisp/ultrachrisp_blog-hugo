@@ -12,13 +12,13 @@
 </section>
 
 <aside class="pagination">
-    {{ if .PrevPage }}
-    <a class="previous" href="{{ .PrevPage.Permalink }}">&lt;&lt; {{ .PrevPage.Title }}</a>
+    {{ if .PrevInSection }}
+    <a class="previous" href="{{ .PrevInSection.Permalink }}">&lt;&lt; {{ .PrevInSection.Title }}</a>
     {{ end }}
 
     
-    {{ if .NextPage }}
-    <a class="next" href="{{ .NextPage.Permalink }}">{{ .NextPage.Title }} &gt;&gt;</a>
+    {{ if .NextInSection }}
+    <a class="next" href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} &gt;&gt;</a>
     {{ end }}
 </aside>
 
