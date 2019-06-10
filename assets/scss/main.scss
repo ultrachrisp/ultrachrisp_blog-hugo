@@ -102,6 +102,11 @@ time{
     line-height: 1.4rem;
 }
 
+table {
+    thead tr th:first-child,
+    tbody tr td:first-child { width: 60%; }
+}
+
 // Custom Layout for different sections
 .grid{
     display: grid;
@@ -137,7 +142,7 @@ time{
         margin: 0 10px;
     }
     .line{ margin-top: 14px; }
-    a:not(.home){ padding-top: 10px; }
+    a:not(.home) { padding: 12px 10px 5px 12px; }
 }
 
 .footer{
