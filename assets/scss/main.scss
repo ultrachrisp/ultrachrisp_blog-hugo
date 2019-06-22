@@ -152,12 +152,9 @@ table {
     margin-bottom: 30px;
 }
 
-.pagination{
-    grid-area: pagination;
-    justify-self: center;
-}
+.logo{ padding: 1.25rem; }
 
-.post, .homepage, .posts-summary, .page-not-found{
+.homepage, .post, .posts-summary, .cv, .page-not-found{
     grid-area: main;
 }
 
@@ -173,8 +170,6 @@ table {
 }
 
 .post-list{ grid-template-rows: max-content; }
-
-.logo{ padding: 1.25rem; }
 
 .post-link{
     @include card();
@@ -206,6 +201,11 @@ table {
     bottom: 15px;
 }
 
+.pagination{
+    grid-area: pagination;
+    justify-self: center;
+}
+
 .previous, .next{
     @include card();
         
@@ -218,19 +218,23 @@ table {
 
 .dashboard{
     @include card();
+    
     padding:0;
-    // box-sizing: border-box;
     align-self: start;
+}
+
+.cv {
+    .title{ text-align: center; }
+    h2 > * { @include card(); }
+    h1 { display: inline-block; }
 }
 
 .page-not-found{
     @include card();
-
+    
     text-align: center;
-    width: 75vw;
-    min-width: 320px;
     padding: 100px 15px;
-
+    
     h2{ padding: 0; }
 }
 
@@ -291,6 +295,4 @@ table {
         grid-column: 2 / span 1;
         justify-self: stretch;
     }
-
-    .page-not-found{ width: 90vw; }
 }

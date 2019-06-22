@@ -1,6 +1,7 @@
 #+DATE: 2019-06-05T10:09:06+02:00
 #+TITLE: Curriculum Vitæ
 #+DRAFT: true
+#+TYPE: cv
 
 ** Work Experience
 *** McCann Johannesburg
@@ -67,3 +68,5 @@
 - Clients included: Paragon Group; PWC; Sanofi Aventis; SAP.
 
 -----
+** Life Experience
+*** Afrikaurn
