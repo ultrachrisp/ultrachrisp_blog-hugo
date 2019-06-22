@@ -2,9 +2,8 @@
 {{ partial "navigation.html" . }}
 
 <section class="cv">
-    <div class="title">
-        <h1>{{ .Title }}</h1>
-    </div>
+
+    <h1>{{ .Title }}</h1>
 
     {{ $sections := split .Content "<h" }}
     {{ range $index, $sec := $sections }}
