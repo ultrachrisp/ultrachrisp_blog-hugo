@@ -11,7 +11,6 @@
 |                              | Senior Developer      |
 |------------------------------+-----------------------|
 
-<br>
 - Only developer in the newly created digital department.
 - Provided technical direction & documentation (functional specifications, scopes of work) for numerous projects.
 - Provided direction & assistance on digital projects to many of the companies that are part of McCann Worldgroup.
@@ -20,8 +19,6 @@
 - Successfully conceptualised, planned, developed & deployed a number of digital projects including: mircosites, cross platform & cross device mobile applications, social media campaigns as well as banners.
 - Clients include: McCann, Nestle, Waltons, Kauai, UIP, Chevrolet, Isuzu, Zurich, Econet
 
------
-
 *** Freelance
 |------------------------------+------------------------|
 | January 2014 - December 2014 | Pretoria, South Africa |
@@ -29,12 +26,9 @@
 |                              | Multi-media Developer  |
 |------------------------------+------------------------|
 
-<br>
 - Provided consultation services and suitable digital strategies to clients.
 - Responsible for brainstorming, scoping, developing and deploying projects.
 - Utilised time to expand knowledge base and streamline development processes.
-
------
 
 *** Gloo
 |---------------------------+-------------------------|
@@ -43,15 +37,12 @@
 |                           | Senior Developer        |
 |---------------------------+-------------------------|
 
-<br>
 - Responsible for taking individual and team briefs from concept through to deployment.
 - Called in to assist with projects which were experiencing set backs (i.e. behind schedule; difficult clients; spike solutions required) required). These projects were successfully delivered on time, usually exceeding the client’s expectations.
 - Input requested from the design teams for experimental briefs that utilised touch-based, mobile, motion capture or AR technologies.
 - Identified areas where Gloo could add additional value to its clients and assisted in incorporating these new areas into the existing Gloo process.
 - Provided assistance and guidance to the junior members of the team.
 - Clients include: BMW; FNB; MINI; RMB; Samsung; SA Tourism.
-
------
 
 *** LXi
 |------------------------------+------------------------|
@@ -60,13 +51,11 @@
 |                              | Developer              |
 |------------------------------+------------------------|
 
-<br>
 - Planned, developed and deployed touch, multi-touch and motion capture applications and interfaces on a variety of devices.
 - Reverse engineered application development for existing and new devices.
 - Researched and implemented new software technologies.
 - Met and liaised with clients to determine their needs and objectives to provide a better custom solution.
 - Clients included: Paragon Group; PWC; Sanofi Aventis; SAP.
 
------
 ** Life Experience
-*** Afrikaurn
+*** AfrikBurn

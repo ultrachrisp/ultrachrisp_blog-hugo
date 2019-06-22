@@ -5,8 +5,22 @@
     <div class="title">
         <h1>{{ .Title }}</h1>
     </div>
-    div.
-        {{ .Content }}
+
+    {{ $sections := split .Content "<h" }}
+    {{ range $index, $p := $sections }}
+     {{ if or (eq $p "") (eq $index 0) }}
+      {{ printf "%s\n" $p | safeHTML }}
+     {{ else if and (hasPrefix $p "2") (gt $index 0)}}
+      <div class="sectionTitle">
+       {{ printf "<h%s\n" $p | safeHTML }}
+      </div>
+	 {{ else if and (hasPrefix $p "3") (gt $index 0) }}
+      <div class="job">
+	  {{ printf "<h%s\n" $p | safeHTML }}
+      </div>
+	 {{ end }}
+    {{ end }}
+
 </section>
 
 {{ partial "footer.html" . }}

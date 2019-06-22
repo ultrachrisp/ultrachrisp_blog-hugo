@@ -158,10 +158,10 @@ table {
     grid-area: main;
 }
 
-.post{
+.post, .sectionTitle, .job{
     @include card();
     padding-bottom: 30px;
-
+    
     display: grid;
     grid-template-columns: 2% 1fr 2%;
 
@@ -225,8 +225,16 @@ table {
 
 .cv {
     .title{ text-align: center; }
-    h2 > * { @include card(); }
-    h1 { display: inline-block; }
+    h1, .sectionTitle { display: inline-block; }
+    h1 {
+        @include card();
+        font-weight: bold;
+    }
+        
+    ul::before {
+        content:"\a";
+        white-space: pre;
+    }
 }
 
 .page-not-found{
@@ -261,7 +269,7 @@ table {
         ". . footer footer .";
     }
 
-    .post{
+    .post, .sectionTitle, .job{
         grid-template-columns: 0.5fr 1fr 7fr 1fr 0.5fr;
 
         p, ul, ol, table{ grid-column: 3 / 5; }
