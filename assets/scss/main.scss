@@ -158,7 +158,7 @@ table {
     grid-area: main;
 }
 
-.post, .sectionTitle, .job{
+.post, .card{
     @include card();
     padding-bottom: 30px;
     
@@ -223,17 +223,22 @@ table {
     align-self: start;
 }
 
+
 .cv {
     .title{ text-align: center; }
-    h1, .sectionTitle { display: inline-block; }
-    h1 {
-        @include card();
-        font-weight: bold;
-    }
+    h1, h2, .card{ @include card(); }
+    h1, h2{ display: inline-block; }
+    h1{ font-weight: bold; }
         
-    ul::before {
+    ul::before{
         content:"\a";
         white-space: pre;
+    }
+    ul li span {
+            @include circle($grey-dark);
+            position: relative;
+            margin-left: 5px;
+            bottom:1px
     }
 }
 
@@ -269,12 +274,15 @@ table {
         ". . footer footer .";
     }
 
-    .post, .sectionTitle, .job{
+    .post, .card{
         grid-template-columns: 0.5fr 1fr 7fr 1fr 0.5fr;
 
         p, ul, ol, table{ grid-column: 3 / 5; }
         h1, h2, h3, h4, h5, h6, hr, time, pre{ grid-column: 2 / span 3; }
     }
+
+    .card{ margin-left: 140px; }
+    .cv h2{ margin-top: 45px; }
         
     .homepage{
         display: grid;

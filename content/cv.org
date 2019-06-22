@@ -17,7 +17,7 @@
 - Interfaced directly with clients to better understand their business objectives and find suitable solutions for these objectives.
 - Responsible for the transferal and oversight of digital skills and best practises to the digital team as well as the traditional creatives.
 - Successfully conceptualised, planned, developed & deployed a number of digital projects including: mircosites, cross platform & cross device mobile applications, social media campaigns as well as banners.
-- Clients include: McCann, Nestle, Waltons, Kauai, UIP, Chevrolet, Isuzu, Zurich, Econet
+- Clients include: McCann<span></span> Nestle<span></span> Waltons<span></span> Kauai<span></span> UIP<span></span> Chevrolet<span></span> Isuzu<span></span> Zurich<span></span> Econet
 
 *** Freelance
 |------------------------------+------------------------|
@@ -42,7 +42,7 @@
 - Input requested from the design teams for experimental briefs that utilised touch-based, mobile, motion capture or AR technologies.
 - Identified areas where Gloo could add additional value to its clients and assisted in incorporating these new areas into the existing Gloo process.
 - Provided assistance and guidance to the junior members of the team.
-- Clients include: BMW; FNB; MINI; RMB; Samsung; SA Tourism.
+- Clients include: BMW<span></span> FNB<span></span> MINI<span></span> RMB<span></span> Samsung<span></span> SA Tourism
 
 *** LXi
 |------------------------------+------------------------|
@@ -55,7 +55,7 @@
 - Reverse engineered application development for existing and new devices.
 - Researched and implemented new software technologies.
 - Met and liaised with clients to determine their needs and objectives to provide a better custom solution.
-- Clients included: Paragon Group; PWC; Sanofi Aventis; SAP.
+- Clients included: Paragon Group<span></span> PWC<span></span> Sanofi Aventis<span></span> SAP
 
 ** Life Experience
 *** AfrikBurn
