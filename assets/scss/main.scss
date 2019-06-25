@@ -80,8 +80,9 @@ a{
 }
 
 ul, ol{
-    padding: 0 0 15px 30px;
+    padding-bottom:15px;
     list-style-position: initial;
+    li{ padding-left:30px; }
 }
 
 ul{
@@ -233,22 +234,29 @@ table {
     h1, h2, .card{
         @include card();
         grid-column: 2 / 3;
+        a{ text-decoration: none; }
     }
     h1{ font-weight: bold; }
         
     ul{
-        padding-bottom: 30px;
         &:before{
             content:"\a";
             white-space: pre;
         }
+
+        li span{
+            display: inline-block;
+        
+            &:before{
+                @include circle($grey-dark);
+                position: relative;
+                margin-right: 4px;
+                bottom: 1px;
+            }
+        }
     }
-    ul li span {
-            @include circle($grey-dark);
-            position: relative;
-            margin-left: 5px;
-            bottom:1px
-    }
+
+    .card{ padding-bottom:30px; }
 }
 
 .card{

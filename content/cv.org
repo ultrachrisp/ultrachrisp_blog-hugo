@@ -17,7 +17,7 @@
 - Interfaced directly with clients to better understand their business objectives and find suitable solutions for these objectives.
 - Responsible for the transferal and oversight of digital skills and best practises to the digital team as well as the traditional creatives.
 - Successfully conceptualised, planned, developed & deployed a number of digital projects including: mircosites, cross platform & cross device mobile applications, social media campaigns as well as banners.
-- Clients include: McCann<span></span> Nestle<span></span> Waltons<span></span> Kauai<span></span> UIP<span></span> Chevrolet<span></span> Isuzu<span></span> Zurich<span></span> Econet
+- Clients include: McCann <span>Nestle</span> <span>Waltons</span> <span>Kauai</span> <span>UIP</span> <span>Chevrolet</span> <span>Isuzu</span> <span>Zurich</span> <span>Econet</span>
 
 *** Freelance
 |------------------------------+------------------------|
@@ -42,7 +42,7 @@
 - Input requested from the design teams for experimental briefs that utilised touch-based, mobile, motion capture or AR technologies.
 - Identified areas where Gloo could add additional value to its clients and assisted in incorporating these new areas into the existing Gloo process.
 - Provided assistance and guidance to the junior members of the team.
-- Clients include: BMW<span></span> FNB<span></span> MINI<span></span> RMB<span></span> Samsung<span></span> SA Tourism
+- Clients include: BMW <span>FNB</span> <span>MINI</span> <span>RMB</span> <span>Samsung</span> <span>SA Tourism</span>
 
 *** LXi
 |------------------------------+------------------------|
@@ -55,7 +55,87 @@
 - Reverse engineered application development for existing and new devices.
 - Researched and implemented new software technologies.
 - Met and liaised with clients to determine their needs and objectives to provide a better custom solution.
-- Clients included: Paragon Group<span></span> PWC<span></span> Sanofi Aventis<span></span> SAP
+- Clients included: Paragon Group <span>PWC</span> <span>Sanofi Aventis</span> <span>SAP</span>
 
-** Life Experience
+*** iLogic
+|--------------------------+-----------------------|
+| May 2010 - November 2010 | Sandton, South Africa |
+|--------------------------+-----------------------|
+|                          | Flash/ Web Developer  |
+|--------------------------+-----------------------|
+
+- Proficiency needed in various web technologies including: Graph API and developing for Facebook, CMS web sites (Wordpress, Drupal), Flash Actionscript 3 applications for web and desktop use as well as content manipulation using the Adobe suite.
+- Critical thinking, creative problem solving, project planning as well as effective group communication were needed to successfully meet the clients' needs.
+- Deadline driven, consistently delivered projects in the time given.
+
+*** ILA Vietnam
+|------------------------+-----------------|
+| July 2007 - March 2009 | Hanoi, Vietnam  |
+|------------------------+-----------------|
+|                        | English Teacher |
+|------------------------+-----------------|
+
+- Developed teaching resources and presented workshops to my peers around the topics: “Film and video in the classroom” and “Using interactive software in an educational
+setting”.
+- Worked with various PC based learning packages with my students and helped evaluate the effectiveness of these resources.
+- Commended on my innovative teaching style, vibrancy of my classes and the variety of media used in my lessons.
+
+*** Aston Schools
+|--------------------------+---------------------------|
+| August 2006 - March 2007 | Zhengzhou, China          |
+|--------------------------+---------------------------|
+|                          | Foreign Manager & Teacher |
+|--------------------------+---------------------------|
+
+- Co-managed a school of 200 students, 2 foreign teachers, 2 Chinese teachers and a number of Chinese staff.
+- Responsible for orientation, development and continuous assessment of the teaching skills of the foreign teachers and planning & presenting English classes.
+- Develop teaching schedules and provided spread sheet templates for payrolls.
+- Planned and delivered promotional activities for the school including: curriculum development <span>designing advertisements</span> <span>delivering promotional classes (all ages)</span> <span>promotional field work</span> <span>judging English competitions</span> <span>creating public English corners.</span>
+
+*** Aston Schools
+|------------------------+----------------|
+| April 2005 - July 2006 | Jinan, China   |
+|------------------------+----------------|
+|                        | Senior Teacher |
+|------------------------+----------------|
+
+- Responsible for planning & presenting English classes for a full range of students from very young learners to adults.
+- Developed school resources including: flash-cards <span>posters</span> <span>authentic materials.</span>
+
+** Other Initiatives
 *** AfrikBurn
+** Education
+*** [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Coursera Specialisation: Functional Programming in Scala]]
+|---------------------------+-----------------------------------------------------|
+| November 2016 - July 2017 | Pretoria, South Africa                              |
+|---------------------------+-----------------------------------------------------|
+|                           | École Polytechnique Fédérale de Lausanne    |
+|---------------------------+-----------------------------------------------------|
+
+*** CELTA
+|-------------------------------+----------------------|
+| September 2006 - October 2006 | Ho Chi Minh, Vietnam |
+|-------------------------------+----------------------|
+|                               | Cambridge University |
+|-------------------------------+----------------------|
+
+- 
+
+*** Bachelor Information Science (Multimedia)
+|------------------------------+------------------------|
+| January 2001 - December 2004 | Pretoria, South Africa |
+|------------------------------+------------------------|
+|                              | Univeristy of Pretoria |
+|------------------------------+------------------------|
+
+Major in Multimedia
+- Concerned with the effective use of media types within a computer science context via the Internet, PCs or hand-held devices.
+- Developed school resources including: flash-cards <span>posters</span> <span>authentic materials.</span>
+
+Major in Computer Science
+- Concerned with computer operation and software development.
+- Major skills include: object orientated programming (focused around C++ and Java); design patterns; data structures; networks.
+
+Major in English
+- Completed an additional major in English.
+
