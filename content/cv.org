@@ -4,6 +4,19 @@
 #+TYPE: cv
 
 ** Work Experience
+*** Absa (formerly Barclays Africa)
+|-------------------------+----------------------------|
+| February 2016 - present | Johannesburg, South Africa |
+|-------------------------+----------------------------|
+|                         | Creative Technologist      |
+|-------------------------+----------------------------|
+
+- Initialiy given a crisis portfolio, but was able to turn it around into a success story for the platform.
+- Introduced the company to React and helped to integrate React into Adobe Expereince Manager before there was native support.
+- Consistently given & delivered high risk or technical briefs considered too risky for other teams or members.
+- Repeatedly asked to assist teams or projects in crisis with a great record of delivering core requirements on time.
+- 
+
 *** McCann Johannesburg
 |------------------------------+-----------------------|
 | January 2015 - December 2015 | Sandton, South Africa |
@@ -12,11 +25,13 @@
 |------------------------------+-----------------------|
 
 - Only developer in the newly created digital department.
-- Provided technical direction & documentation (functional specifications, scopes of work) for numerous projects.
-- Provided direction & assistance on digital projects to many of the companies that are part of McCann Worldgroup.
-- Interfaced directly with clients to better understand their business objectives and find suitable solutions for these objectives.
-- Responsible for the transferal and oversight of digital skills and best practises to the digital team as well as the traditional creatives.
-- Successfully conceptualised, planned, developed & deployed a number of digital projects including: mircosites, cross platform & cross device mobile applications, social media campaigns as well as banners.
+- Conceptualised, successfully motivated, built & deployed a cross-device, cross-platform, mobile based augemented reality solution.
+- Interfaced directly with clients to unpack & define their core objectives.
+- Supported the project managers, community managers & designers in the execution of their tasks.
+- Provided scopes of work, functional specifications as well as process pipelines for projects.
+- Single handedly build, deployed & maintained many of the projects I was involved with.
+- Successfully deployed projects within the tight time & budget contraints of an agency.
+- Provided technical direction & insights into numerous technologies & tech-stacks.
 - Clients include: McCann <span>Nestle</span> <span>Waltons</span> <span>Kauai</span> <span>UIP</span> <span>Chevrolet</span> <span>Isuzu</span> <span>Zurich</span> <span>Econet</span>
 
 *** Freelance
@@ -26,9 +41,10 @@
 |                              | Multi-media Developer  |
 |------------------------------+------------------------|
 
-- Provided consultation services and suitable digital strategies to clients.
-- Responsible for brainstorming, scoping, developing and deploying projects.
-- Utilised time to expand knowledge base and streamline development processes.
+- Assissted clients to narrow down & define their core objectives.
+- Provided technical direction on key technologies & realitic timelines required to achieve objectives.
+- Successfully conceptualised, scoped, developed & deployed a number of projects.
+- Utilised time to expand knowledge base, streamline development processes & investigate interesting technologies.
 
 *** Gloo
 |---------------------------+-------------------------|
@@ -37,11 +53,12 @@
 |                           | Senior Developer        |
 |---------------------------+-------------------------|
 
-- Responsible for taking individual and team briefs from concept through to deployment.
-- Called in to assist with projects which were experiencing set backs (i.e. behind schedule; difficult clients; spike solutions required) required). These projects were successfully delivered on time, usually exceeding the client’s expectations.
-- Input requested from the design teams for experimental briefs that utilised touch-based, mobile, motion capture or AR technologies.
-- Identified areas where Gloo could add additional value to its clients and assisted in incorporating these new areas into the existing Gloo process.
-- Provided assistance and guidance to the junior members of the team.
+- Responsible for taking high-pressure individual & team briefs from concept through to deployment.
+- Successfully & consistently deployed projects within the given time-lines & budgets.
+- Called in to assist with crisis or time-critical projects, as well as difficult clients.
+- Able to identify process bottle-necks or pain-points & possible ways to mitigate or solve these issues.
+- Provided technical direction for technologies not in the company protfolio.
+- Supported & up-skilled the junior developers & creatives.
 - Clients include: BMW <span>FNB</span> <span>MINI</span> <span>RMB</span> <span>Samsung</span> <span>SA Tourism</span>
 
 *** LXi
@@ -51,22 +68,23 @@
 |                              | Developer              |
 |------------------------------+------------------------|
 
-- Planned, developed and deployed touch, multi-touch and motion capture applications and interfaces on a variety of devices.
-- Reverse engineered application development for existing and new devices.
-- Researched and implemented new software technologies.
-- Met and liaised with clients to determine their needs and objectives to provide a better custom solution.
+- Only developer in the company.
+- Reverse engineered application development for existing & new devices.
+- Successfully planned, developed & deployed touch, multi-touch and motion capture applications.
+- Researched & implemented technologies for the company.
+- Interfaced directly with clients to unpack & better understand their core requirements & objectives.
 - Clients included: Paragon Group <span>PWC</span> <span>Sanofi Aventis</span> <span>SAP</span>
 
 *** iLogic
 |--------------------------+-----------------------|
 | May 2010 - November 2010 | Sandton, South Africa |
 |--------------------------+-----------------------|
-|                          | Flash/ Web Developer  |
+|                          | Flash & Web Developer |
 |--------------------------+-----------------------|
 
-- Proficiency needed in various web technologies including: Graph API and developing for Facebook, CMS web sites (Wordpress, Drupal), Flash Actionscript 3 applications for web and desktop use as well as content manipulation using the Adobe suite.
-- Critical thinking, creative problem solving, project planning as well as effective group communication were needed to successfully meet the clients' needs.
-- Deadline driven, consistently delivered projects in the time given.
+- Responsible for taking high-pressure briefs from concept through to deployment.
+- Successfully planned, developed & deployed projects on desktop, social media & web.
+- Deadline driven, consistently delivered projects in the given timelines.
 
 *** ILA Vietnam
 |------------------------+-----------------|
@@ -75,10 +93,11 @@
 |                        | English Teacher |
 |------------------------+-----------------|
 
-- Developed teaching resources and presented workshops to my peers around the topics: “Film and video in the classroom” and “Using interactive software in an educational
-setting”.
-- Worked with various PC based learning packages with my students and helped evaluate the effectiveness of these resources.
-- Commended on my innovative teaching style, vibrancy of my classes and the variety of media used in my lessons.
+- Provided IELTS preparation, as well as custom classes for business & educational English.
+- Commended on my innovative teaching style, vibrancy of my classes & the variety of media used in my lessons.
+- Worked with various PC based learning packages with my students & helped evaluate the effectiveness of these resources.
+- Responsible for planning & presenting English classes for a full range of students from young learners to adults.
+- Developed teaching resources and presented workshops to my peers around the topics: “Film & video in the classroom” <span>“Interactive software in an educational setting”.</span>
 
 *** Aston Schools
 |--------------------------+---------------------------|
@@ -87,9 +106,10 @@ setting”.
 |                          | Foreign Manager & Teacher |
 |--------------------------+---------------------------|
 
-- Co-managed a school of 200 students, 2 foreign teachers, 2 Chinese teachers and a number of Chinese staff.
-- Responsible for orientation, development and continuous assessment of the teaching skills of the foreign teachers and planning & presenting English classes.
-- Develop teaching schedules and provided spread sheet templates for payrolls.
+- Co-managed a school of 200 students, 2 foreign teachers, 2 Chinese teachers & a number of Chinese staff.
+- Responsible for orientation, development & continuous assessment of the teaching skills of the foreign teachers.
+- Developed teaching schedules & provided spread sheet templates for payrolls.
+- Responsible for planning & presenting English classes for a full range of students from young learners to adults.
 - Planned and delivered promotional activities for the school including: curriculum development <span>designing advertisements</span> <span>delivering promotional classes (all ages)</span> <span>promotional field work</span> <span>judging English competitions</span> <span>creating public English corners.</span>
 
 *** Aston Schools
@@ -99,18 +119,18 @@ setting”.
 |                        | Senior Teacher |
 |------------------------+----------------|
 
-- Responsible for planning & presenting English classes for a full range of students from very young learners to adults.
+- Responsible for planning & presenting English classes for a full range of students from young learners to adults.
 - Developed school resources including: flash-cards <span>posters</span> <span>authentic materials.</span>
 
 ** Other Initiatives
 *** AfrikBurn
 ** Education
 *** [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Coursera Specialisation: Functional Programming in Scala]]
-|---------------------------+-----------------------------------------------------|
-| November 2016 - July 2017 | Pretoria, South Africa                              |
-|---------------------------+-----------------------------------------------------|
-|                           | École Polytechnique Fédérale de Lausanne    |
-|---------------------------+-----------------------------------------------------|
+|---------------------------+------------------------------------------|
+| November 2016 - July 2017 | Pretoria, South Africa                   |
+|---------------------------+------------------------------------------|
+|                           | École Polytechnique Fédérale de Lausanne |
+|---------------------------+------------------------------------------|
 
 *** CELTA
 |-------------------------------+----------------------|

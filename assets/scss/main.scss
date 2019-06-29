@@ -6,9 +6,6 @@
 @import "svgs";
 @import "iconmoon";
 
-// @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,600';
-// $font-openSans: 'Open Sans', sans-serif;
-
 $ani-duration: 0.6s;
 //$ani-delay: 0.5s;
 //$swipe-duration: 0.8s;
@@ -30,7 +27,6 @@ body{
 
     font-size: 1.8rem;
     line-height: 2.7rem;
-    // font-family: $font-openSans;
     font-family: 'Open Sans', sans-serif;
 
     background-color: $white;
@@ -103,7 +99,7 @@ time{
     line-height: 1.4rem;
 }
 
-table {
+table{
     thead tr th:first-child,
     tbody tr td:first-child { width: 60%; }
 }
@@ -167,10 +163,8 @@ table {
     grid-template-columns: 2% 1fr 2%;
 
     p, ul, ol, table{ grid-column: 2 / 3; }
-    h1, h2, h3, h4, h5, h6, hr, time, pre { grid-column: 2 / span 3; }
+    h1, h2, h3, h4, h5, h6, hr, time, pre{ grid-column: 2 / span 3; }
 }
-
-.post-list{ grid-template-rows: max-content; }
 
 .post-link{
     @include card();
@@ -225,18 +219,20 @@ table {
 }
 
 
-.cv {
+.cv{
     display: grid;
     grid-template-columns: 2% 1fr 2%;
 
-    h1{ justify-self: center; }
-    h2{ justify-self: start;}
+    h1{
+        justify-self: center;
+        font-weight: bold;
+    }
+    h2{ justify-self: start; }
     h1, h2, .card{
         @include card();
         grid-column: 2 / 3;
         a{ text-decoration: none; }
     }
-    h1{ font-weight: bold; }
         
     ul{
         &:before{
@@ -275,7 +271,7 @@ table {
 }
 
 @media only screen and (min-width: $breakpoint-medium) {
-    .grid {
+    .grid{
         grid-template-columns: 0.5fr 8fr 0.5fr;
     }
     .previous, .next{
@@ -288,7 +284,7 @@ table {
 }
 
 @media only screen and (min-width: $breakpoint-large) {
-    .grid {
+    .grid{
         grid-template-columns: 10px 75px auto 75px 10px;
         grid-template-areas:
         ". header header . ."
@@ -321,21 +317,14 @@ table {
 }
 
 @media only screen and (min-width: $breakpoint-wide) {
-    // .homepage{
-    //     grid-template-columns: 1fr 1fr 20px 1fr 1fr;
-    // }
-
-    // .dashboard{ grid-column: 1 / span 2; }
-
     .post-list{
         display: grid;
         grid-template-columns: 1fr 8fr;
-        grid-auto-rows: minmax(min-content, max-content);
         justify-items: start;
     }
 
-    .post-title { grid-column: 1 / span 2; }
-    .post-link {
+    .post-title{ grid-column: 1 / span 2; }
+    .post-link{
         grid-column: 2 / span 1;
         justify-self: stretch;
     }
