@@ -11,11 +11,18 @@
 |                         | Creative Technologist      |
 |-------------------------+----------------------------|
 
-- Initialiy given a crisis portfolio, but was able to turn it around into a success story for the platform.
-- Introduced the company to React and helped to integrate React into Adobe Expereince Manager before there was native support.
+- Initially given a crisis portfolio, but was able to turn it around into a success story for the platform.
+- Introduced the company to React & helped to integrate React into Adobe Experience Manager before there was native support.
 - Consistently given & delivered high risk or technical briefs considered too risky for other teams or members.
-- Repeatedly asked to assist teams or projects in crisis with a great record of delivering core requirements on time.
-- 
+- Repeatedly asked to assist projects in crisis with a great record of delivering core requirements on time.
+- Responsible for projects from concept through to deployment across Africa.
+- Motivated for & established the company's first virtual reality capability across three cities.
+- Established a partnership with a University to better explore virtual reality & its capabilities.
+- Collaboratively explored new forms of user engagement using virtual & augmented reality.
+- Provided a number of proof of concept projects using virtual & augmented reality.
+- Contributed to a multi-disciplinary team on the practical application of the new corporate brand.
+- Helped establish work flows & pipelines for different portfolios.
+- Established best practises & supported development teams in their tasks.
 
 *** McCann Johannesburg
 |------------------------------+-----------------------|
@@ -25,12 +32,12 @@
 |------------------------------+-----------------------|
 
 - Only developer in the newly created digital department.
-- Conceptualised, successfully motivated, built & deployed a cross-device, cross-platform, mobile based augemented reality solution.
+- Conceptualised, successfully motivated, built & deployed a cross-device, cross-platform, mobile based augmented reality solution.
 - Interfaced directly with clients to unpack & define their core objectives.
 - Supported the project managers, community managers & designers in the execution of their tasks.
 - Provided scopes of work, functional specifications as well as process pipelines for projects.
-- Single handedly build, deployed & maintained many of the projects I was involved with.
-- Successfully deployed projects within the tight time & budget contraints of an agency.
+- Single-handedly build, deployed & maintained many of the projects I was involved with.
+- Successfully deployed projects within the tight time & budget constraints of an agency.
 - Provided technical direction & insights into numerous technologies & tech-stacks.
 - Clients include: McCann <span>Nestle</span> <span>Waltons</span> <span>Kauai</span> <span>UIP</span> <span>Chevrolet</span> <span>Isuzu</span> <span>Zurich</span> <span>Econet</span>
 
@@ -41,8 +48,8 @@
 |                              | Multi-media Developer  |
 |------------------------------+------------------------|
 
-- Assissted clients to narrow down & define their core objectives.
-- Provided technical direction on key technologies & realitic timelines required to achieve objectives.
+- Assisted clients to narrow down & define their core objectives.
+- Provided technical direction on key technologies & realistic timelines required to achieve objectives.
 - Successfully conceptualised, scoped, developed & deployed a number of projects.
 - Utilised time to expand knowledge base, streamline development processes & investigate interesting technologies.
 
@@ -57,7 +64,7 @@
 - Successfully & consistently deployed projects within the given time-lines & budgets.
 - Called in to assist with crisis or time-critical projects, as well as difficult clients.
 - Able to identify process bottle-necks or pain-points & possible ways to mitigate or solve these issues.
-- Provided technical direction for technologies not in the company protfolio.
+- Provided technical direction for technologies not in the company portfolio.
 - Supported & up-skilled the junior developers & creatives.
 - Clients include: BMW <span>FNB</span> <span>MINI</span> <span>RMB</span> <span>Samsung</span> <span>SA Tourism</span>
 
@@ -123,7 +130,28 @@
 - Developed school resources including: flash-cards <span>posters</span> <span>authentic materials.</span>
 
 ** Other Initiatives
-*** AfrikBurn
+*** [[https://www.afrikaburn.com/][AfrikaBurn]]
+- *2019:* Project lead for the 'Sweet Love Gateway' art work.
+- Successfully proposed the project & motivated for grants.
+- Planned, prototyped, budgeted & successfully executed the project.
+- Oversaw & co-ordinated the transportation of equipment to the build site.
+- Solely responsible for the lighting of the project, which was made up of 40m/ 2400 individually addressable LED lights.
+
+- *2010:* Assisted with the development of the original website theme.
+
+*** OppiKoppi
+- Successfully conceptualised, motivated for, prototyped & led/ co-led the construction of a number of structures.
+- Part of the core team which co-ordinated efforts between participants.
+- Responsible for sourcing & transporting the equipment.
+
+- *2017:* Assisted with the construction of the final tower.
+- *2015:* Led the construction of the tower & assisted with the construction of the catapult.
+- *2014:* Led the construction of the tower & assisted with the construction of the shade dome.
+- *2013:* Led the construction of the solo tower.
+- *2012:* Led the construction of the medic tower & assisted with the construction of the primary tower.
+- *2011:* Led the construction of the newer, bigger tower.
+- *2010:* Led the construction of the first tower.
+
 ** Education
 *** [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Coursera Specialisation: Functional Programming in Scala]]
 |---------------------------+------------------------------------------|
@@ -131,6 +159,8 @@
 |---------------------------+------------------------------------------|
 |                           | École Polytechnique Fédérale de Lausanne |
 |---------------------------+------------------------------------------|
+
+- stuffs
 
 *** CELTA
 |-------------------------------+----------------------|
@@ -145,7 +175,7 @@
 |------------------------------+------------------------|
 | January 2001 - December 2004 | Pretoria, South Africa |
 |------------------------------+------------------------|
-|                              | Univeristy of Pretoria |
+|                              | University of Pretoria |
 |------------------------------+------------------------|
 
 Major in Multimedia

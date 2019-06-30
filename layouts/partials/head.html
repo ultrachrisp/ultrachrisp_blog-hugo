@@ -21,8 +21,8 @@
     <meta name="theme-color" content="#ffffff">
     
     <!-- stylesheet -->
-    <link href="{{ .Site.Params.font }}" rel="stylesheet">
-    <link rel="preload" href="{{ .Site.BaseURL }}fonts/icomoon.woff" as="font" type="font/woff" crossorigin>
+    <link href="{{ .Site.Params.font }}" rel="preload" as="style">
+    <link href="{{ .Site.BaseURL }}fonts/icomoon.woff" rel="preload" as="font" type="font/woff" crossorigin>
     {{ $style := resources.Get "scss/main.scss" | toCSS | postCSS | fingerprint }}
     <link href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet">
     

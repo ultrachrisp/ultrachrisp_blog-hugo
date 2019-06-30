@@ -230,7 +230,7 @@ table{
     h2{ justify-self: start; }
     h1, h2, .card{
         @include card();
-        grid-column: 2 / 3;
+        grid-column: 2;
         a{ text-decoration: none; }
     }
         
@@ -257,8 +257,8 @@ table{
 
 .card{
     display: grid;
-    ul, table{ grid-column: 2 / 3; }
-    h1, h2, h3, time { grid-column: 2 / span 3; }
+    ul, table,{ grid-column: 2; }
+    h1, h2, h3, hr, time{ grid-column: 2 / span 2; }
 }
 
 .page-not-found{
