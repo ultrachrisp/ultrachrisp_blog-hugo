@@ -11,18 +11,17 @@
 |                         | Creative Technologist      |
 |-------------------------+----------------------------|
 
-- Initially given a crisis portfolio, but was able to turn it around into a success story for the platform.
+- Initially worked on a crisis portfolio but was able to turn it around into a success story for the platform.
 - Introduced the company to React & helped to integrate React into Adobe Experience Manager before there was native support.
 - Consistently given & delivered high risk or technical briefs considered too risky for other teams or members.
 - Repeatedly asked to assist projects in crisis with a great record of delivering core requirements on time.
 - Responsible for projects from concept through to deployment across Africa.
 - Motivated for & established the company's first virtual reality capability across three cities.
-- Established a partnership with a University to better explore virtual reality & its capabilities.
-- Collaboratively explored new forms of user engagement using virtual & augmented reality.
-- Provided a number of proof of concept projects using virtual & augmented reality.
+- Established a partnership with a University to better explore virtual reality, its capabilities & different forms of user engagement.
+- Managed three interns to produce augmented reality proof of concepts.
 - Contributed to a multi-disciplinary team on the practical application of the new corporate brand.
 - Helped establish work flows & pipelines for different portfolios.
-- Established best practises & supported development teams in their tasks.
+- Established best practises & support for other developers & their teams.
 
 *** McCann Johannesburg
 |------------------------------+-----------------------|
@@ -31,13 +30,13 @@
 |                              | Senior Developer      |
 |------------------------------+-----------------------|
 
-- Only developer in the newly created digital department.
+- Only developer in a newly created digital department.
 - Conceptualised, successfully motivated, built & deployed a cross-device, cross-platform, mobile based augmented reality solution.
 - Interfaced directly with clients to unpack & define their core objectives.
 - Supported the project managers, community managers & designers in the execution of their tasks.
 - Provided scopes of work, functional specifications as well as process pipelines for projects.
-- Single-handedly build, deployed & maintained many of the projects I was involved with.
-- Successfully deployed projects within the tight time & budget constraints of an agency.
+- Single-handedly built, deployed & maintained many of the projects I was involved with.
+- Successfully deployed projects within the tight time & budget constraints of the client.
 - Provided technical direction & insights into numerous technologies & tech-stacks.
 - Clients include: McCann <span>Nestle</span> <span>Waltons</span> <span>Kauai</span> <span>UIP</span> <span>Chevrolet</span> <span>Isuzu</span> <span>Zurich</span> <span>Econet</span>
 
@@ -45,7 +44,7 @@
 |------------------------------+------------------------|
 | January 2014 - December 2014 | Pretoria, South Africa |
 |------------------------------+------------------------|
-|                              | Multi-media Developer  |
+|                              | Multimedia Developer   |
 |------------------------------+------------------------|
 
 - Assisted clients to narrow down & define their core objectives.
@@ -134,14 +133,20 @@
 - *2019:* Project lead for the 'Sweet Love Gateway' art work.
 - Successfully proposed the project & motivated for grants.
 - Planned, prototyped, budgeted & successfully executed the project.
-- Oversaw & co-ordinated the transportation of equipment to the build site.
+- Oversaw & coordinated the transportation of equipment to the build site.
 - Solely responsible for the lighting of the project, which was made up of 40m/ 2400 individually addressable LED lights.
+- Invited to present & share my experiences with a number of interested parties.
 
 - *2010:* Assisted with the development of the original website theme.
 
+# *** University of Pretoria: VRi Lab
+# - Played a part in the formation of the Virtual Reality & Interaction Laboratory (VRi).
+# - Invited to present guest lectures to post-graduate students.
+# - Invited to join workshops & panels to the benefit of students.
+
 *** OppiKoppi
 - Successfully conceptualised, motivated for, prototyped & led/ co-led the construction of a number of structures.
-- Part of the core team which co-ordinated efforts between participants.
+- Part of the core team which coordinated efforts between participants.
 - Responsible for sourcing & transporting the equipment.
 
 - *2017:* Assisted with the construction of the final tower.
@@ -153,14 +158,32 @@
 - *2010:* Led the construction of the first tower.
 
 ** Education
+
+*** Coursera: Machine Learning
+|---------------+---------------------|
+| Present study | Stanford University |
+|---------------+---------------------|
+
+- Hope to provide a solid basis for future machine learning projects.
+- Better leverage machine learning techniques for computer vision & augmented reality applications.
+
+*** [[https://www.coursera.org/account/accomplishments/specialization/LQ3SZPLYWTF7][Coursera Specialisation: Python for Everybody]]
+|--------------+------------------------|
+| January 2018 | University of Michigan |
+|--------------+------------------------|
+
+- Enjoyable introduction to Python showcasing many features of the language.
+- Aimed to use Python for future projects or studies.
+
 *** [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Coursera Specialisation: Functional Programming in Scala]]
 |---------------------------+------------------------------------------|
-| November 2016 - July 2017 | Pretoria, South Africa                   |
-|---------------------------+------------------------------------------|
-|                           | École Polytechnique Fédérale de Lausanne |
+| November 2016 - July 2017 | École Polytechnique Fédérale de Lausanne |
 |---------------------------+------------------------------------------|
 
-- stuffs
+- Exposed to new concepts & principles in programming.
+- Provided alternatives for many contemporary principles & practices.
+- Provided a deeper insight & appreciation for React.
+- Introduction to [[https://spark.apache.org/][Apache Spark]] & large scale data-processing.
 
 *** CELTA
 |-------------------------------+----------------------|
@@ -169,9 +192,12 @@
 |                               | Cambridge University |
 |-------------------------------+----------------------|
 
-- 
+- Passed with a 'Grade A'.
+- Focused around effective & practical methods for English teaching.
+- Empowered me to communicate effectively with elementary English learners.
+- Deeper & richer understanding of what 'communication' really is.
 
-*** Bachelor Information Science (Multimedia)
+*** Bachelor of Information Science (Multimedia)
 |------------------------------+------------------------|
 | January 2001 - December 2004 | Pretoria, South Africa |
 |------------------------------+------------------------|
@@ -179,13 +205,38 @@
 |------------------------------+------------------------|
 
 Major in Multimedia
-- Concerned with the effective use of media types within a computer science context via the Internet, PCs or hand-held devices.
-- Developed school resources including: flash-cards <span>posters</span> <span>authentic materials.</span>
+- Concerned with the practical application of different communication mediums & paradigms in a digital setting.
+- Explored gamification & visual communication via basic design, layout, colour & interaction principles.
+- Provided glimpses into what would later become the digital design process including graphic, product, interface, customer & user experience design.
 
 Major in Computer Science
-- Concerned with computer operation and software development.
-- Major skills include: object orientated programming (focused around C++ and Java); design patterns; data structures; networks.
+- Concerned with the theory & best practises of  computer programming & software development.
+- Explored core concepts including data-structures, design-patterns, programming languages, real-time 3D rendering, networks & security.
 
 Major in English
-- Completed an additional major in English.
+- Concerned with the history, composition & use of the English language.
+- Explored notable periods of literature & their effects on modern English.
 
+** Proficiencies
+*** Soft Skills
+- Substantial communication & interpersonal skills, with a sensitivity to cultures & contexts.
+- Strong leadership skills with the ability to discern when to collaborate or follow.
+- Confident presentation skills allowing easy & natural interactions with audiences.
+- Good motivator with the capability to establish good RAPPORT within a team.
+- Proven problem solving skills complimented with established searching methods.
+- Excited by a challenge & curious by nature.
+- Self-motivated with the aptitude to rapidly upskill myself in a new technology or framework.
+- Understands the design process well & effectively collaborates with the stake-holders of each step.
+
+*** Technical Skills
+
+/My previous roles & responsibilities have required me to work with many different technologies & stacks. I do not claim to be an expert in all of them, since I was usually required to get up to speed as quickly as possible to solve specific problems. However, I do have a strong understanding of the fundamental programming principles & an eye for what makes clean, scalable code which (in my opinion) is present in most technology stacks./
+
+- *Languages:* [[https://www.javascript.com/][JavaScript]] <span>[[http://www.cplusplus.com/doc/tutorial/][C++]]</span> <span>[[https://www.python.org/][Python]]</span> <span>[[https://www.w3schools.com/html/html5_intro.asp][HTML5]] & [[https://www.w3schools.com/html/html5_canvas.asp][Canvas]]</span> <span>[[https://sass-lang.com/][(S)CSS]]</span> <span>[[https://www.w3schools.com/sql/][SQL]]</span> <span>[[https://www.gnu.org/software/emacs/manual/eintr.html][Emacs Lisp]]</span> <span>[[https://golang.org/][Go]]</span> <span>[[https://www.scala-lang.org/][Scala]]</span> <span>[[https://www.gnu.org/software/octave/][Octave]]</span> <span>[[https://www.adobe.com/devnet/actionscript/learning.html][ActionScript 3]]</span> <span>[[https://www.oracle.com/java/][Java]]</span> <span>[[https://php.net/][PHP]]</span> <span>[[https://docs.microsoft.com/en-us/dotnet/csharp/][C#]]</span>
+- *Frameworks:* [[https://reactjs.org/][React]] <span>[[https://jestjs.io/][Jest]]</span> <span>[[https://openframeworks.cc/][OpenFrameworks]]</span> <span>[[https://www.ptc.com/en/products/augmented-reality][Vuforia]]</span> <span>[[https://developers.google.com/ar/][ARcore]]</span> <span>[[https://www.opengl.org/][OpenGL]]</span> <span>[[https://spark.apache.org/][Apache Spark]]</span> <span>[[https://angular.io/][Angular]]</span> <span>[[https://dotnet.microsoft.com/][.NET]]</span>
+- *Task runners:* [[https://www.npmjs.com/][NPM]] <span>[[https://webpack.js.org/][Webpack]]</span> <span>[[https://gulpjs.com/][Gulp]]</span> <span>Bash</span> <span>[[https://gruntjs.com/][Grunt]]</span>
+- *Content Management Systems:* [[https://gohugo.io/][Hugo]] <span>[[https://www.adobe.com/africa/marketing/experience-manager.html][Adobe Experience Manager (AEM)]]</span> <span>[[https://wordpress.com/][Wordpress]]</span> <span>[[https://www.drupal.org/][Drupal]]</span>
+- *Version control:* [[https://git-scm.com/][Git]] <span>[[https://subversion.apache.org/][Subversion]]</span> <span>[[https://www.mercurial-scm.org/][Mercurial]]</span>
+- *Software:* [[Https://www.adobe.com/creativecloud/catalog/desktop.html][Adobe Creative Suite]] <span>[[https://www.framer.com/][Framer]]</span> <span>[[https://unity.com/][Unity]]</span> <span>[[https://www.blender.org/][Blender]]</span> <span>[[https://www.unrealengine.com/en-US/][Unreal]]</span> <span>[[https://www.sketch.com/][Sketch]]</span> <span>[[https://www.autodesk.co.za/products/maya/overview][Maya]]</span> <span>[[https://products.office.com/en-za/products][MS Office]]</span>
+- *Essentials:* [[https://www.gnu.org/software/emacs/manual/eintr.html][Emacs]] <span>[[https://orgmode.org/][Org mode]]</span> <span>[[https://magit.vc/][Magit]]</span> <span>[[https://projectile.readthedocs.io/en/latest/][Projectile]]</span> <span>[[https://ternjs.net/][Tern]]</span>
+- *Interests:* [[https://www.arduino.cc/][Arduino]] <span>ESP32</span> <span>[[https://www.raspberrypi.org/][Raspberry Pi]]</span> <span>Programmable LED strips</span> <span>[[https://developer.microsoft.com/en-us/windows/kinect][Kinect]]</span>

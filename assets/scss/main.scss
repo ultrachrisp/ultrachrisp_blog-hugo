@@ -86,7 +86,7 @@ ul{
     
     li:before{
         @include circle($grey-dark);
-        margin: 10px 0 0 -18px;
+        margin: 9px 0 1px -18px;
     }
 }
 
@@ -231,7 +231,6 @@ table{
     h1, h2, .card{
         @include card();
         grid-column: 2;
-        a{ text-decoration: none; }
     }
         
     ul{
@@ -257,7 +256,7 @@ table{
 
 .card{
     display: grid;
-    ul, table,{ grid-column: 2; }
+    ul, table, p{ grid-column: 2 / span 2; }
     h1, h2, h3, hr, time{ grid-column: 2 / span 2; }
 }
 
