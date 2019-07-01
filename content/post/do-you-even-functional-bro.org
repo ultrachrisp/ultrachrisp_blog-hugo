@@ -1,6 +1,7 @@
 #+DATE: 2017-09-09T15:45:43+02:00
 #+TITLE: Do you even functional bro?
 #+DRAFT: false
+#+TYPE: post
 
 <img style="width:125px; height:200px; float:right; padding-left:10px;" src="../../svg/scala.svg" alt="Scala logo"/>
 My interest grew from a side conversation I over-heard. After that, every taste taught me something different. There is something truly haunting about functional programming.<br><br>I have completed [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Functional Programming in Scala]]. I was not fully prepared for the learning curve as many of the concepts and principles were new to me. What I took away from the course has had a real impact on the way I approach software development.

@@ -1,13 +1,10 @@
 // Screen
 @import "../../node_modules/reset-css/sass/reset";
 @import "colors";
+@import "mixins";
 @import "lines";
 @import "svgs";
 @import "iconmoon";
-
-
-// @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,600';
-// $font-openSans: 'Open Sans', sans-serif;
 
 $ani-duration: 0.6s;
 //$ani-delay: 0.5s;
@@ -18,34 +15,6 @@ $content-width-max: 1100px;
 $breakpoint-medium: 600px;
 $breakpoint-large: 900px;
 $breakpoint-wide: 1200px;
-
-// Some mixins
-@mixin card(){
-    margin-top: 15px;
-    padding: 10px 15px;
-    border-radius: 20px;
-    background-color: $canvas;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 6px 3px $shadow;
-}
-
-@mixin link(){
-    color: $black;
-    font-size: 2.4rem;
-    line-height: 2.8rem;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: background-color $ani-duration, color $ani-duration;
-    
-    &:hover {
-        color: $canvas;
-        background-color: $black;
-        
-        // for the logo
-        .stroke{ stroke: $canvas; }
-        .fill{ fill: $black; }
-    }
-}
 
 // General styles
 html{ font-size: 62.5%; }
@@ -58,7 +27,6 @@ body{
 
     font-size: 1.8rem;
     line-height: 2.7rem;
-    // font-family: $font-openSans;
     font-family: 'Open Sans', sans-serif;
 
     background-color: $white;
@@ -103,15 +71,26 @@ strong{ font-weight: 600; }
 a{
     cursor: pointer;
     color: $grey-dark;
+    transition: color $ani-duration;
     &:hover{ color: $grey-light; }
 }
 
 ul, ol{
-    padding: 0 0 15px 40px;
+    padding-bottom:15px;
     list-style-position: initial;
+    li{ padding-left:30px; }
 }
 
-ul{ list-style-type: disc; }
+ul{
+    list-style: none;
+    
+    li:before{
+        @include circle($grey-dark);
+        margin: 9px 0 1px -18px;
+    }
+}
+
+// ul{ list-style-type: disc; }
 ol{ list-style-type: decimal; }
 
 time{
@@ -120,10 +99,14 @@ time{
     line-height: 1.4rem;
 }
 
+table{
+    thead tr th:first-child,
+    tbody tr td:first-child { width: 60%; }
+}
+
 // Custom Layout for different sections
-.grid {
+.grid{
     display: grid;
-    // justify-content: center;
 
     grid-template-columns: 3% 94% 3%;
     grid-template-rows: auto auto auto auto;
@@ -134,11 +117,10 @@ time{
     ". footer .";
 }
 
-.header, .footer {
+.header, .footer{
     @include card();
     padding: 10px 0px;
     display: flex;
-    //width: min-content;
 
     a{
         @include link();
@@ -156,8 +138,8 @@ time{
         height: 40px;
         margin: 0 10px;
     }
-    .line{ margin-top: 12px; }
-    a:not(.home){ padding-top: 10px; }
+    .line{ margin-top: 14px; }
+    a:not(.home) { padding: 12px 10px 5px 12px; }
 }
 
 .footer{
@@ -167,29 +149,22 @@ time{
     margin-bottom: 30px;
 }
 
-.pagination{
-    grid-area: pagination;
-    justify-self: center;
-}
+.logo{ padding: 1.25rem; }
 
-.post, .homepage, .posts-summary, .page-not-found{
+.homepage, .post, .posts-summary, .cv, .page-not-found{
     grid-area: main;
 }
 
 .post{
     @include card();
     padding-bottom: 30px;
-
+    
     display: grid;
     grid-template-columns: 2% 1fr 2%;
 
-    p, ul, ol{ grid-column: 2 / 3; }
-    h1, h2, h3, h4, h5, h6, hr, time, pre { grid-column: 2 / span 3; }
+    p, ul, ol, table{ grid-column: 2 / 3; }
+    h1, h2, h3, h4, h5, h6, hr, time, pre{ grid-column: 2 / span 3; }
 }
-
-.post-list{ grid-template-rows: max-content; }
-
-.logo{ padding: 1.25rem; }
 
 .post-link{
     @include card();
@@ -221,6 +196,11 @@ time{
     bottom: 15px;
 }
 
+.pagination{
+    grid-area: pagination;
+    justify-self: center;
+}
+
 .previous, .next{
     @include card();
         
@@ -233,24 +213,64 @@ time{
 
 .dashboard{
     @include card();
+    
     padding:0;
-    // box-sizing: border-box;
     align-self: start;
+}
+
+
+.cv{
+    display: grid;
+    grid-template-columns: 2% 1fr 2%;
+
+    h1{
+        justify-self: center;
+        font-weight: bold;
+    }
+    h2{ justify-self: start; }
+    h1, h2, .card{
+        @include card();
+        grid-column: 2;
+    }
+        
+    ul{
+        &:before{
+            content:"\a";
+            white-space: pre;
+        }
+
+        li span{
+            display: inline-block;
+        
+            &:before{
+                @include circle($grey-dark);
+                position: relative;
+                margin-right: 4px;
+                bottom: 1px;
+            }
+        }
+    }
+
+    .card{ padding-bottom:30px; }
+}
+
+.card{
+    display: grid;
+    ul, table, p{ grid-column: 2 / span 2; }
+    h1, h2, h3, hr, time{ grid-column: 2 / span 2; }
 }
 
 .page-not-found{
     @include card();
-
+    
     text-align: center;
-    width: 75vw;
-    min-width: 320px;
     padding: 100px 15px;
-
+    
     h2{ padding: 0; }
 }
 
 @media only screen and (min-width: $breakpoint-medium) {
-    .grid {
+    .grid{
         grid-template-columns: 0.5fr 8fr 0.5fr;
     }
     .previous, .next{
@@ -263,7 +283,7 @@ time{
 }
 
 @media only screen and (min-width: $breakpoint-large) {
-    .grid {
+    .grid{
         grid-template-columns: 10px 75px auto 75px 10px;
         grid-template-areas:
         ". header header . ."
@@ -272,10 +292,17 @@ time{
         ". . footer footer .";
     }
 
-    .post{
-        grid-template-columns: 0.5fr 1fr 7fr 1fr 0.5fr;
+    .post{ grid-template-columns: 0.5fr 1fr 7fr 1fr 0.5fr; }
+    .card{ grid-template-columns: 0.5fr 0.5fr 8fr 0.5fr 0.5fr; }
+    .cv{
+        grid-template-columns: 0.5fr 1fr 8fr 1fr 0.5fr;
+        h1, h2{ grid-column: 1/ span 5; }
+        .card{ grid-column: 3/ span 3;}
+        h2{ margin-top: 30px; }
+    }
 
-        p, ul, ol{ grid-column: 3 / 5; }
+    .post, .card{
+        p, ul, ol, table{ grid-column: 3 / 5; }
         h1, h2, h3, h4, h5, h6, hr, time, pre{ grid-column: 2 / span 3; }
     }
         
@@ -283,29 +310,23 @@ time{
         display: grid;
         grid-template-columns: 5% 50% 15px 1fr 5%;
     }
+        
     .dashboard{ grid-column: 1 / span 2; }
     .post-list{ grid-column: 4 / span 2; }
 }
 
 @media only screen and (min-width: $breakpoint-wide) {
-    // .homepage{
-    //     grid-template-columns: 1fr 1fr 20px 1fr 1fr;
-    // }
-
-    // .dashboard{ grid-column: 1 / span 2; }
-
     .post-list{
         display: grid;
         grid-template-columns: 1fr 8fr;
-        grid-auto-rows: minmax(min-content, max-content);
         justify-items: start;
+
+        grid-auto-rows: minmax(min-content, max-content);
     }
 
-    .post-title { grid-column: 1 / span 2; }
-    .post-link {
+    .post-title{ grid-column: 1 / span 2; }
+    .post-link{
         grid-column: 2 / span 1;
         justify-self: stretch;
     }
-
-    .page-not-found{ width: 90vw; }
 }

@@ -1,6 +1,7 @@
-#+TITLE: Layout Template
 #+DATE: 2017-03-05T08:34:02+02:00
+#+TITLE: Layout Template
 #+DRAFT: true
+#+TYPE: post
 
 So, checking out *org-mode* instead of +markdown+, and I am /happy/ with how things are =turning out=. It all ~appears to be here~.
 

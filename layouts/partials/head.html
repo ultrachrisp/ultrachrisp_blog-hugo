@@ -21,9 +21,10 @@
     <meta name="theme-color" content="#ffffff">
     
     <!-- stylesheet -->
+    <link href="{{ .Site.Params.font }}" rel="stylesheet">
+    <link href="{{ .Site.BaseURL }}fonts/icomoon.woff?6w01iz" rel="preload" as="font" type="font/woff" crossorigin>
     {{ $style := resources.Get "scss/main.scss" | toCSS | postCSS | fingerprint }}
     <link href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet">
-    <link href="{{ .Site.Params.font }}" rel="stylesheet">
     
     <!-- javascript -->
     {{ template "_internal/google_analytics_async.html" . }}

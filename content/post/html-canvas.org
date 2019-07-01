@@ -1,6 +1,7 @@
-#+TITLE: HTML Canvas Play
 #+DATE: 2018-08-05T16:17:34+02:00
+#+TITLE: HTML canvas play
 #+DRAFT: true
+#+TYPE: post
 
 ** Oh the joys
    HTML Canvas seems to be one of those great technologies that you never get the time to play with. I hear of people people
