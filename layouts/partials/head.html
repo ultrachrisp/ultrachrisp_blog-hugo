@@ -22,7 +22,7 @@
     
     <!-- stylesheet -->
     <link href="{{ .Site.Params.font }}" rel="preload" as="style">
-    <link href="{{ .Site.BaseURL }}fonts/icomoon.woff" rel="preload" as="font" type="font/woff" crossorigin>
+    <link href="{{ .Site.BaseURL }}fonts/icomoon.woff?6w01iz" rel="preload" as="font" type="font/woff" crossorigin>
     {{ $style := resources.Get "scss/main.scss" | toCSS | postCSS | fingerprint }}
     <link href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet">
     

@@ -5,7 +5,7 @@
         {{ $logo := resources.Get "svg/front.svg" }}
         <img src="{{ $logo.Permalink }}" alt="Logo"/>
         {{ $script := resources.Get "js/main.bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
-        <script type="text/javascript" src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}" async></script>
+        <script type="text/javascript" src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
 
     </div>
     <div class="post-list">

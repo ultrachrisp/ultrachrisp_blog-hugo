@@ -4,40 +4,39 @@
 #+TYPE: cv
 
 ** Work Experience
-*** Absa (formerly Barclays Africa)
+*** Absa (formerly Barclays Africa Group Ltd)
 |-------------------------+----------------------------|
 | February 2016 - present | Johannesburg, South Africa |
 |-------------------------+----------------------------|
 |                         | Creative Technologist      |
 |-------------------------+----------------------------|
 
-- Initially worked on a crisis portfolio but was able to turn it around into a success story for the platform.
-- Introduced the company to React & helped to integrate React into Adobe Experience Manager before there was native support.
-- Consistently given & delivered high risk or technical briefs considered too risky for other teams or members.
-- Repeatedly asked to assist projects in crisis with a great record of delivering core requirements on time.
 - Responsible for projects from concept through to deployment across Africa.
-- Motivated for & established the company's first virtual reality capability across three cities.
-- Established a partnership with a University to better explore virtual reality, its capabilities & different forms of user engagement.
-- Managed three interns to produce augmented reality proof of concepts.
-- Contributed to a multi-disciplinary team on the practical application of the new corporate brand.
+- Successfully turned around several crisis portfolios & projects with a great record of delivering core requirements on time.
+- Consistently given & delivered high risk or technical briefs considered too risky for other teams or members.
 - Helped establish work flows & pipelines for different portfolios.
 - Established best practises & support for other developers & their teams.
+- Contributed to a multi-disciplinary team on the practical application of the new corporate brand.
+- Introduced the company to React & helped to integrate React into Adobe Experience Manager before there was native support.
+- Motivated for & established the company's first virtual reality capability across three cities.
+- Established a partnership with a University to better explore virtual reality, its capabilities & different forms of user engagement.
+- Managed three interns remotely to produce augmented reality proof of concepts.
 
-*** McCann Johannesburg
+*** McCann Worldgroup South Africa (Pty) Ltd
 |------------------------------+-----------------------|
 | January 2015 - December 2015 | Sandton, South Africa |
 |------------------------------+-----------------------|
 |                              | Senior Developer      |
 |------------------------------+-----------------------|
 
-- Only developer in a newly created digital department.
-- Conceptualised, successfully motivated, built & deployed a cross-device, cross-platform, mobile based augmented reality solution.
-- Interfaced directly with clients to unpack & define their core objectives.
-- Supported the project managers, community managers & designers in the execution of their tasks.
-- Provided scopes of work, functional specifications as well as process pipelines for projects.
+- Was the only developer in a newly created digital department.
 - Single-handedly built, deployed & maintained many of the projects I was involved with.
-- Successfully deployed projects within the tight time & budget constraints of the client.
 - Provided technical direction & insights into numerous technologies & tech-stacks.
+- Interfaced directly with clients to unpack & define their core objectives.
+- Provided scopes of work, functional specifications as well as process pipelines for projects.
+- Successfully deployed projects within the tight time & budget constraints of the client.
+- Supported the project managers, community managers & designers in the execution of their tasks.
+- Conceptualised, successfully motivated, built & deployed a cross-device, cross-platform, mobile based augmented reality solution.
 - Clients include: McCann <span>Nestle</span> <span>Waltons</span> <span>Kauai</span> <span>UIP</span> <span>Chevrolet</span> <span>Isuzu</span> <span>Zurich</span> <span>Econet</span>
 
 *** Freelance
@@ -50,7 +49,7 @@
 - Assisted clients to narrow down & define their core objectives.
 - Provided technical direction on key technologies & realistic timelines required to achieve objectives.
 - Successfully conceptualised, scoped, developed & deployed a number of projects.
-- Utilised time to expand knowledge base, streamline development processes & investigate interesting technologies.
+- Utilised time to expand knowledge base, streamline development processes & investigate emerging technologies.
 
 *** Gloo
 |---------------------------+-------------------------|
@@ -61,8 +60,8 @@
 
 - Responsible for taking high-pressure individual & team briefs from concept through to deployment.
 - Successfully & consistently deployed projects within the given time-lines & budgets.
-- Called in to assist with crisis or time-critical projects, as well as difficult clients.
-- Able to identify process bottle-necks or pain-points & possible ways to mitigate or solve these issues.
+- Called in to assist with crisis or time-critical projects, as well as interface with difficult clients.
+- Able to identify process bottle-necks or potential pitfalls & possible ways to mitigate or resolve these issues.
 - Provided technical direction for technologies not in the company portfolio.
 - Supported & up-skilled the junior developers & creatives.
 - Clients include: BMW <span>FNB</span> <span>MINI</span> <span>RMB</span> <span>Samsung</span> <span>SA Tourism</span>
@@ -74,7 +73,7 @@
 |                              | Developer              |
 |------------------------------+------------------------|
 
-- Only developer in the company.
+- Was the only developer in the company.
 - Reverse engineered application development for existing & new devices.
 - Successfully planned, developed & deployed touch, multi-touch and motion capture applications.
 - Researched & implemented technologies for the company.
@@ -130,14 +129,15 @@
 
 ** Other Initiatives
 *** [[https://www.afrikaburn.com/][AfrikaBurn]]
-- *2019:* Project lead for the 'Sweet Love Gateway' art work.
+- *2019:* Build team lead for the 'Sweet Love Gateway' art work.
 - Successfully proposed the project & motivated for grants.
+- Participated in fundraisers for the project.
 - Planned, prototyped, budgeted & successfully executed the project.
 - Oversaw & coordinated the transportation of equipment to the build site.
 - Solely responsible for the lighting of the project, which was made up of 40m/ 2400 individually addressable LED lights.
 - Invited to present & share my experiences with a number of interested parties.
 
-- *2010:* Assisted with the development of the original website theme.
+- *2010:* Assisted with the development & revision of the original website theme.
 
 # *** University of Pretoria: VRi Lab
 # - Played a part in the formation of the Virtual Reality & Interaction Laboratory (VRi).
