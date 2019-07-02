@@ -35,9 +35,9 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-weight: 300;
-  clear: both;
-  padding: 20px 0 0 0;
+    font-weight: 300;
+    padding: 20px 0 0 0;
+    // clear: both;
 }
 
 h1{
@@ -76,9 +76,9 @@ a{
 }
 
 ul, ol{
-    padding-bottom:15px;
+    padding-bottom: 15px;
     list-style-position: initial;
-    li{ padding-left:30px; }
+    li{ margin-left: 30px; }
 }
 
 ul{
@@ -155,16 +155,18 @@ table{
     grid-area: main;
 }
 
-.post{
+.post, .card{
     @include card();
     padding-bottom: 30px;
     
     display: grid;
-    grid-template-columns: 2% 1fr 2%;
+    grid-template-columns: 4% 1fr;
 
-    p, ul, ol, table{ grid-column: 2 / 3; }
-    h1, h2, h3, h4, h5, h6, hr, time, pre{ grid-column: 2 / span 3; }
+    p, ul, ol, table{ grid-column: 2; }
+    h1, h2, h3, h4, h5, h6, hr, time, pre{ grid-column: 1 / span 2; }
 }
+
+.card{ grid-column: 2; }
 
 .post-link{
     @include card();
@@ -223,12 +225,9 @@ table{
     display: grid;
     grid-template-columns: 2% 1fr 2%;
 
-    h1{
-        justify-self: center;
-        font-weight: bold;
-    }
+    h1{ justify-self: center; }
     h2{ justify-self: start; }
-    h1, h2, .card{
+    h1, h2{
         @include card();
         grid-column: 2;
     }
@@ -250,15 +249,14 @@ table{
             }
         }
     }
-
-    .card{ padding-bottom:30px; }
 }
 
-.card{
-    display: grid;
-    ul, table, p{ grid-column: 2 / span 2; }
-    h1, h2, h3, hr, time{ grid-column: 2 / span 2; }
-}
+// .card{
+//     display: grid;
+//     grid-template-columns: 4% 1fr;
+//     ul, table, p{ grid-column: 2; }
+//     h1, h2, h3, hr, time{ grid-column: 1 / span 2; }
+// }
 
 .page-not-found{
     @include card();

@@ -17,9 +17,9 @@
 - Helped establish work flows & pipelines for different portfolios.
 - Established best practises & support for other developers & their teams.
 - Contributed to a multi-disciplinary team on the practical application of the new corporate brand.
-- Introduced the company to React & helped to integrate React into Adobe Experience Manager before there was native support.
-- Motivated for & established the company's first virtual reality capability across three cities.
-- Established a partnership with a University to better explore virtual reality, its capabilities & different forms of user engagement.
+- Introduced the bank to React & helped to integrate React into Adobe Experience Manager before there was native support.
+- Motivated for & established the bank's first virtual reality capability across Cape Town, Johannesburg & Pretoria.
+- Established a relationship with the University of Pretoria to better explore virtual reality, its capabilities & different forms of user engagement.
 - Managed three interns remotely to produce augmented reality proof of concepts.
 
 *** McCann Worldgroup South Africa (Pty) Ltd
@@ -51,7 +51,7 @@
 - Successfully conceptualised, scoped, developed & deployed a number of projects.
 - Utilised time to expand knowledge base, streamline development processes & investigate emerging technologies.
 
-*** Gloo
+*** Gloo (merged into Ogilvy South Africa)
 |---------------------------+-------------------------|
 | June 2012 - December 2013 | Greenside, South Africa |
 |---------------------------+-------------------------|
@@ -139,10 +139,10 @@
 
 - *2010:* Assisted with the development & revision of the original website theme.
 
-# *** University of Pretoria: VRi Lab
-# - Played a part in the formation of the Virtual Reality & Interaction Laboratory (VRi).
-# - Invited to present guest lectures to post-graduate students.
-# - Invited to join workshops & panels to the benefit of students.
+*** University of Pretoria
+- Played a pivotal role in industry push towards a focus on virtual reality at the University of Pretoria.
+- Invited to present guest lectures to post-graduate & prospective students.
+- Invited to join workshops & panels to the benefit of students.
 
 *** OppiKoppi
 - Successfully conceptualised, motivated for, prototyped & led/ co-led the construction of a number of structures.
@@ -232,7 +232,7 @@ Major in English
 
 /My previous roles & responsibilities have required me to work with many different technologies & stacks. I do not claim to be an expert in all of them, since I was usually required to get up to speed as quickly as possible to solve specific problems. However, I do have a strong understanding of the fundamental programming principles & an eye for what makes clean, scalable code which (in my opinion) is present in most technology stacks./
 
-- *Languages:* [[https://www.javascript.com/][JavaScript]] <span>[[http://www.cplusplus.com/doc/tutorial/][C++]]</span> <span>[[https://www.python.org/][Python]]</span> <span>[[https://www.w3schools.com/html/html5_intro.asp][HTML5]] & [[https://www.w3schools.com/html/html5_canvas.asp][Canvas]]</span> <span>[[https://sass-lang.com/][(S)CSS]]</span> <span>[[https://www.w3schools.com/sql/][SQL]]</span> <span>[[https://www.gnu.org/software/emacs/manual/eintr.html][Emacs Lisp]]</span> <span>[[https://golang.org/][Go]]</span> <span>[[https://www.scala-lang.org/][Scala]]</span> <span>[[https://www.gnu.org/software/octave/][Octave]]</span> <span>[[https://www.adobe.com/devnet/actionscript/learning.html][ActionScript 3]]</span> <span>[[https://www.oracle.com/java/][Java]]</span> <span>[[https://php.net/][PHP]]</span> <span>[[https://docs.microsoft.com/en-us/dotnet/csharp/][C#]]</span>
+- *Languages:* [[https://www.javascript.com/][JavaScript]] <span>[[http://www.cplusplus.com/doc/tutorial/][C++]]</span> <span>[[https://www.python.org/][Python]]</span> <span>[[https://www.w3schools.com/html/html5_intro.asp][HTML5]] & [[https://www.w3schools.com/html/html5_canvas.asp][Canvas]]</span> <span>[[https://sass-lang.com/][SCSS]]</span> <span>[[https://www.w3schools.com/sql/][SQL]]</span> <span>[[https://www.gnu.org/software/emacs/manual/eintr.html][Emacs Lisp]]</span> <span>[[https://golang.org/][Go]]</span> <span>[[https://www.scala-lang.org/][Scala]]</span> <span>[[https://www.gnu.org/software/octave/][Octave]]</span> <span>[[https://www.adobe.com/devnet/actionscript/learning.html][ActionScript 3]]</span> <span>[[https://www.oracle.com/java/][Java]]</span> <span>[[https://php.net/][PHP]]</span> <span>[[https://docs.microsoft.com/en-us/dotnet/csharp/][C#]]</span>
 - *Frameworks:* [[https://reactjs.org/][React]] <span>[[https://jestjs.io/][Jest]]</span> <span>[[https://openframeworks.cc/][OpenFrameworks]]</span> <span>[[https://www.ptc.com/en/products/augmented-reality][Vuforia]]</span> <span>[[https://developers.google.com/ar/][ARcore]]</span> <span>[[https://www.opengl.org/][OpenGL]]</span> <span>[[https://spark.apache.org/][Apache Spark]]</span> <span>[[https://angular.io/][Angular]]</span> <span>[[https://dotnet.microsoft.com/][.NET]]</span>
 - *Task runners:* [[https://www.npmjs.com/][NPM]] <span>[[https://webpack.js.org/][Webpack]]</span> <span>[[https://gulpjs.com/][Gulp]]</span> <span>Bash</span> <span>[[https://gruntjs.com/][Grunt]]</span>
 - *Content Management Systems:* [[https://gohugo.io/][Hugo]] <span>[[https://www.adobe.com/africa/marketing/experience-manager.html][Adobe Experience Manager (AEM)]]</span> <span>[[https://wordpress.com/][Wordpress]]</span> <span>[[https://www.drupal.org/][Drupal]]</span>
