@@ -1,0 +1,13 @@
+#+DATE: 2019-07-07T16:42:43+02:00
+#+TITLE: Sweet Love Gateway
+#+DRAFT: false
+#+TYPE: post
+
+{{< img name="play-time-1.jpg" classes="right" alt="Description for screen readers." >}}
+Hindsight is completely unforgiving. Looking back & observing oversights is a luxury most projects cannot afford. Allowing yourself space to fail & learn at an early stage of a project has advantages. It also allows a project to grow while preventing journey bottlenecks and minimising drop-offs.
+
+** Afrikaburn 2019: Ephemeropolis
+   Content
+
+** Nothing here
+
