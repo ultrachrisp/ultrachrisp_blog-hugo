@@ -4,10 +4,11 @@
 #+TYPE: post
 
 {{< img name="play-time-1.jpg" classes="right" alt="Description for screen readers." >}}
-Hindsight is completely unforgiving. Looking back & observing oversights is a luxury most projects cannot afford. Allowing yourself space to fail & learn at an early stage of a project has advantages. It also allows a project to grow while preventing journey bottlenecks and minimising drop-offs.
+Even though I got involved with the AfrikaBurn website build in 2010, Ephemeropolis was my first burn. Attending AfrikaBurn has long been on the todo list, so late last year, we started making plans. Since 2010, my group of friends & I had gotten a lot of experience building projects at Oppikoppi & Meilie-pop. AfrikaBurn is a better setting for art-projects & building things, so building our own project seemed natural since we were going.
 
-** Afrikaburn 2019: Ephemeropolis
-   Content
+** Prototyping
+*** Funding
+*** Logistics
+*** Afrikaburn 2019: Ephemeropolis
 
-** Nothing here
 

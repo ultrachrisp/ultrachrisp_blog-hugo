@@ -159,13 +159,13 @@
 
 ** Education
 
-*** Coursera: Machine Learning
-|---------------+---------------------|
-| Present study | Stanford University |
-|---------------+---------------------|
+*** [[https://www.coursera.org/account/accomplishments/certificate/NQ7GJD6E4UZR][Coursera: Machine Learning]]
+|-----------+---------------------|
+| July 2019 | Stanford University |
+|-----------+---------------------|
 
-- Hope to provide a solid basis for future machine learning projects.
-- Better leverage machine learning techniques for computer vision & augmented reality applications.
+- Provided a solid base for future machine learning projects.
+- Better understanding on how to leverage machine learning techniques for computer vision & augmented reality applications.
 
 *** [[https://www.coursera.org/account/accomplishments/specialization/LQ3SZPLYWTF7][Coursera Specialisation: Python for Everybody]]
 |--------------+------------------------|
