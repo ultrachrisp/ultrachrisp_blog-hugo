@@ -106,10 +106,10 @@ table{
 
 img {
     max-width:40vw;
-    margin: 0 10px 5px;
-    border-radius: 25px;
+    margin-left: 15px;
     &.left { float:left; }
     &.right { float:right; }
+    &.corners { border-radius: 25px; }
 }
 
 // Custom Layout for different sections
@@ -320,7 +320,7 @@ img {
     .dashboard{ grid-column: 1 / span 2; }
     .post-list{ grid-column: 4 / span 2; }
 
-    img { max-width:25vw; }
+    img { max-width:40%; }
 }
 
 @media only screen and (min-width: $breakpoint-wide) {

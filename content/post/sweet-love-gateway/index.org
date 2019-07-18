@@ -3,12 +3,15 @@
 #+DRAFT: false
 #+TYPE: post
 
-{{< img name="play-time-1.jpg" classes="right" alt="Description for screen readers." >}}
-Even though I got involved with the AfrikaBurn website build in 2010, Ephemeropolis was my first burn. Attending AfrikaBurn has long been on the todo list, so late last year, we started making plans. Since 2010, my group of friends & I had gotten a lot of experience building projects at Oppikoppi & Meilie-pop. AfrikaBurn is a better setting for art-projects & building things, so building our own project seemed natural since we were going.
+{{< img name="play-time-1.jpg" classes="right corners" alt="Description for screen readers." >}}
+Even though I got involved with the AfrikaBurn website build in 2010, Ephemeropolis was my first burn. Attending AfrikaBurn has long been on the todo list, so late last year, we started making plans. Since 2010, my group of friends & I had gotten a lot of experience building projects at Oppikoppi & Meilie-pop. AfrikaBurn is a better setting for art-projects & building things, so building our own project seemed natural. Since we were going, why not build something?<br><br>That something took the form of a gateway via a [[https://www.mathcurve.com/surfaces.gb/paraboloidhyperbolic/paraboloidhyperbolic.shtml][hyperbolic paraboloid]] (look at my fancy vocabulary). This was not the first time that the group had built this structure, but I thought there was room to refine the 'how' to build it.
 
 ** Prototyping
-*** Funding
-*** Logistics
+   This is one of those skills that matures like a fine wine. When I was young, brute force & enthusiasm would carry me through most projects. With time, I realised that I was making similar mistakes at similar stages of projects. Or worse, the team made easily avoidable mistakes cause they didn't check in with everyone who could add value to the project. The process of finding & fixing issues doesn't go away, it's 'when' you do it that prototyping can help with.
+
+   Prototyping for pioneering projects was always a given. As a scout (aka young hot-shot who builds first & explains later, dealing with & fixing issues as they arrise), prototyping was what the scout master told you to do which resulted in a small version of the real version. It was great for photo opportunities (small version in foreground, big version in background) and little else. We did 'attempt' to measure the poles to scale, but more to cause we were told to. 
+*** Role with it
+*** Group Dynamics
 *** Afrikaburn 2019: Ephemeropolis
 
 
