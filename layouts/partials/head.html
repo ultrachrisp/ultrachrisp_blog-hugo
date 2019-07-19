@@ -27,7 +27,9 @@
     <link href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet">
     
     <!-- javascript -->
-    {{ template "_internal/google_analytics_async.html" . }}
+    {{- if not .Site.IsServer -}}
+       {{ template "_internal/google_analytics_async.html" . }}
+    {{- end -}}
     <!-- script async type="text/javascript" src="/js/main.js"></script -->
 </head>
 <body class="grid">

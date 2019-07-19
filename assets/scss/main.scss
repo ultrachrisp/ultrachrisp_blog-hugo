@@ -106,9 +106,9 @@ table{
 
 img {
     max-width:40vw;
-    margin-left: 15px;
-    &.left { float:left; }
-    &.right { float:right; }
+
+    &.left { float:left; margin-right: 15px; }
+    &.right { float:right; margin-left: 15px; }
     &.corners { border-radius: 25px; }
 }
 
