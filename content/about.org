@@ -1,0 +1,15 @@
+#+DATE: 2019-07-18T10:09:06+02:00
+#+TITLE: About
+#+DRAFT: true
+#+TYPE: about
+
+My name is Chrisp, and I'm a 'space cowboy coder'. 
+
+** Definition
+*Space Cowboy Coder* /noun/ 
+1. Frequent trips to the stratosphere to get high level views of a project before zooming in & dealing or assisting with pain-points.
+2. Analytical & process oriented but willing to break the rules for time critical solutions.
+3. Works well in teams or individually, depending on the situation & the needs of the project.
+
+** I build stuff
+   Even though there are many steps to effective application design & development, in many cases, it falls on those responsible for implementation to make sense of the work. I assist clients & project managers define their 'need', as well as educate them on how to structure or position their product. I help different teams & disciplines make sense of the 'ask', as well as pull in specific talent at the relevant stages when their skills are needed. I oversee the juggling of all these 'requirements' into a practical & relevant solution... but it doesn't end there. I co-ordinate the gathering of feedback & unpacking of the analytical data to help define the next iteration cycle, only stepping away when all relevant role players are fore-filling their mandates.

@@ -4,13 +4,55 @@
 #+TYPE: post
 
 {{< img name="play-time-1.jpg" classes="right corners" alt="Description for screen readers." >}}
-Even though I got involved with the AfrikaBurn website build in 2010, Ephemeropolis was my first burn. Attending AfrikaBurn has long been on the todo list, so late last year, we started making plans. Since 2010, my group of friends & I had gotten a lot of experience building projects at Oppikoppi & Meilie-pop. AfrikaBurn is a better setting for art-projects & building things, so building our own project seemed natural. Since we were going, why not build something? <br><br> That something took the form of a gateway via a [[https://www.mathcurve.com/surfaces.gb/paraboloidhyperbolic/paraboloidhyperbolic.shtml][hyperbolic paraboloid]] (look at my fancy vocabulary). This was not the first time that the group had built this structure, but I thought there was room to refine the 'how' to build it.
-
+Even though I got involved with the AfrikaBurn website build in 2010, Ephemeropolis was my first burn. Attending AfrikaBurn has long been on the todo list, so we started making plans late last year. The core build team included [[https://www.facebook.com/igor.zeljko.77][Igor]], [[https://www.facebook.com/alastair.mehl][Alastair]], [[https://www.facebook.com/magoshashot][Margaret]], [[https://www.facebook.com/tiffanychi101][Tiffany]] & myself. There were more people involved with other projects built at Oppikoppi & Meilie-pop, but this was the team building at AfrikaBurn. AfrikaBurn is a better setting for art-projects, so contributing via building something seemed natural. <br><br> That something took the form of a gateway via a [[https://www.mathcurve.com/surfaces.gb/paraboloidhyperbolic/paraboloidhyperbolic.shtml][hyperbolic paraboloid]] (look at my fancy vocabulary). Igor, Alastair & Margaret had built this structure before but I thought there was room to refine 'how' it was build.
+   
 ** Prototyping
    {{< img name="play-time-1.jpg" classes="left corners" alt="Description for screen readers." >}} 
-   This is one of those skills that matures like a fine wine. When I was young, brute force & enthusiasm would carry me through most projects. With time, I realised that I was making similar mistakes at similar stages of projects. Or worse, the team made easily avoidable mistakes cause they didn't check in with everyone who could add value to the project. The process of finding & fixing issues doesn't go away, it's 'when' you do it that prototyping can help with. <br><br> Prototyping for pioneering projects was always a given. As a scout (aka young hot-shot who builds first & explains later, dealing with & fixing issues as they arrise), prototyping was what the scout master told you to do which resulted in a small version of the real version. It was great for photo opportunities (small version in foreground, big version in background) and little else. We did 'attempt' to measure the poles to scale, but more to cause we were told to (older, wiser, more experienced) Scout Masters.
+   This is one of those skills that matures like a fine wine. When I was young, brute force & enthusiasm would carry me through most projects. With time, I realised that I was making similar mistakes at similar stages of a project. Worse, the team made easily avoidable mistakes because they didn't check in with everyone who could add value to the project. The process of finding & fixing issues doesn't go away, it's 'when' you fix them that prototyping can help with. <br><br> Prototyping for pioneering projects was always a given. As a scout (aka young hot-shot who builds first & explains later, dealing with & fixing issues as they arrise), prototyping was what the scout master told you to do which resulted in a small version of the real version. It was great for photo opportunities (small version in foreground, big version in background) but not much else (or so I thought). We did 'attempt' to measure the poles to scale, but more because we were told to.
 
-   As I have mentioned in [[https://chrispyke.com/post/almighty-prototype/][previous post]], prototypes are my sandbox. It's a space where I can play and make mistakes before the mistakes have major concequences. 
+   As I have mentioned in a [[https://chrispyke.com/post/almighty-prototype/][previous post]], prototypes are my sandbox. It's a space where I can play and make mistakes before the mistakes result in serious concequences. 
+
+*** The Problem Statement
+    The structure itself is simple enough. A square comprised of four square lashings at each corner. The hyperbolic paraboloid is created when you warp the 2D square into a 3D space. An interesting by-product of the shape is that the surface or mesh bends to accommodate the frame, but the individual threads or twines remain straight. Since the threads are straight, the problems to solve are:
+
+    - How to secure the individual threads to the poles?
+    - The optimal spacing between threads to create a dense enough surface to catch the LED light?
+    - Possible ways to achieve the above without over working the build team?
+
+    The first few times the structure was built, the spacing between threads was large. Too large to practically catch light. The threads where also tied to the poles individually, making the entire process labour intensive. Each thread needed to be tied into place individually. When the structure was hoisted into it's final position, each thread then need to be tightened. Unsurprisingly, Margaret did not have great things to say about this approach. It got the structure up, but it took a long time & a lot of effort. My programming self needed a way to speed this process up. There had to be a way to for-loop / while-loop / map over the threads.
+
+*** Iteration
+    I set about trying different approaches. The first prototype was concerned with the basic shape.
+ 
+    - Could the hyperbolic paraboloid be hoisted into position from a flat 2D square? 
+    - Would the shape appear if we had two flat, perpendicular surfaces that weren't woven into one another? 
+
+    As much as a small scale prototype could, it did confirmed both questions. The structure would not be as secure as if the two planes were woven into one another, but the time spent weaving would be considerably reduced. It would also allow us to tighten threads without the thread getting caught in the weave. There were obvious problems with this prototype, but it served it's purpose & was super quick to make.
+
+    The next problem was regarding the twine. Prototype 2 & 3 would be focused around solving the below:
+
+    - How could we anchor the twine on the pole so that we could weave & tighten multiple threads at once?
+    - Was there a possibility of weaving more than a single thread at a time?
+    - Could we access the twine from the ground, once the structure was getting close to it's final shape?
+
+    We started investigating different types of anchorage on the poles, weight the cost of the anchorage vs the number of anchors provided. One solution proposed by Igor or Tiffany (or both) was to use metal chains. If the chain was secured onto the pole, it provided a ton of anchorage points without having to individually secure each point (vs hooks or eye-hole bolts). It certainly wasn't a perfect solution, but it did provide the best 'number of anchor points per cost' ratio of the options explored.
+
+    The actual method of weaving the twine through the chains was the next major problem. Prototype 2 prooved, after an afternoon of weaving, that simply feeding the twine through the chain was not good enough. The volume of thread, as well as possible confusion caused by different people weaving in slightly different ways, made this approach impractical. Igor suggested a different approach, feeding the incoming end of the twine through a single chain link, running the thread along the chain and then feed the out-going end through a chain link further down. This approach was much clearer as it was immediately evident which end of the twine needs to be pulled vs which end needs slack to take up the tension. Again, there is a programming term for this: clear & descriptive variable names.
+
+    With these two pivital issues solved in theory, I focused my attention on some of the finer construction issues. The surface area of the hyperbolic paraboloid is much smaller than a flat square. When building the structure, we can save a lot (but not all) of wasted twine by getting the starting shape as close to the final shape. This meant hoisting 2 corners up on barrels, as well as moving the base poles in. Additionally, if you are able to tighten the individual threads, you don't need access to all the anchor points, just half of them. So you could (in theory) keep one half of the structure on the ground & hoist the other half of the structure into the air. This could be done iteratively, and shouldn't need additional scaffolding to secure the part of the gate that is in the air.
+
+    Armed with these take aways from the prototypes, I felt confident that we could errect the structure on the day.
+
+*** Individually Addressable Awesomeness
+    I had an idea of 'how' I wanted to light the structure, but this was very new ground for me. It culminated into my first adventure into micro-controllers, and I was wholely unprepared for the end result.
+
+    It started with crawling the internet, inspecting tutorials, looking at specs, looking at prices, relooking at specs & prices, trying to factor redundacy into the system, just to start the process again when I found something more promising.
+
+    The first problem to solve was power. After looking at what was available & what was most cost effective, we settled on a battery of car batteries (5 to be exact). There would be solar panels to charge them in the day, and they should provide more than enough power for the lights at night.
+
+    The reason for such a large power supply was the LED light strips, specifically the WS2813 (upgraded WS2812b) strips. We were able to source them at 5m / 60 LEDs per meter strips. Each strip at 300 individually addressable LEDs, with a potential power usage of 100w per strip (if each LED was burning at full brightness on white light). The structure was made of 4 x 11m poles, so we had roughly 40m that we needed to cover with LEDs. That is 2400 individually addressable LEDs... I was starting to get very excited.
+
+    The LED strips ran of 5v, which was very handy. We needed step-down converters to get the 20v for the car-batteries to 5v to run the strips as well as the micro-controllers. I was able to get an idea of the processing power required to smoothly run that number of LED lights from [[https://github.com/FastLED/FastLED/issues/288][this thread]]. To ensure that I wasn't overworking the controllers, I decided to get an Arduino DUE for each pole
 
 *** Role with it
 *** Group Dynamics
