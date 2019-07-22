@@ -1,5 +1,5 @@
 baseurl = "https://chrispyke.com/"
-languageCode = "en-za"
+languageCode = "en"
 title = "Space Cowboy Coding"
 enableRobotsTXT = true
 disable404 = false

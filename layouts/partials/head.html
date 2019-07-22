@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="{{ .Site.LanguageCode }}">
 <head>
     <meta http-equiv="x-ua-compatible" content="IE=Edge" />
     <meta charset="UTF-8">
@@ -27,9 +27,9 @@
     <link href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet">
     
     <!-- javascript -->
-    {{- if not .Site.IsServer -}}
+    {{ if not .Site.IsServer }}
        {{ template "_internal/google_analytics_async.html" . }}
-    {{- end -}}
+    {{ end }}
     <!-- script async type="text/javascript" src="/js/main.js"></script -->
 </head>
 <body class="grid">
