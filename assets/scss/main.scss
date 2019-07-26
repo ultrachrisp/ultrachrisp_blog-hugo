@@ -37,7 +37,6 @@ body{
 h1, h2, h3, h4, h5, h6{
     font-weight: 300;
     padding: 20px 0 0 0;
-    // clear: both;
 }
 
 h1{
@@ -170,7 +169,7 @@ img {
     display: grid;
     grid-template-columns: 4% 1fr;
 
-    p, ul, ol, table{ grid-column: 2; }
+    p, ul, ol, table, div{ grid-column: 2; }
     h1, h2, h3, h4, h5, h6, hr, time, pre{ grid-column: 1 / span 2; }
 }
 
@@ -259,13 +258,6 @@ img {
     }
 }
 
-// .card{
-//     display: grid;
-//     grid-template-columns: 4% 1fr;
-//     ul, table, p{ grid-column: 2; }
-//     h1, h2, h3, hr, time{ grid-column: 1 / span 2; }
-// }
-
 .page-not-found{
     @include card();
     
@@ -308,7 +300,7 @@ img {
     }
 
     .post, .card{
-        p, ul, ol, table{ grid-column: 3 / 5; }
+        p, ul, ol, table, div{ grid-column: 3 / 5; }
         h1, h2, h3, h4, h5, h6, hr, time, pre{ grid-column: 2 / span 3; }
     }
         
