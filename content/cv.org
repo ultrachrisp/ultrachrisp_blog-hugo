@@ -37,7 +37,7 @@
 - Successfully deployed projects within the tight time & budget constraints of the client.
 - Supported the project managers, community managers & designers in the execution of their tasks.
 - Conceptualised, successfully motivated, built & deployed a cross-device, cross-platform, mobile based augmented reality solution.
-- Clients include: McCann <span>Nestle</span> <span>Waltons</span> <span>Kauai</span> <span>UIP</span> <span>Chevrolet</span> <span>Isuzu</span> <span>Zurich</span> <span>Econet</span>
+- Clients include: McCann {{< dot >}}Nestle{{</ dot >}} {{< dot >}}Waltons{{</ dot >}} {{< dot >}}Kauai{{</ dot >}} {{< dot >}}UIP{{</ dot >}} {{< dot >}}Chevrolet{{</ dot >}} {{< dot >}}Isuzu{{</ dot >}} {{< dot >}}Zurich{{</ dot >}} {{< dot >}}Econet{{</ dot >}}
 
 *** Freelance
 |------------------------------+------------------------|
@@ -64,7 +64,7 @@
 - Able to identify process bottle-necks or potential pitfalls & possible ways to mitigate or resolve these issues.
 - Provided technical direction for technologies not in the company portfolio.
 - Supported & up-skilled the junior developers & creatives.
-- Clients include: BMW <span>FNB</span> <span>MINI</span> <span>RMB</span> <span>Samsung</span> <span>SA Tourism</span>
+- Clients include: BMW {{< dot >}}FNB{{</ dot >}} {{< dot >}}MINI{{</ dot >}} {{< dot >}}RMB{{</ dot >}} {{< dot >}}Samsung{{</ dot >}} {{< dot >}}SA Tourism{{</ dot >}}
 
 *** LXi
 |------------------------------+------------------------|
@@ -78,7 +78,7 @@
 - Successfully planned, developed & deployed touch, multi-touch and motion capture applications.
 - Researched & implemented technologies for the company.
 - Interfaced directly with clients to unpack & better understand their core requirements & objectives.
-- Clients included: Paragon Group <span>PWC</span> <span>Sanofi Aventis</span> <span>SAP</span>
+- Clients included: Paragon Group {{< dot >}}PWC{{</ dot >}} {{< dot >}}Sanofi Aventis{{</ dot >}} {{< dot >}}SAP{{</ dot >}}
 
 *** iLogic
 |--------------------------+-----------------------|
@@ -102,7 +102,7 @@
 - Commended on my innovative teaching style, vibrancy of my classes & the variety of media used in my lessons.
 - Worked with various PC based learning packages with my students & helped evaluate the effectiveness of these resources.
 - Responsible for planning & presenting English classes for a full range of students from young learners to adults.
-- Developed teaching resources and presented workshops to my peers around the topics: “Film & video in the classroom” <span>“Interactive software in an educational setting”.</span>
+- Developed teaching resources and presented workshops to my peers around the topics: “Film & video in the classroom” {{< dot >}}“Interactive software in an educational setting”.{{</ dot >}}
 
 *** Aston Schools
 |--------------------------+---------------------------|
@@ -115,7 +115,7 @@
 - Responsible for orientation, development & continuous assessment of the teaching skills of the foreign teachers.
 - Developed teaching schedules & provided spread sheet templates for payrolls.
 - Responsible for planning & presenting English classes for a full range of students from young learners to adults.
-- Planned and delivered promotional activities for the school including: curriculum development <span>designing advertisements</span> <span>delivering promotional classes (all ages)</span> <span>promotional field work</span> <span>judging English competitions</span> <span>creating public English corners.</span>
+- Planned and delivered promotional activities for the school including: curriculum development {{< dot >}}designing advertisements{{</ dot >}} {{< dot >}}delivering promotional classes (all ages){{</ dot >}} {{< dot >}}promotional field work{{</ dot >}} {{< dot >}}judging English competitions{{</ dot >}} {{< dot >}}creating public English corners.{{</ dot >}}
 
 *** Aston Schools
 |------------------------+----------------|
@@ -125,7 +125,7 @@
 |------------------------+----------------|
 
 - Responsible for planning & presenting English classes for a full range of students from young learners to adults.
-- Developed school resources including: flash-cards <span>posters</span> <span>authentic materials.</span>
+- Developed school resources including: flash-cards {{< dot >}}posters{{</ dot >}} {{< dot >}}authentic materials.{{</ dot >}}
 
 ** Other Initiatives
 *** [[https://www.afrikaburn.com/][AfrikaBurn]]
@@ -232,11 +232,11 @@ Major in English
 
 /My previous roles & responsibilities have required me to work with many different technologies & stacks. I do not claim to be an expert in all of them, since I was usually required to get up to speed as quickly as possible to solve specific problems. However, I do have a strong understanding of the fundamental programming principles & an eye for what makes clean, scalable code which (in my opinion) is present in most technology stacks./
 
-- *Languages:* [[https://www.javascript.com/][JavaScript]] <span>[[http://www.cplusplus.com/doc/tutorial/][C++]]</span> <span>[[https://www.python.org/][Python]]</span> <span>[[https://www.w3schools.com/html/html5_intro.asp][HTML5]] & [[https://www.w3schools.com/html/html5_canvas.asp][Canvas]]</span> <span>[[https://sass-lang.com/][SCSS]]</span> <span>[[https://www.w3schools.com/sql/][SQL]]</span> <span>[[https://www.gnu.org/software/emacs/manual/eintr.html][Emacs Lisp]]</span> <span>[[https://golang.org/][Go]]</span> <span>[[https://www.scala-lang.org/][Scala]]</span> <span>[[https://www.gnu.org/software/octave/][Octave]]</span> <span>[[https://www.adobe.com/devnet/actionscript/learning.html][ActionScript 3]]</span> <span>[[https://www.oracle.com/java/][Java]]</span> <span>[[https://php.net/][PHP]]</span> <span>[[https://docs.microsoft.com/en-us/dotnet/csharp/][C#]]</span>
-- *Frameworks:* [[https://reactjs.org/][React]] <span>[[https://jestjs.io/][Jest]]</span> <span>[[https://openframeworks.cc/][OpenFrameworks]]</span> <span>[[https://www.ptc.com/en/products/augmented-reality][Vuforia]]</span> <span>[[https://developers.google.com/ar/][ARcore]]</span> <span>[[https://www.opengl.org/][OpenGL]]</span> <span>[[https://spark.apache.org/][Apache Spark]]</span> <span>[[https://angular.io/][Angular]]</span> <span>[[https://dotnet.microsoft.com/][.NET]]</span>
-- *Task runners:* [[https://www.npmjs.com/][NPM]] <span>[[https://webpack.js.org/][Webpack]]</span> <span>[[https://gulpjs.com/][Gulp]]</span> <span>Bash</span> <span>[[https://gruntjs.com/][Grunt]]</span>
-- *Content Management Systems:* [[https://gohugo.io/][Hugo]] <span>[[https://www.adobe.com/africa/marketing/experience-manager.html][Adobe Experience Manager (AEM)]]</span> <span>[[https://wordpress.com/][Wordpress]]</span> <span>[[https://www.drupal.org/][Drupal]]</span>
-- *Version control:* [[https://git-scm.com/][Git]] <span>[[https://subversion.apache.org/][Subversion]]</span> <span>[[https://www.mercurial-scm.org/][Mercurial]]</span>
-- *Software:* [[Https://www.adobe.com/creativecloud/catalog/desktop.html][Adobe Creative Suite]] <span>[[https://www.framer.com/][Framer]]</span> <span>[[https://unity.com/][Unity]]</span> <span>[[https://www.blender.org/][Blender]]</span> <span>[[https://www.unrealengine.com/en-US/][Unreal]]</span> <span>[[https://www.sketch.com/][Sketch]]</span> <span>[[https://www.autodesk.co.za/products/maya/overview][Maya]]</span> <span>[[https://products.office.com/en-za/products][MS Office]]</span>
-- *Essentials:* [[https://www.gnu.org/software/emacs/manual/eintr.html][Emacs]] <span>[[https://orgmode.org/][Org mode]]</span> <span>[[https://magit.vc/][Magit]]</span> <span>[[https://projectile.readthedocs.io/en/latest/][Projectile]]</span> <span>[[https://ternjs.net/][Tern]]</span>
-- *Interests:* [[https://www.arduino.cc/][Arduino]] <span>ESP32</span> <span>[[https://www.raspberrypi.org/][Raspberry Pi]]</span> <span>Programmable LED strips</span> <span>[[https://developer.microsoft.com/en-us/windows/kinect][Kinect]]</span>
+- *Languages:* [[https://www.javascript.com/][JavaScript]] {{< dot >}} [[http://www.cplusplus.com/doc/tutorial/][C++]] {{</ dot >}}{{< dot >}} [[https://www.python.org/][Python]] {{</ dot >}} {{< dot >}}[[https://www.w3schools.com/html/html5_intro.asp][HTML5]] & [[https://www.w3schools.com/html/html5_canvas.asp][Canvas]]{{</ dot >}} {{< dot >}}[[https://sass-lang.com/][SCSS]]{{</ dot >}} {{< dot >}}[[https://www.w3schools.com/sql/][SQL]]{{</ dot >}} {{< dot >}}[[https://www.gnu.org/software/emacs/manual/eintr.html][Emacs Lisp]]{{</ dot >}} {{< dot >}}[[https://golang.org/][Go]]{{</ dot >}} {{< dot >}}[[https://www.scala-lang.org/][Scala]]{{</ dot >}} {{< dot >}}[[https://www.gnu.org/software/octave/][Octave]]{{</ dot >}} {{< dot >}}[[https://www.adobe.com/devnet/actionscript/learning.html][ActionScript 3]]{{</ dot >}} {{< dot >}}[[https://www.oracle.com/java/][Java]]{{</ dot >}} {{< dot >}}[[https://php.net/][PHP]]{{</ dot >}} {{< dot >}}[[https://docs.microsoft.com/en-us/dotnet/csharp/][C#]]{{</ dot >}}
+- *Frameworks:* [[https://reactjs.org/][React]] {{< dot >}}[[https://jestjs.io/][Jest]]{{</ dot >}} {{< dot >}}[[https://openframeworks.cc/][OpenFrameworks]]{{</ dot >}} {{< dot >}}[[https://www.ptc.com/en/products/augmented-reality][Vuforia]]{{</ dot >}} {{< dot >}}[[https://developers.google.com/ar/][ARcore]]{{</ dot >}} {{< dot >}}[[https://www.opengl.org/][OpenGL]]{{</ dot >}} {{< dot >}}[[https://spark.apache.org/][Apache Spark]]{{</ dot >}} {{< dot >}}[[https://angular.io/][Angular]]{{</ dot >}} {{< dot >}}[[https://dotnet.microsoft.com/][.NET]]{{</ dot >}}
+- *Task runners:* [[https://www.npmjs.com/][NPM]] {{< dot >}}[[https://webpack.js.org/][Webpack]]{{</ dot >}} {{< dot >}}[[https://gulpjs.com/][Gulp]]{{</ dot >}} {{< dot >}}Bash{{</ dot >}} {{< dot >}}[[https://gruntjs.com/][Grunt]]{{</ dot >}}
+- *Content Management Systems:* [[https://gohugo.io/][Hugo]] {{< dot >}}[[https://www.adobe.com/africa/marketing/experience-manager.html][Adobe Experience Manager (AEM)]]{{</ dot >}} {{< dot >}}[[https://wordpress.com/][Wordpress]]{{</ dot >}} {{< dot >}}[[https://www.drupal.org/][Drupal]]{{</ dot >}}
+- *Version control:* [[https://git-scm.com/][Git]] {{< dot >}}[[https://subversion.apache.org/][Subversion]]{{</ dot >}} {{< dot >}}[[https://www.mercurial-scm.org/][Mercurial]]{{</ dot >}}
+- *Software:* [[Https://www.adobe.com/creativecloud/catalog/desktop.html][Adobe Creative Suite]] {{< dot >}}[[https://www.framer.com/][Framer]]{{</ dot >}} {{< dot >}}[[https://unity.com/][Unity]]{{</ dot >}} {{< dot >}}[[https://www.blender.org/][Blender]]{{</ dot >}} {{< dot >}}[[https://www.unrealengine.com/en-US/][Unreal]]{{</ dot >}} {{< dot >}}[[https://www.sketch.com/][Sketch]]{{</ dot >}} {{< dot >}}[[https://www.autodesk.co.za/products/maya/overview][Maya]]{{</ dot >}} {{< dot >}}[[https://products.office.com/en-za/products][MS Office]]{{</ dot >}}
+- *Essentials:* [[https://www.gnu.org/software/emacs/manual/eintr.html][Emacs]] {{< dot >}}[[https://orgmode.org/][Org mode]]{{</ dot >}} {{< dot >}}[[https://magit.vc/][Magit]]{{</ dot >}} {{< dot >}}[[https://projectile.readthedocs.io/en/latest/][Projectile]]{{</ dot >}} {{< dot >}}[[https://ternjs.net/][Tern]]{{</ dot >}}
+- *Interests:* [[https://www.arduino.cc/][Arduino]] {{< dot >}}ESP32{{</ dot >}} {{< dot >}}[[https://www.raspberrypi.org/][Raspberry Pi]]{{</ dot >}} {{< dot >}}Programmable LED strips{{</ dot >}} {{< dot >}}[[https://developer.microsoft.com/en-us/windows/kinect][Kinect]]{{</ dot >}}
