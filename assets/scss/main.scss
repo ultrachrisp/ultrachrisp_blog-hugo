@@ -99,8 +99,12 @@ time{
     line-height: 1.4rem;
 }
 
+// Weird FF bug for tables
+table {height: 1rem;}
+
 th, td{
     text-align: left;
+    height:inherit;
     &:first-child{ width: 60%; }
 }
 
