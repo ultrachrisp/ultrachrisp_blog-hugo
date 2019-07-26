@@ -137,6 +137,7 @@
 - Solely responsible for the lighting of the project, which was made up of 40m/ 2400 individually addressable LED lights.
 - Invited to present & share my experiences with a number of interested parties.
 
+
 - *2010:* Assisted with the development & revision of the original website theme.
 
 *** University of Pretoria
@@ -148,6 +149,7 @@
 - Successfully conceptualised, motivated for, prototyped & led/ co-led the construction of a number of structures.
 - Part of the core team which coordinated efforts between participants.
 - Responsible for sourcing & transporting the equipment.
+
 
 - *2017:* Assisted with the construction of the final tower.
 - *2015:* Led the construction of the tower & assisted with the construction of the catapult.
@@ -232,11 +234,11 @@ Major in English
 
 /My previous roles & responsibilities have required me to work with many different technologies & stacks. I do not claim to be an expert in all of them, since I was usually required to get up to speed as quickly as possible to solve specific problems. However, I do have a strong understanding of the fundamental programming principles & an eye for what makes clean, scalable code which (in my opinion) is present in most technology stacks./
 
-- *Languages:* [[https://www.javascript.com/][JavaScript]] {{< dot >}} [[http://www.cplusplus.com/doc/tutorial/][C++]] {{</ dot >}}{{< dot >}} [[https://www.python.org/][Python]] {{</ dot >}} {{< dot >}}[[https://www.w3schools.com/html/html5_intro.asp][HTML5]] & [[https://www.w3schools.com/html/html5_canvas.asp][Canvas]]{{</ dot >}} {{< dot >}}[[https://sass-lang.com/][SCSS]]{{</ dot >}} {{< dot >}}[[https://www.w3schools.com/sql/][SQL]]{{</ dot >}} {{< dot >}}[[https://www.gnu.org/software/emacs/manual/eintr.html][Emacs Lisp]]{{</ dot >}} {{< dot >}}[[https://golang.org/][Go]]{{</ dot >}} {{< dot >}}[[https://www.scala-lang.org/][Scala]]{{</ dot >}} {{< dot >}}[[https://www.gnu.org/software/octave/][Octave]]{{</ dot >}} {{< dot >}}[[https://www.adobe.com/devnet/actionscript/learning.html][ActionScript 3]]{{</ dot >}} {{< dot >}}[[https://www.oracle.com/java/][Java]]{{</ dot >}} {{< dot >}}[[https://php.net/][PHP]]{{</ dot >}} {{< dot >}}[[https://docs.microsoft.com/en-us/dotnet/csharp/][C#]]{{</ dot >}}
-- *Frameworks:* [[https://reactjs.org/][React]] {{< dot >}}[[https://jestjs.io/][Jest]]{{</ dot >}} {{< dot >}}[[https://openframeworks.cc/][OpenFrameworks]]{{</ dot >}} {{< dot >}}[[https://www.ptc.com/en/products/augmented-reality][Vuforia]]{{</ dot >}} {{< dot >}}[[https://developers.google.com/ar/][ARcore]]{{</ dot >}} {{< dot >}}[[https://www.opengl.org/][OpenGL]]{{</ dot >}} {{< dot >}}[[https://spark.apache.org/][Apache Spark]]{{</ dot >}} {{< dot >}}[[https://angular.io/][Angular]]{{</ dot >}} {{< dot >}}[[https://dotnet.microsoft.com/][.NET]]{{</ dot >}}
-- *Task runners:* [[https://www.npmjs.com/][NPM]] {{< dot >}}[[https://webpack.js.org/][Webpack]]{{</ dot >}} {{< dot >}}[[https://gulpjs.com/][Gulp]]{{</ dot >}} {{< dot >}}Bash{{</ dot >}} {{< dot >}}[[https://gruntjs.com/][Grunt]]{{</ dot >}}
-- *Content Management Systems:* [[https://gohugo.io/][Hugo]] {{< dot >}}[[https://www.adobe.com/africa/marketing/experience-manager.html][Adobe Experience Manager (AEM)]]{{</ dot >}} {{< dot >}}[[https://wordpress.com/][Wordpress]]{{</ dot >}} {{< dot >}}[[https://www.drupal.org/][Drupal]]{{</ dot >}}
-- *Version control:* [[https://git-scm.com/][Git]] {{< dot >}}[[https://subversion.apache.org/][Subversion]]{{</ dot >}} {{< dot >}}[[https://www.mercurial-scm.org/][Mercurial]]{{</ dot >}}
-- *Software:* [[Https://www.adobe.com/creativecloud/catalog/desktop.html][Adobe Creative Suite]] {{< dot >}}[[https://www.framer.com/][Framer]]{{</ dot >}} {{< dot >}}[[https://unity.com/][Unity]]{{</ dot >}} {{< dot >}}[[https://www.blender.org/][Blender]]{{</ dot >}} {{< dot >}}[[https://www.unrealengine.com/en-US/][Unreal]]{{</ dot >}} {{< dot >}}[[https://www.sketch.com/][Sketch]]{{</ dot >}} {{< dot >}}[[https://www.autodesk.co.za/products/maya/overview][Maya]]{{</ dot >}} {{< dot >}}[[https://products.office.com/en-za/products][MS Office]]{{</ dot >}}
-- *Essentials:* [[https://www.gnu.org/software/emacs/manual/eintr.html][Emacs]] {{< dot >}}[[https://orgmode.org/][Org mode]]{{</ dot >}} {{< dot >}}[[https://magit.vc/][Magit]]{{</ dot >}} {{< dot >}}[[https://projectile.readthedocs.io/en/latest/][Projectile]]{{</ dot >}} {{< dot >}}[[https://ternjs.net/][Tern]]{{</ dot >}}
-- *Interests:* [[https://www.arduino.cc/][Arduino]] {{< dot >}}ESP32{{</ dot >}} {{< dot >}}[[https://www.raspberrypi.org/][Raspberry Pi]]{{</ dot >}} {{< dot >}}Programmable LED strips{{</ dot >}} {{< dot >}}[[https://developer.microsoft.com/en-us/windows/kinect][Kinect]]{{</ dot >}}
+- *Languages:* JavaScript {{< dot >}}C++{{</ dot >}} {{< dot >}}Python{{</ dot >}} {{< dot >}}HTML5 & Canvas{{</ dot >}} {{< dot >}}SCSS{{</ dot >}} {{< dot >}}SQL{{</ dot >}} {{< dot >}}Emacs Lisp{{</ dot >}} {{< dot >}}Go{{</ dot >}} {{< dot >}}Scala{{</ dot >}} {{< dot >}}Octave{{</ dot >}} {{< dot >}}ActionScript 3{{</ dot >}} {{< dot >}}Java{{</ dot >}} {{< dot >}}PHP{{</ dot >}} {{< dot >}}C#{{</ dot >}}
+- *Frameworks:* React {{< dot >}}Jest{{</ dot >}} {{< dot >}}OpenFrameworks{{</ dot >}} {{< dot >}}Vuforia{{</ dot >}} {{< dot >}}ARcore{{</ dot >}} {{< dot >}}OpenGL{{</ dot >}} {{< dot >}}Apache Spark{{</ dot >}} {{< dot >}}Angular{{</ dot >}} {{< dot >}}.NET{{</ dot >}}
+- *Task runners:* NPM {{< dot >}}Webpack{{</ dot >}} {{< dot >}}Gulp{{</ dot >}} {{< dot >}}Bash{{</ dot >}} {{< dot >}}Grunt{{</ dot >}}
+- *Content Management Systems:* Hugo {{< dot >}}Adobe Experience Manager (AEM){{</ dot >}} {{< dot >}}Wordpress{{</ dot >}} {{< dot >}}Drupal{{</ dot >}}
+- *Version control:* Git {{< dot >}}Subversion{{</ dot >}} {{< dot >}}Mercurial{{</ dot >}}
+- *Software:* Adobe Creative Suite {{< dot >}}Framer{{</ dot >}} {{< dot >}}Unity{{</ dot >}} {{< dot >}}Blender{{</ dot >}} {{< dot >}}Unreal{{</ dot >}} {{< dot >}}Sketch{{</ dot >}} {{< dot >}}Maya{{</ dot >}} {{< dot >}}MS Office{{</ dot >}}
+- *Essentials:* Emacs {{< dot >}}Org mode{{</ dot >}} {{< dot >}}Magit{{</ dot >}} {{< dot >}}Projectile{{</ dot >}} {{< dot >}}Tern{{</ dot >}}
+- *Interests:* Arduino {{< dot >}}ESP32{{</ dot >}} {{< dot >}}Raspberry Pi{{</ dot >}} {{< dot >}}Programmable LED strips{{</ dot >}} {{< dot >}}Kinect{{</ dot >}}

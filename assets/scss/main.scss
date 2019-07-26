@@ -75,24 +75,22 @@ a{
 }
 
 ul, ol{
-    // padding-bottom: 15px;
     list-style-position: initial;
-    li{
-        margin-left: 30px;
-        p{ padding: 0px; }
-    }
+    li{ margin-left: 20px; }
 }
 
 ul{
     list-style: none;
-    
-    li:before{
-        @include circle($grey-dark);
-        margin: 9px 0 1px -18px;
+
+    li{
+        p{ padding: 0; }
+        &:before{
+            @include circle($grey-dark);
+            margin: 9px 0 1px -18px;
+        }
     }
 }
 
-// ul{ list-style-type: disc; }
 ol{ list-style-type: decimal; }
 
 time{
@@ -101,13 +99,13 @@ time{
     line-height: 1.4rem;
 }
 
-th, td {
+th, td{
     text-align: left;
-    &:first-child { width: 60%; }
+    &:first-child{ width: 60%; }
 }
 
 
-img {
+img{
     max-width:40vw;
 
     &.left { float:left; margin-right: 15px; }
@@ -228,7 +226,6 @@ img {
     align-self: start;
 }
 
-
 .cv{
     display: grid;
     grid-template-columns: 2% 1fr 2%;
@@ -244,26 +241,21 @@ img {
     table{ margin-bottom: 15px; }
     p{
         padding: 0;
-        em {
-            display:block;
-            padding: 15px 0;
+        em{
+            display: block;
+            padding-bottom: 15px;
         }
     }
         
     ul{
-        &:before { white-space: pre; }
         padding-bottom: 15px;
-        &:last-child{ padding-bottom:0; }
+        &:before{ white-space: pre; }
+        &:last-child{ padding-bottom: 0; }
             
-        li span{
-            display: inline-block;
-        
-            &:before{
-                @include circle($grey-dark);
-                position: relative;
-                margin-right: 4px;
-                bottom: 1px;
-            }
+        li span:before{
+            @include circle($grey-dark);
+            position: relative;
+            bottom: 1px;
         }
     }
 }
