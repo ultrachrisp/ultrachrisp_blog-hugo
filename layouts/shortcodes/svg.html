@@ -1,0 +1,9 @@
+{{ $style := .Get "style"}}
+{{ $altText := .Get "alt"}}
+{{ $classes := .Get "classes"}}
+
+{{ with $.Page.Resources.GetMatch (.Get "name") }}
+<img class="{{ $classes }}" style="{{ $style | safeCSS }}" src="{{ .RelPermalink }}" alt="{{ $altText }}"/>
+{{ else }}
+could not find image
+{{ end }}

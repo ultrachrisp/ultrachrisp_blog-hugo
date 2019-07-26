@@ -3,7 +3,7 @@
 #+DRAFT: false
 #+TYPE: post
 
-<img class="right" style="width:130px; height:130px;" src="../../svg/prototype.svg" alt="Prototype logo"/>
+{{< svg name="prototype.svg" style="width:130px;" classes="right" alt="Prototype graphic" >}}
 Hindsight is completely unforgiving. Looking back & observing oversights is a luxury most projects cannot afford. Allowing yourself space to fail & learn at an early stage of a project has advantages. It also allows a project to grow while preventing journey bottlenecks and minimising drop-offs.
 
 ** But I know what the user wants

@@ -3,7 +3,7 @@
 #+DRAFT: false
 #+TYPE: post
 
-<img class="right" style="width:180px; height:160px;" src="../../svg/react.svg" alt="React"/>
+{{< svg name="react.svg" style="width:180px;" classes="right" alt="React" >}}
 I am surprised how quickly I took to [[https://reactjs.org/][React]]. I had completed [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Functional Programming in Scala]] and was itching to apply the theory. I never anticipated how naturally React (and by extension functional programming) solved many of the problems I was facing. Below are some impressions of deploying my first React application.
 
 ** So it began
