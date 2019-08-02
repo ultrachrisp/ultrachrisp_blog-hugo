@@ -34,33 +34,20 @@ body{
     background-image: $background_image;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-weight: 300;
-    padding: 20px 0 0 0;
-}
+h1, h2, h3, h4, h5, h6{ font-weight: 300; }
 
 h1{
-    font-size: 4.9rem;
-    line-height: 5.7rem;
+    font-size: 3.4rem;
+    line-height: 3.9rem;
 }
 
 h2, h3{
-    font-size: 4.2rem;
-    line-height: 4.9rem;
+    font-size: 3.0rem;
+    line-height: 3.5rem;
 }
 
-h4{
-    font-size: 3.6rem;
-    line-height: 4.2rem;
-}
-
-h5{
-    font-size: 3.1rem;
-    line-height: 3.6rem;
-}
-
-h6{
-    font-size: 2.7rem;
+h4, h5, h6{
+    font-size: 2.6rem;
     line-height: 3.1rem;
 }
 
@@ -76,18 +63,18 @@ a{
 
 ul, ol{
     list-style-position: initial;
-    li{ margin-left: 20px; }
+    li{
+        margin-left: 20px;
+        p{ padding: 0; }
+    }
 }
 
 ul{
     list-style: none;
 
-    li{
-        p{ padding: 0; }
-        &:before{
-            @include circle($grey-dark);
-            margin: 9px 0 1px -18px;
-        }
+    li:before{
+        @include circle($grey-dark);
+        margin: 9px 0 1px -18px;
     }
 }
 
@@ -284,6 +271,9 @@ img{
     }
 
     .next{ margin-left: 15px; }
+    th, td{
+        &:first-child{ width: 60%; }
+    }
 }
 
 @media only screen and (min-width: $breakpoint-large) {
@@ -319,8 +309,22 @@ img{
     .post-list{ grid-column: 4 / span 2; }
 
     img { max-width:40%; }
-    th, td{
-        &:first-child{ width: 60%; }
+
+    h1, h2, h3, h4, h5, h6{ padding-top: 15px; }
+
+    h1{
+        font-size: 4.9rem;
+        line-height: 5.7rem;
+    }
+
+    h2, h3{
+        font-size: 4.2rem;
+        line-height: 4.9rem;
+    }
+
+    h4, h5, h6{
+        font-size: 3.6rem;
+        line-height: 4.2rem;
     }
 }
 

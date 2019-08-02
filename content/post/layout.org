@@ -32,7 +32,7 @@ Unordered lists:
 - item
 - item
 
-[[file:../../img/LogoPlay.png]]
+[[file:../sweet-love-gateway/night_1.jpg]]
 
 <span class='myClass'>Looking for something</span>
 
