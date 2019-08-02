@@ -18,15 +18,16 @@ Blogs and the CMS's that power them are diverse in their approaches. They all ha
 - support for task runners.
 - able to author using an editor of my choice.
 
+
 ** Obsessively Compulsively Indecisive
-     So why even bother building your own blog? There are such great mediums out there like... erm... [[https://medium.com/][Medium.com]]. They provide greater content discovery and more tools & features so that you can focus on writing. 
+   So why even bother building your own blog? There are such great mediums out there like... erm... [[https://medium.com/][Medium.com]]. They provide greater content discovery and more tools & features so that you can focus on writing. 
 
-     Content is a large part of blogging, but I want to tweak the presentation too. I plan to play with the layout, to try new things and see what doesn't work. If I iterate over a number of bad ideas, maybe I will discover a good. 
+   Content is a large part of blogging, but I want to tweak the presentation too. I plan to play with the layout, to try new things and see what doesn't work. If I iterate over a number of bad ideas, maybe I will discover a good. 
 
-     - Should the focus always be center aligned?
-     - Can I solve most navigation & presentation issues with JS disabled?
-     - +Susy+ CSS grid & flexbox provides such flexibility with layouts, why not experiment? 
-     - What will an odd number of columns in the grid do to the balance?
-     - Can the balance be corrected using other visual techniques?
+   - Should the focus always be center aligned?
+   - Can I solve most navigation & presentation issues with JS disabled?
+   - +Susy+ CSS grid & flexbox provides such flexibility with layouts, why not experiment? 
+   - What will an odd number of columns in the grid do to the balance?
+   - Can the balance be corrected using other visual techniques?
 
 To sate my own curiosity, the layout on this site may change from time to time.
