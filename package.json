@@ -8,14 +8,10 @@
         "createFolders": "mkdir -p ./static ./static/svg ./static/fonts",
         "general": "cp assets/general/* static",
         "fonts": "cp assets/fonts/* static/fonts",
-        "commonReasources": "npm-run-all -p general fonts",
-        "imagemin": "imagemin assets/svg/* --out-dir=static/svg",
-        "images:watch": "onchange 'assets/svg/**/*' -- npm run images:build",
-        "images:build": "npm run imagemin",
-        "hugo:watch": "hugo server -w -D",
-        "hugo:build": "hugo",
-        "build": "npm-run-all -s clean createFolders commonReasources images:build hugo:build",
-        "start": "npm-run-all -p images:watch hugo:watch"
+        "svg": "cp assets/svg/* static/svg",
+        "commonReasources": "npm run general && npm run fonts && npm run svg",
+        "build": "npm run clean && npm run createFolders && npm run commonReasources && hugo",
+        "start": "hugo server -w -D"
     },
     "repository": {
         "type": "git",
@@ -27,9 +23,6 @@
         "autoprefixer": "^8.4.1",
         "cssnano": "^4.1.10",
         "del-cli": "^1.1.0",
-        "imagemin-cli": "^3.0.0",
-        "npm-run-all": "^4.1.3",
-        "onchange": "^4.0.0",
         "postcss-cli": "^5.0.0",
         "reset-css": "^4.0.1"
     },
