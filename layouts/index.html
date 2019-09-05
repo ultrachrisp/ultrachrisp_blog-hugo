@@ -12,7 +12,7 @@
         <div class="post-title">
             <h2>Recent Posts</h2>
         </div>
-        {{ range first 10 (where .Pages ".Params.type" "post") }}
+        {{ range first 10 (where .Site.Pages ".Params.type" "post") }}
         <div class="post-link">
             <a href="{{ .Permalink }}">{{ .Title }}</a>
             <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
