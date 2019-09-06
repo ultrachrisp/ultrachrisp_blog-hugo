@@ -2,8 +2,9 @@
 #+TITLE: Sweet Love Gateway
 #+DRAFT: false
 #+TYPE: post
+#+DESCRIPTION: A brief description of the planning, prototyping, funding and construction of the 'Sweet Love Gateway' at AfrikaBurn 2019
 
-{{< img name="night_1.jpg" classes="right corners" alt="Description for screen readers." >}}
+{{< img name="night_1.jpg" classes="right corners" alt="The 'Sweet love gateway' at night with red colour palette" >}}
 Ephemeropolis was my first burn. I got involved with the AfrikaBurn website build in 2010 but I never attended. It had long been on the to-do list, so we started making plans late 2018. The core build team included [[https://www.facebook.com/igor.zeljko.77][Igor]], [[https://www.facebook.com/alastair.mehl][Alastair]], [[https://www.facebook.com/magoshashot][Margaret]], [[https://www.facebook.com/tiffanychi101][Tiffany]] and myself. Supporting the team was [[https://www.facebook.com/CyBeRmAnZA][Bjorn]] as well as the 'NoFomosapiens', who were all incredible. Oppikoppi and Meilie-pop had bigger build teams but many members couldn't attend AfrikaBurn. Contributing to AfrikaBurn seemed natural since we had built structures at festivals before.{{< break >}}The project took the form of a [[https://www.mathcurve.com/surfaces.gb/paraboloidhyperbolic/paraboloidhyperbolic.shtml][hyperbolic paraboloid]] gateway (look at my fancy vocabulary). Igor, Alastair and Margaret had built this structure before at Oppikoppi. Based off of their insights, I thought there was room to refine 'how' it was build. I also took on the responsibility of lighting the structure.
 
 ** The Problem Statement
@@ -18,7 +19,7 @@ Ephemeropolis was my first burn. I got involved with the AfrikaBurn website buil
    My programming self needed a way to speed up the anchoring and weaving. There had to be a way to 'for loop' / 'while loop' / 'map' over the threads.
 
 *** Prototyping
-    {{< img name="prototype.jpg" classes="left corners" alt="Description for screen readers." >}}
+    {{< img name="prototype.jpg" classes="left corners" alt="Small prototypes of the 'Sweet love gateway'" >}}
     This is one of those skills that matures like a fine wine. When I was younger, brute force and enthusiasm would carry me through most projects. With time, I realised that I was making similar mistakes at similar stages of a project. Worse, avoidable mistakes were made because all stakeholders were not consulted. The process of finding and fixing issues doesn't go away, it's 'when' you fix them that prototyping can help with.{{< break >}} Prototyping for pioneering projects was always a given. As a scout (aka young hot-shot who builds first and explains later, dealing with and fixing issues as they arise), prototyping was what the scout master told you to do. This resulted in a small version of the real version, which was great for photo opportunities (small version in foreground, big version in background). We did attempt to measure and prototype to scale, but the true value of prototyping was lost to us.{{< break >}} As I have mentioned in a [[https://chrispyke.com/post/almighty-prototype/][previous post]], prototypes are my sandbox. It's a space where I can play and make mistakes before they result in serious consequences. 
 
 *** Iteration
@@ -35,7 +36,7 @@ Ephemeropolis was my first burn. I got involved with the AfrikaBurn website buil
     - Was there a possibility of weaving more than a single, long thread at a time?
     - Could we access the anchor points from the ground, once the structure was getting close to its final shape?
 
-    {{< img name="prototype_2.jpg" classes="right corners" alt="Description for screen readers." >}}
+    {{< img name="prototype_2.jpg" classes="right corners" alt="The third and final prototype of the 'Sweet love gateway'" >}}
     We started investigating different types of thread anchors. What was the cost of an anchor and how long would it take to secure it to a pole? {{< break >}} One solution proposed by Igor or Tiffany (or both) was to use metal chains. If the chain was secured onto the pole, it provided a ton of anchor points. This was better than hooks or eye-hole bolts which needed to be secured individually. It wasn't perfect but it did provide the best 'number of anchor points per cost' ratio.
 
     The actual method of weaving the thread through the chains was the next issue. After an afternoon of weaving, prototype two proved that simply feeding the thread through the chain was not good enough. It was impractical because of the volume of threads as well as the confusion caused by different weaving styles. Igor suggested a different approach, feeding the incoming end of the thread through a single chain link, running the thread along the chain and then feeding the out-going end through a link further along. This made tightening threads clearer as it was immediately evident which thread needed pulling vs feeding. Again, there is a programmatic term for this: clear and descriptive variable names.
@@ -47,14 +48,14 @@ Ephemeropolis was my first burn. I got involved with the AfrikaBurn website buil
 *** Individually Addressable Awesomeness
     I had an idea of 'how' I wanted to illuminate the structure, but I was exploring new ground. It culminated into my first adventure into micro-controllers. I was wholly unprepared for the end result. 
 
-   {{< img name="night_3.jpg" classes="center corners" alt="Description for screen readers." >}}
+   {{< img name="night_3.jpg" classes="center corners" alt="A sideways photo of the 'Sweet love gateway' at night" >}}
     It started with crawling the internet, inspecting tutorials, looking at specs, looking at prices, then re-looking at specs and prices. I tried to factor redundancy into the system. Often, I would restart the process when I found more promising solutions.
 
     The first problem was power. After checking availability and cost, we settled on a battery of car batteries. Bjorn was able to source the car batteries and some solar panels to charge them. At the time, we were unsure how much power the whole system would use? So Bjorn got five car batteries to be safe.
 
     As for the LEDs, I was able to source some WS2813 strips (upgraded WS2812b). They were each 5 meters long, with 60 LEDs per meter. Each strip had 300 individually addressable LEDs. This had a potential power draw of 90W per strip (if each LED was burning white light at full brightness). The structure comprised of four 11 meter poles, so we had roughly 40 meters that we needed to cover with LEDs. That is 2400 individually addressable LEDs... I was starting to get very excited.
 
-    {{< img name="day_1.jpg" classes="right corners" alt="Description for screen readers." >}}
+    {{< img name="day_1.jpg" classes="right corners" alt="A day-time photo of the 'Sweet love gateway'" >}}
     The LED strips ran on 5v, which was handy. We needed step-down converters to get from 20v to 5v to run the strips and micro-controllers. I was able to get an idea of the processing power required for that number of LEDs from [[https://github.com/FastLED/FastLED/issues/288][this thread]]. To ensure that I wasn't overworking the controllers, I decided to dedicate an Arduino Due to each pole.{{< break >}} The next issue was interaction. I sourced two lasers that produced line beams and 6 photo-resistors to produce a 'trip wire' system. I then setup a Raspberry Pi 3b to receive signals from the photo-resistors. The Rasberry Pi also co-ordinated lighting effects with the Arduinos. As I worked on the system, I realised communication could be simplified by favoring WIFI over cabling. I replaced the Arduinos with ESP32 controllers. Communication was further streamlined using the [[http://mqtt.org/][MQTT protocol]]. The theory was sound and I got a working version running in my garage.
 
     Time caught up with me in the end. I did as many general tests as I could before packing up the system and preparing for the trip to Tankwa Town.
@@ -63,7 +64,7 @@ Ephemeropolis was my first burn. I got involved with the AfrikaBurn website buil
 
     /"No plan survives first contact with the enemy,"/ said [[https://en.wikiquote.org/wiki/Helmuth_von_Moltke_the_Elder][Helmuth von Moltke the Elder]].
 
-    {{< img name="day_2.jpg" classes="left corners" alt="Description for screen readers." >}}
+    {{< img name="day_2.jpg" classes="left corners" alt="Another daytime photo of the 'Sweet love gateway', from a side angle" >}}
     The group that I was traveling with needed two full days to get from Johannesburg to Tankwa. We were venturing into the unknown (i.e. none of us had been to AfrikaBurn before), so there was a fair amount of over-preparation.{{< break >}} The first hurdle was separating the essential equipment from the 'nice to haves'. The second was to get everyone into cars and moving. One of the cars blew a tyre on a main highway. We hadn't even started driving on the tyre-shredding gravel roads yet. We dealt with all of this in turn, trying to balance the group's feelings with the common objectives.{{< break >}} After we got to Tankwa town and setup our tents, we went in search of our 11 meter poles. We found them stacked by the Clan's Lamp (the core AfrikaBurn structure). The Clan helped us purchase and transported the poles to Tankwa town. This greatly simplified our lives and we were very grateful to the Clan for their support. After locating the poles, we left transporting them to the build site for the next morning.
 
     Three of the 11 meter poles were missing when we woke up. Everyone, including the organisers, were stunned. Search parties were sent out, calls were made and the whole camp started looking for the missing poles. Igor eventually spotted them at another project. We got help transporting them to our build site and then started construction.
@@ -72,7 +73,7 @@ Ephemeropolis was my first burn. I got involved with the AfrikaBurn website buil
 
     We had two options before us: try to brace the broken pole with metal (causing further delays) or literal cut our losses by shortening all the poles to match the broken one. After a tense debate, the group decided to cut the poles and carry on building. There was a small consolation that all the poles were originally 12 meters long instead of 11. This meant that we didn't reduce the size of the structure as much as we initially feared.
 
-    {{< img name="night_2.jpg" classes="right corners" alt="Description for screen readers." >}}
+    {{< img name="night_2.jpg" classes="right corners" alt="A night time photo of the 'Sweet love gateway', with checkered lighting" >}}
     Weaving nearly broke the team. Based on the prototypes, the team knew that weaving was the hardest part and took the most time. We had over-come more obstacles than anticipated just to get to this point. The team carried themselves well through roughly 18 hours of straight weaving. We even continued weaving through a dust storm.{{< break >}} Hoisting the structure was the last major hurdle. We were caught off guard with the realities of AfrikaBurn. After two and a half days of construction and weaving, we needed to stop and hold the structure in a precarious position overnight. There were risks involved in pausing construction but it provided a much needed rest. 
 
     The next morning, we got some unexpected assistance from the Clan cherry picker, which sped us along. We leaned the gateway into its final position and celebrated what we had done. But even though the structure was up, I still needed to finish setting up the lights.

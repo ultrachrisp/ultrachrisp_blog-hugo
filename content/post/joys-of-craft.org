@@ -2,6 +2,7 @@
 #+TITLE: The Joys of Craft
 #+DRAFT: false
 #+TYPE: post
+#+DESCRIPTION: Short post on why it is great to control your blogging environment
 
 I get great satisfaction from viewing a product I built using tools I prefer following principles I believe in. 
 
@@ -17,8 +18,7 @@ Blogs and the CMS's that power them are diverse in their approaches. They all ha
 - less dependence on a back-end (mostly because I am the only contributor).
 - support for task runners.
 - able to author using an editor of my choice.
-
-
+{{< break >}}
 ** Obsessively Compulsively Indecisive
    So why even bother building your own blog? There are such great mediums out there like... erm... [[https://medium.com/][Medium.com]]. They provide greater content discovery and more tools & features so that you can focus on writing. 
 
