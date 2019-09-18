@@ -12,15 +12,15 @@
 |-------------------------+----------------------------|
 
 - Responsible for projects from concept through to deployment across Africa.
+- Introduced the bank to React & helped to integrate React into Adobe Experience Manager before there was native support.
 - Successfully turned around several crisis portfolios & projects with a great record of delivering core requirements on time.
 - Consistently given & delivered high risk or technical briefs considered too risky for other teams or members.
 - Helped establish work flows & pipelines for different portfolios.
 - Established best practises & support for other developers & their teams.
 - Contributed to a multi-disciplinary team on the practical application of the new corporate brand.
-- Introduced the bank to React & helped to integrate React into Adobe Experience Manager before there was native support.
 - Motivated for & established the bank's first virtual reality capability across Cape Town, Johannesburg & Pretoria.
-- Established a relationship with the University of Pretoria to better explore virtual reality, its capabilities & different forms of user engagement.
 - Managed three interns remotely to produce augmented reality proof of concepts.
+- Established a relationship with the University of Pretoria to better explore virtual reality, its capabilities & different forms of user engagement.
 
 *** McCann Worldgroup South Africa (Pty) Ltd
 |------------------------------+-----------------------|
