@@ -3,6 +3,7 @@
 #+TITLE: We're Live!
 #+DRAFT: false
 #+TYPE: post
+#+DESCRIPTION: First post, and a break down of the tools used to construct the site
 
 This blog has been a long time coming. I have wanted to post on a number of things that completing the blog became a priority. Before I jump into topics of interest, I want to list some of the technologies driving the blog.
 

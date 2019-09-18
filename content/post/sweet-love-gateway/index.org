@@ -2,7 +2,7 @@
 #+TITLE: Sweet Love Gateway
 #+DRAFT: false
 #+TYPE: post
-#+DESCRIPTION: A brief description of the planning, prototyping, funding and construction of the 'Sweet Love Gateway' at AfrikaBurn 2019
+#+DESCRIPTION: A story of the planning, prototyping, funding and construction of the 'Sweet Love Gateway' at AfrikaBurn 2019
 
 {{< img name="night_1.jpg" classes="right corners" alt="The 'Sweet love gateway' at night with red colour palette" >}}
 Ephemeropolis was my first burn. I got involved with the AfrikaBurn website build in 2010 but I never attended. It had long been on the to-do list, so we started making plans late 2018. The core build team included [[https://www.facebook.com/igor.zeljko.77][Igor]], [[https://www.facebook.com/alastair.mehl][Alastair]], [[https://www.facebook.com/magoshashot][Margaret]], [[https://www.facebook.com/tiffanychi101][Tiffany]] and myself. Supporting the team was [[https://www.facebook.com/CyBeRmAnZA][Bjorn]] as well as the 'NoFomosapiens', who were all incredible. Oppikoppi and Meilie-pop had bigger build teams but many members couldn't attend AfrikaBurn. Contributing to AfrikaBurn seemed natural since we had built structures at festivals before.{{< break >}}The project took the form of a [[https://www.mathcurve.com/surfaces.gb/paraboloidhyperbolic/paraboloidhyperbolic.shtml][hyperbolic paraboloid]] gateway (look at my fancy vocabulary). Igor, Alastair and Margaret had built this structure before at Oppikoppi. Based off of their insights, I thought there was room to refine 'how' it was build. I also took on the responsibility of lighting the structure.
@@ -19,7 +19,7 @@ Ephemeropolis was my first burn. I got involved with the AfrikaBurn website buil
    My programming self needed a way to speed up the anchoring and weaving. There had to be a way to 'for loop' / 'while loop' / 'map' over the threads.
 
 *** Prototyping
-    {{< img name="prototype.jpg" classes="left corners" alt="Small prototypes of the 'Sweet love gateway'" >}}
+    {{< img name="prototype.jpg" classes="left corners" alt="Initial prototypes of the 'Sweet love gateway'" >}}
     This is one of those skills that matures like a fine wine. When I was younger, brute force and enthusiasm would carry me through most projects. With time, I realised that I was making similar mistakes at similar stages of a project. Worse, avoidable mistakes were made because all stakeholders were not consulted. The process of finding and fixing issues doesn't go away, it's 'when' you fix them that prototyping can help with.{{< break >}} Prototyping for pioneering projects was always a given. As a scout (aka young hot-shot who builds first and explains later, dealing with and fixing issues as they arise), prototyping was what the scout master told you to do. This resulted in a small version of the real version, which was great for photo opportunities (small version in foreground, big version in background). We did attempt to measure and prototype to scale, but the true value of prototyping was lost to us.{{< break >}} As I have mentioned in a [[https://chrispyke.com/post/almighty-prototype/][previous post]], prototypes are my sandbox. It's a space where I can play and make mistakes before they result in serious consequences. 
 
 *** Iteration
