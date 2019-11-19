@@ -4,12 +4,21 @@
 #+TYPE: cv
 
 ** Work Experience
+*** MessageBird
+|------------------------+------------------------|
+| January 2020 - present | Amsterdam, Netherlands |
+|------------------------+------------------------|
+|                        | Front-end Engineer     |
+|------------------------+------------------------|
+
+- Still figuring this one out.
+
 *** Absa (formerly Barclays Africa Group Ltd)
-|-------------------------+----------------------------|
-| February 2016 - present | Johannesburg, South Africa |
-|-------------------------+----------------------------|
-|                         | Creative Technologist      |
-|-------------------------+----------------------------|
+|-------------------------------+----------------------------|
+| February 2016 - December 2019 | Johannesburg, South Africa |
+|-------------------------------+----------------------------|
+|                               | Creative Technologist      |
+|-------------------------------+----------------------------|
 
 - Responsible for projects from concept through to deployment across Africa.
 - Successfully turned around several crisis portfolios & projects with a great record of delivering core requirements on time.
@@ -160,6 +169,14 @@
 - *2010:* Led the construction of the first tower.
 
 ** Education
+
+*** [[https://studies.cs.helsinki.fi/fullstackopen2019/certificate/en/3564501ea7364f15b2aec61765909af7][Fullstack Open]]
+|---------+------------------------|
+| Present | University of Helsinki |
+|---------+------------------------|
+
+- Deeper understanding of modern ES6 trends.
+- Opportunity to explore best fullstack practises focused around React.
 
 *** [[https://www.coursera.org/account/accomplishments/certificate/NQ7GJD6E4UZR][Coursera: Machine Learning]]
 |-----------+---------------------|
