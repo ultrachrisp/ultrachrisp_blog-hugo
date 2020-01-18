@@ -3,8 +3,8 @@
 #+DRAFT: false
 #+TYPE: cv
 
-** Work Experience
-*** MessageBird
+* Work Experience
+** MessageBird
 |------------------------+------------------------|
 | January 2020 - present | Amsterdam, Netherlands |
 |------------------------+------------------------|
@@ -13,7 +13,7 @@
 
 - Still figuring this one out.
 
-*** Absa (formerly Barclays Africa Group Ltd)
+** Absa (formerly Barclays Africa Group Ltd)
 |-------------------------------+----------------------------|
 | February 2016 - December 2019 | Johannesburg, South Africa |
 |-------------------------------+----------------------------|
@@ -31,7 +31,7 @@
 - Established a relationship with the University of Pretoria to better explore virtual reality, its capabilities & different forms of user engagement.
 - Managed three interns remotely to produce augmented reality proof of concepts.
 
-*** McCann Worldgroup South Africa (Pty) Ltd
+** McCann Worldgroup South Africa (Pty) Ltd
 |------------------------------+-----------------------|
 | January 2015 - December 2015 | Sandton, South Africa |
 |------------------------------+-----------------------|
@@ -48,7 +48,7 @@
 - Conceptualised, successfully motivated, built & deployed a cross-device, cross-platform, mobile based augmented reality solution.
 - Clients include: McCann {{< dot >}}Nestle{{</ dot >}} {{< dot >}}Waltons{{</ dot >}} {{< dot >}}Kauai{{</ dot >}} {{< dot >}}UIP{{</ dot >}} {{< dot >}}Chevrolet{{</ dot >}} {{< dot >}}Isuzu{{</ dot >}} {{< dot >}}Zurich{{</ dot >}} {{< dot >}}Econet{{</ dot >}}
 
-*** Freelance
+** Freelance
 |------------------------------+------------------------|
 | January 2014 - December 2014 | Pretoria, South Africa |
 |------------------------------+------------------------|
@@ -60,7 +60,7 @@
 - Successfully conceptualised, scoped, developed & deployed a number of projects.
 - Utilised time to expand knowledge base, streamline development processes & investigate emerging technologies.
 
-*** Gloo (merged into Ogilvy South Africa)
+** Gloo (merged into Ogilvy South Africa)
 |---------------------------+-------------------------|
 | June 2012 - December 2013 | Greenside, South Africa |
 |---------------------------+-------------------------|
@@ -75,7 +75,7 @@
 - Supported & up-skilled the junior developers & creatives.
 - Clients include: BMW {{< dot >}}FNB{{</ dot >}} {{< dot >}}MINI{{</ dot >}} {{< dot >}}RMB{{</ dot >}} {{< dot >}}Samsung{{</ dot >}} {{< dot >}}SA Tourism{{</ dot >}}
 
-*** LXi
+** LXi
 |------------------------------+------------------------|
 | January 2011 - February 2012 | Randburg, South Africa |
 |------------------------------+------------------------|
@@ -89,7 +89,7 @@
 - Interfaced directly with clients to unpack & better understand their core requirements & objectives.
 - Clients included: Paragon Group {{< dot >}}PWC{{</ dot >}} {{< dot >}}Sanofi Aventis{{</ dot >}} {{< dot >}}SAP{{</ dot >}}
 
-*** iLogic
+** iLogic
 |--------------------------+-----------------------|
 | May 2010 - November 2010 | Sandton, South Africa |
 |--------------------------+-----------------------|
@@ -100,7 +100,7 @@
 - Successfully planned, developed & deployed projects on desktop, social media & web.
 - Deadline driven, consistently delivered projects in the given timelines.
 
-*** ILA Vietnam
+** ILA Vietnam
 |------------------------+-----------------|
 | July 2007 - March 2009 | Hanoi, Vietnam  |
 |------------------------+-----------------|
@@ -113,7 +113,7 @@
 - Responsible for planning & presenting English classes for a full range of students from young learners to adults.
 - Developed teaching resources and presented workshops to my peers around the topics: “Film & video in the classroom” {{< dot >}}“Interactive software in an educational setting”.{{</ dot >}}
 
-*** Aston Schools
+** Aston Schools
 |--------------------------+---------------------------|
 | August 2006 - March 2007 | Zhengzhou, China          |
 |--------------------------+---------------------------|
@@ -126,7 +126,7 @@
 - Responsible for planning & presenting English classes for a full range of students from young learners to adults.
 - Planned and delivered promotional activities for the school including: curriculum development {{< dot >}}designing advertisements{{</ dot >}} {{< dot >}}delivering promotional classes (all ages){{</ dot >}} {{< dot >}}promotional field work{{</ dot >}} {{< dot >}}judging English competitions{{</ dot >}} {{< dot >}}creating public English corners.{{</ dot >}}
 
-*** Aston Schools
+** Aston Schools
 |------------------------+----------------|
 | April 2005 - July 2006 | Jinan, China   |
 |------------------------+----------------|
@@ -136,8 +136,8 @@
 - Responsible for planning & presenting English classes for a full range of students from young learners to adults.
 - Developed school resources including: flash-cards {{< dot >}}posters{{</ dot >}} {{< dot >}}authentic materials.{{</ dot >}}
 
-** Other Initiatives
-*** [[https://www.afrikaburn.com/][AfrikaBurn]]
+* Other Initiatives
+** [[https://www.afrikaburn.com/][AfrikaBurn]]
 - *2019:* Build team lead for the 'Sweet Love Gateway' art work.
 - Successfully proposed the project & motivated for grants.
 - Participated in fundraisers for the project.
@@ -149,12 +149,12 @@
 
 - *2010:* Assisted with the development & revision of the original website theme.
 
-*** University of Pretoria
+** University of Pretoria
 - Played a pivotal role in industry push towards a focus on virtual reality at the University of Pretoria.
 - Invited to present guest lectures to post-graduate & prospective students.
 - Invited to join workshops & panels to the benefit of students.
 
-*** OppiKoppi
+** OppiKoppi
 - Successfully conceptualised, motivated for, prototyped & led/ co-led the construction of a number of structures.
 - Part of the core team which coordinated efforts between participants.
 - Responsible for sourcing & transporting the equipment.
@@ -168,9 +168,8 @@
 - *2011:* Led the construction of the newer, bigger tower.
 - *2010:* Led the construction of the first tower.
 
-** Education
-
-*** [[https://studies.cs.helsinki.fi/fullstackopen2019/certificate/en/3564501ea7364f15b2aec61765909af7][Fullstack Open]]
+* Education
+** [[https://studies.cs.helsinki.fi/fullstackopen2019/certificate/en/3564501ea7364f15b2aec61765909af7][Fullstack Open]]
 |---------+------------------------|
 | Present | University of Helsinki |
 |---------+------------------------|
@@ -178,7 +177,7 @@
 - Deeper understanding of modern ES6 trends.
 - Opportunity to explore best fullstack practises focused around React.
 
-*** [[https://www.coursera.org/account/accomplishments/certificate/NQ7GJD6E4UZR][Coursera: Machine Learning]]
+** [[https://www.coursera.org/account/accomplishments/certificate/NQ7GJD6E4UZR][Coursera: Machine Learning]]
 |-----------+---------------------|
 | July 2019 | Stanford University |
 |-----------+---------------------|
@@ -186,7 +185,7 @@
 - Provided a solid base for future machine learning projects.
 - Better understanding on how to leverage machine learning techniques for computer vision & augmented reality applications.
 
-*** [[https://www.coursera.org/account/accomplishments/specialization/LQ3SZPLYWTF7][Coursera Specialisation: Python for Everybody]]
+** [[https://www.coursera.org/account/accomplishments/specialization/LQ3SZPLYWTF7][Coursera Specialisation: Python for Everybody]]
 |--------------+------------------------|
 | January 2018 | University of Michigan |
 |--------------+------------------------|
@@ -194,7 +193,7 @@
 - Enjoyable introduction to Python showcasing many features of the language.
 - Aimed to use Python for future projects or studies.
 
-*** [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Coursera Specialisation: Functional Programming in Scala]]
+** [[https://www.coursera.org/account/accomplishments/specialization/3VS6JECTTJKS][Coursera Specialisation: Functional Programming in Scala]]
 |---------------------------+------------------------------------------|
 | November 2016 - July 2017 | École Polytechnique Fédérale de Lausanne |
 |---------------------------+------------------------------------------|
@@ -204,7 +203,7 @@
 - Provided a deeper insight & appreciation for React.
 - Introduction to [[https://spark.apache.org/][Apache Spark]] & large scale data-processing.
 
-*** CELTA
+** CELTA
 |-------------------------------+----------------------|
 | September 2006 - October 2006 | Ho Chi Minh, Vietnam |
 |-------------------------------+----------------------|
@@ -216,7 +215,7 @@
 - Empowered me to communicate effectively with elementary English learners.
 - Deeper & richer understanding of what 'communication' really is.
 
-*** Bachelor of Information Science (Multimedia)
+** Bachelor of Information Science (Multimedia)
 |------------------------------+------------------------|
 | January 2001 - December 2004 | Pretoria, South Africa |
 |------------------------------+------------------------|
@@ -236,8 +235,8 @@ Major in English
 - Concerned with the history, composition & use of the English language.
 - Explored notable periods of literature & their effects on modern English.
 
-** Proficiencies
-*** Soft Skills
+* Proficiencies
+** Soft Skills
 - Substantial communication & interpersonal skills, with a sensitivity to cultures & contexts.
 - Strong leadership skills with the ability to discern when to collaborate or follow.
 - Confident presentation skills allowing easy & natural interactions with audiences.
@@ -247,7 +246,7 @@ Major in English
 - Self-motivated with the aptitude to rapidly upskill myself in a new technology or framework.
 - Understands the design process well & effectively collaborates with the stake-holders of each step.
 
-*** Technical Skills
+** Technical Skills
 
 /My previous roles & responsibilities have required me to work with many different technologies & stacks. I do not claim to be an expert in all of them, since I was usually required to get up to speed as quickly as possible to solve specific problems. However, I do have a strong understanding of the fundamental programming principles & an eye for what makes clean, scalable code which (in my opinion) is present in most technology stacks./
 
