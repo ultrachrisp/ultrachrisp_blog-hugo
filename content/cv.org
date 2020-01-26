@@ -4,15 +4,6 @@
 #+TYPE: cv
 
 * Work Experience
-** MessageBird
-|------------------------+------------------------|
-| January 2020 - present | Amsterdam, Netherlands |
-|------------------------+------------------------|
-|                        | Front-end Engineer     |
-|------------------------+------------------------|
-
-- Still figuring this one out.
-
 ** Absa (formerly Barclays Africa Group Ltd)
 |-------------------------------+----------------------------|
 | February 2016 - December 2019 | Johannesburg, South Africa |
@@ -246,15 +237,3 @@ Major in English
 - Self-motivated with the aptitude to rapidly upskill myself in a new technology or framework.
 - Understands the design process well & effectively collaborates with the stake-holders of each step.
 
-** Technical Skills
-
-/My previous roles & responsibilities have required me to work with many different technologies & stacks. I do not claim to be an expert in all of them, since I was usually required to get up to speed as quickly as possible to solve specific problems. However, I do have a strong understanding of the fundamental programming principles & an eye for what makes clean, scalable code which (in my opinion) is present in most technology stacks./
-
-- *Languages:* JavaScript {{< dot >}}C++{{</ dot >}} {{< dot >}}Python{{</ dot >}} {{< dot >}}HTML5 & Canvas{{</ dot >}} {{< dot >}}SCSS{{</ dot >}} {{< dot >}}SQL{{</ dot >}} {{< dot >}}Emacs Lisp{{</ dot >}} {{< dot >}}Go{{</ dot >}} {{< dot >}}Scala{{</ dot >}} {{< dot >}}Octave{{</ dot >}} {{< dot >}}ActionScript 3{{</ dot >}} {{< dot >}}Java{{</ dot >}} {{< dot >}}PHP{{</ dot >}} {{< dot >}}C#{{</ dot >}}
-- *Frameworks:* React {{< dot >}}Jest{{</ dot >}} {{< dot >}}OpenFrameworks{{</ dot >}} {{< dot >}}Vuforia{{</ dot >}} {{< dot >}}ARcore{{</ dot >}} {{< dot >}}OpenGL{{</ dot >}} {{< dot >}}Apache Spark{{</ dot >}} {{< dot >}}Angular{{</ dot >}} {{< dot >}}.NET{{</ dot >}}
-- *Task runners:* NPM {{< dot >}}Webpack{{</ dot >}} {{< dot >}}Gulp{{</ dot >}} {{< dot >}}Bash{{</ dot >}} {{< dot >}}Grunt{{</ dot >}}
-- *Content Management Systems:* Hugo {{< dot >}}Adobe Experience Manager (AEM){{</ dot >}} {{< dot >}}Wordpress{{</ dot >}} {{< dot >}}Drupal{{</ dot >}}
-- *Version control:* Git {{< dot >}}Subversion{{</ dot >}} {{< dot >}}Mercurial{{</ dot >}}
-- *Software:* Adobe Creative Suite {{< dot >}}Framer{{</ dot >}} {{< dot >}}Unity{{</ dot >}} {{< dot >}}Blender{{</ dot >}} {{< dot >}}Unreal{{</ dot >}} {{< dot >}}Sketch{{</ dot >}} {{< dot >}}Maya{{</ dot >}} {{< dot >}}MS Office{{</ dot >}}
-- *Essentials:* Emacs {{< dot >}}Org mode{{</ dot >}} {{< dot >}}Magit{{</ dot >}} {{< dot >}}Projectile{{</ dot >}} {{< dot >}}Tern{{</ dot >}}
-- *Interests:* Arduino {{< dot >}}ESP32{{</ dot >}} {{< dot >}}Raspberry Pi{{</ dot >}} {{< dot >}}Programmable LED strips{{</ dot >}} {{< dot >}}Kinect{{</ dot >}}
