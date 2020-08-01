@@ -2,22 +2,21 @@
 {{ partial "navigation.html" . }}
 
 <section class="cv">
-
     <h1>{{ .Title }}</h1>
-
     {{ $sections := split .Content "<h" }}
-    {{ range $index, $sec := $sections }}
-     {{ if or (eq $sec "") (eq $index 0) }}
-      {{ printf "%s\n" $sec | safeHTML }} 
-     {{ else if and (hasPrefix $sec "2") (gt $index 0)}}
-      {{ printf "<h%s\n" $sec | safeHTML }}
-	 {{ else if and (hasPrefix $sec "3") (gt $index 0) }}
-      <div class="card">
-	  {{ printf "<h%s\n" $sec | safeHTML }}
-      </div>
-	 {{ end }}
-    {{ end }}
-
+     {{ range $index, $sec := $sections }}
+      {{ if or (eq $sec "") (eq $index 0) }}
+       {{ printf "%s\n" $sec | safeHTML }} 
+      {{ else if and (hasPrefix $sec "2") (gt $index 0)}}
+       {{ printf "<h%s\n" $sec | safeHTML }}
+	    {{ else if and (hasPrefix $sec "3") (gt $index 0) }}
+       <div class="card">
+	      {{ printf "<h%s\n" $sec | safeHTML }}
+       </div>
+	    {{ end }}
+     {{ end }}
 </section>
 
 {{ partial "footer.html" . }}
+
+
