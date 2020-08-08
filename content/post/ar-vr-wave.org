@@ -36,7 +36,7 @@
 
    This is a difficult question to answer, and it is even more difficult if you haven't experienced VR or AR. The fast, dirty answer is "More emotional investment, less real world risk".
 
-   I remember talking to a UX designer before his first VR experience. He was rapid firing questions like, "What about smell or touch?" and "Can it be fully immersive without all the sense". After he got out of VR, he realised that many of his points are moot. You are so invested in the virtual experiences while they are happening, your brain makes it real for you... even if it's not.
+   I remember talking to a UX designer before his first VR experience. He was rapid firing questions like, "What about smell or touch?" and "Can it be fully immersive without all five senses". After he got out of VR, he realised that many of his points are moot. You are so invested in the virtual experiences while they are happening, your brain makes it real for you... even if it's not.
 
    Another surprising insight came when I tried out my first hand tracker in VR. I was able to interact with virtual objects through the hand tracker even though I wasn't holding anything in the real world. The surprise came when I started interacting with objects that had 'warm' (yellow, orange, red) or 'cool' (blue, purple, turquiose) colours. Even though I wasn't holding anything, there was a distinct 'warm' or 'cool' sensation in my fingers during the interactions. My brain was telling my fingers what they 'should' be feeling. These sensations were created by the information my eyes were receiving, not my fingers.
 
@@ -47,34 +47,34 @@
 
    For example, if someone wants to learn how to walk a tight-rope, you need to spend hours practising in a safe environment. They need time to master their balance, and to adjust to the context of 'tight rope walking'. 
 
-   Let's say this person has mastered their balance and the skills needed to walk a tight rope. They might feel and behave like a beginner when they approach a tight-rope that is strung high above the ground. How did this happen, they have mastered their balance on a rope? It's because the setting has changed. The student has to do something familiar in an unfamiliar setting. This is why many students sometimes struggle with material they know well during an exam. Or why performers make mistakes even if they have spent countless hours practising.
+   Let's say this person has mastered their balance and the skills needed to walk a tight rope. They might feel and behave like a beginner when they approach a tight-rope that is strung high above the ground. How did this happen? They have already mastered their balance on a rope? It's because the setting changed. The student has to do something familiar in an unfamiliar setting. This is why many students sometimes struggle with material they know well during an exam. Or why performers make mistakes even if they have spent countless hours practising.
 
-VR has the ability to expose you to something that is very close to the 'real deal' while keeping you in a safe. You can mentally prepare for the real event without having to put yourself at the same level of risk.
+VR has the ability to expose you to something that is very close to the real-deal while keeping you safe. You can mentally prepare for the real event without having to put yourself at the same level of risk.
 
-   For this reason, VR has been adopted by industries that have very real stakes involved. The medical, military and mining industries, to mention a few, use VR for training & simulation purposes. Helping doctors or soldiers get exposed to certain situations could mean life & death.  And with stakes like that, it is important to simulations as real as possible.
+   For this reason, VR has been adopted by industries that have very real stakes involved. The medical, military and mining industries, to mention a few, use VR for training & simulation purposes. Helping doctors or soldiers get exposed to certain situations could mean life & death.  And with stakes like that, it is important to make the  simulations as real as possible.
 
-   VR has also found a very natural fit with architecture. Being able to explore a building or proposed space, before construction starts, is very powerful. VR can allow you to experience the space, not just see it. To experience the space, how big or small it is, how the light plays on some of the surfaces or how close a wall is to a staircase. This can provide insights into plans & designs, can save a lot of time, money & effort. 
+   VR has also found a very natural fit with architecture. Being able to explore a building or proposed space, before construction starts, is very powerful. VR can allow you to experience the space, not just see it. To experience the space, how big or small it is, how the light plays on some of the surfaces or how close a wall is to a staircase. This can provide insights into plans & designs as well as saving a lot of time, money & effort. 
 
 ** Surprises and challenges
    The technology and tools for fully immersive experiences are progressing rapidly. Yet our understanding and application of virtual experiences is showing some surprising patterns.
 
    For example, if you are placed in a familiar setting, you would rely on what you know to navigate the space. If you create a trampoline in VR, a user may try to jump on it even if they are standing in their own living room.
 
-   Even though we live & navigate a 3D world, most of our information is captured & transferred via 2D mediums. The written word allowed information to survive longer and more accurately than the spoken word. Maps, and their typographical representations of 3D objects in a 2D medium, have been invaluable to humanity. 
+   Even though we live & navigate a 3D world, most of our information is captured & transferred via 2D mediums. The written word allowed information to survive longer and more accurately than the spoken word. Maps, and their typographical representations of 3D spaces within a 2D medium, have been invaluable to humanity. 
 
-   But now that we are able to create and interact in a 3D setting, we also need to evolve how we create and share information. And this is not an easy challenge. It is very difficult to think of problems that are better solved or represented in a 3D compared to 2D. Sometimes the best solutions rely on tried & trusted 2D tools. 
+   But now that we are able to create and interact in a 3D setting, we also need to evolve how we create and share information. And this is not an easy challenge. It is very difficult to think of problems that are better solved or represented in 3D. Sometimes the best solutions rely on tried & trusted 2D tools. 
 
-   This partially explains why adoption of AR & VR have been slow. AR & VR are great marketing opportunities but our toolbox is full of existing and dependable tools. We are still searching for problems that are better solved in 3D. And finding problems that are inherently 3D in nature is trickier than expected.
+   This partially explains why adoption of AR & VR has been slow. AR & VR are great marketing opportunities but our toolbox is full of existing and dependable tools. We are still searching for problems that are better solved in 3D. And finding problems that are inherently 3D in nature is trickier than expected.
 
 ** AR, VR and me
-   Even though there have been successes, the interaction models for AR and VR are still being developed. We have the technology, we have seen what works well and we have stubbed our collective toes on what doesn't. But mass adoption still eludes us. We are still looking for the 'killer problem' that AR or VR can solve that our other tools cannot.
+   Even though there have been successes, the interaction models for AR & VR are still being developed. We have the technology, we have seen what works well and we have stubbed our collective toes on what doesn't. But mass adoption still eludes us. We are still looking for the 'killer problem' that AR or VR can solve that our other tools cannot.
 
    E-commerce can and has benefitted from AR. Furniture and electronic goods stores have developed AR applications where you can preview what an object will look like in your home. This is a non-trivial development. Enabling a customer to preview what a product will look like before they buy is a huge development.
 
    VR is also new ground for e-commerce. Aside from selling 'virtual real estate', we are only now exploring the e-commerce possibilities of VR. You might find yourself exploring virtual stores in similar ways that we explore brick & cement stores... but this would be a failure of imagination.
 
 ** Conclusion
-   Recreating the physical world within virtual systems seems inevitable. One benefit of this approach is that you can leverage real world metaphors within a virtual setting. It might be a necessary first step as we build bigger & more beautiful virtual-scapes but we need to evolve. Once we start thinking outside of our current constraints, outside of our current approaches, we may find truely innovative solutions to we didn't know we had.
+   Recreating the physical world within virtual systems seems inevitable. One benefit of this approach is that you can leverage real world metaphors within a virtual setting. It might be a necessary first step as we build bigger & more beautiful virtual-scapes. Once we start thinking outside of our current constraints, outside of our current approaches, we may find truely innovative solutions to problems we didn't know we had.
 
 
 
