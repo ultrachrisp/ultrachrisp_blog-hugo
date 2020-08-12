@@ -4,6 +4,18 @@
 #+TYPE: cv
 
 * Work Experience
+** MessageBird
+|------------------------+------------------------|
+| January 2020 - present | Amsterdam, Netherlands |
+|------------------------+------------------------|
+|                        | Frontend Engineer      |
+|------------------------+------------------------|
+
+- Responsible for designing, developing and deploying internal facing user interfaces to support various MessageBird teams.
+- Successfully conceptualised and deployed a solution between loose business requirements and existing backend capabilities.
+- Successfully decoupled an internal capability from a larger codebase to allow for faster development iterations.
+- Responsible for developing robust, flexible and user friendly solutions.
+
 ** Absa (formerly Barclays Africa Group Ltd)
 |-------------------------------+----------------------------|
 | February 2016 - December 2019 | Johannesburg, South Africa |
