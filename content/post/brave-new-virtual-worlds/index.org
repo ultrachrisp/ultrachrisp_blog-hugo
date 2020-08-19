@@ -4,7 +4,7 @@
 #+TYPE: post
 #+DESCRIPTION: Ideas around virtual and augmented reality
 
-{{< img name="headset.png" classes="right corners" style="width:250px" alt="Virtual reality headset" >}}
+{{< img name="headset.png" classes="right corners" style="width:200px" alt="Virtual reality headset" >}}
 As technology progresses, so the world gets smaller. But virtual reality (VR) is allowing us to explore new worlds in new ways, or even interact with others over large distances. And augmented reality (AR) is allowing us to layer more content and more worlds on top of our own. 
 ** Definitions
    In this article, I will focus on 2 technologies: virtual reality (VR) and augmented reality (AR). Regardless of their similarities, they have different use cases as well as different effects on the user.

@@ -11,10 +11,9 @@
 |                        | Frontend Engineer      |
 |------------------------+------------------------|
 
-- Responsible for designing, developing and deploying internal facing user interfaces to support various MessageBird teams.
-- Successfully conceptualised and deployed a solution between loose business requirements and existing backend capabilities.
-- Successfully decoupled an internal capability from a larger codebase to allow for faster development iterations.
-- Responsible for developing robust, flexible and user friendly solutions.
+- Responsible for developing & deploying internal facing applications to support various MessageBird teams.
+- Successfully conceptualised & deployed solutions from business requirements, leveraging existing backend capabilities.
+- Successfully decoupled an internal capability from a larger code base to allow for faster development cycles.
 
 ** Absa (formerly Barclays Africa Group Ltd)
 |-------------------------------+----------------------------|
@@ -241,11 +240,11 @@ Major in English
 * Proficiencies
 ** Soft Skills
 - Substantial communication & interpersonal skills, with a sensitivity to cultures & contexts.
-- Strong leadership skills with the ability to discern when to collaborate or follow.
+- Strong leadership skills without sacrificing the ability to collaborate or follow.
 - Confident presentation skills allowing easy & natural interactions with audiences.
-- Good motivator with the capability to establish good RAPPORT within a team.
-- Proven problem solving skills complimented with established searching methods.
+- Good motivator able to establish meaningful RAPPORT within a team.
+- Proven problem solving skills complimented with established research methodologies.
 - Excited by a challenge & curious by nature.
-- Self-motivated with the aptitude to rapidly upskill myself in a new technology or framework.
-- Understands the design process well & effectively collaborates with the stake-holders of each step.
+- Self-motivated with an aptitude to rapidly upskill myself in a new technology or framework.
+- Understands the design process well & effectively collaborates with stake-holders.
 
