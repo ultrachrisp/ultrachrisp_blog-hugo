@@ -4,14 +4,12 @@
 #+TYPE: post
 #+DESCRIPTION: Ideas around virtual and augmented reality
 
-{{< img name="headset.png" classes="right corners" style="width:200px" alt="Virtual reality headset" >}}
-As technology progresses, so the world gets smaller. But virtual reality (VR) is allowing us to explore new worlds in new ways, or even interact with others over large distances. And augmented reality (AR) is allowing us to layer more content and more worlds on top of our own. 
+{{< img name="headset.png" classes="right corners" style="width:180px" alt="Virtual reality headset" >}}
+As technology progresses, so the world gets smaller. Virtual reality (VR) is allowing us to explore new worlds in new ways, or even interact with people over large distances. Conversely, augmented reality (AR) is allowing us to layer more content, or even new worlds, on top of our own. It has the potential to redefine how we see and experience our environment. 
 ** Definitions
-   In this article, I will focus on 2 technologies: virtual reality (VR) and augmented reality (AR). Regardless of their similarities, they have different use cases as well as different effects on the user.
+   I am going to focus on 2 technologies: virtual reality (VR) and augmented reality (AR). Regardless of their similarities, they have different use cases as well as different effects on the user.
    
-   Virtual reality aims for full immersion in a virtual setting. The user is completely removed from their current setting and placed into a virtual environment. Virtual reality can also have degrees of interaction. There are passive experiences where the user can only view the virtual world. 
-
-   Some VR devices have limited interaction. The user can interact with the virtual world using a controller but their movements or motions are not tracked. The user typically sit on a couch or chair for the experience. 
+   Virtual reality aims for full immersion in a virtual setting. The user is completely removed from their current setting and placed into a virtual environment. Virtual reality can also have degrees of interaction, where passive experiences only allow the user to view the virtual world. There are then incremental steps of limited interaction from this point on. For example, a user can interact with the virtual world using a controller but their movements or motions are not tracked. They would typically sit on a couch or chair for the experience, which is practical but not very immersive.
 
    Other VR devices allow for fuller immersion. Controllers or hand trackers enable interaction while movement is tracked via base-stations or directly from the headset. This allows the user to take a few steps in any direction as well as bend, duck or jump.
 
@@ -24,8 +22,10 @@ As technology progresses, so the world gets smaller. But virtual reality (VR) is
 
    Augmented reality is more collaborative by nature. Since you are not fully removed from your world, you can still interact with people or things in the real. In addition to interacting with virtual objects and people. Multiple users can also share their experiences as easily as they share their tablet or mobile phone screens.
 
+    {{< youtube YJg02ivYzSs >}}
+
 ** The effects
-   I have been lucky enough to watch a number of people experience VR & AR for the first time. If you look closely, you can watch someone progress through the stages of a first time experience. 
+   I have been lucky enough to watch a number of people experience VR for the first time. If you look closely, you can watch someone progress through the stages of a first time experience. 
 
    They stop, momentarily, as they adjust to their surroundings. As they realise what is happening and ease into the setting, they relax further. This is usually followed by a deep sigh and more confidence to explore and interact with their surroundings.
 
@@ -39,6 +39,8 @@ As technology progresses, so the world gets smaller. But virtual reality (VR) is
    This is a difficult question to answer, and it is even more difficult if you haven't experienced VR or AR. The fast, dirty answer is "More emotional investment, less real world risk".
 
    I remember talking to a UX designer before his first VR experience. He was rapid firing questions like, "What about smell or touch?" and "Can it be fully immersive without all five senses". After he got out of VR, he realised that many of his points are moot. You are so invested in the virtual experiences while they are happening, your brain makes it real for you... even if it's not.
+
+    {{< youtube ByLuRCrsNlg >}}
 
    Another surprising insight came when I tried out my first hand tracker in VR. I was able to interact with virtual objects through the hand tracker even though I wasn't holding anything in the real world. The surprise came when I started interacting with objects that had 'warm' (yellow, orange, red) or 'cool' (blue, purple, turquiose) colours. Even though I wasn't holding anything, there was a distinct 'warm' or 'cool' sensation in my fingers during the interactions. My brain was telling my fingers what they 'should' be feeling. These sensations were created by the information my eyes were receiving, not my fingers.
 
