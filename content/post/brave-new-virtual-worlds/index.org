@@ -71,12 +71,15 @@ VR has the ability to expose you to something that is very close to the real-dea
    This partially explains why adoption of AR & VR has been slow. AR & VR are great marketing opportunities but our toolbox is full of existing and dependable tools. We are still searching for problems that are better solved in 3D. And finding problems that are inherently 3D in nature is trickier than expected.
 
 ** AR, VR and me
+   {{< img name="roc_meatSpace.jpg" classes="right corners" alt="More humble in the real world" >}}
    Even though there have been successes, the interaction models for AR & VR are still being developed. We have the technology, we have seen what works well and we have stubbed our collective toes on what doesn't. But mass adoption still eludes us. We are still looking for the 'killer problem' that AR or VR can solve that our other tools cannot.
 
    E-commerce can and has benefitted from AR. Furniture and electronic goods stores have developed AR applications where you can preview what an object will look like in your home. This is a non-trivial development. Enabling a customer to preview what a product will look like before they buy is a huge development.
 
    VR is also new ground for e-commerce. Aside from selling 'virtual real estate', we are only now exploring the e-commerce possibilities of VR. You might find yourself exploring virtual stores in similar ways that we explore brick & cement stores... but this would be a failure of imagination.
-
+   
+   {{< img name="roc.png" classes="center corners" alt="A gift from a citizen of the roc" >}}
+   
 ** Conclusion
    Recreating the physical world within virtual systems seems inevitable. One benefit of this approach is that you can leverage real world metaphors within a virtual setting. It might be a necessary first step as we build bigger & more beautiful virtual-scapes. Once we start thinking outside of our current constraints, outside of our current approaches, we may find truely innovative solutions to problems we didn't know we had.
 
