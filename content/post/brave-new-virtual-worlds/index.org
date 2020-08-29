@@ -79,6 +79,8 @@ VR has the ability to expose you to something that is very close to the real-dea
    VR is also new ground for e-commerce. Aside from selling 'virtual real estate', we are only now exploring the e-commerce possibilities of VR. You might find yourself exploring virtual stores in similar ways that we explore brick & cement stores... but this would be a failure of imagination.
    
    {{< img name="roc.png" classes="center corners" alt="A gift from a citizen of the roc" >}}
+
+   /The above graphic was a gift from the incredible [[https://za.linkedin.com/in/gemmafaerch][Gemma Faerch]]./
    
 ** Conclusion
    Recreating the physical world within virtual systems seems inevitable. One benefit of this approach is that you can leverage real world metaphors within a virtual setting. It might be a necessary first step as we build bigger & more beautiful virtual-scapes. Once we start thinking outside of our current constraints, outside of our current approaches, we may find truely innovative solutions to problems we didn't know we had.
