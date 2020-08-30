@@ -1,27 +1,29 @@
-#+DATE: 2020-06-13T12:50:53+02:00
+#+DATE: 2020-08-29T12:50:53+02:00
 #+TITLE: Brave New Virtual Worlds
-#+DRAFT: true
+#+DRAFT: false
 #+TYPE: post
 #+DESCRIPTION: Ideas around virtual and augmented reality
 
 {{< img name="headset.png" classes="right corners" style="width:180px" alt="Virtual reality headset" >}}
-As technology progresses, so the world gets smaller. Virtual reality (VR) is allowing us to explore new worlds in new ways. It also has the potential to redefine how we interact virtually, closing vase distances as participants play in the same virtual spaces. Conversely, augmented reality (AR) is allowing us to layer more content on top of our own. This could change how we see our own world and everything that lives in it. Even though we have seen the potential for both of these technologies, mass adoption has still delayed the wave.
+As technology progresses, so the world gets smaller. Virtual reality (VR) is allowing us to explore new worlds in new ways. It also has the potential to redefine how we interact virtually. It can close vase distances as participants play in the same virtual spaces.{{<break>}}{{<break>}} Conversely, augmented reality (AR) is allowing us to layer more content on top of our own. This could change how we see our own world and everything that lives in it. Even though we have seen the potential for both of these technologies, mass adoption has still delayed the wave.
 
 ** Setting the Stage   
-   Virtual reality aims for full immersion in a virtual setting. The user is completely removed from their current setting and placed into a virtual environment. Virtual reality can also have degrees of interaction, where passive experiences only allow the user to view the virtual world. From this point, there are samll incremental stages of limited interaction. For example, a user can interact with the virtual world using a game controller but their movements or motions are not tracked. They would typically sit on a couch or chair for the experience, which is practical but not very immersive.
+   Virtual reality aims for full immersion in a virtual setting. The user is completely removed from their current setting and placed into a virtual environment. Virtual reality can also have degrees of interaction, where passive experiences only allow the user to view the virtual world.
+
+   From this point, there are small incremental stages of limited interaction. For example, a user can interact with the virtual world using a game controller but their movements or motions are not tracked. They would typically sit on a couch or chair for the experience, which is practical but not very immersive.
 
    Other VR devices allow for fuller immersion. Controllers or hand trackers enable interaction while movement is tracked via base-stations or directly from the headset. This allows the user to take a few steps in any direction as well as bend, duck or jump.
 
-   Augmented reality is when a virtual world is super-impose onto an existing one. AR works well on mobile phones or tablets with more sophisticated solutions are entering the market. AR headsets with hand trackers are allowing for more natural interactions.
+   Augmented reality is when a virtual world is super-impose onto an existing one. AR works well on mobile phones or tablets while more sophisticated solutions are entering the market. AR headsets with hand trackers are allowing for more natural interactions.
 
-   Mixed reality is a cross between AR & VR with more of an emphasis on interaction. AR is becoming more interactive as the hardware develops, thus the term 'mixed reality' has slowly fallen away.
+   Mixed reality is a cross between AR & VR with more of an emphasis on interaction. AR is becoming more interactive as the hardware develops, thus the term 'mixed reality' has fallen away.
 
 ** The Approaches
-   Virtual reality can be a lonely experience. While a user can interact with other people in the same virtual setting, the VR experience itself is a solitary one. And this is a by product of the hardware. The headset is supposed to remove you from your current environment and place you somewhere else. People present in you physical environment devolve into 'voices in your head'. Fuller immersion comes with at the cost of more 'real world' isolation.
+   Virtual reality can be a lonely experience. While a user can interact with other people in the same virtual setting, the VR experience itself is a solitary one. And this is a by-product of the hardware. The headset is supposed to remove you from your current environment and place you somewhere else. People present in you physical environment devolve into 'voices in your head'. Fuller immersion comes at the cost of more real world isolation.
 
-   Augmented reality is more collaborative by nature. Since you are not fully removed from your world, you can still interact with people or things in the real. In addition to interacting with virtual objects and people. Multiple users can also share their experiences as easily as they share their tablet or mobile phone screens.
+   Augmented reality is more collaborative by nature. Since you are not fully removed from your world, you can still interact with people or things in the real. In addition to interacting with virtual objects and people. Multiple users can also share their experiences by sharing their tablet or mobile phone screens.
 
-   Below is an interesting thought experiment on some of the potential dangers of an 'all ways on' AR world.
+   Below is an interesting thought experiment on some of the potential dangers of an always on AR world.
    
     {{< youtube YJg02ivYzSs >}}
     
@@ -32,40 +34,47 @@ As technology progresses, so the world gets smaller. Virtual reality (VR) is all
 
    First time experiences are powerful. People love to talk about the 'first time' they did anything, as well as the thoughts and feelings that followed. 
 
-   First time experiences leave lasting impressions. People commonly repeat an activity attempting to recreate the feelings they had that first time.  The number of people I observed having 'first time experience' in VR is an indication of the medium's power. And VR can provide 'first time experiences' via the content, not just the medium it is served through.
+   First time experiences leave lasting impressions. People repeat an activity attempting to recreate the feelings they experienced that first time.  The number of people I observed having a first time experience in VR is an indication of the medium's power. And VR can provide first time experiences via the content, not just through the medium that the content is served. This is quite significant for content creators.
+
+   {{< youtube ByLuRCrsNlg >}}
 
 ** So What?
    Even if we have access to this incredible technology, why should we care?
 
    This is a difficult question to answer, and it is even more difficult if you haven't experienced VR or AR. The fast, dirty answer is "More emotional investment, less real world risk".
 
-   I remember talking to a UX designer before his first VR experience. He was rapid firing questions like, "What about smell or touch?" and "Can it be fully immersive without all five senses". After he got out of VR, he realised that many of his arguements were less important than he thought. You are so invested in the virtual experiences while it is happening that your brain makes it real for you... even if it's not.
+   I remember talking to a UX designer before his first VR experience. He was rapid firing questions like, "What about smell or touch?" and "Can it be fully immersive without all five senses". After he got out of VR, he realised that many of his arguments were less important than he thought. You are so invested in the virtual experiences while it is happening that your brain makes it real for you... even if it's not.
 
-    {{< youtube ByLuRCrsNlg >}}
+   Another surprising insight came when I tried out my first hand tracker in VR. I was able to interact with virtual objects through the hand tracker even though I wasn't actually holding anything. The surprise came when I started interacting with objects that had 'warm' (yellow, orange, red) or 'cool' (blue, purple, turquoise) colours. Even though I wasn't holding anything, there was a distinct 'warm' or 'cool' sensation in my fingers during the interactions. My brain was telling my fingers what they 'should' be feeling. These sensations were created by the information my eyes were receiving, not my fingers.
 
-   Another surprising insight came when I tried out my first hand tracker in VR. I was able to interact with virtual objects through the hand tracker even though I wasn't actually holding anything. The surprise came when I started interacting with objects that had 'warm' (yellow, orange, red) or 'cool' (blue, purple, turquiose) colours. Even though I wasn't holding anything, there was a distinct 'warm' or 'cool' sensation in my fingers during the interactions. My brain was telling my fingers what they 'should' be feeling. These sensations were created by the information my eyes were receiving, not my fingers.
-
-   And this is key. It might sound cliche but this [[https://www.imdb.com/title/tt0133093/][The Matrix]] quote is proving to be surprising accurate:
+   And this is key. It might sound cliché but this [[https://www.imdb.com/title/tt0133093/][The Matrix]] quote is proving to be surprising accurate:
    
    /"I thought you said it wasn't real?"{{<break>}}"Your brain makes it real."/
 
 ** What do we do with these new tools
    AR and VR have immediate application in 'training' and 'simulation' settings. If the brain believes that it is present in the virtual setting, the user will be more invested in the exercise and its outcome.
 
-   For example, if someone wants to learn how to walk a tight-rope, they will need to spend hours practising in a safe environment. They need time to master their balance, and to adjust to the practicalities of 'tight rope walking'. 
+   For example, if someone wants to learn how to walk a tight-rope, they will need to spend hours practising in a safe environment. They need time to master their balance, and to adjust to the practicalities of tight rope walking. 
 
-   Time passes, and this person has mastered their balance as well as the other skills needed to walk a tight rope. But when they approach a tight-rope that is strung high above the ground, they might go back to feeling and behaving like a beginner.
+   Time passes, and this person has mastered their balance as well as the other skills needed. But when they approach a tight rope that is strung high above the ground, they might go back to feeling and behaving like a beginner.
 
-   What just happened? This person mastered their balance on a rope? It's because the setting changed. The student was asked to do something familiar in an unfamiliar setting. It is the same with students flunking an exam even if they know the subject matter well. Or why performers suffer from stage fright. 
+   What happened? This person mastered their balance on a rope? It's because the setting changed. The student was asked to do something familiar in an unfamiliar setting. It is the same with students flunking an exam even if they know the subject matter well. Or why performers suffer from stage fright. 
 
 VR has the ability to expose you to something that is very close to the real-deal. All while keeping you safe. You can mentally prepare for the real event without having to put yourself at the same level of risk.
 
    For this reason, VR has been adopted by industries that have very real stakes involved. The medical, military and mining industries, to mention a few, can use VR for training & simulation purposes. Some of them already are. Helping doctors or soldiers get exposed to certain situations could mean life & death.  And with stakes like that, it is important to make the simulations as real as possible.
 
-   VR has also found a very natural fit with architecture. Being able to explore a building or proposed space, before construction starts, is very powerful. VR can allow you to experience the space, not just see it. To see how big or small an room is, how the light plays on some of the surfaces or how close a wall is to a staircase. This can provide insights into plans & designs and could potentially save architects a lot of time, money & effort. 
+   VR also fits quite well with architecture. Being able to virtually explore a building before construction starts is very powerful. VR can allow you to experience the space and the layout, not just see it. To experience how big or small a room is, how the light plays on some of the surfaces or how close a wall is to a staircase. This can provide insights into plans & designs and could potentially save architects a lot of time, money & effort. 
+
+** The Metaverse
+   [[https://www.matthewball.vc/all/themetaverse][Matthew Ball]] does a great job of explaining what the metaverse is, or rather could be. But it is also important to stress that no-one knows what the metaverse will be, or what it will look like. Nor can anyone say if it will turn into a multi-verse as there are some major players all actively building their own version of it.
+   
+      {{< img name="rohan-and-i.jpg" classes="left corners" alt="Facebook spaces before it was cool" >}} For example, the concept  of an 'inter-web' has been with us long before the internet arrived. And yet the internet, in its current form, is stranger than its science fiction forerunners. And it keeps evolving. Even as there are attempts to dismantle the silos that Apple, Facebook, Amazon and others have built within the internet, so too will there be resistance to enclosures within the metaverse. 
+
+   Above is a picture of [[https://za.linkedin.com/in/rohanshackleford][Rohan]] and I, messing around in Facebook Spaces. He was in Cape Town while I was in Johannesburg when this virtual selfie was taken.
 
 ** Surprises and Challenges
-   The technology and tools for fully immersive experiences are progressing rapidly. Yet our understanding and application of virtual experiences is showing some surprising patterns.
+   The technology and tools for immersive experiences are progressing. Yet our understanding and application of virtual experiences is showing some surprising patterns.
 
    For example, if you are placed in a familiar setting, you would rely on what you know to navigate the space. If you create a trampoline in VR, a user may try to jump on it even if they are standing in their own living room. Amusing as this may seem, it can be quite jarring for the user. There are many videos of people falling over in the real world because they fell over in the virtual.
 
@@ -75,20 +84,21 @@ VR has the ability to expose you to something that is very close to the real-dea
 
    This partially explains why adoption of AR & VR has been slow. AR & VR are great marketing opportunities but our toolbox is full of existing and dependable 2D tools. We are still searching for problems that are better solved in 3D. And finding problems that are inherently 3D in nature is trickier than expected.
 
-** The Metaverse
-   [[https://www.matthewball.vc/all/themetaverse][Matthew Ball]] does a great job of explaining what the metaverse is, or rather could be. But it is also important to stress that know one really knows. Nor can anyone say if it will turn into a multi-verse.
-
-   For example, the idea of an 'inter-web' has been with humanity long before the internet arrived. And yet the internet, in its current form, is stranger than its science fiction forerunners. And it keeps evolving. 
-   
 **  A Failed Utopia Revisited
    {{< img name="roc_meatSpace.jpg" classes="right corners" alt="More humble in the real world" >}}
-   Late in 2017, a cunning plan was conceptualised and pitched. Those involved did not think much of its chance of success, but they persevered. What took shape by mid 2018 was a VR capability across Cape Town, Johannesburg & Pretoria, South Africa. Through the further actions of [[https://za.linkedin.com/in/koos-de-beer-21425b8][Koos de Beer]], it would provide the spark for the [[http://vri.up.ac.za/][VRI Lab]] that is still going strong today. Unfortunately, not so for Cape Town or Johannesburg teams.
+   Late in 2017, a cunning plan was conceptualised and pitched. Those involved did not think much of its chance of success, but they persevered. What took shape by mid 2018 was a VR capability across Cape Town, Johannesburg & Pretoria, South Africa. From this spark, and through the a ton of further hard work and dedication from [[https://za.linkedin.com/in/koos-de-beer-21425b8][Koos]], the [[http://vri.up.ac.za/][VRI Lab]] was born and is still going strong today. Unfortunately, not so for the Cape Town or Johannesburg teams.
 
-   The Johannesburg unit was cheekily named "The Republic of Chrisp" or "RoC" for short.
+   The Johannesburg unit was cheekily named "The Republic of Chrisp" or "RoC" for short. It grew in an unlikely setting, housed within the flagship offices of a bastion of the financial sector. It's mandate was simple, keep pace to new trends and technologies to ensure the company wasn't left behind. To that end, it was successful, but the fruit only ripened after the capability was closed down.
+
+   I am grateful for what The Republic was, and what it taught me. I am grateful for those that participated and shared in its odd-ball status. It was weird, eccentric, a safe space, a portal to new worlds and a place of revelation, inspiration and awe. It rewarded people's curiosity and their sense of adventure. And it allowed me to share many of those moments with any of the visitors passing through.
+
+   It wasn't meant to last forever, but that it even existed is a wonder of its own.
    
    {{< img name="roc.png" classes="center corners" alt="A gift from a citizen of the roc" >}}
 
-   /The above graphic was a gift from the incredible [[https://za.linkedin.com/in/gemmafaerch][Gemma Faerch]]./
+   /The above graphic was a gift from the incredible [[https://za.linkedin.com/in/gemmafaerch][Gemma]]./
    
 ** Conclusion
-   Even though there have been successes, the interaction models for AR & VR are still being developed and defined. We have the technology, we have seen what works well and we have stubbed our collective toes on what doesn't. But mass adoption still eludes us. We are still looking for the 'killer problem' that AR or VR can solve better than existing options.
+   Even though there have been successes, the interaction models for AR & VR are still being written & developed. We have the technology, we have seen what works well and we have stubbed our collective toes on what doesn't.
+
+   There has been renewed interest in these technologies now that we are unable to move and gather like we used to. But we are still searching for a specific problem that VR & AR solve better than our current tools. And until then, the virtual spaces are still the frontier, explored and built by the adventurous. 
