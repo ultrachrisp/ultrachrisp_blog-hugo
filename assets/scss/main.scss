@@ -248,7 +248,7 @@ img {
     
     li span:before {
       @include circle($grey-dark);  
-      margin-bottom: 1px;
+      margin: 0 3px 1px 0;
     }
   }
 }
