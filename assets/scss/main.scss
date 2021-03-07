@@ -17,9 +17,9 @@ $breakpoint-large: 900px;
 $breakpoint-wide: 1200px;
 
 // General styles
-html{ font-size: 62.5%; }
+html { font-size: 62.5%; }
 
-body{
+body {
   min-width: 320px;
   max-width: $content-width-max;
   margin: 0 auto;
@@ -34,54 +34,58 @@ body{
   background-image: $background_image;
 }
 
-h1, h2, h3, h4, h5, h6{ font-weight: 300; }
+h1, h2, h3, h4, h5, h6 { font-weight: 300; }
 
-h1{
+h1 {
   font-size: 3.4rem;
   line-height: 3.9rem;
 }
 
-h2, h3{
+h2, h3 {
   font-size: 3.0rem;
   line-height: 3.5rem;
 }
 
-h4, h5, h6{
+h4, h5, h6 {
   font-size: 2.6rem;
   line-height: 3.1rem;
 }
 
-p{ padding: 15px 0; }
-em{ font-style: italic; }
-strong{ font-weight: 600; }
+p { padding: 15px 0; }
+em { font-style: italic; }
+strong { font-weight: 600; }
 
-a{
+a {
   cursor: pointer;
   color: $grey-dark;
   transition: color $ani-duration;
   &:hover{ color: $grey-light; }
 }
 
-ul, ol{
+ul, ol {
   list-style-position: initial;
   li{
     margin-left: 20px;
-    p{ padding: 0; }
+    p {
+      padding: 0;
+    }
   }
 }
 
-ul{
+ul {
   list-style: none;
-
+  position: relative;
+  
   li:before{
     @include circle($grey-dark);
-    margin: 9px 0 1px -18px;
+    margin: 9px 0 0 -18px;
+    position: absolute;
   }
 }
 
-ol{ list-style-type: decimal; }
+ol { list-style-type: decimal; }
 
-time{
+time {
   padding-top: 5px;
   font-size: 1.3rem;
   line-height: 1.4rem;
@@ -90,13 +94,13 @@ time{
 // Weird FF bug for tables
 table {height: 1rem;}
 
-th, td{
+th, td {
   text-align: left;
   height:inherit;
   &:first-child{ width: 50%; }
 }
 
-img{
+img {
   max-width:40vw;
 
   &.left { float:left; margin-right: 15px; }
@@ -106,7 +110,7 @@ img{
 }
 
 // Custom Layout for different sections
-.grid{
+.grid {
   display: grid;
 
   grid-template-columns: 3% 94% 3%;
@@ -118,88 +122,88 @@ img{
     ". footer .";
 }
 
-.header, .footer{
+.header, .footer {
   @include card();
   padding: 10px 0px;
   display: flex;
 
-  a{
+  a {
     @include link();
     padding: 5px 10px;
     margin: 0 12px 0 7px;
   }
 }
 
-.header{
+.header {
   grid-area: header;
   justify-self: start;
 
-  .home{
+  .home {
     width: 40px;
     height: 40px;
     margin: 0 10px;
   }
-  .line{ margin-top: 14px; }
+  .line { margin-top: 14px; }
   a:not(.home) { padding: 12px 10px 5px 12px; }
 }
 
-.footer{
+.footer {
   grid-area: footer;
   justify-self: end;
 
   margin-bottom: 30px;
 }
 
-.logo{ padding: 1.25rem; }
+.logo { padding: 1.25rem; }
 
-.homepage, .post, .posts-summary, .cv, .page-not-found{
+.homepage, .post, .posts-summary, .cv, .page-not-found {
   grid-area: main;
 }
 
-.post, .card{
+.post, .card {
   @include card();
   padding-bottom: 30px;
   
   display: grid;
   grid-template-columns: 4% 1fr;
 
-  p, ul, ol, table, div{ grid-column: 2; }
-  h1, h2, h3, h4, h5, h6, hr, time, pre{ grid-column: 1 / span 2; }
+  p, ul, ol, table, div { grid-column: 2; }
+  h1, h2, h3, h4, h5, h6, hr, time, pre { grid-column: 1 / span 2; }
 }
 
-.card{ grid-column: 2; }
-.posts-summary .card{
+.card { grid-column: 2; }
+.posts-summary .card {
   position: relative;
   h2 > a{ text-decoration: none; }
 }
 
-.post-link{
+.post-link {
   @include card();
   overflow: hidden;
 
-  time{ float: right; }
-  a{ text-decoration: none; }
+  time { float: right; }
+  a { text-decoration: none; }
 }
 
-.post-title{
+.post-title {
   @include card();
   display: inline-block;
 
-  h2{ padding: 0; }
+  h2 { padding: 0; }
 }
 
-.readMore{
+.readMore {
   position: absolute;
   right: 20px;
   bottom: 15px;
 }
 
-.pagination{
+.pagination {
   grid-area: pagination;
   justify-self: center;
 }
 
-.previous, .next{
+.previous, .next {
   @include card();
   
   width: 100%;
@@ -209,77 +213,76 @@ img{
   text-decoration: none;
 }
 
-.dashboard{
+.dashboard {
   @include card();
   
   padding:0;
   align-self: start;
 }
 
-.cv{
+.cv {
   display: grid;
   grid-template-columns: 2% 1fr 2%;
 
-  h1{ justify-self: center; }
-  h2{ justify-self: start; }
-  h1, h2{
+  h1 { justify-self: center; }
+  h2 { justify-self: start; }
+  h1, h2 {
     @include card();
     grid-column: 2;
   }
   
-  h3{ margin-bottom: 5px; }
-  table{ margin-bottom: 15px; }
-  p{
+  h3 { margin-bottom: 5px; }
+  table { margin-bottom: 15px; }
+  p {
     padding: 0;
-    em{
+    em {
       display: block;
       padding-bottom: 15px;
     }
   }
   
-  ul{
+  ul {
     padding-bottom: 15px;
     &:before{ white-space: pre; }
     &:last-child{ padding-bottom: 0; }
     
-    li span:before{
-      @include circle($grey-dark);
-      position: relative;
-      bottom: 1px;
+    li span:before {
+      @include circle($grey-dark);  
+      margin-bottom: 1px;
     }
   }
 }
 
 /* wildcard needed for generated divs... specifically for cv page */
-div[class^='outline']{ display:contents; }
+div[class^='outline'] { display:contents; }
 
-.page-not-found{
+.page-not-found {
   @include card();
   
   text-align: center;
   padding: 100px 15px;
   
-  h2{ padding: 0; }
+  h2 { padding: 0; }
 }
 
 @media only screen and (min-width: $breakpoint-medium) {
-  .grid{
+  .grid {
     grid-template-columns: 0.5fr 8fr 0.5fr;
   }
-  .previous, .next{
+  .previous, .next {
     text-align: inherit;
     margin: 15px 0;
     width: initial;
   }
 
-  .next{ margin-left: 15px; }
-  th, td{
-    &:first-child{ width: 60%; }
+  .next { margin-left: 15px; }
+  th, td {
+    &:first-child { width: 60%; }
   }
 }
 
 @media only screen and (min-width: $breakpoint-large) {
-  .grid{
+  .grid {
     grid-template-columns: 10px 75px auto 75px 10px;
     grid-template-areas:
       ". header header . ."
@@ -288,50 +291,50 @@ div[class^='outline']{ display:contents; }
       ". . footer footer .";
   }
 
-  .post{ grid-template-columns: 0.5fr 1fr 7fr 1fr 0.5fr; }
-  .card{ grid-template-columns: 0.5fr 0.5fr 8fr 0.5fr 0.5fr; }
-  .cv{
+  .post { grid-template-columns: 0.5fr 1fr 7fr 1fr 0.5fr; }
+  .card { grid-template-columns: 0.5fr 0.5fr 8fr 0.5fr 0.5fr; }
+  .cv {
     grid-template-columns: 0.5fr 1fr 8fr 1fr 0.5fr;
-    h1, h2{ grid-column: 1 / span 5; }
-    .card{ grid-column: 3 / span 3;}
-    h2{ margin-top: 30px; }
+    h1, h2 { grid-column: 1 / span 5; }
+    .card { grid-column: 3 / span 3; }
+    h2 { margin-top: 30px; }
   }
 
-  .post, .card{
+  .post, .card {
     p, ul, ol, table, div{ grid-column: 3 / 5; }
     h1, h2, h3, h4, h5, h6, hr, time, pre{ grid-column: 2 / span 3; }
   }
   
-  .homepage{
+  .homepage {
     display: grid;
     grid-template-columns: 5% 50% 15px 1fr 5%;
   }
   
-  .dashboard{ grid-column: 1 / span 2; }
-  .post-list{ grid-column: 4 / span 2; }
+  .dashboard { grid-column: 1 / span 2; }
+  .post-list { grid-column: 4 / span 2; }
 
   img { max-width:40%; }
 
-  h1, h2, h3, h4, h5, h6{ padding-top: 15px; }
+  h1, h2, h3, h4, h5, h6 { padding-top: 15px; }
 
-  h1{
+  h1 {
     font-size: 4.9rem;
     line-height: 5.7rem;
   }
 
-  h2, h3{
+  h2, h3 {
     font-size: 4.2rem;
     line-height: 4.9rem;
   }
 
-  h4, h5, h6{
+  h4, h5, h6 {
     font-size: 3.6rem;
     line-height: 4.2rem;
   }
 }
 
 @media only screen and (min-width: $breakpoint-wide) {
-  .post-list{
+  .post-list {
     display: grid;
     grid-template-columns: 1fr 8fr;
     justify-items: start;
@@ -339,8 +342,8 @@ div[class^='outline']{ display:contents; }
     grid-auto-rows: minmax(min-content, max-content);
   }
 
-  .post-title{ grid-column: 1 / span 2; }
-  .post-link{
+  .post-title { grid-column: 1 / span 2; }
+  .post-link {
     grid-column: 2 / span 1;
     justify-self: stretch;
   }

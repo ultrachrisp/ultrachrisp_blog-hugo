@@ -5,12 +5,11 @@
 
 So, checking out *org-mode* instead of +markdown+, and I am /happy/ with how things are =turning out=. It all ~appears to be here~.
 
-* Heading 1
-** Heading 2
-*** Heading 3
-**** Heading 4
-***** Heading 5
-****** Heading 6
+* Heading 2
+** Heading 3
+*** Heading 4
+**** Heading 5
+***** Heading 6
 
 So far, it all seems to be here.
 
@@ -32,10 +31,6 @@ Unordered lists:
 - item
 - item
 
-[[file:../sweet-love-gateway/night_1.jpg]]
-
-<span class='myClass'>Looking for something</span>
-
 [[http://gohugo.io/][Check out Hugo]]
 
 -----
@@ -54,7 +49,7 @@ print s
 
 /My previous roles & responsibilities have required me to work with many different technologies & stacks. I do not claim to be an expert in all of them, since I was usually required to get up to speed as quickly as possible to solve specific problems. However, I do have a strong understanding of the fundamental programming principles & an eye for what makes clean, scalable code which (in my opinion) is present in most technology stacks./
 
-- *Languages:* JavaScript {{< dot >}}C++{{</ dot >}} {{< dot >}}Python{{</ dot >}} {{< dot >}}HTML5 & Canvas{{</ dot >}} {{< dot >}}SCSS{{</ dot >}} {{< dot >}}SQL{{</ dot >}} {{< dot >}}Emacs Lisp{{</ dot >}} {{< dot >}}Go{{</ dot >}} {{< dot >}}Scala{{</ dot >}} {{< dot >}}Octave{{</ dot >}} {{< dot >}}ActionScript 3{{</ dot >}} {{< dot >}}Java{{</ dot >}} {{< dot >}}PHP{{</ dot >}} {{< dot >}}C#{{</ dot >}}
+- *Languages:* {{< dot >}}JavaScript{{</ dot >}} {{< dot >}}C++{{</ dot >}} {{< dot >}}Python{{</ dot >}} {{< dot >}}HTML5 & Canvas{{</ dot >}} {{< dot >}}SCSS{{</ dot >}} {{< dot >}}SQL{{</ dot >}} {{< dot >}}Emacs Lisp{{</ dot >}} {{< dot >}}Go{{</ dot >}} {{< dot >}}Scala{{</ dot >}} {{< dot >}}Octave{{</ dot >}} {{< dot >}}ActionScript 3{{</ dot >}} {{< dot >}}Java{{</ dot >}} {{< dot >}}PHP{{</ dot >}} {{< dot >}}C#{{</ dot >}}
 - *Frameworks:* React {{< dot >}}Jest{{</ dot >}} {{< dot >}}OpenFrameworks{{</ dot >}} {{< dot >}}Vuforia{{</ dot >}} {{< dot >}}ARcore{{</ dot >}} {{< dot >}}OpenGL{{</ dot >}} {{< dot >}}Apache Spark{{</ dot >}} {{< dot >}}Angular{{</ dot >}} {{< dot >}}.NET{{</ dot >}}
 - *Task runners:* NPM {{< dot >}}Webpack{{</ dot >}} {{< dot >}}Gulp{{</ dot >}} {{< dot >}}Bash{{</ dot >}} {{< dot >}}Grunt{{</ dot >}}
 - *Content Management Systems:* Hugo {{< dot >}}Adobe Experience Manager (AEM){{</ dot >}} {{< dot >}}Wordpress{{</ dot >}} {{< dot >}}Drupal{{</ dot >}}
