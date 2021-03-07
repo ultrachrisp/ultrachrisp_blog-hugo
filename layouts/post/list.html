@@ -2,9 +2,9 @@
 {{ partial "navigation.html" . }}
 
 <section class="posts-summary">
-    {{ range .Data.Pages }}
-    {{ .Render "li"}}
-    {{ end }}
+  {{ range .Data.Pages }}
+  {{ .Render "li"}}
+  {{ end }}
 </section>
 
 {{ partial "footer.html" . }}

@@ -1,9 +1,9 @@
 <div class="card">
-    <h2>
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </h2>
-    <time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time>
-    <p>{{ .Summary }}</p>
-    
-    <a class="readMore" href="{{ .RelPermalink }}">Read more</a>
+  <h2>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </h2>
+  <time datetime="{{ .Date }}">{{ .Date.Format "2006-01-02" }}</time>
+  <p>{{ .Summary }}</p>
+  
+  <a class="readMore" href="{{ .RelPermalink }}">Read more</a>
 </div>

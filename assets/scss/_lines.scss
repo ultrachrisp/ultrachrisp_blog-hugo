@@ -1,56 +1,56 @@
 hr, .line {
-    overflow: visible;
-    position: relative;
+  overflow: visible;
+  position: relative;
 }
 
 hr:before, hr:after { @include circle($grey-light); }
 .line:before, .line:after { @include circle($grey-dark); }
 
 hr {
-    border-width: 1px;
-    border-style: solid;
-    border-color: $grey-light;
-    width: 99%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $grey-light;
+  width: 99%;
 
-    &:before {
-        top: -5px;
-        left: -5px;
-    }
-    &:after {
-        top: -5px;
-        right: -5px;
-    }
+  &:before {
+    top: -5px;
+    left: -5px;
+  }
+  &:after {
+    top: -5px;
+    right: -5px;
+  }
 }
 
 .line {
-    width: 15px;
-    height: 30px;
-    margin-top: 7px;
-    display: inline-block;
+  width: 15px;
+  height: 30px;
+  margin-top: 7px;
+  display: inline-block;
 
-    &:before {
-        top: -3px;
-        right: 0px;
-    }
-        
-    &:after {
-        bottom: 3px;
-        left: -5px;
-    }
+  &:before {
+    top: -3px;
+    right: 0px;
+  }
+  
+  &:after {
+    bottom: 3px;
+    left: -5px;
+  }
 
-    .subLine1 { border-bottom-color: $grey-dark; }
-    .subLine2 {
-        left: 2px;
-        border-bottom-color: $canvas;
-    }
+  .subLine1 { border-bottom-color: $grey-dark; }
+  .subLine2 {
+    left: 2px;
+    border-bottom-color: $canvas;
+  }
 
-    span {
-        top: 0px;
-        left: 0px;
-        position: absolute;
+  span {
+    top: 0px;
+    left: 0px;
+    position: absolute;
 
-        border-style: solid;
-        border-left-color: transparent;
-        border-width: 0px 0px 20px 10px;
-    }
+    border-style: solid;
+    border-left-color: transparent;
+    border-width: 0px 0px 20px 10px;
+  }
 }

@@ -2,27 +2,26 @@
 {{ partial "navigation.html" . }}
 
 <section class="post">
-    <h1 id="{{ .Title | urlize }}">{{ .Title }}</h1>
-    <time datetime="{{ .Date.Format "2006-01-02" }}">Published: {{ .Date.Format "2006-01-02" }}</time>
-    {{ if ne .Date .Lastmod }}
-    <time datetime="{{ .Lastmod.Format "2006-01-02" }}">Last update: {{ .Lastmod.Format "2006-01-02" }}</time>
-    {{ end }}
-    
-    {{ .Content }}
+  <h1 id="{{ .Title | urlize }}">{{ .Title }}</h1>
+  <time datetime="{{ .Date.Format "2006-01-02" }}">Published: {{ .Date.Format "2006-01-02" }}</time>
+  {{ if ne .Date .Lastmod }}
+  <time datetime="{{ .Lastmod.Format "2006-01-02" }}">Last update: {{ .Lastmod.Format "2006-01-02" }}</time>
+  {{ end }}
+  
+  {{ .Content }}
 
-    {{ partial "comments.html" }}
-    
+  {{ partial "comments.html" }}
+  
 </section>
 
 <aside class="pagination">
-    {{ if .PrevInSection }}
-    <a class="previous" href="{{ .PrevInSection.Permalink }}">&lt;&lt; {{ .PrevInSection.Title }}</a>
-    {{ end }}
-
-    
-    {{ if .NextInSection }}
-    <a class="next" href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} &gt;&gt;</a>
-    {{ end }}
+  {{ if .PrevInSection }}
+  <a class="previous" href="{{ .PrevInSection.Permalink }}">&lt;&lt; {{ .PrevInSection.Title }}</a>
+  {{ end }}
+  
+  {{ if .NextInSection }}
+  <a class="next" href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} &gt;&gt;</a>
+  {{ end }}
 </aside>
 
 {{ partial "footer.html" . }}
