@@ -11,8 +11,11 @@
 |                        | Frontend Engineer      |
 |------------------------+------------------------|
 
-- Responsible for developing & deploying internal facing applications to support various MessageBird teams.
-- Successfully conceptualised & deployed solutions from business requirements, leveraging existing backend capabilities.
+- Part of a DevOps team responsible for developing & deploying internal facing applications to support various MessageBird teams.
+- Routinely required to monitor the kubernetes systems my team's software runs on.
+- Required to oversee the support channels for our software. This includes answering or assisting internal support agents in their duties.
+- The only frontend engineer in the team, building upon & expanding the services developed by the rest of the team.
+- Successfully conceptualised & deployed a number of solutions from loose business requirements, often under tight timelines.
 - Successfully decoupled an internal capability from a larger code base to allow for faster development cycles.
 
 ** Absa (formerly Barclays Africa Group Ltd)
