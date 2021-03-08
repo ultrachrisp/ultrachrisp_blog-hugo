@@ -175,9 +175,9 @@
 
 * Education
 ** [[https://studies.cs.helsinki.fi/fullstackopen2019/certificate/en/3564501ea7364f15b2aec61765909af7][Fullstack Open]]
-|---------+------------------------|
-| Present | University of Helsinki |
-|---------+------------------------|
+|---------------+------------------------|
+| December 2019 | University of Helsinki |
+|---------------+------------------------|
 
 - Deeper understanding of modern ES6 trends.
 - Opportunity to explore best fullstack practises focused around React.
