@@ -4,14 +4,14 @@
   "description": "Personal blog",
   "main": "public/index.html",
   "scripts": {
-    "clean": "del static/** & del public/** !public !public/.git !public/.gitignore",
+    "start": "hugo server -w -D",
+    "build": "npm run clean && npm run createFolders && npm run commonReasources && hugo --minify",
+    "clean": "del static/** && del public/** !public !public/.git !public/.gitignore",
     "createFolders": "mkdir -p ./static ./static/svg ./static/fonts",
+    "commonReasources": "npm run general && npm run fonts && npm run svg",
     "general": "cp assets/general/* static",
     "fonts": "cp assets/fonts/* static/fonts",
     "svg": "cp assets/svg/* static/svg",
-    "commonReasources": "npm run general && npm run fonts && npm run svg",
-    "build": "npm run clean && npm run createFolders && npm run commonReasources && hugo --minify",
-    "start": "hugo server -w -D",
     "check_git_diff": "git diff --name-only --diff-filter=U"
   },
   "repository": {
