@@ -3,7 +3,7 @@ languageCode = "en"
 title = "Space Cowboy Coding"
 enableRobotsTXT = true
 disable404 = false
-googleAnalyticsID = "G-ELLT1F8NM9"  
+googleAnalytics = "G-ELLT1F8NM9"
 
 [params]
   author = "Chris Pyke"
