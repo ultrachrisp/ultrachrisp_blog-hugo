@@ -28,7 +28,7 @@
     <link href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet">
     
     <!-- javascript -->
-    {{ if and (hugo.IsProduction) (.Site.Params.googleAnalyticsID) }}
+    {{ if not .Site.IsServer }}
     {{ partial "analytics-gtag.html" . }}
     {{ end }}
 
