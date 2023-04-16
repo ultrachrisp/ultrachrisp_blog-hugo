@@ -21,10 +21,10 @@
   "author": "Chris Pyke",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^8.4.1",
+    "autoprefixer": "^10.4.14",
     "cssnano": "^4.1.10",
     "del-cli": "^1.1.0",
-    "postcss-cli": "^5.0.0",
+    "postcss-cli": "^10.1.0",
     "reset-css": "^4.0.1"
   },
   "dependencies": {}
