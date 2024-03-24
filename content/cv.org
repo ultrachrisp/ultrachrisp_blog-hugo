@@ -4,19 +4,19 @@
 #+TYPE: cv
 
 * Work Experience
-** MessageBird
+** Bird (formerly MessageBird)
 |------------------------+------------------------|
 | January 2020 - present | Amsterdam, Netherlands |
 |------------------------+------------------------|
-|                        | Frontend Engineer      |
+|                        | Software Engineer      |
 |------------------------+------------------------|
 
-- Part of a DevOps team responsible for developing & deploying internal facing applications to support various MessageBird teams.
-- Routinely required to monitor the kubernetes systems my team's software runs on.
-- Required to oversee the support channels for our software. This includes answering or assisting internal support agents in their duties.
-- The only frontend engineer in the team, building upon & expanding the services developed by the rest of the team.
-- Successfully conceptualised & deployed a number of solutions from loose business requirements, often under tight timelines.
-- Successfully decoupled an internal capability from a larger code base to allow for faster development cycles.
+- Required to work on many different products both customer facing as well as internal tooling.
+- Due to my adaptability and ability to get up to speed quickly, I moved between a number of teams within the Engineering department. Often the only developer working on frontend related tasks.
+- Sought after by the teams I had previously worked with. I was able to rekindle existing relationships which resulted in faster ramp up times for new initiatives or projects.
+- Provided developer as well as operations responsibilities depending on the team I was with. This included answering support questions as well as on-call duties. 
+- Successfully conceptualized & deployed a number of solutions from loose business requirements, often under tight timelines.
+- Successfully executed a number of projects from start to finish. This included: bootstrapping new micro-frontend frameworks for existing systems, decoupling internal systems from larger code bases to allow for faster development cycles as well as many new features to existing products.
 
 ** Absa (formerly Barclays Africa Group Ltd)
 |-------------------------------+----------------------------|
@@ -174,13 +174,14 @@
 - *2010:* Led the construction of the first tower.
 
 * Education
-** [[https://studies.cs.helsinki.fi/fullstackopen2019/certificate/en/3564501ea7364f15b2aec61765909af7][Fullstack Open]]
-|---------------+------------------------|
-| December 2019 | University of Helsinki |
-|---------------+------------------------|
 
-- Deeper understanding of modern ES6 trends.
-- Opportunity to explore best fullstack practises focused around React.
+** [[https://frontendmasters.com/u/Ultrachrisp/][Frontend Masters]]
+|--------------------------|
+| September 2020 - present |
+|--------------------------|
+
+- Deeper understanding of modern development trends
+- Opportunity to explore various topics around multiple languages and technology stacks.
 
 ** [[https://www.coursera.org/account/accomplishments/certificate/NQ7GJD6E4UZR][Coursera: Machine Learning]]
 |-----------+---------------------|
@@ -246,8 +247,7 @@ Major in English
 - Strong leadership skills without sacrificing the ability to collaborate or follow.
 - Confident presentation skills allowing easy & natural interactions with audiences.
 - Good motivator able to establish meaningful RAPPORT within a team.
-- Proven problem solving skills complimented with established research methodologies.
+- Proven problem solving skills complimented with effective application of design thinking processes.
 - Excited by a challenge & curious by nature.
 - Self-motivated with an aptitude to rapidly upskill myself in a new technology or framework.
-- Understands the design process well & effectively collaborates with stake-holders.
 
