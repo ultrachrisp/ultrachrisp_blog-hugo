@@ -2,7 +2,7 @@
 {{ partial "navigation.html" . }}
 
 <section class="posts-summary">
-  {{ range .Data.Pages }}
+  {{ range .Pages }}
   {{ .Render "li"}}
   {{ end }}
 </section>

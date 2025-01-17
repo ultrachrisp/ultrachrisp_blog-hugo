@@ -4,6 +4,7 @@
   "title": "Space Cowboy Coding",
   "enableRobotsTXT": true,
   "disable404": false,
+  "summaryLength": 20,
   "params": {
     "author": "Chris Pyke",
     "description": "Chrisp's personal blog"
